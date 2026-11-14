@@ -77,7 +77,7 @@ The pipeline processes raw news text through three sequential cognitive stages:
 │ • Preprocessor: Strips HTML, normalizes datelines ("yesterday at 10pm") │
 │ • Classifier: 5 Incident Classes + 1 Non-Incident Control Class         │
 │ • Spatial Resolver: Maps mentions to 34+ canonical Noida POIs & sectors │
-│ • Entity Extractor: Isolates vehicles, weapons, roles, organizations   │
+│ • Entity Extractor: Isolates vehicles, weapons, roles, organizations    │
 └────────────────────────────────────┬────────────────────────────────────┘
                                      │ Structured Reports (REP_XXXX)
                                      ▼
