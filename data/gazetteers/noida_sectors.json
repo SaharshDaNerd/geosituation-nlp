@@ -1,0 +1,525 @@
+[
+  {
+    "id": "Sector 1",
+    "name": "Sector 1, Noida",
+    "zone": "Industrial",
+    "lat": 28.588,
+    "lon": 77.309,
+    "aliases": [
+      "sector 1",
+      "sec 1",
+      "sector-1",
+      "gol chakkar sector 1",
+      "noida entry point sector 1"
+    ]
+  },
+  {
+    "id": "Sector 2",
+    "name": "Sector 2, Noida",
+    "zone": "Industrial / Commercial",
+    "lat": 28.587,
+    "lon": 77.315,
+    "aliases": [
+      "sector 2",
+      "sec 2",
+      "sector-2",
+      "sector 2 metro",
+      "sector 2 industrial area"
+    ]
+  },
+  {
+    "id": "Sector 15",
+    "name": "Sector 15, Noida",
+    "zone": "Residential / Commercial",
+    "lat": 28.583,
+    "lon": 77.314,
+    "aliases": [
+      "sector 15",
+      "sec 15",
+      "sector-15",
+      "sector 15 metro",
+      "nayabans",
+      "nayabaas sector 15"
+    ]
+  },
+  {
+    "id": "Sector 16",
+    "name": "Sector 16, Noida",
+    "zone": "Commercial / IT Hub",
+    "lat": 28.578,
+    "lon": 77.318,
+    "aliases": [
+      "sector 16",
+      "sec 16",
+      "sector-16",
+      "sector 16 metro",
+      "film city entrance",
+      "world trade tower",
+      "wtt noida"
+    ]
+  },
+  {
+    "id": "Sector 18",
+    "name": "Sector 18, Noida",
+    "zone": "Major Commercial Hub",
+    "lat": 28.57,
+    "lon": 77.322,
+    "aliases": [
+      "sector 18",
+      "sec 18",
+      "sector-18",
+      "atta market",
+      "atta",
+      "sector 18 market",
+      "dlf mall of india",
+      "mall of india",
+      "wave mall",
+      "radisson blu sector 18",
+      "sector 18 metro",
+      "the great india place",
+      "gip mall"
+    ]
+  },
+  {
+    "id": "Sector 21",
+    "name": "Sector 21, Noida",
+    "zone": "Residential / Civic",
+    "lat": 28.5885,
+    "lon": 77.334,
+    "aliases": [
+      "sector 21",
+      "sec 21",
+      "sector-21",
+      "noida stadium",
+      "jalvayu vihar sector 21",
+      "spices mall"
+    ]
+  },
+  {
+    "id": "Sector 25",
+    "name": "Sector 25, Noida",
+    "zone": "Residential",
+    "lat": 28.587,
+    "lon": 77.34,
+    "aliases": [
+      "sector 25",
+      "sec 25",
+      "sector-25",
+      "jalvayu vihar",
+      "climate tower"
+    ]
+  },
+  {
+    "id": "Sector 27",
+    "name": "Sector 27, Noida",
+    "zone": "Commercial / Residential",
+    "lat": 28.5775,
+    "lon": 77.33,
+    "aliases": [
+      "sector 27",
+      "sec 27",
+      "sector-27",
+      "atta chowk",
+      "vinayak hospital sector 27",
+      "dharamsheela"
+    ]
+  },
+  {
+    "id": "Sector 29",
+    "name": "Sector 29, Noida",
+    "zone": "Residential / Civic",
+    "lat": 28.568,
+    "lon": 77.332,
+    "aliases": [
+      "sector 29",
+      "sec 29",
+      "sector-29",
+      "ganga shopping complex",
+      "brahmputra market",
+      "botanical garden road"
+    ]
+  },
+  {
+    "id": "Sector 32",
+    "name": "Sector 32, Noida",
+    "zone": "Commercial / Transport Hub",
+    "lat": 28.575,
+    "lon": 77.352,
+    "aliases": [
+      "sector 32",
+      "sec 32",
+      "sector-32",
+      "noida city centre",
+      "city centre metro",
+      "logix city centre",
+      "logix mall"
+    ]
+  },
+  {
+    "id": "Sector 34",
+    "name": "Sector 34, Noida",
+    "zone": "Residential",
+    "lat": 28.583,
+    "lon": 77.358,
+    "aliases": [
+      "sector 34",
+      "sec 34",
+      "sector-34",
+      "sector 34 metro",
+      "bhati chowk sector 34"
+    ]
+  },
+  {
+    "id": "Sector 37",
+    "name": "Sector 37, Noida",
+    "zone": "Civic / Transit",
+    "lat": 28.563,
+    "lon": 77.336,
+    "aliases": [
+      "sector 37",
+      "sec 37",
+      "sector-37",
+      "botanical garden metro",
+      "botanical garden",
+      "golf course metro",
+      "sector 37 crossing"
+    ]
+  },
+  {
+    "id": "Sector 38A",
+    "name": "Sector 38A, Noida",
+    "zone": "Entertainment / Retail",
+    "lat": 28.567,
+    "lon": 77.326,
+    "aliases": [
+      "sector 38a",
+      "sec 38a",
+      "sector 38",
+      "sec 38",
+      "worlds of wonder",
+      "gardens galleria",
+      "appu ghar noida"
+    ]
+  },
+  {
+    "id": "Sector 50",
+    "name": "Sector 50, Noida",
+    "zone": "Residential High-Density",
+    "lat": 28.577,
+    "lon": 77.368,
+    "aliases": [
+      "sector 50",
+      "sec 50",
+      "sector-50",
+      "sector 50 metro",
+      "alok vihar",
+      "central park sector 50"
+    ]
+  },
+  {
+    "id": "Sector 51",
+    "name": "Sector 51, Noida",
+    "zone": "Transit Interchange",
+    "lat": 28.582,
+    "lon": 77.373,
+    "aliases": [
+      "sector 51",
+      "sec 51",
+      "sector-51",
+      "sector 51 metro",
+      "aqua line interchange sector 51",
+      "hoshiyarpur"
+    ]
+  },
+  {
+    "id": "Sector 52",
+    "name": "Sector 52, Noida",
+    "zone": "Transit Hub / Residential",
+    "lat": 28.589,
+    "lon": 77.371,
+    "aliases": [
+      "sector 52",
+      "sec 52",
+      "sector-52",
+      "sector 52 metro",
+      "blue line sector 52"
+    ]
+  },
+  {
+    "id": "Sector 58",
+    "name": "Sector 58, Noida",
+    "zone": "IT / Industrial",
+    "lat": 28.611,
+    "lon": 77.361,
+    "aliases": [
+      "sector 58",
+      "sec 58",
+      "sector-58",
+      "sector 58 police station",
+      "bishanpura sector 58"
+    ]
+  },
+  {
+    "id": "Sector 59",
+    "name": "Sector 59, Noida",
+    "zone": "IT / Metro Hub",
+    "lat": 28.608,
+    "lon": 77.373,
+    "aliases": [
+      "sector 59",
+      "sec 59",
+      "sector-59",
+      "sector 59 metro",
+      "mamura chowk",
+      "mamura"
+    ]
+  },
+  {
+    "id": "Sector 61",
+    "name": "Sector 61, Noida",
+    "zone": "Residential",
+    "lat": 28.599,
+    "lon": 77.366,
+    "aliases": [
+      "sector 61",
+      "sec 61",
+      "sector-61",
+      "sector 61 metro",
+      "shopper's square 61"
+    ]
+  },
+  {
+    "id": "Sector 62",
+    "name": "Sector 62, Noida",
+    "zone": "Major Institutional & IT Hub",
+    "lat": 28.627,
+    "lon": 77.363,
+    "aliases": [
+      "sector 62",
+      "sec 62",
+      "sector-62",
+      "sector 62 metro",
+      "electronic city",
+      "noida electronic city",
+      "fortis hospital noida",
+      "fortis sector 62",
+      "jiit",
+      "jaypee institute",
+      "iim lucknow noida campus",
+      "stellar it park",
+      "symbiosis noida"
+    ]
+  },
+  {
+    "id": "Sector 63",
+    "name": "Sector 63, Noida",
+    "zone": "Major Industrial & Tech Zone",
+    "lat": 28.625,
+    "lon": 77.382,
+    "aliases": [
+      "sector 63",
+      "sec 63",
+      "sector-63",
+      "sector 63 industrial area",
+      "chhijarsi",
+      "chhijarsi toll",
+      "sector 63 a"
+    ]
+  },
+  {
+    "id": "Sector 71",
+    "name": "Sector 71, Noida",
+    "zone": "Residential / Transit",
+    "lat": 28.588,
+    "lon": 77.38,
+    "aliases": [
+      "sector 71",
+      "sec 71",
+      "sector-71",
+      "sector 71 underpass",
+      "sai temple sector 71",
+      "baba balak nath temple"
+    ]
+  },
+  {
+    "id": "Sector 76",
+    "name": "Sector 76, Noida",
+    "zone": "High-Rise Residential",
+    "lat": 28.573,
+    "lon": 77.385,
+    "aliases": [
+      "sector 76",
+      "sec 76",
+      "sector-76",
+      "sector 76 metro",
+      "amrapali silicon city",
+      "seththi max royal"
+    ]
+  },
+  {
+    "id": "Sector 78",
+    "name": "Sector 78, Noida",
+    "zone": "High-Rise Residential",
+    "lat": 28.567,
+    "lon": 77.389,
+    "aliases": [
+      "sector 78",
+      "sec 78",
+      "sector-78",
+      "antriksh golf view",
+      "mahagun moderne sector 78",
+      "aditya urban casa"
+    ]
+  },
+  {
+    "id": "Sector 93A",
+    "name": "Sector 93A, Noida",
+    "zone": "Expressway Residential",
+    "lat": 28.517,
+    "lon": 77.375,
+    "aliases": [
+      "sector 93a",
+      "sec 93a",
+      "sector 93",
+      "supertech twin towers site",
+      "emerald court",
+      "ats greens village"
+    ]
+  },
+  {
+    "id": "Sector 100",
+    "name": "Sector 100, Noida",
+    "zone": "Residential",
+    "lat": 28.539,
+    "lon": 77.368,
+    "aliases": [
+      "sector 100",
+      "sec 100",
+      "sector-100",
+      "lotus boulevard",
+      "century apartments"
+    ]
+  },
+  {
+    "id": "Sector 125",
+    "name": "Sector 125, Noida",
+    "zone": "Educational / Institutional Hub",
+    "lat": 28.544,
+    "lon": 77.332,
+    "aliases": [
+      "sector 125",
+      "sec 125",
+      "sector-125",
+      "amity university",
+      "amity noida",
+      "amity campus sector 125",
+      "hcl technologies 125"
+    ]
+  },
+  {
+    "id": "Sector 128",
+    "name": "Sector 128, Noida",
+    "zone": "Expressway / Healthcare Hub",
+    "lat": 28.514,
+    "lon": 77.355,
+    "aliases": [
+      "sector 128",
+      "sec 128",
+      "sector-128",
+      "jaypee hospital",
+      "jaypee greens wish town",
+      "wish town noida"
+    ]
+  },
+  {
+    "id": "Sector 135",
+    "name": "Sector 135, Noida",
+    "zone": "IT SEZ / Corporate Hub",
+    "lat": 28.497,
+    "lon": 77.402,
+    "aliases": [
+      "sector 135",
+      "sec 135",
+      "sector-135",
+      "cognizant noida 135",
+      "tcs sector 135",
+      "genpact sector 135",
+      "candor techspace 135"
+    ]
+  },
+  {
+    "id": "Sector 137",
+    "name": "Sector 137, Noida",
+    "zone": "Expressway High-Rise Hub",
+    "lat": 28.508,
+    "lon": 77.408,
+    "aliases": [
+      "sector 137",
+      "sec 137",
+      "sector-137",
+      "sector 137 metro",
+      "felix hospital",
+      "paras tierea",
+      "purvanchal royal park",
+      "exotica fresca"
+    ]
+  },
+  {
+    "id": "Sector 142",
+    "name": "Sector 142, Noida",
+    "zone": "Expressway Corporate / Transit Hub",
+    "lat": 28.491,
+    "lon": 77.419,
+    "aliases": [
+      "sector 142",
+      "sec 142",
+      "sector-142",
+      "sector 142 metro",
+      "advant navis business park",
+      "advant noida",
+      "advant tower"
+    ]
+  },
+  {
+    "id": "Sector 150",
+    "name": "Sector 150, Noida",
+    "zone": "Sports City / Eco-Residential",
+    "lat": 28.455,
+    "lon": 77.458,
+    "aliases": [
+      "sector 150",
+      "sec 150",
+      "sector-150",
+      "noida sports city",
+      "shaheed bhagat singh park 150",
+      "tata eureka park"
+    ]
+  },
+  {
+    "id": "Noida-Greater Noida Expressway",
+    "name": "Noida-Greater Noida Expressway",
+    "zone": "High-Speed Arterial Corridor",
+    "lat": 28.518,
+    "lon": 77.382,
+    "aliases": [
+      "noida expressway",
+      "greater noida expressway",
+      "expressway toll",
+      "expressway flyover",
+      "mahahmaya flyover"
+    ]
+  },
+  {
+    "id": "DND Flyway",
+    "name": "DND Flyway (Delhi-Noida Direct)",
+    "zone": "Inter-State Arterial Highway",
+    "lat": 28.572,
+    "lon": 77.301,
+    "aliases": [
+      "dnd flyway",
+      "dnd toll plaza",
+      "delhi noida direct flyway",
+      "yamuna bridge noida"
+    ]
+  }
+]

@@ -1,0 +1,670 @@
+[
+  {
+    "report_id": "REP_AA467FEB46",
+    "source_url": "https://test.com/fire",
+    "headline": "Delivery van caught fire near Sector 62 intersection",
+    "full_text": "Delivery van caught fire near Sector 62 intersection. Noida: An electrical delivery van caught fire near Sector 62 Fortis hospital crossing. Fire fighters doused the vehicle.",
+    "published_at": "2026-11-14T20:54:36.289815",
+    "incident_timestamp": "2026-11-14T20:54:36.289815",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "model_confidence": 0.1667,
+    "severity_weight": 3.5,
+    "sector_id": "Sector 62",
+    "sector_name": "Sector 62, Noida",
+    "zone": "Major Institutional & IT Hub",
+    "latitude": 28.627,
+    "longitude": 77.363,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [
+        "Fortis Hospital"
+      ],
+      "vehicles": [
+        "Van"
+      ],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    }
+  },
+  {
+    "report_id": "REP_7C3C8F9B37",
+    "source_url": "https://test.com/fire",
+    "headline": "Delivery van caught fire near Sector 62 intersection",
+    "full_text": "Delivery van caught fire near Sector 62 intersection. Noida: An electrical delivery van caught fire near Sector 62 Fortis hospital crossing. Fire fighters doused the vehicle.",
+    "published_at": "2026-11-14T19:59:37.143663",
+    "incident_timestamp": "2026-11-14T19:59:37.143663",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "model_confidence": 0.1667,
+    "severity_weight": 3.5,
+    "sector_id": "Sector 62",
+    "sector_name": "Sector 62, Noida",
+    "zone": "Major Institutional & IT Hub",
+    "latitude": 28.627,
+    "longitude": 77.363,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [
+        "Fortis Hospital"
+      ],
+      "vehicles": [
+        "Van"
+      ],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    }
+  },
+  {
+    "report_id": "REP_8716C494AF",
+    "source_url": "https://test.com/fire",
+    "headline": "Delivery van caught fire near Sector 62 intersection",
+    "full_text": "Delivery van caught fire near Sector 62 intersection. Noida: An electrical delivery van caught fire near Sector 62 Fortis hospital crossing. Fire fighters doused the vehicle.",
+    "published_at": "2026-11-14T19:51:43.453443",
+    "incident_timestamp": "2026-11-14T19:51:43.453443",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "model_confidence": 0.1667,
+    "severity_weight": 3.5,
+    "sector_id": "Sector 62",
+    "sector_name": "Sector 62, Noida",
+    "zone": "Major Institutional & IT Hub",
+    "latitude": 28.627,
+    "longitude": 77.363,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [
+        "Fortis Hospital"
+      ],
+      "vehicles": [
+        "Van"
+      ],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    }
+  },
+  {
+    "report_id": "REP_B7BB9780AD",
+    "source_url": "https://test.com/fire",
+    "headline": "Delivery van caught fire near Sector 62 intersection",
+    "full_text": "Delivery van caught fire near Sector 62 intersection. Noida: An electrical delivery van caught fire near Sector 62 Fortis hospital crossing. Fire fighters doused the vehicle.",
+    "published_at": "2026-11-14T19:39:53.980085",
+    "incident_timestamp": "2026-11-14T19:39:53.980085",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "model_confidence": 0.1667,
+    "severity_weight": 3.5,
+    "sector_id": "Sector 62",
+    "sector_name": "Sector 62, Noida",
+    "zone": "Major Institutional & IT Hub",
+    "latitude": 28.627,
+    "longitude": 77.363,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [
+        "Fortis Hospital"
+      ],
+      "vehicles": [
+        "Van"
+      ],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    }
+  },
+  {
+    "report_id": "REP_84B80B9327",
+    "source_url": "https://timesofindia.indiatimes.com/city/noida/robbery-sector-18",
+    "headline": "Armed robbery at jewelry store in Sector 18 Atta Market, four masked men escape with gold worth 40 lakh",
+    "full_text": "Armed robbery at jewelry store in Sector 18 Atta Market, four masked men escape with gold worth 40 lakh. Noida: In a daring daylight robbery, four masked assailants stormed into a jewelry showroom in the bustling Atta market of Sector 18. The robbers brandished country-made pistols, threatened security guards and staff, and looted gold ornaments before fleeing on two motorcycles towards Sector 27. Noida police have formed five special teams to trace the miscreants.",
+    "published_at": "2026-11-13T14:48:39.753636",
+    "incident_timestamp": "2026-11-13T14:48:39.753636",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "VIOLENT_CRIME",
+    "category_name": "Violent Crime",
+    "model_confidence": 1.0,
+    "severity_weight": 5.0,
+    "sector_id": "Sector 18",
+    "sector_name": "Sector 18, Noida",
+    "zone": "Major Commercial Hub",
+    "latitude": 28.57,
+    "longitude": 77.322,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [
+        "Noida Police"
+      ],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [
+        "Assailants",
+        "Miscreants",
+        "Robbers"
+      ],
+      "casualty_mentions": []
+    }
+  },
+  {
+    "report_id": "REP_E7E9C361C8",
+    "source_url": "https://hindustantimes.com/ncr/noida-sec-18-robbery-gold",
+    "headline": "Gunmen storm Atta Market jewelry shop in Sector 18, loot gold ornaments at gunpoint",
+    "full_text": "Gunmen storm Atta Market jewelry shop in Sector 18, loot gold ornaments at gunpoint. Greater Noida: Tension gripped Sector 18 market on Tuesday afternoon when four armed miscreants raided an upscale jewelry outlet near the metro station. The assailants fired one round in the air to terrorize shopkeepers and escaped on bikes. Senior police officers rushed to the spot with forensic teams.",
+    "published_at": "2026-11-13T17:12:39.753636",
+    "incident_timestamp": "2026-11-13T12:00:00.753636",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP_NOON",
+    "temporal_confidence": 0.65,
+    "category": "VIOLENT_CRIME",
+    "category_name": "Violent Crime",
+    "model_confidence": 1.0,
+    "severity_weight": 5.0,
+    "sector_id": "Sector 18",
+    "sector_name": "Sector 18, Noida",
+    "zone": "Major Commercial Hub",
+    "latitude": 28.57,
+    "longitude": 77.322,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [
+        "Assailants",
+        "Miscreants"
+      ],
+      "casualty_mentions": []
+    }
+  },
+  {
+    "report_id": "REP_F6C6AB5BE9",
+    "source_url": "https://indianexpress.com/cities/delhi/noida-sector-18-atta-loot",
+    "headline": "Sec 18 Atta Market jewelry loot: Noida Police scan CCTV footage of bike-borne robbers",
+    "full_text": "Sec 18 Atta Market jewelry loot: Noida Police scan CCTV footage of bike-borne robbers. Noida: Investigators are scanning CCTV camera footage after four armed robbers barged into a showroom in Sector 18 market yesterday and decamped with jewelry. Two security guards sustained minor injuries while attempting to shut the glass doors.",
+    "published_at": "2026-11-14T00:24:39.753636",
+    "incident_timestamp": "2026-11-13T00:24:39.753636",
+    "temporal_indicator": "YESTERDAY",
+    "temporal_confidence": 0.88,
+    "category": "VIOLENT_CRIME",
+    "category_name": "Violent Crime",
+    "model_confidence": 1.0,
+    "severity_weight": 5.0,
+    "sector_id": "Sector 18",
+    "sector_name": "Sector 18, Noida",
+    "zone": "Major Commercial Hub",
+    "latitude": 28.57,
+    "longitude": 77.322,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [
+        "Noida Police"
+      ],
+      "vehicles": [
+        "Bike"
+      ],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [
+        "Robbers"
+      ],
+      "casualty_mentions": []
+    }
+  },
+  {
+    "report_id": "REP_B925C8864E",
+    "source_url": "https://timesofindia.indiatimes.com/city/noida/expressway-pileup-fog",
+    "headline": "Dense fog triggers seven-vehicle pileup on Noida-Greater Noida Expressway near Sector 128, three injured",
+    "full_text": "Dense fog triggers seven-vehicle pileup on Noida-Greater Noida Expressway near Sector 128, three injured. Noida: Poor morning visibility due to dense smog caused a multi-vehicle collision involving a dumper truck, two private cars, and an SUV on the Noida Expressway near Sector 128 flyover early yesterday morning. Traffic police used cranes to clear damaged vehicles. The injured were shifted to Jaypee Hospital.",
+    "published_at": "2026-11-12T07:36:39.753636",
+    "incident_timestamp": "2026-11-11T09:00:00.753636",
+    "temporal_indicator": "YESTERDAY_MORNING",
+    "temporal_confidence": 0.88,
+    "category": "TRAFFIC_INCIDENT",
+    "category_name": "Traffic & Road Hazard",
+    "model_confidence": 1.0,
+    "severity_weight": 2.0,
+    "sector_id": "Sector 128",
+    "sector_name": "Sector 128, Noida",
+    "zone": "Expressway / Healthcare Hub",
+    "latitude": 28.514,
+    "longitude": 77.355,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [
+        "Jaypee Hospital",
+        "Traffic Police"
+      ],
+      "vehicles": [
+        "Dumper",
+        "Dumper Truck",
+        "Suv",
+        "Truck"
+      ],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [],
+      "casualty_mentions": [
+        "three"
+      ]
+    }
+  },
+  {
+    "report_id": "REP_2D193B22FE",
+    "source_url": "https://hindustantimes.com/ncr/expressway-crash-traffic-jam",
+    "headline": "Massive pileup on Noida Expressway at Sector 128 disrupts morning office commute",
+    "full_text": "Massive pileup on Noida Expressway at Sector 128 disrupts morning office commute. Commuters heading towards Delhi faced two-hour delays after a speeding dumper truck rammed into a sedan near Sector 128, triggering a chain collision of five other vehicles. Traffic was diverted onto service lanes.",
+    "published_at": "2026-11-12T10:00:39.753636",
+    "incident_timestamp": "2026-11-12T09:00:00.753636",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP_MORNING",
+    "temporal_confidence": 0.65,
+    "category": "TRAFFIC_INCIDENT",
+    "category_name": "Traffic & Road Hazard",
+    "model_confidence": 1.0,
+    "severity_weight": 2.0,
+    "sector_id": "Sector 128",
+    "sector_name": "Sector 128, Noida",
+    "zone": "Expressway / Healthcare Hub",
+    "latitude": 28.514,
+    "longitude": 77.355,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [],
+      "vehicles": [
+        "Dumper",
+        "Dumper Truck",
+        "Sedan",
+        "Truck"
+      ],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    }
+  },
+  {
+    "report_id": "REP_19C91C9EBE",
+    "source_url": "https://timesofindia.indiatimes.com/city/noida/sector-62-fire-transformer",
+    "headline": "Major fire in electrical transformer outside IT park in Sector 62, fire tenders rushed to spot",
+    "full_text": "Major fire in electrical transformer outside IT park in Sector 62, fire tenders rushed to spot. Noida: A high-voltage transformer caught fire with loud explosions near the Fortis Hospital crossing in Sector 62 late yesterday evening. Four fire tenders battled the blaze for over an hour. Power supply was disconnected to prevent damage to nearby commercial complexes.",
+    "published_at": "2026-11-11T19:36:39.753636",
+    "incident_timestamp": "2026-11-10T18:30:00.753636",
+    "temporal_indicator": "YESTERDAY_EVENING",
+    "temporal_confidence": 0.88,
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "model_confidence": 1.0,
+    "severity_weight": 3.5,
+    "sector_id": "Sector 62",
+    "sector_name": "Sector 62, Noida",
+    "zone": "Major Institutional & IT Hub",
+    "latitude": 28.627,
+    "longitude": 77.363,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [
+        "Fire Tenders",
+        "Fortis Hospital"
+      ],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Blaze",
+        "Fire",
+        "Transformer"
+      ],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    }
+  },
+  {
+    "report_id": "REP_2E1E65288A",
+    "source_url": "https://amarujala.com/delhi-ncr/noida/sec-62-transformer-blaze",
+    "headline": "Transformer blast sparks panic near Sector 62 metro station, thick smoke engulfs road",
+    "full_text": "Transformer blast sparks panic near Sector 62 metro station, thick smoke engulfs road. Noida: Commuters and office workers in Sector 62 witnessed thick plumes of black smoke as an electrical transformer exploded near the institutional area. Fire department personnel contained the fire with chemical foam.",
+    "published_at": "2026-11-11T22:00:39.753636",
+    "incident_timestamp": "2026-11-11T22:00:39.753636",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "model_confidence": 1.0,
+    "severity_weight": 3.5,
+    "sector_id": "Sector 62",
+    "sector_name": "Sector 62, Noida",
+    "zone": "Major Institutional & IT Hub",
+    "latitude": 28.627,
+    "longitude": 77.363,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [
+        "Fire Department"
+      ],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Fire",
+        "Smoke",
+        "Transformer"
+      ],
+      "roles_and_actors": [
+        "Workers"
+      ],
+      "casualty_mentions": []
+    }
+  },
+  {
+    "report_id": "REP_4450870450",
+    "source_url": "https://hindustantimes.com/ncr/sec-137-flats-burglary",
+    "headline": "Burglaries in two locked high-rise flats in Sector 137 society, cash and laptops stolen",
+    "full_text": "Burglaries in two locked high-rise flats in Sector 137 society, cash and laptops stolen. Noida: Burglars targeted two locked apartments in a premium residential society in Sector 137 while the residents were away for the weekend. The thieves broke the front door latches and fled with cash and gold jewelry. Felix Hospital police post is investigating.",
+    "published_at": "2026-11-10T19:36:39.753636",
+    "incident_timestamp": "2026-11-10T19:36:39.753636",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "PROPERTY_CRIME",
+    "category_name": "Property / Financial Crime",
+    "model_confidence": 1.0,
+    "severity_weight": 2.5,
+    "sector_id": "Sector 137",
+    "sector_name": "Sector 137, Noida",
+    "zone": "Expressway High-Rise Hub",
+    "latitude": 28.508,
+    "longitude": 77.408,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [
+        "Felix Hospital"
+      ],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [
+        "Thieves"
+      ],
+      "casualty_mentions": []
+    }
+  },
+  {
+    "report_id": "REP_E76A43926C",
+    "source_url": "https://timesofindia.indiatimes.com/city/noida/advant-snatching-sec-142",
+    "headline": "Bike-borne snatchers target female software engineer outside Advant Navis tower in Sector 142",
+    "full_text": "Bike-borne snatchers target female software engineer outside Advant Navis tower in Sector 142. Noida: Two motorcycle-borne youths snatched a smartphone and handbag from an IT employee while she was walking towards the Sector 142 metro station near Advant Navis Business Park. The miscreants sped away towards the expressway.",
+    "published_at": "2026-11-13T07:36:39.753636",
+    "incident_timestamp": "2026-11-13T07:36:39.753636",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "PROPERTY_CRIME",
+    "category_name": "Property / Financial Crime",
+    "model_confidence": 1.0,
+    "severity_weight": 2.5,
+    "sector_id": "Sector 142",
+    "sector_name": "Sector 142, Noida",
+    "zone": "Expressway Corporate / Transit Hub",
+    "latitude": 28.491,
+    "longitude": 77.419,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [],
+      "vehicles": [
+        "Bike",
+        "Motorcycle"
+      ],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [
+        "Miscreants",
+        "Snatchers"
+      ],
+      "casualty_mentions": []
+    }
+  },
+  {
+    "report_id": "REP_7A69CF47AE",
+    "source_url": "https://hindustantimes.com/ncr/sec-142-chain-snatching-surge",
+    "headline": "Second chain snatching reported near Sector 142 metro station within 24 hours",
+    "full_text": "Second chain snatching reported near Sector 142 metro station within 24 hours. Noida: In another incident near Advant tower in Sector 142, bike-borne miscreants snatched a gold chain from a commuter waiting for an auto-rickshaw. Police have intensified night patrolling along the service roads.",
+    "published_at": "2026-11-14T07:36:39.753636",
+    "incident_timestamp": "2026-11-14T21:00:00.753636",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP_NIGHT",
+    "temporal_confidence": 0.65,
+    "category": "PROPERTY_CRIME",
+    "category_name": "Property / Financial Crime",
+    "model_confidence": 1.0,
+    "severity_weight": 2.5,
+    "sector_id": "Sector 142",
+    "sector_name": "Sector 142, Noida",
+    "zone": "Expressway Corporate / Transit Hub",
+    "latitude": 28.491,
+    "longitude": 77.419,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [],
+      "vehicles": [
+        "Auto",
+        "Auto-Rickshaw",
+        "Bike"
+      ],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [
+        "Miscreants"
+      ],
+      "casualty_mentions": []
+    }
+  },
+  {
+    "report_id": "REP_285F93405C",
+    "source_url": "https://indianexpress.com/cities/delhi/noida-sector-63-factory-fire",
+    "headline": "Massive fire destroys garment manufacturing factory warehouse in Sector 63 industrial area",
+    "full_text": "Massive fire destroys garment manufacturing factory warehouse in Sector 63 industrial area. Noida: A devastating fire erupted on the top floor of a garment packaging unit in Sector 63. Ten fire tenders from Phase 3 fire station worked through the night to bring the flames under control. No casualties were reported.",
+    "published_at": "2026-11-09T14:48:39.753636",
+    "incident_timestamp": "2026-11-09T21:00:00.753636",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP_NIGHT",
+    "temporal_confidence": 0.65,
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "model_confidence": 1.0,
+    "severity_weight": 3.5,
+    "sector_id": "Sector 63",
+    "sector_name": "Sector 63, Noida",
+    "zone": "Major Industrial & Tech Zone",
+    "latitude": 28.625,
+    "longitude": 77.382,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [
+        "Fire Tenders"
+      ],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    }
+  },
+  {
+    "report_id": "REP_F3A70C7FEB",
+    "source_url": "https://amarujala.com/delhi-ncr/noida/sec-76-suv-stolen",
+    "headline": "Luxury SUV stolen from outside society gate in Sector 76, car-lifter gang caught on CCTV",
+    "full_text": "Luxury SUV stolen from outside society gate in Sector 76, car-lifter gang caught on CCTV. Noida: An expensive SUV was stolen from the roadside parking outside a high-rise society in Sector 76. CCTV footage shows two men using an electronic key cloner to unlock the vehicle within ninety seconds.",
+    "published_at": "2026-11-08T19:36:39.753636",
+    "incident_timestamp": "2026-11-08T19:36:39.753636",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "PROPERTY_CRIME",
+    "category_name": "Property / Financial Crime",
+    "model_confidence": 1.0,
+    "severity_weight": 2.5,
+    "sector_id": "Sector 76",
+    "sector_name": "Sector 76, Noida",
+    "zone": "High-Rise Residential",
+    "latitude": 28.573,
+    "longitude": 77.385,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [],
+      "vehicles": [
+        "Car",
+        "Suv"
+      ],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [
+        "Gang"
+      ],
+      "casualty_mentions": []
+    }
+  },
+  {
+    "report_id": "REP_BA3E257708",
+    "source_url": "https://timesofindia.indiatimes.com/city/noida/dnd-flyway-farmer-protest",
+    "headline": "Farmers stage tractor march, block traffic near DND Flyway toll plaza causing five-kilometer jam",
+    "full_text": "Farmers stage tractor march, block traffic near DND Flyway toll plaza causing five-kilometer jam. Noida: Hundreds of protesting farmers on tractors blocked the entry corridor near the DND flyway and Chilla border demanding enhanced rehabilitation compensation. Heavy police deployment and barricading diverted commuter traffic via Kalindi Kunj.",
+    "published_at": "2026-11-11T00:24:39.753636",
+    "incident_timestamp": "2026-11-11T00:24:39.753636",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "PUBLIC_DISRUPTION",
+    "category_name": "Public Order & Protests",
+    "model_confidence": 1.0,
+    "severity_weight": 2.0,
+    "sector_id": "DND Flyway",
+    "sector_name": "DND Flyway (Delhi-Noida Direct)",
+    "zone": "Inter-State Arterial Highway",
+    "latitude": 28.572,
+    "longitude": 77.301,
+    "spatial_match_type": "LANDMARK_GAZETTEER_MATCH",
+    "spatial_confidence": 0.9,
+    "entities": {
+      "organizations": [],
+      "vehicles": [
+        "Tractor"
+      ],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [
+        "Farmers"
+      ],
+      "casualty_mentions": []
+    }
+  },
+  {
+    "report_id": "REP_79733A828A",
+    "source_url": "https://hindustantimes.com/ncr/sec-50-delivery-boy-accident",
+    "headline": "Delivery boy critically injured in hit-and-run crash near Sector 50 market",
+    "full_text": "Delivery boy critically injured in hit-and-run crash near Sector 50 market. Noida: A speeding sedan rammed into a delivery executive's motorcycle at the Sector 50 intersection late last night. The car driver fled the scene without stopping. The victim was rushed to a nearby private hospital with multiple fractures.",
+    "published_at": "2026-11-06T07:36:39.753636",
+    "incident_timestamp": "2026-11-05T21:00:00.753636",
+    "temporal_indicator": "LAST_NIGHT_NIGHT",
+    "temporal_confidence": 0.92,
+    "category": "TRAFFIC_INCIDENT",
+    "category_name": "Traffic & Road Hazard",
+    "model_confidence": 1.0,
+    "severity_weight": 2.0,
+    "sector_id": "Sector 50",
+    "sector_name": "Sector 50, Noida",
+    "zone": "Residential High-Density",
+    "latitude": 28.577,
+    "longitude": 77.368,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [],
+      "vehicles": [
+        "Car",
+        "Motorcycle",
+        "Sedan"
+      ],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [
+        "Delivery Executive",
+        "Driver",
+        "Victim"
+      ],
+      "casualty_mentions": []
+    }
+  },
+  {
+    "report_id": "REP_1854761CFF",
+    "source_url": "https://timesofindia.indiatimes.com/city/noida/sector-125-student-clash",
+    "headline": "Clash between two student groups outside Sector 125 university campus, four detained",
+    "full_text": "Clash between two student groups outside Sector 125 university campus, four detained. Noida: Tension flared outside the university campus in Sector 125 following a physical brawl between two student groups over a vehicle parking argument. Police arrived promptly, dispersed the crowd, and detained four youths.",
+    "published_at": "2026-11-03T19:36:39.753636",
+    "incident_timestamp": "2026-11-03T19:36:39.753636",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "VIOLENT_CRIME",
+    "category_name": "Violent Crime",
+    "model_confidence": 1.0,
+    "severity_weight": 5.0,
+    "sector_id": "Sector 125",
+    "sector_name": "Sector 125, Noida",
+    "zone": "Educational / Institutional Hub",
+    "latitude": 28.544,
+    "longitude": 77.332,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    }
+  },
+  {
+    "report_id": "REP_8C5EF03BB3",
+    "source_url": "https://amarujala.com/delhi-ncr/noida/sec-15-metro-snatching",
+    "headline": "Pedestrian's mobile snatched near Sector 15 metro station entry gate",
+    "full_text": "Pedestrian's mobile snatched near Sector 15 metro station entry gate. Noida: An unidentified youth on a scooty snatched an iPhone from a pedestrian outside the Sector 15 metro station near Nayabans before racing towards the Gol Chakkar.",
+    "published_at": "2026-10-31T19:36:39.753636",
+    "incident_timestamp": "2026-10-31T19:36:39.753636",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "PROPERTY_CRIME",
+    "category_name": "Property / Financial Crime",
+    "model_confidence": 0.6128,
+    "severity_weight": 2.5,
+    "sector_id": "Sector 15",
+    "sector_name": "Sector 15, Noida",
+    "zone": "Residential / Commercial",
+    "latitude": 28.583,
+    "longitude": 77.314,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [
+        "Pedestrian"
+      ],
+      "casualty_mentions": []
+    }
+  }
+]
