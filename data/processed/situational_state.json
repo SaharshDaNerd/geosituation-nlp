@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-14T20:54:36.374875",
+  "last_updated": "2026-11-14T21:09:30.642476",
   "executive_summary": {
-    "timestamp": "2026-11-14T20:54:36.377782",
+    "timestamp": "2026-11-14T21:09:30.645262",
     "level_1_perception": {
       "headline": "Current Environmental Cues & Reported Incidents",
       "total_canonical_events": 12,
@@ -47,7 +47,7 @@
       "active_baseline_anomalies_count": 8,
       "anomaly_highlights": [
         "Sector Sector 62 exhibits an anomaly Z-score of 2.24\u03c3 (2 reports in 7d vs 0.5 expected). Predominant pattern: CIVIC_HAZARD.",
-        "Sector Sector 128 exhibits an anomaly Z-score of 1.59\u03c3 (1 reports in 7d vs 0.2 expected). Predominant pattern: TRAFFIC_INCIDENT.",
+        "Sector DND Flyway exhibits an anomaly Z-score of 1.59\u03c3 (1 reports in 7d vs 0.2 expected). Predominant pattern: PUBLIC_DISRUPTION.",
         "Sector Sector 63 exhibits an anomaly Z-score of 1.59\u03c3 (1 reports in 7d vs 0.2 expected). Predominant pattern: CIVIC_HAZARD."
       ],
       "system_data_confidence": "HIGH (Deduplicated multi-source corpus anchored to Noida Gazetteer)"
@@ -58,8 +58,8 @@
       "hotspot_trajectories": [
         "Emerging CIVIC_HAZARD cluster across Sector 62, Sector 63 with 3 incidents. Drift: West at 0.37 km/day.",
         "Emerging PUBLIC_DISRUPTION cluster across Sector 18, DND Flyway with 2 incidents. Drift: East at 0.79 km/day.",
-        "Emerging PROPERTY_CRIME cluster across Sector 142, Sector 137 with 2 incidents. Drift: South-East at 0.87 km/day.",
-        "Emerging TRAFFIC_INCIDENT cluster across Sector 50, Sector 76 with 2 incidents. Drift: East at 0.58 km/day."
+        "Emerging PROPERTY_CRIME cluster across Sector 137, Sector 142 with 2 incidents. Drift: South-East at 0.87 km/day.",
+        "Emerging PROPERTY_CRIME cluster across Sector 76, Sector 50 with 2 incidents. Drift: East at 0.58 km/day."
       ],
       "accelerating_risk_sectors": [
         {
@@ -641,7 +641,7 @@
           "category": "PROPERTY_CRIME",
           "timestamp": "2026-10-31T19:36:39.753636",
           "impact": 0.381,
-          "temporal_weight": 0.249
+          "temporal_weight": 0.248
         }
       ],
       "activity_level": "LOW_ACTIVITY_NORMAL",
@@ -689,8 +689,8 @@
           "headline": "Armed robbery at jewelry store in Sector 18 Atta Market, four masked men escape with gold worth 40 lakh",
           "category": "VIOLENT_CRIME",
           "timestamp": "2026-11-13T14:48:39.753636",
-          "impact": 4.412,
-          "temporal_weight": 0.883
+          "impact": 4.407,
+          "temporal_weight": 0.882
         }
       ],
       "activity_level": "MODERATE_ACTIVITY",
@@ -878,7 +878,7 @@
           "headline": "Delivery boy critically injured in hit-and-run crash near Sector 50 market",
           "category": "TRAFFIC_INCIDENT",
           "timestamp": "2026-11-05T21:00:00.753636",
-          "impact": 0.82,
+          "impact": 0.819,
           "temporal_weight": 0.41
         }
       ],
@@ -993,7 +993,7 @@
       "longitude": 77.363,
       "sai_score": 4.14,
       "raw_incident_count": 2,
-      "decayed_incident_count": 1.67,
+      "decayed_incident_count": 1.66,
       "category_breakdown": {
         "VIOLENT_CRIME": 0,
         "PROPERTY_CRIME": 0,
@@ -1007,15 +1007,15 @@
           "headline": "Delivery van caught fire near Sector 62 intersection",
           "category": "CIVIC_HAZARD",
           "timestamp": "2026-11-14T20:54:36.289815",
-          "impact": 1.812,
-          "temporal_weight": 1.0
+          "impact": 1.81,
+          "temporal_weight": 0.999
         },
         {
           "event_id": "EVT_19C91C9EBE",
           "headline": "Major fire in electrical transformer outside IT park in Sector 62, fire tenders rushed to spot",
           "category": "CIVIC_HAZARD",
           "timestamp": "2026-11-10T18:30:00.753636",
-          "impact": 2.33,
+          "impact": 2.327,
           "temporal_weight": 0.666
         }
       ],
@@ -1044,8 +1044,8 @@
           "headline": "Massive fire destroys garment manufacturing factory warehouse in Sector 63 industrial area",
           "category": "CIVIC_HAZARD",
           "timestamp": "2026-11-09T21:00:00.753636",
-          "impact": 2.132,
-          "temporal_weight": 0.61
+          "impact": 2.13,
+          "temporal_weight": 0.609
         }
       ],
       "activity_level": "LOW_ACTIVITY_NORMAL",
@@ -1093,7 +1093,7 @@
           "headline": "Luxury SUV stolen from outside society gate in Sector 76, car-lifter gang caught on CCTV",
           "category": "PROPERTY_CRIME",
           "timestamp": "2026-11-08T19:36:39.753636",
-          "impact": 1.371,
+          "impact": 1.37,
           "temporal_weight": 0.549
         }
       ],
@@ -1182,8 +1182,8 @@
           "headline": "Clash between two student groups outside Sector 125 university campus, four detained",
           "category": "VIOLENT_CRIME",
           "timestamp": "2026-11-03T19:36:39.753636",
-          "impact": 1.672,
-          "temporal_weight": 0.335
+          "impact": 1.67,
+          "temporal_weight": 0.334
         }
       ],
       "activity_level": "LOW_ACTIVITY_NORMAL",
@@ -1211,7 +1211,7 @@
           "headline": "Dense fog triggers seven-vehicle pileup on Noida-Greater Noida Expressway near Sector 128, three injured",
           "category": "TRAFFIC_INCIDENT",
           "timestamp": "2026-11-11T09:00:00.753636",
-          "impact": 1.413,
+          "impact": 1.412,
           "temporal_weight": 0.707
         }
       ],
@@ -1260,7 +1260,7 @@
           "headline": "Burglaries in two locked high-rise flats in Sector 137 society, cash and laptops stolen",
           "category": "PROPERTY_CRIME",
           "timestamp": "2026-11-10T19:36:39.753636",
-          "impact": 1.672,
+          "impact": 1.67,
           "temporal_weight": 0.669
         }
       ],
@@ -1289,8 +1289,8 @@
           "headline": "Bike-borne snatchers target female software engineer outside Advant Navis tower in Sector 142",
           "category": "PROPERTY_CRIME",
           "timestamp": "2026-11-13T07:36:39.753636",
-          "impact": 2.141,
-          "temporal_weight": 0.857
+          "impact": 2.139,
+          "temporal_weight": 0.856
         }
       ],
       "activity_level": "LOW_ACTIVITY_NORMAL",
@@ -1358,8 +1358,8 @@
           "headline": "Farmers stage tractor march, block traffic near DND Flyway toll plaza causing five-kilometer jam",
           "category": "PUBLIC_DISRUPTION",
           "timestamp": "2026-11-11T00:24:39.753636",
-          "impact": 1.364,
-          "temporal_weight": 0.683
+          "impact": 1.363,
+          "temporal_weight": 0.682
         }
       ],
       "activity_level": "LOW_ACTIVITY_NORMAL",
@@ -1378,14 +1378,14 @@
       "explanation": "Sector Sector 62 exhibits an anomaly Z-score of 2.24\u03c3 (2 reports in 7d vs 0.5 expected). Predominant pattern: CIVIC_HAZARD."
     },
     {
-      "sector_id": "Sector 128",
+      "sector_id": "DND Flyway",
       "z_score": 1.59,
       "recent_count": 1,
       "expected_count": 0.23,
       "severity": "ELEVATED_SURGE",
       "is_anomaly": true,
-      "dominant_category": "TRAFFIC_INCIDENT",
-      "explanation": "Sector Sector 128 exhibits an anomaly Z-score of 1.59\u03c3 (1 reports in 7d vs 0.2 expected). Predominant pattern: TRAFFIC_INCIDENT."
+      "dominant_category": "PUBLIC_DISRUPTION",
+      "explanation": "Sector DND Flyway exhibits an anomaly Z-score of 1.59\u03c3 (1 reports in 7d vs 0.2 expected). Predominant pattern: PUBLIC_DISRUPTION."
     },
     {
       "sector_id": "Sector 63",
@@ -1396,26 +1396,6 @@
       "is_anomaly": true,
       "dominant_category": "CIVIC_HAZARD",
       "explanation": "Sector Sector 63 exhibits an anomaly Z-score of 1.59\u03c3 (1 reports in 7d vs 0.2 expected). Predominant pattern: CIVIC_HAZARD."
-    },
-    {
-      "sector_id": "Sector 76",
-      "z_score": 1.59,
-      "recent_count": 1,
-      "expected_count": 0.23,
-      "severity": "ELEVATED_SURGE",
-      "is_anomaly": true,
-      "dominant_category": "PROPERTY_CRIME",
-      "explanation": "Sector Sector 76 exhibits an anomaly Z-score of 1.59\u03c3 (1 reports in 7d vs 0.2 expected). Predominant pattern: PROPERTY_CRIME."
-    },
-    {
-      "sector_id": "DND Flyway",
-      "z_score": 1.59,
-      "recent_count": 1,
-      "expected_count": 0.23,
-      "severity": "ELEVATED_SURGE",
-      "is_anomaly": true,
-      "dominant_category": "PUBLIC_DISRUPTION",
-      "explanation": "Sector DND Flyway exhibits an anomaly Z-score of 1.59\u03c3 (1 reports in 7d vs 0.2 expected). Predominant pattern: PUBLIC_DISRUPTION."
     },
     {
       "sector_id": "Sector 142",
@@ -1448,6 +1428,36 @@
       "explanation": "Sector Sector 18 exhibits an anomaly Z-score of 1.59\u03c3 (1 reports in 7d vs 0.2 expected). Predominant pattern: VIOLENT_CRIME."
     },
     {
+      "sector_id": "Sector 76",
+      "z_score": 1.59,
+      "recent_count": 1,
+      "expected_count": 0.23,
+      "severity": "ELEVATED_SURGE",
+      "is_anomaly": true,
+      "dominant_category": "PROPERTY_CRIME",
+      "explanation": "Sector Sector 76 exhibits an anomaly Z-score of 1.59\u03c3 (1 reports in 7d vs 0.2 expected). Predominant pattern: PROPERTY_CRIME."
+    },
+    {
+      "sector_id": "Sector 128",
+      "z_score": 1.59,
+      "recent_count": 1,
+      "expected_count": 0.23,
+      "severity": "ELEVATED_SURGE",
+      "is_anomaly": true,
+      "dominant_category": "TRAFFIC_INCIDENT",
+      "explanation": "Sector Sector 128 exhibits an anomaly Z-score of 1.59\u03c3 (1 reports in 7d vs 0.2 expected). Predominant pattern: TRAFFIC_INCIDENT."
+    },
+    {
+      "sector_id": "Sector 15",
+      "z_score": -0.48,
+      "recent_count": 0,
+      "expected_count": 0.23,
+      "severity": "NORMAL",
+      "is_anomaly": false,
+      "dominant_category": "PROPERTY_CRIME",
+      "explanation": "Sector Sector 15 is operating within normal baseline variance (Z=-0.48\u03c3)."
+    },
+    {
       "sector_id": "Sector 125",
       "z_score": -0.48,
       "recent_count": 0,
@@ -1466,16 +1476,6 @@
       "is_anomaly": false,
       "dominant_category": "TRAFFIC_INCIDENT",
       "explanation": "Sector Sector 50 is operating within normal baseline variance (Z=-0.48\u03c3)."
-    },
-    {
-      "sector_id": "Sector 15",
-      "z_score": -0.48,
-      "recent_count": 0,
-      "expected_count": 0.23,
-      "severity": "NORMAL",
-      "is_anomaly": false,
-      "dominant_category": "PROPERTY_CRIME",
-      "explanation": "Sector Sector 15 is operating within normal baseline variance (Z=-0.48\u03c3)."
     }
   ],
   "hotspots": [
@@ -1522,8 +1522,8 @@
       "center_longitude": 77.4135,
       "radius_km": 1.09,
       "sectors_involved": [
-        "Sector 142",
-        "Sector 137"
+        "Sector 137",
+        "Sector 142"
       ],
       "dominant_category": "PROPERTY_CRIME",
       "drift_velocity_km_per_day": 0.87,
@@ -1531,7 +1531,7 @@
       "drift_direction": "South-East",
       "first_detected": "2026-11-10T19:36:39.753636",
       "latest_incident": "2026-11-13T07:36:39.753636",
-      "trajectory_summary": "Emerging PROPERTY_CRIME cluster across Sector 142, Sector 137 with 2 incidents. Drift: South-East at 0.87 km/day."
+      "trajectory_summary": "Emerging PROPERTY_CRIME cluster across Sector 137, Sector 142 with 2 incidents. Drift: South-East at 0.87 km/day."
     },
     {
       "hotspot_id": "HOTSPOT_04",
@@ -1540,16 +1540,16 @@
       "center_longitude": 77.3765,
       "radius_km": 0.86,
       "sectors_involved": [
-        "Sector 50",
-        "Sector 76"
+        "Sector 76",
+        "Sector 50"
       ],
-      "dominant_category": "TRAFFIC_INCIDENT",
+      "dominant_category": "PROPERTY_CRIME",
       "drift_velocity_km_per_day": 0.58,
       "drift_bearing_degrees": 103.2,
       "drift_direction": "East",
       "first_detected": "2026-11-05T21:00:00.753636",
       "latest_incident": "2026-11-08T19:36:39.753636",
-      "trajectory_summary": "Emerging TRAFFIC_INCIDENT cluster across Sector 50, Sector 76 with 2 incidents. Drift: East at 0.58 km/day."
+      "trajectory_summary": "Emerging PROPERTY_CRIME cluster across Sector 76, Sector 50 with 2 incidents. Drift: East at 0.58 km/day."
     }
   ],
   "trajectories": [
