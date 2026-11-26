@@ -1,0 +1,455 @@
+{
+  "Sector 3": null,
+  "Sector 4": {
+    "lat": 28.5837,
+    "lon": 77.323,
+    "osm_type": "industrial",
+    "display_name": "Sector 4, Sector 10, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 5": {
+    "lat": 28.5888,
+    "lon": 77.3211,
+    "osm_type": "industrial",
+    "display_name": "Sector 5, Chilla, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 6": {
+    "lat": 28.5938,
+    "lon": 77.3205,
+    "osm_type": "industrial",
+    "display_name": "Sector 6, Chilla, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 7": {
+    "lat": 28.5949,
+    "lon": 77.3152,
+    "osm_type": "industrial",
+    "display_name": "Sector 7, Chilla, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 8": {
+    "lat": 28.5958,
+    "lon": 77.3265,
+    "osm_type": "industrial",
+    "display_name": "Sector 8, Sector 10, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 9": {
+    "lat": 28.5869,
+    "lon": 77.3274,
+    "osm_type": "industrial",
+    "display_name": "Sector 9, Sector 10, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, 201301, India"
+  },
+  "Sector 10": {
+    "lat": 28.5906,
+    "lon": 77.3325,
+    "osm_type": "hamlet",
+    "display_name": "Sector 10, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, 110096, India"
+  },
+  "Sector 11": {
+    "lat": 28.5981,
+    "lon": 77.3338,
+    "osm_type": "industrial",
+    "display_name": "Sector 11, Sector 10, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 12": {
+    "lat": 28.5951,
+    "lon": 77.3385,
+    "osm_type": "residential",
+    "display_name": "Sector 12, Sector 10, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 13": null,
+  "Sector 14": {
+    "lat": 28.5872,
+    "lon": 77.3082,
+    "osm_type": "residential",
+    "display_name": "Sector 14, Chilla, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, 110091, India"
+  },
+  "Sector 17": {
+    "lat": 28.5737,
+    "lon": 77.32,
+    "osm_type": "residential",
+    "display_name": "Sector 17, Chilla, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 19": {
+    "lat": 28.5784,
+    "lon": 77.3248,
+    "osm_type": "residential",
+    "display_name": "Sector 19, Nithari, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 20": {
+    "lat": 28.5833,
+    "lon": 77.3314,
+    "osm_type": "residential",
+    "display_name": "Sector 20, Sector 10, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 22": {
+    "lat": 28.5952,
+    "lon": 77.3473,
+    "osm_type": "residential",
+    "display_name": "Sector 22, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 23": {
+    "lat": 28.5924,
+    "lon": 77.3538,
+    "osm_type": "residential",
+    "display_name": "Sector 23, Noida City Centre, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 24": null,
+  "Sector 26": {
+    "lat": 28.5795,
+    "lon": 77.3351,
+    "osm_type": "residential",
+    "display_name": "Sector 26, Nithari, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 28": {
+    "lat": 28.5716,
+    "lon": 77.3318,
+    "osm_type": "residential",
+    "display_name": "Sector 28, Nithari, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 30": {
+    "lat": 28.5733,
+    "lon": 77.3392,
+    "osm_type": "residential",
+    "display_name": "Sector 30, Nithari, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 31": {
+    "lat": 28.5772,
+    "lon": 77.3437,
+    "osm_type": "residential",
+    "display_name": "Sector 31, Nithari, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 33": {
+    "lat": 28.5884,
+    "lon": 77.3563,
+    "osm_type": "residential",
+    "display_name": "Sector 33, Noida City Centre, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 35": {
+    "lat": 28.5806,
+    "lon": 77.3563,
+    "osm_type": "residential",
+    "display_name": "Sector 35, Morna, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 36": {
+    "lat": 28.5719,
+    "lon": 77.3485,
+    "osm_type": "residential",
+    "display_name": "Sector 36, Nithari, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 39": {
+    "lat": 28.5686,
+    "lon": 77.3521,
+    "osm_type": "residential",
+    "display_name": "Sector 39, Noida City Centre, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 40": {
+    "lat": 28.567,
+    "lon": 77.3561,
+    "osm_type": "residential",
+    "display_name": "Sector 40, Noida City Centre, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 41": {
+    "lat": 28.5662,
+    "lon": 77.3617,
+    "osm_type": "residential",
+    "display_name": "Sector 41, Noida City Centre, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 42": {
+    "lat": 28.5581,
+    "lon": 77.3612,
+    "osm_type": "residential",
+    "display_name": "Sector 42, Noida City Centre, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 43": {
+    "lat": 28.5576,
+    "lon": 77.3517,
+    "osm_type": "residential",
+    "display_name": "Sector 43, Sadarpur, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 44": {
+    "lat": 28.5532,
+    "lon": 77.3382,
+    "osm_type": "residential",
+    "display_name": "Sector 44, Chhalera, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 45": {
+    "lat": 28.5506,
+    "lon": 77.3505,
+    "osm_type": "residential",
+    "display_name": "Sector 45, Sadarpur, Hazipur, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 46": {
+    "lat": 28.5522,
+    "lon": 77.3606,
+    "osm_type": "residential",
+    "display_name": "Sector 46, Sadarpur, Hazipur, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, 201303, India"
+  },
+  "Sector 47": {
+    "lat": 28.5498,
+    "lon": 77.3701,
+    "osm_type": "residential",
+    "display_name": "Sector 47, Hazipur, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 48": {
+    "lat": 28.5567,
+    "lon": 77.3687,
+    "osm_type": "residential",
+    "display_name": "Sector 48, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 49": {
+    "lat": 28.564,
+    "lon": 77.3672,
+    "osm_type": "residential",
+    "display_name": "Sector 49, Noida City Centre, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 53": {
+    "lat": 28.5912,
+    "lon": 77.3627,
+    "osm_type": "residential",
+    "display_name": "Sector 53, Gijhore, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 54": null,
+  "Sector 55": {
+    "lat": 28.6043,
+    "lon": 77.348,
+    "osm_type": "residential",
+    "display_name": "Sector 55, Sector 62, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 56": {
+    "lat": 28.6039,
+    "lon": 77.3426,
+    "osm_type": "residential",
+    "display_name": "Sector 56, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 57": {
+    "lat": 28.605,
+    "lon": 77.3535,
+    "osm_type": "industrial",
+    "display_name": "Sector 57, Sector 62, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 60": {
+    "lat": 28.6032,
+    "lon": 77.3672,
+    "osm_type": "industrial",
+    "display_name": "Sector 60, Mamura, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 64": {
+    "lat": 28.6145,
+    "lon": 77.3772,
+    "osm_type": "industrial",
+    "display_name": "Sector 64, Mamura, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 65": {
+    "lat": 28.6118,
+    "lon": 77.3854,
+    "osm_type": "industrial",
+    "display_name": "Sector 65, Mamura, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 66": {
+    "lat": 28.605,
+    "lon": 77.3764,
+    "osm_type": "residential",
+    "display_name": "Sector 66, Mamura, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 67": {
+    "lat": 28.6048,
+    "lon": 77.3848,
+    "osm_type": "industrial",
+    "display_name": "Sector 67, Mamura, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 68": null,
+  "Sector 69": null,
+  "Sector 70": {
+    "lat": 28.5977,
+    "lon": 77.3843,
+    "osm_type": "residential",
+    "display_name": "Sector 70, Mamura, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 72": null,
+  "Sector 73": null,
+  "Sector 74": null,
+  "Sector 75": null,
+  "Sector 77": null,
+  "Sector 79": null,
+  "Sector 80": null,
+  "Sector 81": null,
+  "Sector 82": null,
+  "Sector 83": {
+    "lat": 28.5245,
+    "lon": 77.398,
+    "osm_type": "locality",
+    "display_name": "Sector 83, Yaqubpur, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 84": {
+    "lat": 28.5283,
+    "lon": 77.4081,
+    "osm_type": "commercial",
+    "display_name": "Sector 84, Noida, Yaqubpur, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 85": {
+    "lat": 28.5181,
+    "lon": 77.4045,
+    "osm_type": "industrial",
+    "display_name": "Sector 85, Yaqubpur, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 86": null,
+  "Sector 87": null,
+  "Sector 88": {
+    "lat": 28.5293,
+    "lon": 77.4241,
+    "osm_type": "industrial",
+    "display_name": "Sector 88, Sikandarpur, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 89": null,
+  "Sector 90": {
+    "lat": 28.5122,
+    "lon": 77.4143,
+    "osm_type": "industrial",
+    "display_name": "Sector 90, Shahdara, Noida, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 91": null,
+  "Sector 92": {
+    "lat": 28.518,
+    "lon": 77.3951,
+    "osm_type": "residential",
+    "display_name": "Sector 92, Yaqubpur, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 93": {
+    "lat": 28.523,
+    "lon": 77.3861,
+    "osm_type": "residential",
+    "display_name": "Sector 93, Yaqubpur, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 94": {
+    "lat": 28.551,
+    "lon": 77.3238,
+    "osm_type": "commercial",
+    "display_name": "Sector 94, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 95": null,
+  "Sector 96": null,
+  "Sector 97": {
+    "lat": 28.5405,
+    "lon": 77.3541,
+    "osm_type": "residential",
+    "display_name": "Sector 97, Bakhtawarpur, Hazipur, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 98": {
+    "lat": 28.5361,
+    "lon": 77.3597,
+    "osm_type": "residential",
+    "display_name": "Sector 98, Bakhtawarpur, Hazipur, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 99": {
+    "lat": 28.5435,
+    "lon": 77.3589,
+    "osm_type": "residential",
+    "display_name": "Sector 99, Hazipur, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 101": null,
+  "Sector 102": null,
+  "Sector 103": null,
+  "Sector 104": null,
+  "Sector 105": {
+    "lat": 28.5316,
+    "lon": 77.3692,
+    "osm_type": "residential",
+    "display_name": "Sector 105, Hazipur, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 106": null,
+  "Sector 107": {
+    "lat": 28.5459,
+    "lon": 77.3766,
+    "osm_type": "residential",
+    "display_name": "Sector 107, Hazipur, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 108": {
+    "lat": 28.5266,
+    "lon": 77.3768,
+    "osm_type": "residential",
+    "display_name": "Sector 108, Hazipur, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 109": null,
+  "Sector 110": null,
+  "Sector 111": null,
+  "Sector 112": null,
+  "Sector 113": null,
+  "Sector 114": null,
+  "Sector 115": null,
+  "Sector 116": null,
+  "Sector 117": null,
+  "Sector 118": null,
+  "Sector 119": null,
+  "Sector 120": {
+    "lat": 28.5862,
+    "lon": 77.3966,
+    "osm_type": "residential",
+    "display_name": "Sector 120, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 121": null,
+  "Sector 122": {
+    "lat": 28.5929,
+    "lon": 77.3976,
+    "osm_type": "residential",
+    "display_name": "Sector 122, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 123": null,
+  "Sector 124": {
+    "lat": 28.5483,
+    "lon": 77.3278,
+    "osm_type": "commercial",
+    "display_name": "Sector 124, Ralpur Khadar, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 126": null,
+  "Sector 127": null,
+  "Sector 129": null,
+  "Sector 130": null,
+  "Sector 131": null,
+  "Sector 132": {
+    "lat": 28.5117,
+    "lon": 77.3768,
+    "osm_type": "common",
+    "display_name": "Sector 132, Nagli Sabapur, Noida, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 133": {
+    "lat": 28.5052,
+    "lon": 77.3715,
+    "osm_type": "residential",
+    "display_name": "Sector 133, Nagli Sabapur, Noida, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 134": null,
+  "Sector 136": null,
+  "Sector 138": null,
+  "Sector 139": null,
+  "Sector 140": null,
+  "Sector 141": null,
+  "Sector 143": {
+    "lat": 28.5027,
+    "lon": 77.4263,
+    "osm_type": "residential",
+    "display_name": "Sector 143, Shahdara, Noida, Gautam Buddha Nagar, Uttar Pradesh, India"
+  },
+  "Sector 144": null,
+  "Sector 145": null,
+  "Sector 146": null,
+  "Sector 147": null,
+  "Sector 148": null,
+  "Sector 149": null,
+  "Sector 151": null,
+  "Sector 152": null,
+  "Sector 153": null,
+  "Sector 154": null,
+  "Sector 155": null,
+  "Sector 156": null,
+  "Sector 157": null,
+  "Sector 158": null,
+  "Sector 159": null,
+  "Sector 160": null,
+  "Sector 161": null,
+  "Sector 162": null,
+  "Sector 163": null,
+  "Sector 164": null,
+  "Sector 165": null,
+  "Sector 166": null,
+  "Sector 167": null,
+  "Sector 168": null,
+  "Sector 38": null
+}

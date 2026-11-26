@@ -50,41 +50,23 @@ class NoidaGazetteer:
         text_lower = text.lower()
         
         # Pass 1: Deterministic Sector Number Extraction (High Precision)
-        sector_matches = self.regex_sector_pattern.findall(text_lower)
-        if sector_matches:
-            sector_num = sector_matches[0].upper()
+        # Take the first mentioned sector that exists in the gazetteer. Sectors
+        # without a known centroid are never given estimated coordinates.
+        by_id = {s["id"].lower(): s for s in self.sectors}
+        for sector_num in self.regex_sector_pattern.findall(text_lower):
+            sector_num = sector_num.upper()
             canonical_id = f"Sector {sector_num}"
-            
-            # Lookup in canonical registry
-            for sector in self.sectors:
-                if sector["id"].lower() == canonical_id.lower():
-                    return {
-                        "sector_id": sector["id"],
-                        "sector_name": sector["name"],
-                        "zone": sector["zone"],
-                        "lat": sector["lat"],
-                        "lon": sector["lon"],
-                        "confidence": 0.96,
-                        "match_type": "EXACT_SECTOR_REGEX",
-                        "matched_text": f"Sector {sector_num}"
-                    }
-            
-            # If valid sector number within 1-168 but not explicitly in curated list:
-            # Generate estimated centroid within Noida bounds
-            num_clean = re.sub(r'[^0-9]', '', sector_num)
-            if num_clean and 1 <= int(num_clean) <= 168:
-                # Approximate interpolation for unlisted sectors
-                approx_lat = NOIDA_BOUNDS["center_lat"] - (int(num_clean) % 15) * 0.008
-                approx_lon = NOIDA_BOUNDS["center_lon"] + (int(num_clean) % 12) * 0.008
+            sector = by_id.get(canonical_id.lower())
+            if sector:
                 return {
-                    "sector_id": canonical_id,
-                    "sector_name": f"{canonical_id}, Noida",
-                    "zone": "Mixed Urban Sector",
-                    "lat": round(approx_lat, 4),
-                    "lon": round(approx_lon, 4),
-                    "confidence": 0.82,
-                    "match_type": "INTERPOLATED_SECTOR_REGEX",
-                    "matched_text": f"Sector {sector_num}"
+                    "sector_id": sector["id"],
+                    "sector_name": sector["name"],
+                    "zone": sector["zone"],
+                    "lat": sector["lat"],
+                    "lon": sector["lon"],
+                    "confidence": 0.96,
+                    "match_type": "EXACT_SECTOR_REGEX",
+                    "matched_text": canonical_id
                 }
 
         # Pass 2: Curated Landmark & POI Lookup (Longest string match first)

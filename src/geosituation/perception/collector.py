@@ -5,12 +5,13 @@ import xml.etree.ElementTree as ET
 from datetime import datetime
 from typing import Dict, List, Optional
 import requests
+from email.utils import parsedate_to_datetime
 
 from geosituation.perception.preprocessor import TextPreprocessor
 from geosituation.perception.classifier import IncidentClassifier
 from geosituation.perception.gazetteer import NoidaGazetteer
 from geosituation.perception.ner_extractor import IncidentEntityExtractor
-from geosituation.config import RAW_DATA_DIR, PROCESSED_DATA_DIR
+from geosituation.config import RAW_DATA_DIR, PROCESSED_DATA_DIR, INCIDENT_CATEGORIES
 
 class NewsIncidentCollector:
     """
@@ -78,37 +79,133 @@ class NewsIncidentCollector:
         }
         return record
 
-    def fetch_google_news_rss(self, query: str = "Noida crime OR accident OR fire OR protest") -> List[Dict]:
+    # Words that indicate an actual incident. Real-news feeds are full of
+    # property launches, events and policy stories; those never reach the map.
+    INCIDENT_TERMS = re.compile(
+        r"\b(kill(ed|ing|s)?|murder(ed)?|found dead|(one|two|three|four|five|\d+) dead|death|died|dies|"
+        r"body found|shot|shoot(ing|out)?|stabb(ed|ing)|"
+        r"assault(ed)?|attack(ed)?|rap(e|ed)|molest(ed|ation)?|kidnap(ped|ping)?|abduct(ed|ion)?|"
+        r"rob(bed|bery|bers?)|loot(ed)?|thie(f|ves)|theft|stole(n)?|snatch(ed|ing|ers?)?|burglar(y|s|ies)?|"
+        r"fraud|scam|cheat(ed|ing)?|duped|extort(ion|ed)?|arrest(ed|s)?|held|nabbed|booked|encounter|"
+        r"accident|crash(ed|es)?|collid(e|ed)|collision|mow(ed)? down|hit[- ]and[- ]run|overturn(ed|s)?|"
+        r"rams?|rammed|run over|pile-?up|injur(ed|ies|y)|hurt|fire|blaze|gutted|explosion|blast|"
+        r"collapse(d|s)?|caved?[- ]in|electrocut(ed|ion)|drown(ed|s)?|"
+        r"waterlog(ged|ging)|flood(ed|ing)?|gas leak|"
+        r"protest(s|ers|ed)?|agitation|clash(ed|es)?|ruckus|brawl|scuffle|lathi|blockade|dharna)\b",
+        re.IGNORECASE,
+    )
+
+    # Stories that mention incident words but are not a new, located incident:
+    # retrospectives, media, court stages of old cases, self-harm.
+    EXCLUDE_TERMS = re.compile(
+        r"\b(suicide|film|films|documentar(y|ies)|web series|anniversary|years after|verdict|"
+        r"acquit(ted|tal)?|convicted|sentenced|bail|hearing|chargesheet|mock drill|drill)\b",
+        re.IGNORECASE,
+    )
+
+    # Other cities that also number their neighbourhoods as "Sector N".
+    OTHER_CITIES = re.compile(
+        r"\b(gurugram|gurgaon|chandigarh|mohali|panchkula|faridabad|ghaziabad|dwarka|rohini|"
+        r"navi mumbai|kharghar|vashi|bhilai|bokaro|lucknow|jaipur|bhubaneswar|zirakpur|kurukshetra|"
+        r"karnal|sonipat|rewari|manesar|bahadurgarh|panipat|hisar|ambala|yamunanagar)\b",
+        re.IGNORECASE,
+    )
+
+    # Headline-only text is too short for the statistical classifier to be
+    # reliable, so unambiguous cue words decide the category first. Order
+    # matters: a deadly fire is a civic hazard, a fatal crash is traffic.
+    HEADLINE_CATEGORY_RULES = [
+        ("CIVIC_HAZARD", re.compile(r"\b(fire|blaze|gutted|explosion|blast|collapse(d|s)?|caved?[- ]in|electrocut(ed|ion)|gas leak|waterlog(ged|ging)|flood(ed|ing)?|drown(ed|s)?)\b", re.I)),
+        ("TRAFFIC_INCIDENT", re.compile(r"\b(accident|crash(ed|es)?|collid(e|ed)|collision|mow(ed)? down|hit[- ]and[- ]run|overturn(ed|s)?|rams?|rammed|run over|pile-?up)\b", re.I)),
+        ("PROPERTY_CRIME", re.compile(r"\b(burglar(y|s|ies)?|theft|thie(f|ves)|stole(n)?|snatch(ed|ing|ers?)?|loot(ed)?|fraud|scam|cheat(ed|ing)?|duped|extort(ion|ed)?)\b", re.I)),
+        ("VIOLENT_CRIME", re.compile(r"\b(murder(ed)?|kill(ed|ing)?|stabb(ed|ing)|shot|shoot(ing|out)?|firing|assault(ed)?|attack(ed)?|rap(e|ed)|molest(ed|ation)?|kidnap(ped|ping)?|abduct(ed|ion)?|rob(bed|bery|bers?)|encounter|found dead|body found|beat(en)? to death|thrash(ed)?)\b", re.I)),
+        ("PUBLIC_DISRUPTION", re.compile(r"\b(protest(s|ers|ed)?|agitation|clash(ed|es)?|ruckus|brawl|scuffle|lathi|blockade|dharna)\b", re.I)),
+    ]
+
+    @staticmethod
+    def _clean_feed_title(title: str, outlet: str) -> str:
+        """Strip the outlet suffixes Google News and publishers append to titles."""
+        t = title.strip()
+        if outlet and t.endswith(" - " + outlet):
+            t = t[: -len(" - " + outlet)].strip()
+        elif " - " in t:
+            t = t.rpartition(" - ")[0].strip()
+        if outlet and t.endswith(" | " + outlet):
+            t = t[: -len(" | " + outlet)].strip()
+        # Generic " | Outlet" suffix (e.g. "... | Hindustan Times")
+        t = re.sub(r"\s+\|\s+[A-Z][\w .&']{2,40}$", "", t).strip()
+        # Leading "Noida News | " style prefixes
+        t = re.sub(r"^[\w .']{2,25}\s+\|\s+", "", t).strip()
+        return t
+
+    def fetch_google_news_rss(self, query: str = "Noida crime OR accident OR fire OR protest",
+                              max_items: int = 100, timeout: int = 15) -> List[Dict]:
         """
-        Fetches live news RSS feed. Gracefully handles network outages.
+        Fetches a live Google News RSS search and returns Level 1 records for
+        real articles that (a) name Noida in the headline, (b) read as a new
+        incident and (c) resolve to a known sector or landmark.
+        Network errors return [].
+
+        Each record's `source_url` holds the outlet name as plain text and the
+        original link is kept in `article_url`.
         """
-        encoded_query = requests.utils.quote(query)
-        rss_url = f"https://news.google.com/rss/search?q={encoded_query}&hl=en-IN&gl=IN&ceid=IN:en"
-        
+        rss_url = "https://news.google.com/rss/search"
+        params = {"q": query, "hl": "en-IN", "gl": "IN", "ceid": "IN:en"}
+
         articles = []
         try:
-            resp = requests.get(rss_url, timeout=5, headers={"User-Agent": "Mozilla/5.0"})
-            if resp.status_code == 200:
-                root = ET.fromstring(resp.content)
-                for item in root.findall(".//item")[:20]:
-                    title = item.findtext("title", "")
-                    link = item.findtext("link", "")
-                    pub_date_str = item.findtext("pubDate", "")
-                    
-                    pub_date = None
-                    if pub_date_str:
-                        try:
-                            pub_date = datetime.strptime(pub_date_str[:25], "%a, %d %b %Y %H:%M:%S")
-                        except Exception:
-                            pub_date = datetime.now()
-                            
-                    # Clean title
-                    headline = title.split(" - ")[0] if " - " in title else title
-                    record = self.process_raw_article(headline=headline, body="", source_url=link, pub_date=pub_date)
-                    if record:
-                        articles.append(record)
+            resp = requests.get(rss_url, params=params, timeout=timeout, headers={"User-Agent": "Mozilla/5.0"})
+            resp.raise_for_status()
+            root = ET.fromstring(resp.content)
         except Exception:
-            # Fallback to local offline mode
-            pass
-            
+            return articles
+
+        for item in root.findall(".//item")[:max_items]:
+            title = (item.findtext("title") or "").strip()
+            link = (item.findtext("link") or "").strip()
+            outlet = (item.findtext("source") or "").strip()
+            if not outlet and " - " in title:
+                outlet = title.rpartition(" - ")[2].strip()
+            headline = self._clean_feed_title(title, outlet)
+            if not headline:
+                continue
+
+            # pubDate is RFC 822 in GMT -> convert to local naive time like the rest of the pipeline
+            try:
+                pub_date = parsedate_to_datetime((item.findtext("pubDate") or "").strip()).astimezone().replace(tzinfo=None)
+            except Exception:
+                continue  # undated items cannot be placed on the timeline
+
+            low = headline.lower()
+            # Must explicitly be Noida. Greater Noida has its own sector numbering,
+            # so it is excluded except for the shared Noida-Greater Noida Expressway.
+            if "noida" not in low:
+                continue
+            if "greater noida" in low.replace("noida-greater noida", "").replace("noida greater noida", ""):
+                continue
+            if self.OTHER_CITIES.search(low):
+                continue
+            if not self.INCIDENT_TERMS.search(headline) or self.EXCLUDE_TERMS.search(headline):
+                continue
+
+            record = self.process_raw_article(headline=headline, body="", source_url=outlet or "Google News", pub_date=pub_date)
+            if not record:
+                continue
+
+            for cat, pattern in self.HEADLINE_CATEGORY_RULES:
+                if pattern.search(headline):
+                    if cat != record["category"]:
+                        meta = INCIDENT_CATEGORIES[cat]
+                        record["category"] = cat
+                        record["category_name"] = meta["name"]
+                        record["severity_weight"] = meta["severity_weight"]
+                    record["category_source"] = "headline_cue_rule"
+                    break
+            else:
+                record["category_source"] = "classifier"
+
+            record["article_url"] = link
+            record["ingest_channel"] = "google_news_rss"
+            articles.append(record)
+
         return articles

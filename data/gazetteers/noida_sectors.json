@@ -28,6 +28,136 @@
     ]
   },
   {
+    "id": "Sector 4",
+    "name": "Sector 4, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5837,
+    "lon": 77.323,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 4",
+      "sec 4",
+      "sector-4"
+    ]
+  },
+  {
+    "id": "Sector 5",
+    "name": "Sector 5, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5888,
+    "lon": 77.3211,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 5",
+      "sec 5",
+      "sector-5"
+    ]
+  },
+  {
+    "id": "Sector 6",
+    "name": "Sector 6, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5938,
+    "lon": 77.3205,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 6",
+      "sec 6",
+      "sector-6"
+    ]
+  },
+  {
+    "id": "Sector 7",
+    "name": "Sector 7, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5949,
+    "lon": 77.3152,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 7",
+      "sec 7",
+      "sector-7"
+    ]
+  },
+  {
+    "id": "Sector 8",
+    "name": "Sector 8, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5958,
+    "lon": 77.3265,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 8",
+      "sec 8",
+      "sector-8"
+    ]
+  },
+  {
+    "id": "Sector 9",
+    "name": "Sector 9, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5869,
+    "lon": 77.3274,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 9",
+      "sec 9",
+      "sector-9"
+    ]
+  },
+  {
+    "id": "Sector 10",
+    "name": "Sector 10, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5906,
+    "lon": 77.3325,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 10",
+      "sec 10",
+      "sector-10"
+    ]
+  },
+  {
+    "id": "Sector 11",
+    "name": "Sector 11, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5981,
+    "lon": 77.3338,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 11",
+      "sec 11",
+      "sector-11"
+    ]
+  },
+  {
+    "id": "Sector 12",
+    "name": "Sector 12, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5951,
+    "lon": 77.3385,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 12",
+      "sec 12",
+      "sector-12"
+    ]
+  },
+  {
+    "id": "Sector 14",
+    "name": "Sector 14, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5872,
+    "lon": 77.3082,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 14",
+      "sec 14",
+      "sector-14"
+    ]
+  },
+  {
     "id": "Sector 15",
     "name": "Sector 15, Noida",
     "zone": "Residential / Commercial",
@@ -59,6 +189,19 @@
     ]
   },
   {
+    "id": "Sector 17",
+    "name": "Sector 17, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5737,
+    "lon": 77.32,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 17",
+      "sec 17",
+      "sector-17"
+    ]
+  },
+  {
     "id": "Sector 18",
     "name": "Sector 18, Noida",
     "zone": "Major Commercial Hub",
@@ -81,6 +224,32 @@
     ]
   },
   {
+    "id": "Sector 19",
+    "name": "Sector 19, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5784,
+    "lon": 77.3248,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 19",
+      "sec 19",
+      "sector-19"
+    ]
+  },
+  {
+    "id": "Sector 20",
+    "name": "Sector 20, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5833,
+    "lon": 77.3314,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 20",
+      "sec 20",
+      "sector-20"
+    ]
+  },
+  {
     "id": "Sector 21",
     "name": "Sector 21, Noida",
     "zone": "Residential / Civic",
@@ -96,6 +265,32 @@
     ]
   },
   {
+    "id": "Sector 22",
+    "name": "Sector 22, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5952,
+    "lon": 77.3473,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 22",
+      "sec 22",
+      "sector-22"
+    ]
+  },
+  {
+    "id": "Sector 23",
+    "name": "Sector 23, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5924,
+    "lon": 77.3538,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 23",
+      "sec 23",
+      "sector-23"
+    ]
+  },
+  {
     "id": "Sector 25",
     "name": "Sector 25, Noida",
     "zone": "Residential",
@@ -107,6 +302,19 @@
       "sector-25",
       "jalvayu vihar",
       "climate tower"
+    ]
+  },
+  {
+    "id": "Sector 26",
+    "name": "Sector 26, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5795,
+    "lon": 77.3351,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 26",
+      "sec 26",
+      "sector-26"
     ]
   },
   {
@@ -125,6 +333,19 @@
     ]
   },
   {
+    "id": "Sector 28",
+    "name": "Sector 28, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5716,
+    "lon": 77.3318,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 28",
+      "sec 28",
+      "sector-28"
+    ]
+  },
+  {
     "id": "Sector 29",
     "name": "Sector 29, Noida",
     "zone": "Residential / Civic",
@@ -137,6 +358,32 @@
       "ganga shopping complex",
       "brahmputra market",
       "botanical garden road"
+    ]
+  },
+  {
+    "id": "Sector 30",
+    "name": "Sector 30, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5733,
+    "lon": 77.3392,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 30",
+      "sec 30",
+      "sector-30"
+    ]
+  },
+  {
+    "id": "Sector 31",
+    "name": "Sector 31, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5772,
+    "lon": 77.3437,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 31",
+      "sec 31",
+      "sector-31"
     ]
   },
   {
@@ -156,6 +403,19 @@
     ]
   },
   {
+    "id": "Sector 33",
+    "name": "Sector 33, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5884,
+    "lon": 77.3563,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 33",
+      "sec 33",
+      "sector-33"
+    ]
+  },
+  {
     "id": "Sector 34",
     "name": "Sector 34, Noida",
     "zone": "Residential",
@@ -167,6 +427,32 @@
       "sector-34",
       "sector 34 metro",
       "bhati chowk sector 34"
+    ]
+  },
+  {
+    "id": "Sector 35",
+    "name": "Sector 35, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5806,
+    "lon": 77.3563,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 35",
+      "sec 35",
+      "sector-35"
+    ]
+  },
+  {
+    "id": "Sector 36",
+    "name": "Sector 36, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5719,
+    "lon": 77.3485,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 36",
+      "sec 36",
+      "sector-36"
     ]
   },
   {
@@ -199,6 +485,149 @@
       "worlds of wonder",
       "gardens galleria",
       "appu ghar noida"
+    ]
+  },
+  {
+    "id": "Sector 39",
+    "name": "Sector 39, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5686,
+    "lon": 77.3521,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 39",
+      "sec 39",
+      "sector-39"
+    ]
+  },
+  {
+    "id": "Sector 40",
+    "name": "Sector 40, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.567,
+    "lon": 77.3561,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 40",
+      "sec 40",
+      "sector-40"
+    ]
+  },
+  {
+    "id": "Sector 41",
+    "name": "Sector 41, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5662,
+    "lon": 77.3617,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 41",
+      "sec 41",
+      "sector-41"
+    ]
+  },
+  {
+    "id": "Sector 42",
+    "name": "Sector 42, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5581,
+    "lon": 77.3612,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 42",
+      "sec 42",
+      "sector-42"
+    ]
+  },
+  {
+    "id": "Sector 43",
+    "name": "Sector 43, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5576,
+    "lon": 77.3517,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 43",
+      "sec 43",
+      "sector-43"
+    ]
+  },
+  {
+    "id": "Sector 44",
+    "name": "Sector 44, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5532,
+    "lon": 77.3382,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 44",
+      "sec 44",
+      "sector-44"
+    ]
+  },
+  {
+    "id": "Sector 45",
+    "name": "Sector 45, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5506,
+    "lon": 77.3505,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 45",
+      "sec 45",
+      "sector-45"
+    ]
+  },
+  {
+    "id": "Sector 46",
+    "name": "Sector 46, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5522,
+    "lon": 77.3606,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 46",
+      "sec 46",
+      "sector-46"
+    ]
+  },
+  {
+    "id": "Sector 47",
+    "name": "Sector 47, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5498,
+    "lon": 77.3701,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 47",
+      "sec 47",
+      "sector-47"
+    ]
+  },
+  {
+    "id": "Sector 48",
+    "name": "Sector 48, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5567,
+    "lon": 77.3687,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 48",
+      "sec 48",
+      "sector-48"
+    ]
+  },
+  {
+    "id": "Sector 49",
+    "name": "Sector 49, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.564,
+    "lon": 77.3672,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 49",
+      "sec 49",
+      "sector-49"
     ]
   },
   {
@@ -246,6 +675,58 @@
     ]
   },
   {
+    "id": "Sector 53",
+    "name": "Sector 53, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5912,
+    "lon": 77.3627,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 53",
+      "sec 53",
+      "sector-53"
+    ]
+  },
+  {
+    "id": "Sector 55",
+    "name": "Sector 55, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.6043,
+    "lon": 77.348,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 55",
+      "sec 55",
+      "sector-55"
+    ]
+  },
+  {
+    "id": "Sector 56",
+    "name": "Sector 56, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.6039,
+    "lon": 77.3426,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 56",
+      "sec 56",
+      "sector-56"
+    ]
+  },
+  {
+    "id": "Sector 57",
+    "name": "Sector 57, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.605,
+    "lon": 77.3535,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 57",
+      "sec 57",
+      "sector-57"
+    ]
+  },
+  {
     "id": "Sector 58",
     "name": "Sector 58, Noida",
     "zone": "IT / Industrial",
@@ -272,6 +753,19 @@
       "sector 59 metro",
       "mamura chowk",
       "mamura"
+    ]
+  },
+  {
+    "id": "Sector 60",
+    "name": "Sector 60, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.6032,
+    "lon": 77.3672,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 60",
+      "sec 60",
+      "sector-60"
     ]
   },
   {
@@ -327,6 +821,71 @@
     ]
   },
   {
+    "id": "Sector 64",
+    "name": "Sector 64, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.6145,
+    "lon": 77.3772,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 64",
+      "sec 64",
+      "sector-64"
+    ]
+  },
+  {
+    "id": "Sector 65",
+    "name": "Sector 65, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.6118,
+    "lon": 77.3854,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 65",
+      "sec 65",
+      "sector-65"
+    ]
+  },
+  {
+    "id": "Sector 66",
+    "name": "Sector 66, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.605,
+    "lon": 77.3764,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 66",
+      "sec 66",
+      "sector-66"
+    ]
+  },
+  {
+    "id": "Sector 67",
+    "name": "Sector 67, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.6048,
+    "lon": 77.3848,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 67",
+      "sec 67",
+      "sector-67"
+    ]
+  },
+  {
+    "id": "Sector 70",
+    "name": "Sector 70, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5977,
+    "lon": 77.3843,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 70",
+      "sec 70",
+      "sector-70"
+    ]
+  },
+  {
     "id": "Sector 71",
     "name": "Sector 71, Noida",
     "zone": "Residential / Transit",
@@ -372,6 +931,97 @@
     ]
   },
   {
+    "id": "Sector 83",
+    "name": "Sector 83, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5245,
+    "lon": 77.398,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 83",
+      "sec 83",
+      "sector-83"
+    ]
+  },
+  {
+    "id": "Sector 84",
+    "name": "Sector 84, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5283,
+    "lon": 77.4081,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 84",
+      "sec 84",
+      "sector-84"
+    ]
+  },
+  {
+    "id": "Sector 85",
+    "name": "Sector 85, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5181,
+    "lon": 77.4045,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 85",
+      "sec 85",
+      "sector-85"
+    ]
+  },
+  {
+    "id": "Sector 88",
+    "name": "Sector 88, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5293,
+    "lon": 77.4241,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 88",
+      "sec 88",
+      "sector-88"
+    ]
+  },
+  {
+    "id": "Sector 90",
+    "name": "Sector 90, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5122,
+    "lon": 77.4143,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 90",
+      "sec 90",
+      "sector-90"
+    ]
+  },
+  {
+    "id": "Sector 92",
+    "name": "Sector 92, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.518,
+    "lon": 77.3951,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 92",
+      "sec 92",
+      "sector-92"
+    ]
+  },
+  {
+    "id": "Sector 93",
+    "name": "Sector 93, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.523,
+    "lon": 77.3861,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 93",
+      "sec 93",
+      "sector-93"
+    ]
+  },
+  {
     "id": "Sector 93A",
     "name": "Sector 93A, Noida",
     "zone": "Expressway Residential",
@@ -387,6 +1037,58 @@
     ]
   },
   {
+    "id": "Sector 94",
+    "name": "Sector 94, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.551,
+    "lon": 77.3238,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 94",
+      "sec 94",
+      "sector-94"
+    ]
+  },
+  {
+    "id": "Sector 97",
+    "name": "Sector 97, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5405,
+    "lon": 77.3541,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 97",
+      "sec 97",
+      "sector-97"
+    ]
+  },
+  {
+    "id": "Sector 98",
+    "name": "Sector 98, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5361,
+    "lon": 77.3597,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 98",
+      "sec 98",
+      "sector-98"
+    ]
+  },
+  {
+    "id": "Sector 99",
+    "name": "Sector 99, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5435,
+    "lon": 77.3589,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 99",
+      "sec 99",
+      "sector-99"
+    ]
+  },
+  {
     "id": "Sector 100",
     "name": "Sector 100, Noida",
     "zone": "Residential",
@@ -398,6 +1100,84 @@
       "sector-100",
       "lotus boulevard",
       "century apartments"
+    ]
+  },
+  {
+    "id": "Sector 105",
+    "name": "Sector 105, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5316,
+    "lon": 77.3692,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 105",
+      "sec 105",
+      "sector-105"
+    ]
+  },
+  {
+    "id": "Sector 107",
+    "name": "Sector 107, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5459,
+    "lon": 77.3766,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 107",
+      "sec 107",
+      "sector-107"
+    ]
+  },
+  {
+    "id": "Sector 108",
+    "name": "Sector 108, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5266,
+    "lon": 77.3768,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 108",
+      "sec 108",
+      "sector-108"
+    ]
+  },
+  {
+    "id": "Sector 120",
+    "name": "Sector 120, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5862,
+    "lon": 77.3966,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 120",
+      "sec 120",
+      "sector-120"
+    ]
+  },
+  {
+    "id": "Sector 122",
+    "name": "Sector 122, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5929,
+    "lon": 77.3976,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 122",
+      "sec 122",
+      "sector-122"
+    ]
+  },
+  {
+    "id": "Sector 124",
+    "name": "Sector 124, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5483,
+    "lon": 77.3278,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 124",
+      "sec 124",
+      "sector-124"
     ]
   },
   {
@@ -429,6 +1209,32 @@
       "jaypee hospital",
       "jaypee greens wish town",
       "wish town noida"
+    ]
+  },
+  {
+    "id": "Sector 132",
+    "name": "Sector 132, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5117,
+    "lon": 77.3768,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 132",
+      "sec 132",
+      "sector-132"
+    ]
+  },
+  {
+    "id": "Sector 133",
+    "name": "Sector 133, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5052,
+    "lon": 77.3715,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 133",
+      "sec 133",
+      "sector-133"
     ]
   },
   {
@@ -481,6 +1287,19 @@
     ]
   },
   {
+    "id": "Sector 143",
+    "name": "Sector 143, Noida",
+    "zone": "Urban Sector",
+    "lat": 28.5027,
+    "lon": 77.4263,
+    "source": "OpenStreetMap Nominatim",
+    "aliases": [
+      "sector 143",
+      "sec 143",
+      "sector-143"
+    ]
+  },
+  {
     "id": "Sector 150",
     "name": "Sector 150, Noida",
     "zone": "Sports City / Eco-Residential",
@@ -496,6 +1315,19 @@
     ]
   },
   {
+    "id": "DND Flyway",
+    "name": "DND Flyway (Delhi-Noida Direct)",
+    "zone": "Inter-State Arterial Highway",
+    "lat": 28.572,
+    "lon": 77.301,
+    "aliases": [
+      "dnd flyway",
+      "dnd toll plaza",
+      "delhi noida direct flyway",
+      "yamuna bridge noida"
+    ]
+  },
+  {
     "id": "Noida-Greater Noida Expressway",
     "name": "Noida-Greater Noida Expressway",
     "zone": "High-Speed Arterial Corridor",
@@ -507,19 +1339,6 @@
       "expressway toll",
       "expressway flyover",
       "mahahmaya flyover"
-    ]
-  },
-  {
-    "id": "DND Flyway",
-    "name": "DND Flyway (Delhi-Noida Direct)",
-    "zone": "Inter-State Arterial Highway",
-    "lat": 28.572,
-    "lon": 77.301,
-    "aliases": [
-      "dnd flyway",
-      "dnd toll plaza",
-      "delhi noida direct flyway",
-      "yamuna bridge noida"
     ]
   }
 ]

@@ -1,591 +1,114 @@
 [
   {
-    "report_id": "REP_AA467FEB46",
-    "source_url": "https://test.com/fire",
-    "headline": "Delivery van caught fire near Sector 62 intersection",
-    "full_text": "Delivery van caught fire near Sector 62 intersection. Noida: An electrical delivery van caught fire near Sector 62 Fortis hospital crossing. Fire fighters doused the vehicle.",
-    "published_at": "2026-11-14T20:54:36.289815",
-    "incident_timestamp": "2026-11-14T20:54:36.289815",
+    "report_id": "REP_9508ADE417",
+    "source_url": "www.thesamaja.com",
+    "headline": "Massive Fire Guts Plastic Decorative Items Factory in Noida's Sector 6; No Casualties Reported",
+    "full_text": "Massive Fire Guts Plastic Decorative Items Factory in Noida's Sector 6; No Casualties Reported.",
+    "published_at": "2026-11-24T07:37:42",
+    "incident_timestamp": "2026-11-24T07:37:42",
     "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
     "temporal_confidence": 0.65,
     "category": "CIVIC_HAZARD",
     "category_name": "Civic & Industrial Hazard",
-    "model_confidence": 0.1667,
+    "model_confidence": 0.9185,
     "severity_weight": 3.5,
-    "sector_id": "Sector 62",
-    "sector_name": "Sector 62, Noida",
-    "zone": "Major Institutional & IT Hub",
-    "latitude": 28.627,
-    "longitude": 77.363,
-    "spatial_match_type": "EXACT_SECTOR_REGEX",
-    "spatial_confidence": 0.96,
-    "entities": {
-      "organizations": [
-        "Fortis Hospital"
-      ],
-      "vehicles": [
-        "Van"
-      ],
-      "instruments_or_hazards": [
-        "Fire"
-      ],
-      "roles_and_actors": [],
-      "casualty_mentions": []
-    }
-  },
-  {
-    "report_id": "REP_7C3C8F9B37",
-    "source_url": "https://test.com/fire",
-    "headline": "Delivery van caught fire near Sector 62 intersection",
-    "full_text": "Delivery van caught fire near Sector 62 intersection. Noida: An electrical delivery van caught fire near Sector 62 Fortis hospital crossing. Fire fighters doused the vehicle.",
-    "published_at": "2026-11-14T19:59:37.143663",
-    "incident_timestamp": "2026-11-14T19:59:37.143663",
-    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
-    "temporal_confidence": 0.65,
-    "category": "CIVIC_HAZARD",
-    "category_name": "Civic & Industrial Hazard",
-    "model_confidence": 0.1667,
-    "severity_weight": 3.5,
-    "sector_id": "Sector 62",
-    "sector_name": "Sector 62, Noida",
-    "zone": "Major Institutional & IT Hub",
-    "latitude": 28.627,
-    "longitude": 77.363,
-    "spatial_match_type": "EXACT_SECTOR_REGEX",
-    "spatial_confidence": 0.96,
-    "entities": {
-      "organizations": [
-        "Fortis Hospital"
-      ],
-      "vehicles": [
-        "Van"
-      ],
-      "instruments_or_hazards": [
-        "Fire"
-      ],
-      "roles_and_actors": [],
-      "casualty_mentions": []
-    }
-  },
-  {
-    "report_id": "REP_8716C494AF",
-    "source_url": "https://test.com/fire",
-    "headline": "Delivery van caught fire near Sector 62 intersection",
-    "full_text": "Delivery van caught fire near Sector 62 intersection. Noida: An electrical delivery van caught fire near Sector 62 Fortis hospital crossing. Fire fighters doused the vehicle.",
-    "published_at": "2026-11-14T19:51:43.453443",
-    "incident_timestamp": "2026-11-14T19:51:43.453443",
-    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
-    "temporal_confidence": 0.65,
-    "category": "CIVIC_HAZARD",
-    "category_name": "Civic & Industrial Hazard",
-    "model_confidence": 0.1667,
-    "severity_weight": 3.5,
-    "sector_id": "Sector 62",
-    "sector_name": "Sector 62, Noida",
-    "zone": "Major Institutional & IT Hub",
-    "latitude": 28.627,
-    "longitude": 77.363,
-    "spatial_match_type": "EXACT_SECTOR_REGEX",
-    "spatial_confidence": 0.96,
-    "entities": {
-      "organizations": [
-        "Fortis Hospital"
-      ],
-      "vehicles": [
-        "Van"
-      ],
-      "instruments_or_hazards": [
-        "Fire"
-      ],
-      "roles_and_actors": [],
-      "casualty_mentions": []
-    }
-  },
-  {
-    "report_id": "REP_B7BB9780AD",
-    "source_url": "https://test.com/fire",
-    "headline": "Delivery van caught fire near Sector 62 intersection",
-    "full_text": "Delivery van caught fire near Sector 62 intersection. Noida: An electrical delivery van caught fire near Sector 62 Fortis hospital crossing. Fire fighters doused the vehicle.",
-    "published_at": "2026-11-14T19:39:53.980085",
-    "incident_timestamp": "2026-11-14T19:39:53.980085",
-    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
-    "temporal_confidence": 0.65,
-    "category": "CIVIC_HAZARD",
-    "category_name": "Civic & Industrial Hazard",
-    "model_confidence": 0.1667,
-    "severity_weight": 3.5,
-    "sector_id": "Sector 62",
-    "sector_name": "Sector 62, Noida",
-    "zone": "Major Institutional & IT Hub",
-    "latitude": 28.627,
-    "longitude": 77.363,
-    "spatial_match_type": "EXACT_SECTOR_REGEX",
-    "spatial_confidence": 0.96,
-    "entities": {
-      "organizations": [
-        "Fortis Hospital"
-      ],
-      "vehicles": [
-        "Van"
-      ],
-      "instruments_or_hazards": [
-        "Fire"
-      ],
-      "roles_and_actors": [],
-      "casualty_mentions": []
-    }
-  },
-  {
-    "report_id": "REP_84B80B9327",
-    "source_url": "https://timesofindia.indiatimes.com/city/noida/robbery-sector-18",
-    "headline": "Armed robbery at jewelry store in Sector 18 Atta Market, four masked men escape with gold worth 40 lakh",
-    "full_text": "Armed robbery at jewelry store in Sector 18 Atta Market, four masked men escape with gold worth 40 lakh. Noida: In a daring daylight robbery, four masked assailants stormed into a jewelry showroom in the bustling Atta market of Sector 18. The robbers brandished country-made pistols, threatened security guards and staff, and looted gold ornaments before fleeing on two motorcycles towards Sector 27. Noida police have formed five special teams to trace the miscreants.",
-    "published_at": "2026-11-13T14:48:39.753636",
-    "incident_timestamp": "2026-11-13T14:48:39.753636",
-    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
-    "temporal_confidence": 0.65,
-    "category": "VIOLENT_CRIME",
-    "category_name": "Violent Crime",
-    "model_confidence": 1.0,
-    "severity_weight": 5.0,
-    "sector_id": "Sector 18",
-    "sector_name": "Sector 18, Noida",
-    "zone": "Major Commercial Hub",
-    "latitude": 28.57,
-    "longitude": 77.322,
-    "spatial_match_type": "EXACT_SECTOR_REGEX",
-    "spatial_confidence": 0.96,
-    "entities": {
-      "organizations": [
-        "Noida Police"
-      ],
-      "vehicles": [],
-      "instruments_or_hazards": [],
-      "roles_and_actors": [
-        "Assailants",
-        "Miscreants",
-        "Robbers"
-      ],
-      "casualty_mentions": []
-    }
-  },
-  {
-    "report_id": "REP_E7E9C361C8",
-    "source_url": "https://hindustantimes.com/ncr/noida-sec-18-robbery-gold",
-    "headline": "Gunmen storm Atta Market jewelry shop in Sector 18, loot gold ornaments at gunpoint",
-    "full_text": "Gunmen storm Atta Market jewelry shop in Sector 18, loot gold ornaments at gunpoint. Greater Noida: Tension gripped Sector 18 market on Tuesday afternoon when four armed miscreants raided an upscale jewelry outlet near the metro station. The assailants fired one round in the air to terrorize shopkeepers and escaped on bikes. Senior police officers rushed to the spot with forensic teams.",
-    "published_at": "2026-11-13T17:12:39.753636",
-    "incident_timestamp": "2026-11-13T12:00:00.753636",
-    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP_NOON",
-    "temporal_confidence": 0.65,
-    "category": "VIOLENT_CRIME",
-    "category_name": "Violent Crime",
-    "model_confidence": 1.0,
-    "severity_weight": 5.0,
-    "sector_id": "Sector 18",
-    "sector_name": "Sector 18, Noida",
-    "zone": "Major Commercial Hub",
-    "latitude": 28.57,
-    "longitude": 77.322,
+    "sector_id": "Sector 6",
+    "sector_name": "Sector 6, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5938,
+    "longitude": 77.3205,
     "spatial_match_type": "EXACT_SECTOR_REGEX",
     "spatial_confidence": 0.96,
     "entities": {
       "organizations": [],
       "vehicles": [],
-      "instruments_or_hazards": [],
-      "roles_and_actors": [
-        "Assailants",
-        "Miscreants"
-      ],
-      "casualty_mentions": []
-    }
-  },
-  {
-    "report_id": "REP_F6C6AB5BE9",
-    "source_url": "https://indianexpress.com/cities/delhi/noida-sector-18-atta-loot",
-    "headline": "Sec 18 Atta Market jewelry loot: Noida Police scan CCTV footage of bike-borne robbers",
-    "full_text": "Sec 18 Atta Market jewelry loot: Noida Police scan CCTV footage of bike-borne robbers. Noida: Investigators are scanning CCTV camera footage after four armed robbers barged into a showroom in Sector 18 market yesterday and decamped with jewelry. Two security guards sustained minor injuries while attempting to shut the glass doors.",
-    "published_at": "2026-11-14T00:24:39.753636",
-    "incident_timestamp": "2026-11-13T00:24:39.753636",
-    "temporal_indicator": "YESTERDAY",
-    "temporal_confidence": 0.88,
-    "category": "VIOLENT_CRIME",
-    "category_name": "Violent Crime",
-    "model_confidence": 1.0,
-    "severity_weight": 5.0,
-    "sector_id": "Sector 18",
-    "sector_name": "Sector 18, Noida",
-    "zone": "Major Commercial Hub",
-    "latitude": 28.57,
-    "longitude": 77.322,
-    "spatial_match_type": "EXACT_SECTOR_REGEX",
-    "spatial_confidence": 0.96,
-    "entities": {
-      "organizations": [
-        "Noida Police"
-      ],
-      "vehicles": [
-        "Bike"
-      ],
-      "instruments_or_hazards": [],
-      "roles_and_actors": [
-        "Robbers"
-      ],
-      "casualty_mentions": []
-    }
-  },
-  {
-    "report_id": "REP_B925C8864E",
-    "source_url": "https://timesofindia.indiatimes.com/city/noida/expressway-pileup-fog",
-    "headline": "Dense fog triggers seven-vehicle pileup on Noida-Greater Noida Expressway near Sector 128, three injured",
-    "full_text": "Dense fog triggers seven-vehicle pileup on Noida-Greater Noida Expressway near Sector 128, three injured. Noida: Poor morning visibility due to dense smog caused a multi-vehicle collision involving a dumper truck, two private cars, and an SUV on the Noida Expressway near Sector 128 flyover early yesterday morning. Traffic police used cranes to clear damaged vehicles. The injured were shifted to Jaypee Hospital.",
-    "published_at": "2026-11-12T07:36:39.753636",
-    "incident_timestamp": "2026-11-11T09:00:00.753636",
-    "temporal_indicator": "YESTERDAY_MORNING",
-    "temporal_confidence": 0.88,
-    "category": "TRAFFIC_INCIDENT",
-    "category_name": "Traffic & Road Hazard",
-    "model_confidence": 1.0,
-    "severity_weight": 2.0,
-    "sector_id": "Sector 128",
-    "sector_name": "Sector 128, Noida",
-    "zone": "Expressway / Healthcare Hub",
-    "latitude": 28.514,
-    "longitude": 77.355,
-    "spatial_match_type": "EXACT_SECTOR_REGEX",
-    "spatial_confidence": 0.96,
-    "entities": {
-      "organizations": [
-        "Jaypee Hospital",
-        "Traffic Police"
-      ],
-      "vehicles": [
-        "Dumper",
-        "Dumper Truck",
-        "Suv",
-        "Truck"
-      ],
-      "instruments_or_hazards": [],
-      "roles_and_actors": [],
-      "casualty_mentions": [
-        "three"
-      ]
-    }
-  },
-  {
-    "report_id": "REP_2D193B22FE",
-    "source_url": "https://hindustantimes.com/ncr/expressway-crash-traffic-jam",
-    "headline": "Massive pileup on Noida Expressway at Sector 128 disrupts morning office commute",
-    "full_text": "Massive pileup on Noida Expressway at Sector 128 disrupts morning office commute. Commuters heading towards Delhi faced two-hour delays after a speeding dumper truck rammed into a sedan near Sector 128, triggering a chain collision of five other vehicles. Traffic was diverted onto service lanes.",
-    "published_at": "2026-11-12T10:00:39.753636",
-    "incident_timestamp": "2026-11-12T09:00:00.753636",
-    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP_MORNING",
-    "temporal_confidence": 0.65,
-    "category": "TRAFFIC_INCIDENT",
-    "category_name": "Traffic & Road Hazard",
-    "model_confidence": 1.0,
-    "severity_weight": 2.0,
-    "sector_id": "Sector 128",
-    "sector_name": "Sector 128, Noida",
-    "zone": "Expressway / Healthcare Hub",
-    "latitude": 28.514,
-    "longitude": 77.355,
-    "spatial_match_type": "EXACT_SECTOR_REGEX",
-    "spatial_confidence": 0.96,
-    "entities": {
-      "organizations": [],
-      "vehicles": [
-        "Dumper",
-        "Dumper Truck",
-        "Sedan",
-        "Truck"
-      ],
-      "instruments_or_hazards": [],
-      "roles_and_actors": [],
-      "casualty_mentions": []
-    }
-  },
-  {
-    "report_id": "REP_19C91C9EBE",
-    "source_url": "https://timesofindia.indiatimes.com/city/noida/sector-62-fire-transformer",
-    "headline": "Major fire in electrical transformer outside IT park in Sector 62, fire tenders rushed to spot",
-    "full_text": "Major fire in electrical transformer outside IT park in Sector 62, fire tenders rushed to spot. Noida: A high-voltage transformer caught fire with loud explosions near the Fortis Hospital crossing in Sector 62 late yesterday evening. Four fire tenders battled the blaze for over an hour. Power supply was disconnected to prevent damage to nearby commercial complexes.",
-    "published_at": "2026-11-11T19:36:39.753636",
-    "incident_timestamp": "2026-11-10T18:30:00.753636",
-    "temporal_indicator": "YESTERDAY_EVENING",
-    "temporal_confidence": 0.88,
-    "category": "CIVIC_HAZARD",
-    "category_name": "Civic & Industrial Hazard",
-    "model_confidence": 1.0,
-    "severity_weight": 3.5,
-    "sector_id": "Sector 62",
-    "sector_name": "Sector 62, Noida",
-    "zone": "Major Institutional & IT Hub",
-    "latitude": 28.627,
-    "longitude": 77.363,
-    "spatial_match_type": "EXACT_SECTOR_REGEX",
-    "spatial_confidence": 0.96,
-    "entities": {
-      "organizations": [
-        "Fire Tenders",
-        "Fortis Hospital"
-      ],
-      "vehicles": [],
       "instruments_or_hazards": [
-        "Blaze",
-        "Fire",
-        "Transformer"
+        "Fire"
       ],
       "roles_and_actors": [],
       "casualty_mentions": []
-    }
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNVc1M1E0QnRiZmRMaWFvRzl6N0VUVnRrNi0wRFh1Q1FoY2t2eV9XRE5qT3NYck8zZGhxRko2WDdmNDNwQXNPdEhXSko1aUFKWF8wNkRzR1ZmOWpsOXAyQzhPWVcyUTM0cVh2cW1nT2luVWR1U2JiNTlqd3E0RkxKM1BibW8yZ0t4aVBfRl9CMVZkdllZc2JOWmhXY2dnUm5FQlVNVDFmaHVwcGtueDVjNzIwNUY3Sk1nTlRhcW9n?oc=5",
+    "ingest_channel": "google_news_rss"
   },
   {
-    "report_id": "REP_2E1E65288A",
-    "source_url": "https://amarujala.com/delhi-ncr/noida/sec-62-transformer-blaze",
-    "headline": "Transformer blast sparks panic near Sector 62 metro station, thick smoke engulfs road",
-    "full_text": "Transformer blast sparks panic near Sector 62 metro station, thick smoke engulfs road. Noida: Commuters and office workers in Sector 62 witnessed thick plumes of black smoke as an electrical transformer exploded near the institutional area. Fire department personnel contained the fire with chemical foam.",
-    "published_at": "2026-11-11T22:00:39.753636",
-    "incident_timestamp": "2026-11-11T22:00:39.753636",
-    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
-    "temporal_confidence": 0.65,
-    "category": "CIVIC_HAZARD",
-    "category_name": "Civic & Industrial Hazard",
-    "model_confidence": 1.0,
-    "severity_weight": 3.5,
-    "sector_id": "Sector 62",
-    "sector_name": "Sector 62, Noida",
-    "zone": "Major Institutional & IT Hub",
-    "latitude": 28.627,
-    "longitude": 77.363,
-    "spatial_match_type": "EXACT_SECTOR_REGEX",
-    "spatial_confidence": 0.96,
-    "entities": {
-      "organizations": [
-        "Fire Department"
-      ],
-      "vehicles": [],
-      "instruments_or_hazards": [
-        "Fire",
-        "Smoke",
-        "Transformer"
-      ],
-      "roles_and_actors": [
-        "Workers"
-      ],
-      "casualty_mentions": []
-    }
-  },
-  {
-    "report_id": "REP_4450870450",
-    "source_url": "https://hindustantimes.com/ncr/sec-137-flats-burglary",
-    "headline": "Burglaries in two locked high-rise flats in Sector 137 society, cash and laptops stolen",
-    "full_text": "Burglaries in two locked high-rise flats in Sector 137 society, cash and laptops stolen. Noida: Burglars targeted two locked apartments in a premium residential society in Sector 137 while the residents were away for the weekend. The thieves broke the front door latches and fled with cash and gold jewelry. Felix Hospital police post is investigating.",
-    "published_at": "2026-11-10T19:36:39.753636",
-    "incident_timestamp": "2026-11-10T19:36:39.753636",
-    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
-    "temporal_confidence": 0.65,
-    "category": "PROPERTY_CRIME",
-    "category_name": "Property / Financial Crime",
-    "model_confidence": 1.0,
-    "severity_weight": 2.5,
-    "sector_id": "Sector 137",
-    "sector_name": "Sector 137, Noida",
-    "zone": "Expressway High-Rise Hub",
-    "latitude": 28.508,
-    "longitude": 77.408,
-    "spatial_match_type": "EXACT_SECTOR_REGEX",
-    "spatial_confidence": 0.96,
-    "entities": {
-      "organizations": [
-        "Felix Hospital"
-      ],
-      "vehicles": [],
-      "instruments_or_hazards": [],
-      "roles_and_actors": [
-        "Thieves"
-      ],
-      "casualty_mentions": []
-    }
-  },
-  {
-    "report_id": "REP_E76A43926C",
-    "source_url": "https://timesofindia.indiatimes.com/city/noida/advant-snatching-sec-142",
-    "headline": "Bike-borne snatchers target female software engineer outside Advant Navis tower in Sector 142",
-    "full_text": "Bike-borne snatchers target female software engineer outside Advant Navis tower in Sector 142. Noida: Two motorcycle-borne youths snatched a smartphone and handbag from an IT employee while she was walking towards the Sector 142 metro station near Advant Navis Business Park. The miscreants sped away towards the expressway.",
-    "published_at": "2026-11-13T07:36:39.753636",
-    "incident_timestamp": "2026-11-13T07:36:39.753636",
-    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
-    "temporal_confidence": 0.65,
-    "category": "PROPERTY_CRIME",
-    "category_name": "Property / Financial Crime",
-    "model_confidence": 1.0,
-    "severity_weight": 2.5,
-    "sector_id": "Sector 142",
-    "sector_name": "Sector 142, Noida",
-    "zone": "Expressway Corporate / Transit Hub",
-    "latitude": 28.491,
-    "longitude": 77.419,
-    "spatial_match_type": "EXACT_SECTOR_REGEX",
-    "spatial_confidence": 0.96,
-    "entities": {
-      "organizations": [],
-      "vehicles": [
-        "Bike",
-        "Motorcycle"
-      ],
-      "instruments_or_hazards": [],
-      "roles_and_actors": [
-        "Miscreants",
-        "Snatchers"
-      ],
-      "casualty_mentions": []
-    }
-  },
-  {
-    "report_id": "REP_7A69CF47AE",
-    "source_url": "https://hindustantimes.com/ncr/sec-142-chain-snatching-surge",
-    "headline": "Second chain snatching reported near Sector 142 metro station within 24 hours",
-    "full_text": "Second chain snatching reported near Sector 142 metro station within 24 hours. Noida: In another incident near Advant tower in Sector 142, bike-borne miscreants snatched a gold chain from a commuter waiting for an auto-rickshaw. Police have intensified night patrolling along the service roads.",
-    "published_at": "2026-11-14T07:36:39.753636",
-    "incident_timestamp": "2026-11-14T21:00:00.753636",
+    "report_id": "REP_333FDB753F",
+    "source_url": "The Times of India",
+    "headline": "Burglaries on the rise, Noida residents seek night patrols: DDRWA and Sector 105 RWA seek mandatory verif",
+    "full_text": "Burglaries on the rise, Noida residents seek night patrols: DDRWA and Sector 105 RWA seek mandatory verif.",
+    "published_at": "2026-11-24T01:21:00",
+    "incident_timestamp": "2026-11-24T21:00:00",
     "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP_NIGHT",
     "temporal_confidence": 0.65,
     "category": "PROPERTY_CRIME",
     "category_name": "Property / Financial Crime",
     "model_confidence": 1.0,
     "severity_weight": 2.5,
-    "sector_id": "Sector 142",
-    "sector_name": "Sector 142, Noida",
-    "zone": "Expressway Corporate / Transit Hub",
-    "latitude": 28.491,
-    "longitude": 77.419,
+    "sector_id": "Sector 105",
+    "sector_name": "Sector 105, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5316,
+    "longitude": 77.3692,
     "spatial_match_type": "EXACT_SECTOR_REGEX",
     "spatial_confidence": 0.96,
     "entities": {
       "organizations": [],
-      "vehicles": [
-        "Auto",
-        "Auto-Rickshaw",
-        "Bike"
-      ],
+      "vehicles": [],
       "instruments_or_hazards": [],
-      "roles_and_actors": [
-        "Miscreants"
-      ],
+      "roles_and_actors": [],
       "casualty_mentions": []
-    }
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxONDdjTUlQT0t1NTJpUVJzZ1NSN1JtRTdrZy1hdzE0OTk0OU55SUF1Vy11c3dpWFNqSUJQZ2dHWm9xbmxiVkhTd3hlNldVakhYcHdsMHd0bGRDMnkyWHoyZW1xTlZMVkkzbVdfR1BndHl3aDdZRW13Mm1ZUXJIRDBfMEtCRzByQXozMkhnYVozVlNTX2c0b0dVOC1MOG0xZ0F2Z29pTDZIVWQ4bk1fNjVSWXhtVkVlQ0ZaWHljUWtkN2MwejRsUmJJNzgzMXVtSTdKMWtaUnZBOEpRV2hHdkJLRFg0X0pZSjAyemFJVEcwblE2aWFKc0JzOTF5ZmNzYkhUSkwzMG83Q0o1d0FWN19OTExMWFBmN0owWVBieERyaUNFODJtVjNhWmtGTzY4YS1CNGVrYmU1M2lId2xYMHfSAcMCQVVfeXFMT0c4WjV0UlYtRklwTHktQ0xNZ196U2w0VVpLUFQ0RE9kMkNOa2ZLOUt1bzV0UG9vWndWZFVIejF3YllKMllVMG4zX3Y1cWJNY3pWVm5rMlVsMExQOUtnZDFWOE1ZbGV2WmZndXpfMXB5YlJUYktSSDNqaHF1YTFNLWM0WVVWUG5XeFhyeV9hZllral9PWjhSbUo4Vi1Vdld4SWd0UWtJZHYwRVVMUmtXcW94MEF5Ukh3Y0E2ZUNQbDZLa1dMdV9pZ3ZjbjhOcURrUVh6VjlOOG5pVmxPYVNEM3JVVkpwY0VTRzhXV2tFdklzOWZOUDdlZDJ0bTdGenNjNmNidV9rQm9HUy1OSm1UUU1NeENnNzFGbWxVNzBwQUZoRkROdkppVXBrUmk5VmxyNzBQeDYwQmJ5OXZaUHZMN0U3QUE?oc=5",
+    "ingest_channel": "google_news_rss"
   },
   {
-    "report_id": "REP_285F93405C",
-    "source_url": "https://indianexpress.com/cities/delhi/noida-sector-63-factory-fire",
-    "headline": "Massive fire destroys garment manufacturing factory warehouse in Sector 63 industrial area",
-    "full_text": "Massive fire destroys garment manufacturing factory warehouse in Sector 63 industrial area. Noida: A devastating fire erupted on the top floor of a garment packaging unit in Sector 63. Ten fire tenders from Phase 3 fire station worked through the night to bring the flames under control. No casualties were reported.",
-    "published_at": "2026-11-09T14:48:39.753636",
-    "incident_timestamp": "2026-11-09T21:00:00.753636",
-    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP_NIGHT",
+    "report_id": "REP_E7BADBA78A",
+    "source_url": "tennews.in",
+    "headline": "Massive fire engulfs unit manufacturing plastic decorative items in Noida’s Sector 6",
+    "full_text": "Massive fire engulfs unit manufacturing plastic decorative items in Noida’s Sector 6.",
+    "published_at": "2026-11-23T11:39:58",
+    "incident_timestamp": "2026-11-23T11:39:58",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
     "temporal_confidence": 0.65,
     "category": "CIVIC_HAZARD",
     "category_name": "Civic & Industrial Hazard",
-    "model_confidence": 1.0,
+    "model_confidence": 0.8855,
     "severity_weight": 3.5,
-    "sector_id": "Sector 63",
-    "sector_name": "Sector 63, Noida",
-    "zone": "Major Industrial & Tech Zone",
-    "latitude": 28.625,
-    "longitude": 77.382,
+    "sector_id": "Sector 6",
+    "sector_name": "Sector 6, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5938,
+    "longitude": 77.3205,
     "spatial_match_type": "EXACT_SECTOR_REGEX",
     "spatial_confidence": 0.96,
     "entities": {
-      "organizations": [
-        "Fire Tenders"
-      ],
+      "organizations": [],
       "vehicles": [],
       "instruments_or_hazards": [
         "Fire"
       ],
       "roles_and_actors": [],
       "casualty_mentions": []
-    }
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxONXI3VVVTREl0bkwxc3dKVElmTmhMUmo3b29KbkhGc1hEYlRZYXZwVlZscUxFQUFoOG5QcS1sNGtaMEo5ZExXaDloSG5KWFR1M09KWFJTdnZGT25OUmlCRU5nVjNkbWI2WlhlQkxGbDdZVmttOVRDZkk1MWpib1dtRERUMlpoRzEzdVNUazdtVTdFeWl5M1JRRzhTMXRoZ2RjTVFSV3RR?oc=5",
+    "ingest_channel": "google_news_rss"
   },
   {
-    "report_id": "REP_F3A70C7FEB",
-    "source_url": "https://amarujala.com/delhi-ncr/noida/sec-76-suv-stolen",
-    "headline": "Luxury SUV stolen from outside society gate in Sector 76, car-lifter gang caught on CCTV",
-    "full_text": "Luxury SUV stolen from outside society gate in Sector 76, car-lifter gang caught on CCTV. Noida: An expensive SUV was stolen from the roadside parking outside a high-rise society in Sector 76. CCTV footage shows two men using an electronic key cloner to unlock the vehicle within ninety seconds.",
-    "published_at": "2026-11-08T19:36:39.753636",
-    "incident_timestamp": "2026-11-08T19:36:39.753636",
+    "report_id": "REP_D0F51E09A6",
+    "source_url": "Hindustan Times",
+    "headline": "Three arrested for ₹1.5 crore burglary in Noida’s Sector 50 society, police hunt fourth suspect",
+    "full_text": "Three arrested for ₹1.5 crore burglary in Noida’s Sector 50 society, police hunt fourth suspect.",
+    "published_at": "2026-11-19T19:04:05",
+    "incident_timestamp": "2026-11-19T19:04:05",
     "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
     "temporal_confidence": 0.65,
     "category": "PROPERTY_CRIME",
     "category_name": "Property / Financial Crime",
     "model_confidence": 1.0,
     "severity_weight": 2.5,
-    "sector_id": "Sector 76",
-    "sector_name": "Sector 76, Noida",
-    "zone": "High-Rise Residential",
-    "latitude": 28.573,
-    "longitude": 77.385,
-    "spatial_match_type": "EXACT_SECTOR_REGEX",
-    "spatial_confidence": 0.96,
-    "entities": {
-      "organizations": [],
-      "vehicles": [
-        "Car",
-        "Suv"
-      ],
-      "instruments_or_hazards": [],
-      "roles_and_actors": [
-        "Gang"
-      ],
-      "casualty_mentions": []
-    }
-  },
-  {
-    "report_id": "REP_BA3E257708",
-    "source_url": "https://timesofindia.indiatimes.com/city/noida/dnd-flyway-farmer-protest",
-    "headline": "Farmers stage tractor march, block traffic near DND Flyway toll plaza causing five-kilometer jam",
-    "full_text": "Farmers stage tractor march, block traffic near DND Flyway toll plaza causing five-kilometer jam. Noida: Hundreds of protesting farmers on tractors blocked the entry corridor near the DND flyway and Chilla border demanding enhanced rehabilitation compensation. Heavy police deployment and barricading diverted commuter traffic via Kalindi Kunj.",
-    "published_at": "2026-11-11T00:24:39.753636",
-    "incident_timestamp": "2026-11-11T00:24:39.753636",
-    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
-    "temporal_confidence": 0.65,
-    "category": "PUBLIC_DISRUPTION",
-    "category_name": "Public Order & Protests",
-    "model_confidence": 1.0,
-    "severity_weight": 2.0,
-    "sector_id": "DND Flyway",
-    "sector_name": "DND Flyway (Delhi-Noida Direct)",
-    "zone": "Inter-State Arterial Highway",
-    "latitude": 28.572,
-    "longitude": 77.301,
-    "spatial_match_type": "LANDMARK_GAZETTEER_MATCH",
-    "spatial_confidence": 0.9,
-    "entities": {
-      "organizations": [],
-      "vehicles": [
-        "Tractor"
-      ],
-      "instruments_or_hazards": [],
-      "roles_and_actors": [
-        "Farmers"
-      ],
-      "casualty_mentions": []
-    }
-  },
-  {
-    "report_id": "REP_79733A828A",
-    "source_url": "https://hindustantimes.com/ncr/sec-50-delivery-boy-accident",
-    "headline": "Delivery boy critically injured in hit-and-run crash near Sector 50 market",
-    "full_text": "Delivery boy critically injured in hit-and-run crash near Sector 50 market. Noida: A speeding sedan rammed into a delivery executive's motorcycle at the Sector 50 intersection late last night. The car driver fled the scene without stopping. The victim was rushed to a nearby private hospital with multiple fractures.",
-    "published_at": "2026-11-06T07:36:39.753636",
-    "incident_timestamp": "2026-11-05T21:00:00.753636",
-    "temporal_indicator": "LAST_NIGHT_NIGHT",
-    "temporal_confidence": 0.92,
-    "category": "TRAFFIC_INCIDENT",
-    "category_name": "Traffic & Road Hazard",
-    "model_confidence": 1.0,
-    "severity_weight": 2.0,
     "sector_id": "Sector 50",
     "sector_name": "Sector 50, Noida",
     "zone": "Residential High-Density",
@@ -595,33 +118,224 @@
     "spatial_confidence": 0.96,
     "entities": {
       "organizations": [],
-      "vehicles": [
-        "Car",
-        "Motorcycle",
-        "Sedan"
-      ],
+      "vehicles": [],
       "instruments_or_hazards": [],
-      "roles_and_actors": [
-        "Delivery Executive",
-        "Driver",
-        "Victim"
-      ],
+      "roles_and_actors": [],
       "casualty_mentions": []
-    }
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOVTRiMFlpYU1QaFZldmFOQ2w4M002SnBiN0JYcDdUUnVhclJKTWxYVmhhY3pSeUtsSTRGNXNXY0h5ak1SNkg1eFBlYVhfcGljdkNLaWtyQUwwMjh0WDBFZTB4NE5xUVlORmwyY3R3THFDeDBtVGUzTEpnU3JON3E5b1dyak5RU19FLTdpNjlnX251SWNpMTJVaFlEU0p1RXBFSDRCbHo3ejJSSUJ4WGFJVXp4dDRPMTlpMmVIT1pkQWotWDU1aHE2dmZ2SUlnT05lZHBJYkEzLTBodkNZS1hKWUprVy1YVnFuenp4T2hKZVVGNXRlS3fSAfsBQVVfeXFMTWNGNWhqY2FNblhHTVktS3NpNnRtNVBNSVBaQ3JvMEFJUWtkUHZOV3c3dFZENzdoWTdDdzIyZ3JnQzg3UElsWFdvMVZIaUItcU5XOHBnTDd6SF9RMnlGTXBza0lnVlFMTGJYUGkwNVJFdlhpYnk3SUJUblFjOHhoZjYyY3MxLTIzcFdIZ3A3SWF3Rk5HUDVMS1VlSUpfalVJUWxvSjhwY2p4OXVUcmJaMUNUd0l2R0cyRjRSWTQ1VE01SXZQUllfemI3WEsyVGpzNFZ6UTZ6ZjVLZy04RUlETjdBc094cmg5LTV3QU1kS1RYdVhSU1BwUVJVNTA?oc=5",
+    "ingest_channel": "google_news_rss"
   },
   {
-    "report_id": "REP_1854761CFF",
-    "source_url": "https://timesofindia.indiatimes.com/city/noida/sector-125-student-clash",
-    "headline": "Clash between two student groups outside Sector 125 university campus, four detained",
-    "full_text": "Clash between two student groups outside Sector 125 university campus, four detained. Noida: Tension flared outside the university campus in Sector 125 following a physical brawl between two student groups over a vehicle parking argument. Police arrived promptly, dispersed the crowd, and detained four youths.",
-    "published_at": "2026-11-03T19:36:39.753636",
-    "incident_timestamp": "2026-11-03T19:36:39.753636",
+    "report_id": "REP_762F0140F7",
+    "source_url": "Hindustan Times",
+    "headline": "Man dies after his bike crashes into tree in Noida Sec 63",
+    "full_text": "Man dies after his bike crashes into tree in Noida Sec 63.",
+    "published_at": "2026-11-19T07:39:00",
+    "incident_timestamp": "2026-11-19T07:39:00",
     "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "TRAFFIC_INCIDENT",
+    "category_name": "Traffic & Road Hazard",
+    "model_confidence": 1.0,
+    "severity_weight": 2.0,
+    "sector_id": "Sector 63",
+    "sector_name": "Sector 63, Noida",
+    "zone": "Major Industrial & Tech Zone",
+    "latitude": 28.625,
+    "longitude": 77.382,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [],
+      "vehicles": [
+        "Bike"
+      ],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQbkhHNURsSUdFaVVaZjJfdFVpLWdUSTUwRFY2Zl9IOWJDZDVCVUNHYXZRQlZMWEdEaTVZR0ZBWFVUclZxLTlWNnRyaGdfeDhRa2t3UXFzbG9TTnY5SFYta1VOZnY2UXVYaFAtZ2VZT0l3UVFWdTh4X0o4ejViaGZSMWhiVzltanBUa09PemlNd3R4YVhUOHl0cXZLazFON0tjQXM0OFZvZ00ybFNVNlhpdGo0cTJCbW1XTlhTRkljUFdZNk1sNlHSAcsBQVVfeXFMTlRlU2czVXRrTWExeUVCMjRiRE1jWWllRjdRVVNOZWlCN19rNzRmTTJHUGM1ZWU1QXo0OXcwamx4WjU0cE81MDJMZU5NY1lHZWtMTzNFZ0VLMzhIS3RyODNUUVRFeVRCd0JoNFNpX3g5MnFrc05wTjk0NVpvcl9jY3NMYjVGaG1ycUZlLTBrZmwzcUtqcjlmQWpmR3JFQ29yZzBYcWE4bGdwalg0Yk9OY3lHU21XMzgzbXJjTzdybXpBejhNMUh3VnNwX1U?oc=5",
+    "ingest_channel": "google_news_rss"
+  },
+  {
+    "report_id": "REP_A9B073C770",
+    "source_url": "The Hans India",
+    "headline": "Noida: Two workers rescued after fire breaks out at garment export company in Sector 63",
+    "full_text": "Noida: Two workers rescued after fire breaks out at garment export company in Sector 63.",
+    "published_at": "2026-11-10T13:30:00",
+    "incident_timestamp": "2026-11-10T13:30:00",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "model_confidence": 0.1667,
+    "severity_weight": 3.5,
+    "sector_id": "Sector 63",
+    "sector_name": "Sector 63, Noida",
+    "zone": "Major Industrial & Tech Zone",
+    "latitude": 28.625,
+    "longitude": 77.382,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": [
+        "Workers"
+      ],
+      "casualty_mentions": []
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOdFRQQ3paaVZzNFYtcVZrM2E1TWpCQm5CQm5GMDNyaU5EV2ZmZGlNcG1iQ1pBeUVuMlU3OTFCcjFPZzFNRmtvT3ZHSHJra0c1RFRRaFNCQlFUcENVUE1GTmpyY3B5dmJIbWFzY1NwUHpCdmZ2Q2t4bDdkTGdzQ3l0MTFPUGdrVW93eXMyMk1IRjF6TFRIVlBqWlJ5R1JmZlZXeC1zbUtrUkZTQkgzQU9pTVRCZGE0VzN2bTlQRVl3S21valJWdjllUHlfWXBsUW5vX25n?oc=5",
+    "ingest_channel": "google_news_rss"
+  },
+  {
+    "report_id": "REP_9A66F239C4",
+    "source_url": "Mid-Day",
+    "headline": "Noida police arrest four suspects after late-night encounter in Sector 63",
+    "full_text": "Noida police arrest four suspects after late-night encounter in Sector 63.",
+    "published_at": "2026-11-02T13:30:00",
+    "incident_timestamp": "2026-11-02T21:00:00",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP_NIGHT",
     "temporal_confidence": 0.65,
     "category": "VIOLENT_CRIME",
     "category_name": "Violent Crime",
     "model_confidence": 1.0,
     "severity_weight": 5.0,
+    "sector_id": "Sector 63",
+    "sector_name": "Sector 63, Noida",
+    "zone": "Major Industrial & Tech Zone",
+    "latitude": 28.625,
+    "longitude": 77.382,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [
+        "Noida Police"
+      ],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPRk1VZHdJS3J2OXY4MkVMd3VQWVl2V2tTekJOWTdWQ2xKdlRubmRFWTkwU2Q1RXR2blNLRzczRzlpdTlIVkc4c0Y4THl0TjV0TVZOa3BnRUJMQlBIYmNicGQ3UmVOTU5aZF9jaXpHU3h0cU9rNVdaSHBXQUMxRzRJNXNERlBaSnVJblVjWGd0MnlLdUVIbEdNUllQLWNGZXpUeWdqR1ZVaDZJQzVhNmlJUnV3NzZzWEl0REZoaGlmOE5nLXJ2?oc=5",
+    "ingest_channel": "google_news_rss"
+  },
+  {
+    "report_id": "REP_C3A7565B2A",
+    "source_url": "Hindustan Times",
+    "headline": "Noida Sector 37 residents raise security concerns after burglary in society",
+    "full_text": "Noida Sector 37 residents raise security concerns after burglary in society.",
+    "published_at": "2026-11-01T12:30:00",
+    "incident_timestamp": "2026-11-01T12:30:00",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "PROPERTY_CRIME",
+    "category_name": "Property / Financial Crime",
+    "model_confidence": 1.0,
+    "severity_weight": 2.5,
+    "sector_id": "Sector 37",
+    "sector_name": "Sector 37, Noida",
+    "zone": "Civic / Transit",
+    "latitude": 28.563,
+    "longitude": 77.336,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNeGFGS1lpYUJIMFNJQUtLOFRBYzBENV96QXd3bEV0MGk3VzBja3JvMTBkd3NnZzlPZlpBY0pJWlZ6Qkc4RnNjWXJLYU5paEtkVG9wSWMwY2NaNFJ0ekg3Wl9kb1dUZ0hjRy1JRWVOYmVFSzZaUmpnQTQwZHYwXzBHUnRwRGdjZE0xNWdXRkdHZ3hVLUNYX0F2NnplYnJHTG90VXVDS2k0V1ZzOXllOU8wUTAzaW52TzZBaHc0czA0aDBQcVBDOHFYTVd1cGplNjFjb054MjhGdGVMRDljTFHSAeMBQVVfeXFMTWZWcjBUdUFROVJXckhDT0FEVnhQM3pnQnZpVUdXUG1iWVdqR3E5MU5weFZJbW9ra3J3dWhwTS16VnVDZmN5VkVQU0w3LU5LSmw4XzN6UVhpbmxwQ3pWVldYRVZZWDZtaFFldUllQklHODhhRDVyTV8zR0tfTk9zMS1GbG44SnpiajBITlpqSVc5ZWZBQUdlclRWZWlFTkUtMmYzNWYzTDBnWXFqcHB2QzFpV3AzTkVZTnJObDFHS1hDSlhodnVab09JWlU2QW1RRVNfVExYYXVJTlB5dVRQRmlpcmc?oc=5",
+    "ingest_channel": "google_news_rss"
+  },
+  {
+    "report_id": "REP_F8B9BE9DC0",
+    "source_url": "The Times of India",
+    "headline": "Man loses control, crashes car into another on Noida Expressway, dies",
+    "full_text": "Man loses control, crashes car into another on Noida Expressway, dies.",
+    "published_at": "2026-10-31T12:30:00",
+    "incident_timestamp": "2026-10-31T12:30:00",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "TRAFFIC_INCIDENT",
+    "category_name": "Traffic & Road Hazard",
+    "model_confidence": 1.0,
+    "severity_weight": 2.0,
+    "sector_id": "Noida-Greater Noida Expressway",
+    "sector_name": "Noida-Greater Noida Expressway",
+    "zone": "High-Speed Arterial Corridor",
+    "latitude": 28.518,
+    "longitude": 77.382,
+    "spatial_match_type": "LANDMARK_GAZETTEER_MATCH",
+    "spatial_confidence": 0.9,
+    "entities": {
+      "organizations": [],
+      "vehicles": [
+        "Car"
+      ],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxObVllV2RlbVA2YTQ0ZkNwc00zLTM2Q19aeVpjNjcySlZxX0JyS2ptS3A3cGd3Z0pfTWlNVWRsYnVUT0hFcXFGZkJUa19GRFhfTXVlYkRBV2xVcWpGZWhQSk16eWJLYWkzeDRmMnZlY2hBdG9Lb0pmRGpPcEdIbFNTeU5CYTd4cmstM3dSWWdHbmkzWWZhNDlFbjR0RlZjblV4WnZyRjRWSmlDR2VxcDdzNmhEV2E5dFA3cXVqaHNtZmhsMlRpc1A3YS1yRmVmRVY0b1NYOHFzSdIB3AFBVV95cUxNcXV3dnV0REV2NGxiOEtmQ1VKX0NvUHRGMVU5S0tGNUJYbHpISjJMdzBZd0xja0N2NDdFNW8zZHo0RWZtcUdIMGptTDdXTzMxM3lleEJKVXFhU0FQR2FMMDhBcVFYNEJodjRTUkU0WlM2LUdwVUtyWUh6U29LODFtUEQxWDEyZ2xqWTdtUGdESVFNQTZiUUQwSk05b3V6eUkwcmlUeFRXaDBRRG5tVFBJYkw4WjFBVGFGQTJHOXplN0ExcEx1NG1iWnprdllqdXp5Yl81UmdmT3VycU1S?oc=5",
+    "ingest_channel": "google_news_rss"
+  },
+  {
+    "report_id": "REP_1A80B254EA",
+    "source_url": "Urban Acres",
+    "headline": "Noida Sector 150 Air Pollution Protest Targets Heavy Trucks",
+    "full_text": "Noida Sector 150 Air Pollution Protest Targets Heavy Trucks.",
+    "published_at": "2026-10-25T00:54:32",
+    "incident_timestamp": "2026-10-25T00:54:32",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "PUBLIC_DISRUPTION",
+    "category_name": "Public Order & Protests",
+    "model_confidence": 1.0,
+    "severity_weight": 2.0,
+    "sector_id": "Sector 150",
+    "sector_name": "Sector 150, Noida",
+    "zone": "Sports City / Eco-Residential",
+    "latitude": 28.455,
+    "longitude": 77.458,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQOF9iOUtfYVFfcDgzb3ZHbEQ5LXlfUUFMTmx6OXpyV1BKU2dXN3JOSjN2R3EzYUppVHBMN0RvNEFxQkd2WkFGZUVtTnJMVUlYemRGY2RoTEZQdHFiYkhzbmplQnZIZWRTUTM3MDVTMXhmNHFGYS02Wjh1TWxscGNlc0p0MlRndFJtUEE?oc=5",
+    "ingest_channel": "google_news_rss"
+  },
+  {
+    "report_id": "REP_31D0085BFB",
+    "source_url": "India Today",
+    "headline": "Noida Sector 125 Fire: 1 Dead as Blaze Engulfs Multiple Shops Following Blast - India Today",
+    "full_text": "Noida Sector 125 Fire: 1 Dead as Blaze Engulfs Multiple Shops Following Blast - India Today.",
+    "published_at": "2026-10-24T12:30:00",
+    "incident_timestamp": "2026-10-24T12:30:00",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "model_confidence": 0.5,
+    "severity_weight": 3.5,
     "sector_id": "Sector 125",
     "sector_name": "Sector 125, Noida",
     "zone": "Educational / Institutional Hub",
@@ -632,29 +346,277 @@
     "entities": {
       "organizations": [],
       "vehicles": [],
-      "instruments_or_hazards": [],
+      "instruments_or_hazards": [
+        "Blaze",
+        "Fire"
+      ],
       "roles_and_actors": [],
-      "casualty_mentions": []
-    }
+      "casualty_mentions": [
+        "1"
+      ]
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOUUpaUWlpb0dhb3ZmX2VpbzhkbjVZZG1WY1pSMFRLZDduSWRnVXJ1T1RiSzA2TnJhRHdfTjl6U0NWZWYzWGtvVEJYY01kekpBbEM3SElpLXo0Z01Gc285OVQtVWU2Q0taaHViakVXdmMycjlpYi1qVU9VZXJHNFdub3IzRmhrMGtRZm1EdExkYzg5S3pkZEgtQ1lZdmpGalRaMGtLel9kTlY0bndscXlsaDNKSll6Z1B4eVJ5UjV2S3JHWVZHLTQ0c1YyZDAyXzNCeVdXNtIB2gFBVV95cUxOa0txeFJ3bVZDeWdoUkk4QnUweUlzWHRFWDRxNmxDZjJjWGhpQ0hfN3RaOG5OZGdCaUMyUnRjSEJxS3NvUU1uZmx6WER6YkNJYVB3WkViU19FZXQ2bWtUUGVBU1EzUXVpV0FyVTlKX3VGRWd2bVBPQmQ5WlF3dzd1cEk3cnQtN0RhdDduQ1Zic2M5SklzdE8xNEUya1phR3NMdlpLcUFMSXpLcldzazJBM0JETHc4TEQ2QUs5a3ZKQThfRDg3VEdha0dha2x3LTVCSE5DaGQtYUNlUQ?oc=5",
+    "ingest_channel": "google_news_rss"
   },
   {
-    "report_id": "REP_8C5EF03BB3",
-    "source_url": "https://amarujala.com/delhi-ncr/noida/sec-15-metro-snatching",
-    "headline": "Pedestrian's mobile snatched near Sector 15 metro station entry gate",
-    "full_text": "Pedestrian's mobile snatched near Sector 15 metro station entry gate. Noida: An unidentified youth on a scooty snatched an iPhone from a pedestrian outside the Sector 15 metro station near Nayabans before racing towards the Gol Chakkar.",
-    "published_at": "2026-10-31T19:36:39.753636",
-    "incident_timestamp": "2026-10-31T19:36:39.753636",
+    "report_id": "REP_2D12D6DECB",
+    "source_url": "Hindustan Times",
+    "headline": "Massive fire breaks out at food outlet in Noida’s Sector 125; one killed, several shops gutted",
+    "full_text": "Massive fire breaks out at food outlet in Noida’s Sector 125; one killed, several shops gutted.",
+    "published_at": "2026-10-24T12:30:00",
+    "incident_timestamp": "2026-10-24T12:30:00",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "model_confidence": 0.764,
+    "severity_weight": 3.5,
+    "sector_id": "Sector 125",
+    "sector_name": "Sector 125, Noida",
+    "zone": "Educational / Institutional Hub",
+    "latitude": 28.544,
+    "longitude": 77.332,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": [],
+      "casualty_mentions": [
+        "one"
+      ]
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPUE00bHpsWnNUZy00RjBRWC1LWjE0aEFKeWVhX1p3QTNRYkx5MXI3ckdZR0pCTHdMNElFTndHb2VVQTNwU0x1NmRDV2Rrb2FaWVFyMVdVbGxPT3pveThqQzN2VmtQaFVBMjI3OGl2eVlvQmxPS1lNSUlfVHlKR05iRDZrUm5HdjZ5eUo2d3hjYTFXbnhNU0Q4cGppT0NDdlZQdVdXSWpOMlMyN1NjUU9FTjlZTldTOEkydWtTbU1qZDhJeDBlS3EweXh0aVF2OUtGUEg40gHYAUFVX3lxTE5LUlNHbk9weW1fUENJd2VHcTZwQ3ZKVzhxeThEalF0aEJhYjB0ZUhELUtuMFAzX1pOX0EyOFBNNEloV3I0YkpJVkRWQXltZ1NtNS1NV3ZNOFpURVQyR1MtTkEzSzFzSHFraHl3MzZfVGxBSVBlR0gyb0hDczlBcFlSNTJveHRZQzB0NGNFMUdIN21ybDJjLU9UMmphNU5wdE1TYmVJX0JscHV6WGtyMEhpMk1VNHRRYVREbWY5Y2xPRXNPNVE3WDIza1IyRWxVclJiRjFNNi1yTg?oc=5",
+    "ingest_channel": "google_news_rss"
+  },
+  {
+    "report_id": "REP_5FDDCA9C2D",
+    "source_url": "Livemint",
+    "headline": "Noida Sector 125 fire: Blaze at hotel spreads to nearby eateries, firefighting ops underway",
+    "full_text": "Noida Sector 125 fire: Blaze at hotel spreads to nearby eateries, firefighting ops underway.",
+    "published_at": "2026-10-24T12:30:00",
+    "incident_timestamp": "2026-10-24T12:30:00",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "model_confidence": 1.0,
+    "severity_weight": 3.5,
+    "sector_id": "Sector 125",
+    "sector_name": "Sector 125, Noida",
+    "zone": "Educational / Institutional Hub",
+    "latitude": 28.544,
+    "longitude": 77.332,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Blaze",
+        "Fire"
+      ],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPcmN3Nlh6RzFBZWVUODBWSVA1RTJKSnVJWDF5SHBIdS01TGtaNl9OTENEbzRKVmFIYXJrSFVqTjl2dzdpdE1aSWlBVGNxVjNod1J3T1JPNDNfaW9DYnVLUUh1RWdaejFEM3NCbEhsQUNPemNHbzMydDZmWldJVUF0N09waUE1cFBpaEVYTGx2X05EZjM3SHpzRkRqNGNheEZaZHctY0NmZ0JNdlBtRTQ0eUdBRjNJRUZRVmZyY3JOS3BEcHVIS1RqZmlIMnRpYS0zendyVWxzZ3Y0NFFWeEtlYS1HSWp4Z9IB6wFBVV95cUxOcmJUNkpFQ2ZYSFpUWjFaTGZMdVlld3I2cnBYdTNVbWxjMFFlMnV3TG03bGZ4VEp4ZDZfUUN3SGdjY1FzWHlEbFNSM0toWUtxN0VzOEo2MzdJSVVSSlltc09wMmp3ZWptTlp3M1dCTzBfM1NmbG9NRjF4QkVHLTRkNmRCZ2x6QUlLV0dKSUZKZlpCeTQ5YkhJTVVrUmhERHhNN3VjMjYwejFXdkFOY2RoT1p3Y2g0a2VfaFMzMnd2ajdtQjlkcFV1Z0ZMbnl0U1c4VGYybURmZUQ2SE83NDRkVmJXeXhFTjdHZ0U4?oc=5",
+    "ingest_channel": "google_news_rss"
+  },
+  {
+    "report_id": "REP_BCD6CDADE1",
+    "source_url": "News Arena India",
+    "headline": "Noida Fire: 1 Dead as Massive Blaze Engulfs Shops in Sector 125",
+    "full_text": "Noida Fire: 1 Dead as Massive Blaze Engulfs Shops in Sector 125.",
+    "published_at": "2026-10-24T12:30:00",
+    "incident_timestamp": "2026-10-24T12:30:00",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "model_confidence": 0.5184,
+    "severity_weight": 3.5,
+    "sector_id": "Sector 125",
+    "sector_name": "Sector 125, Noida",
+    "zone": "Educational / Institutional Hub",
+    "latitude": 28.544,
+    "longitude": 77.332,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Blaze",
+        "Fire"
+      ],
+      "roles_and_actors": [],
+      "casualty_mentions": [
+        "1"
+      ]
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWUdJajc2Z0NmdUw2NHVSV1I0Yko1UVdoRG1BcHR1eWZQTl80WDY5RG5xTTNWaFFZNzhTVlJEN0syUS1GSTZjVHFhTGozd1cwQUN2X2gzVl83bTBkRlc3Tm0zMVJ0N1Zrc0pDOElEaTJnU3Vlc1RZRW81T2FoVHdrc0xaWWFvMEphbHZEdlNwSkNhR2xIbnRjZnZpc2NNaVg2aHBreg?oc=5",
+    "ingest_channel": "google_news_rss"
+  },
+  {
+    "report_id": "REP_45596F022D",
+    "source_url": "Times Now",
+    "headline": "Massive Fire Breaks Out In Noida's Sector 125, One Dead, Several Shops Gutted",
+    "full_text": "Massive Fire Breaks Out In Noida's Sector 125, One Dead, Several Shops Gutted.",
+    "published_at": "2026-10-24T12:30:00",
+    "incident_timestamp": "2026-10-24T12:30:00",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "model_confidence": 0.5,
+    "severity_weight": 3.5,
+    "sector_id": "Sector 125",
+    "sector_name": "Sector 125, Noida",
+    "zone": "Educational / Institutional Hub",
+    "latitude": 28.544,
+    "longitude": 77.332,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": [],
+      "casualty_mentions": [
+        "one"
+      ]
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPcEhyejRpNWVCeHlacWVabGhNenVpeDhjWVFjZ2s5TXVoSllJTFM1Zlc1TnhXT1JucU9semZjbTdUc1dpYnRzbTlRdW5faWF2ZVF0Uno5eVpMT1NMY2hJd0M4dWhVcFlocUppc0V5N3FZMF9sTjhWZjYxQ0hSOTVEYTY0aktPaFlaWWtxSUUwUXlUdmFONUtETHoyQlFVSmlfUEJHOWNzUFVfZU1ScEh2WVFkRnRtb3FyWjZGNlVVVkprckhlWU81aNIBzgFBVV95cUxNcHFMaW1HSmRQT1N1NGVvd3NVOFpIR3NFcEdkNHdGYmhNMmxGVGJIdzhEY0NFLW1aLTZubXpkWDNVbllxVGFXYzRvaVNVVXVqQzVvZWdNYTNjaC1IMDJDUkNoRmZmT0Y3QnpxMkwwelRpWUVfaXZmdzRpTGtQSmxGSGNyeWY1Rm5ENnc5cGRKeUV0bmVYUTQ4S2ZacC1sR2Rnc2YxaGF6OGlkY1lBdHB6aGRQc2xhbHlCbVkxWnVWRHk4Rlp4UFZVTWpVdnFYZw?oc=5",
+    "ingest_channel": "google_news_rss"
+  },
+  {
+    "report_id": "REP_F481F56907",
+    "source_url": "Oneindia",
+    "headline": "Noida Fire: One Dead As Blaze Breaks Out At Krishna Food Point In Sector 125, Multiple LPG Cylinders Spotted",
+    "full_text": "Noida Fire: One Dead As Blaze Breaks Out At Krishna Food Point In Sector 125, Multiple LPG Cylinders Spotted.",
+    "published_at": "2026-10-24T12:30:00",
+    "incident_timestamp": "2026-10-24T12:30:00",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "model_confidence": 1.0,
+    "severity_weight": 3.5,
+    "sector_id": "Sector 125",
+    "sector_name": "Sector 125, Noida",
+    "zone": "Educational / Institutional Hub",
+    "latitude": 28.544,
+    "longitude": 77.332,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Blaze",
+        "Fire"
+      ],
+      "roles_and_actors": [],
+      "casualty_mentions": [
+        "one"
+      ]
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNYld5eWFmN01RdWU2TWdPTWZ1aUZWbzE2UkFMNDFGTEs1dkhUYVFSbVd4c0VieEY1N0NxWWV5bTlOYnJ0dHhubk9qRWoyaFdHRzZxNnJrdzhaU3RDUHR2Zks0T0hfZG5jWThiYk9qTThKMGJoMnMtU2NyUWpQQWgzam5OQlBuMS05emxWVmtjRlQ0VlJCbjd0X1pVaW9kYVd3SVplNkVVbDVtQnlyYm5yYk9UYlY2R0N3NnlpQlJQSDYtTGJRMGtSbEU0dkV6YldEbnF2NGtkWF8?oc=5",
+    "ingest_channel": "google_news_rss"
+  },
+  {
+    "report_id": "REP_7EDD90AE8F",
+    "source_url": "The Week",
+    "headline": "What caused massive fire near Noida Amity University?",
+    "full_text": "What caused massive fire near Noida Amity University?.",
+    "published_at": "2026-10-24T12:30:00",
+    "incident_timestamp": "2026-10-24T12:30:00",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "model_confidence": 0.5,
+    "severity_weight": 3.5,
+    "sector_id": "Sector 125",
+    "sector_name": "Sector 125, Noida",
+    "zone": "Educational / Institutional Hub",
+    "latitude": 28.544,
+    "longitude": 77.332,
+    "spatial_match_type": "LANDMARK_GAZETTEER_MATCH",
+    "spatial_confidence": 0.9,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPS3hONTNZdjBjRjNlWFlDS2RaX3JMaV94eVA2OVJSc2pIdU0yWlY4OHdlbmdnYVpVejZTRzBnRnpLZ0s3d09PN0NlMlN3SUVKdTVPYTVYZ2ROMWZRbHRGdmM2bGZBbEZqdjE5eFhqaV82ZWtkN2tZN0k0M2lXZkU1X2k1am4yRUg5N1BhdW1iVmhxZDlZUy1Lc0NiOXB0cXh0d1MzYWRfNjFzaFpselNKcG5TaHozS2pXc2JFVjE5VTduMzNHeWVwc9IBzgFBVV95cUxOSWdnMVNMRmo0QlNyUS0wV0ZQX2RXaGVPNEhwMzZRVFVXNDJpQ1ozMDdyRVdPRkJnbTFYb0l6ekZORnpBOHR5VkIzT2VVRzlxbHFMV1NPZHlZc19mdzhuWWVtbkpaM2tUR3pCU3A1bGc1VmdIWG51TVp5U2FXQ2o4RGR0a0NTdl9leWhyNEgwQWpPcVZEUUZ4UlJ6dnpCOXo5T0prTGJMLW1LcVlldVYwaUxlaDh4TFdhVDBib0FhZFNES2JzU3VqaUthQkRoZw?oc=5",
+    "ingest_channel": "google_news_rss"
+  },
+  {
+    "report_id": "REP_BF2AA832FD",
+    "source_url": "The Times of India",
+    "headline": "Burglars steal jewellery and cash worth Rs 1.5 crore from two locked flats in Noida Sector 50 highrise",
+    "full_text": "Burglars steal jewellery and cash worth Rs 1.5 crore from two locked flats in Noida Sector 50 highrise.",
+    "published_at": "2026-10-15T12:30:00",
+    "incident_timestamp": "2026-10-15T12:30:00",
     "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
     "temporal_confidence": 0.65,
     "category": "PROPERTY_CRIME",
     "category_name": "Property / Financial Crime",
-    "model_confidence": 0.6128,
+    "model_confidence": 0.9529,
     "severity_weight": 2.5,
-    "sector_id": "Sector 15",
-    "sector_name": "Sector 15, Noida",
-    "zone": "Residential / Commercial",
-    "latitude": 28.583,
-    "longitude": 77.314,
+    "sector_id": "Sector 50",
+    "sector_name": "Sector 50, Noida",
+    "zone": "Residential High-Density",
+    "latitude": 28.577,
+    "longitude": 77.368,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOX0NPNjlJNGNBeUJWemdhd2FVNnFwUlJ3S0NaODJpazBsRFhSV1RKT3V3d1NWeFFpbGMzdzFxUUk0TExwQ0dscXZ2MnJPWkFqd21WYnZYSVpPaDFVOE5nOVFIam5QSEtuNkd6MUlHSFROd245MDQ0WnpTbFlkd2NnTVphaXh0cGJCVFJPajg1elZXSWZTX2RpSWw4NjFZMFZRc0ZsR2V1Ql9qQnoxX0xJQVpTOWthVHhjYjgxd1V6VWtYLUp4Ykh3S0Q5TkUtdE5FY01OZlptbDl4ZElPc3lxNWJoWnR3TjFnYTVLQlZrUGVhb05MaFZfTnpDLXVCYWF1aFZLZktn0gGLAkFVX3lxTE0tUnRMQnZnTWpwS0tsYWNaYVZMeG5NeFlYdmZOYmI2RXFnazFsRDZFYjJYREttZHR1cUZrLVJqNENyZDAxeFRnMlhnY0tYQVNhNlhINHJiVFBnUW9tTUN3Q0VlVDdyN3RmazJEY2E0QnZ1c0EzRHhnQmtJbURSdmQ0SWZvMDNKRGJ0YUpNaTctYXQwN0Y3TkNuenFTZUFuTEpLbHBoWXdSZlZUd2s3SUJBNGdYdkhhZFVjeVhqTjVDZmtmRXhzM1dBbDhJbC1zejF4OHdCQ0FocExkNU9ocGFnTjg3VUxjejcycmJST09kWUxVZVVKNUkzZ1F2UUd5R0hxdUhXV0tHTWMxQQ?oc=5",
+    "ingest_channel": "google_news_rss"
+  },
+  {
+    "report_id": "REP_357766711A",
+    "source_url": "Hindustan Times",
+    "headline": "Thieves steal valuables worth ₹1.5 crore from two locked flats in Noida’s Sector 50 society",
+    "full_text": "Thieves steal valuables worth ₹1.5 crore from two locked flats in Noida’s Sector 50 society.",
+    "published_at": "2026-10-14T12:30:00",
+    "incident_timestamp": "2026-10-14T12:30:00",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "PROPERTY_CRIME",
+    "category_name": "Property / Financial Crime",
+    "model_confidence": 0.6741,
+    "severity_weight": 2.5,
+    "sector_id": "Sector 50",
+    "sector_name": "Sector 50, Noida",
+    "zone": "Residential High-Density",
+    "latitude": 28.577,
+    "longitude": 77.368,
     "spatial_match_type": "EXACT_SECTOR_REGEX",
     "spatial_confidence": 0.96,
     "entities": {
@@ -662,9 +624,78 @@
       "vehicles": [],
       "instruments_or_hazards": [],
       "roles_and_actors": [
-        "Pedestrian"
+        "Thieves"
       ],
       "casualty_mentions": []
-    }
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNRmxjTUVKcjl0aGM3TDNITGRkeWl3clJjTDBGc3JXSHpsLThyeGM3eVB4aE1tSXU4eEtwN1JJcG9yYkZ2ME5xWVRKZDZyNXN5N19pUml4ZkN0WTluRFFrS3p5RlRDVGh0QlFDaU5ISHJqZldxWkNHblZoVFlYVDM3eTdnTjdOU2tBT1BqVlBXVzlmMmVranJoc0xDc003Z18yeXkyM0MzT09vWGMxMEY2eEtNWU9UeHJHSl95TGptWUY0MWpWR205THNnLS1tMGR3Unl1RUdPenlYcldNOXJKdTEtTkduLTJLTmhyNXhWblRTd9IB9wFBVV95cUxOLXB2TG1Fb1EwdUZEM2FrdldnR0llaWZQYkFuRi1iaGl6TVBENkRDbU93dlo2bXExT1RJbk9wbWIzVVYyMy1EaldxekJCMzJ1VFdWQTQ2U09VR01oNmlzb0J1SnpLVlBDZ2Zram9iTFZkb2VmZDVPWC13VkRyd2xvUWVadEhZeGl3Q2Q5VkkzZXFrRVhEZEZhdmtycWl5SHN6ZHdLMlNETy1XUUhGY0M5WldxdGpSWDdWV0RSMkdFTE1NbXdLckYtQjZZOC1rTWQwMkxlOVIwMS1MSFptbUVXa3pTUjVhSUcxZVd2YS15aHQ0UElhSGw4?oc=5",
+    "ingest_channel": "google_news_rss"
+  },
+  {
+    "report_id": "REP_64BE6F55D8",
+    "source_url": "NDTV",
+    "headline": "Sleeper Bus Catches Fire On Noida-Greater Noida Expressway, All Passengers Rescued",
+    "full_text": "Sleeper Bus Catches Fire On Noida-Greater Noida Expressway, All Passengers Rescued.",
+    "published_at": "2026-10-07T15:12:45",
+    "incident_timestamp": "2026-10-07T15:12:45",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "model_confidence": 1.0,
+    "severity_weight": 3.5,
+    "sector_id": "Noida-Greater Noida Expressway",
+    "sector_name": "Noida-Greater Noida Expressway",
+    "zone": "High-Speed Arterial Corridor",
+    "latitude": 28.518,
+    "longitude": 77.382,
+    "spatial_match_type": "LANDMARK_GAZETTEER_MATCH",
+    "spatial_confidence": 0.9,
+    "entities": {
+      "organizations": [],
+      "vehicles": [
+        "Bus"
+      ],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOUC1lQTJDM2E1UXVyUzRxelFIc2NVdDE5MlRybHJaRUlpWUVQUEdnR2NRRkNla193NldnMTN2a0ExaTVvOW12WDJfdmtzM0xyS0VCZ3ZDUDVWbWhUNFpTaFo3SEFJWDFjWFFOVG5hVWdPWVZjcmxxRDFwVnEzQzNmeDZNTktvVHBaT0poc2VtVVJTalNDRDhSREd4eWdmbDEtZ0pyVXVnUUgtSDJTVjNzaWc0bVNzZzJTalhqNWJnS2RfMUtJcDNV?oc=5",
+    "ingest_channel": "google_news_rss"
+  },
+  {
+    "report_id": "REP_2F18C5A4A3",
+    "source_url": "The Statesman",
+    "headline": "Horror at Noida’s Supernova: Airbnb guest falls from Sector 94 high-rise; police probe death",
+    "full_text": "Horror at Noida’s Supernova: Airbnb guest falls from Sector 94 high-rise; police probe death.",
+    "published_at": "2026-10-03T12:30:00",
+    "incident_timestamp": "2026-10-03T12:30:00",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "VIOLENT_CRIME",
+    "category_name": "Violent Crime",
+    "model_confidence": 0.5556,
+    "severity_weight": 5.0,
+    "sector_id": "Sector 94",
+    "sector_name": "Sector 94, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.551,
+    "longitude": 77.3238,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    },
+    "category_source": "classifier",
+    "article_url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQU3htVGN0M3FtSE1vRmxQMlJLMFRGd2xsS0M2cTdRaUE2WVVXTU1ZY25xTktmZTNqS0I1Nm5VRjlvQUtQbkV1a1k3Vk80QUszNWw4X3Z3bmFuMTRaeWJ2MW0zUE9MQzdvQlVFYWlZZkRUTkJOT0FMNnRNanM3SFE2U0ItdjdPaUFqQXFwOEJhM2x4bGZxeUxIOV9vT2J4ajBUT0I1Q0QxcW9LUEI5VkxlLWk1U0g0YWRGNU9wczB4YjVseTIwWWNmS0pBbEN6YmhsOEJvSzlYTDktWlJYMGRJX3V30gHnAUFVX3lxTE5NMHJNaFZWeWZocVFXRGRTUXhaXzZhYTBFTU5Sd0VSNzg4MlV1VG53emU0UGs5QmQ0SmljZ0lRVlVUb2xEUUhhWXQxVUxJaFp3UWxfWUZSdXFtaDZHckdydWtnZEFRanA2UWhzU2xFSy1QQ2hyQkhudWhDLVZGUWZNR25WaVloYmM5VG9USEtyM2ZpejRlaDVacG5zTDVDaXN4Z19DVTVlMEIzMVZMRmFiNDZIa1c4X0hQTDZxWjFVTC1HTzVWMW5zWVJfWUNSMjl1R0dack9WVXJhWTF5VGQwWVZSYkpWZw?oc=5",
+    "ingest_channel": "google_news_rss"
   }
 ]
