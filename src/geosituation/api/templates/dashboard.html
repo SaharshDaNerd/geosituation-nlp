@@ -354,6 +354,10 @@
           <button data-view="density">Density</button>
           <button data-view="clusters">Clusters</button>
         </div>
+        <div class="segmented" id="basemap-switch">
+          <button class="active" data-bm="esri" title="Clean Esri Canvas (No key required, zero watermarks)">Esri</button>
+          <button data-bm="carto" title="CARTO Basemap (With API key)">CARTO</button>
+        </div>
       </div>
       <div class="legend floating" id="legend"></div>
     </main>
@@ -536,17 +540,35 @@
     }
 
     // ------------------------------------------------------------------ map
-    function setBasemap() {
+    let currentBasemap = localStorage.getItem("geosituation_basemap") || "esri";
+
+    function setBasemap(provider) {
       if (baseLayer) map.removeLayer(baseLayer);
       const key = "{{ carto_api_key|default('') }}".trim();
-      if (key) {
-        // CARTO Positron / Dark Matter without labels (needs CARTO_API_KEY in .env).
+      if (provider) {
+        currentBasemap = provider;
+        localStorage.setItem("geosituation_basemap", provider);
+      } else {
+        provider = currentBasemap;
+      }
+
+      // Update switcher button state
+      document.querySelectorAll("#basemap-switch button").forEach(b => {
+        b.classList.toggle("active", b.dataset.bm === provider);
+      });
+
+      if (provider === "carto") {
+        // CARTO Positron / Dark Matter without labels.
+        // NOTE: CARTO's mandatory query param is ?key= (passing ?api_key= causes CARTO to ignore it and show the watermark).
+        // We pass ?key= (and &api_key= for backwards compatibility).
         const style = (isDark() ? "dark" : "light") + "_nolabels";
-        baseLayer = L.tileLayer(`https://{s}.basemaps.cartocdn.com/rastertiles/${style}/{z}/{x}/{y}{r}.png?api_key=` + encodeURIComponent(key), {
+        const encodedKey = encodeURIComponent(key);
+        const keyParam = key ? `?key=${encodedKey}&api_key=${encodedKey}` : "";
+        baseLayer = L.tileLayer(`https://{s}.basemaps.cartocdn.com/rastertiles/${style}/{z}/{x}/{y}{r}.png${keyParam}`, {
           attribution: "&copy; OpenStreetMap &copy; CARTO", subdomains: "abcd", maxZoom: 19
         });
       } else {
-        // Keyless default: Esri light / dark gray canvas (no labels).
+        // Clean default: Esri light / dark gray canvas (completely free, zero watermarks, no key required).
         const style = isDark() ? "World_Dark_Gray_Base" : "World_Light_Gray_Base";
         baseLayer = L.tileLayer(`https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/${style}/MapServer/tile/{z}/{y}/{x}`, {
           attribution: "Tiles &copy; Esri", maxNativeZoom: 16, maxZoom: 18
@@ -931,6 +953,7 @@
       if (globalState) { applyView(); renderLegend(); }
     }
     document.querySelectorAll("#view-switch button").forEach(b => b.addEventListener("click", () => setView(b.dataset.view)));
+    document.querySelectorAll("#basemap-switch button").forEach(b => b.addEventListener("click", () => setBasemap(b.dataset.bm)));
 
     function filterCategory(cat) {
       currentCategoryFilter = cat;

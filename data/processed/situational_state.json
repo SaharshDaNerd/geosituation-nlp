@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-26T12:57:03.574067",
+  "last_updated": "2026-11-26T14:46:27.179065",
   "executive_summary": {
-    "timestamp": "2026-11-26T12:57:03.579001",
+    "timestamp": "2026-11-26T14:46:27.182729",
     "level_1_perception": {
       "headline": "Current Environmental Cues & Reported Incidents",
       "total_canonical_events": 13,
@@ -20,22 +20,22 @@
       "top_activity_sectors": [
         {
           "sector": "Sector 6, Noida",
-          "sai": 2.78,
+          "sai": 2.76,
           "incidents": 1
         },
         {
           "sector": "Sector 105, Noida",
-          "sai": 2.12,
+          "sai": 2.1,
           "incidents": 1
         },
         {
           "sector": "Sector 63, Noida",
-          "sai": 1.58,
+          "sai": 1.57,
           "incidents": 3
         },
         {
           "sector": "Sector 50, Noida",
-          "sai": 1.32,
+          "sai": 1.31,
           "incidents": 2
         },
         {
@@ -47,8 +47,8 @@
       "active_baseline_anomalies_count": 3,
       "anomaly_highlights": [
         "Sector 105 exhibits an anomaly Z-score of 1.59\u03c3 (1 reports in 7d vs 0.2 expected). Predominant pattern: PROPERTY_CRIME.",
-        "Sector 6 exhibits an anomaly Z-score of 1.59\u03c3 (1 reports in 7d vs 0.2 expected). Predominant pattern: CIVIC_HAZARD.",
-        "Sector 50 exhibits an anomaly Z-score of 1.59\u03c3 (1 reports in 7d vs 0.2 expected). Predominant pattern: PROPERTY_CRIME."
+        "Sector 50 exhibits an anomaly Z-score of 1.59\u03c3 (1 reports in 7d vs 0.2 expected). Predominant pattern: PROPERTY_CRIME.",
+        "Sector 6 exhibits an anomaly Z-score of 1.59\u03c3 (1 reports in 7d vs 0.2 expected). Predominant pattern: CIVIC_HAZARD."
       ],
       "system_data_confidence": "HIGH (Deduplicated multi-source corpus anchored to Noida Gazetteer)"
     },
@@ -637,7 +637,7 @@
       "zone": "Urban Sector",
       "latitude": 28.5938,
       "longitude": 77.3205,
-      "sai_score": 2.78,
+      "sai_score": 2.76,
       "raw_incident_count": 1,
       "decayed_incident_count": 0.8,
       "category_breakdown": {
@@ -653,8 +653,8 @@
           "headline": "Massive Fire Guts Plastic Decorative Items Factory in Noida's Sector 6; No Casualties Reported",
           "category": "CIVIC_HAZARD",
           "timestamp": "2026-11-24T07:37:42",
-          "impact": 2.783,
-          "temporal_weight": 0.803
+          "impact": 2.762,
+          "temporal_weight": 0.797
         }
       ],
       "activity_level": "LOW_ACTIVITY_NORMAL",
@@ -1242,8 +1242,8 @@
           "headline": "Noida Sector 37 residents raise security concerns after burglary in society",
           "category": "PROPERTY_CRIME",
           "timestamp": "2026-11-01T12:30:00",
-          "impact": 0.21,
-          "temporal_weight": 0.084
+          "impact": 0.208,
+          "temporal_weight": 0.083
         }
       ],
       "activity_level": "LOW_ACTIVITY_NORMAL",
@@ -1495,9 +1495,9 @@
       "zone": "Residential High-Density",
       "latitude": 28.577,
       "longitude": 77.368,
-      "sai_score": 1.32,
+      "sai_score": 1.31,
       "raw_incident_count": 2,
-      "decayed_incident_count": 0.53,
+      "decayed_incident_count": 0.52,
       "category_breakdown": {
         "VIOLENT_CRIME": 0,
         "PROPERTY_CRIME": 2,
@@ -1511,8 +1511,8 @@
           "headline": "Three arrested for \u20b91.5 crore burglary in Noida\u2019s Sector 50 society, police hunt fourth suspect",
           "category": "PROPERTY_CRIME",
           "timestamp": "2026-11-19T19:04:05",
-          "impact": 1.281,
-          "temporal_weight": 0.513
+          "impact": 1.271,
+          "temporal_weight": 0.509
         },
         {
           "event_id": "EVT_BF2AA832FD",
@@ -1520,7 +1520,7 @@
           "category": "PROPERTY_CRIME",
           "timestamp": "2026-10-15T12:30:00",
           "impact": 0.038,
-          "temporal_weight": 0.016
+          "temporal_weight": 0.015
         }
       ],
       "activity_level": "LOW_ACTIVITY_NORMAL",
@@ -1752,9 +1752,9 @@
       "zone": "Major Industrial & Tech Zone",
       "latitude": 28.625,
       "longitude": 77.382,
-      "sai_score": 1.58,
+      "sai_score": 1.57,
       "raw_incident_count": 3,
-      "decayed_incident_count": 0.79,
+      "decayed_incident_count": 0.78,
       "category_breakdown": {
         "VIOLENT_CRIME": 1,
         "PROPERTY_CRIME": 0,
@@ -1768,24 +1768,24 @@
           "headline": "Man dies after his bike crashes into tree in Noida Sec 63",
           "category": "TRAFFIC_INCIDENT",
           "timestamp": "2026-11-19T07:39:00",
-          "impact": 0.977,
-          "temporal_weight": 0.489
+          "impact": 0.97,
+          "temporal_weight": 0.486
         },
         {
           "event_id": "EVT_A9B073C770",
           "headline": "Noida: Two workers rescued after fire breaks out at garment export company in Sector 63",
           "category": "CIVIC_HAZARD",
           "timestamp": "2026-11-10T13:30:00",
-          "impact": 0.12,
-          "temporal_weight": 0.206
+          "impact": 0.119,
+          "temporal_weight": 0.204
         },
         {
           "event_id": "EVT_9A66F239C4",
           "headline": "Noida police arrest four suspects after late-night encounter in Sector 63",
           "category": "VIOLENT_CRIME",
           "timestamp": "2026-11-02T21:00:00",
-          "impact": 0.48,
-          "temporal_weight": 0.096
+          "impact": 0.476,
+          "temporal_weight": 0.095
         }
       ],
       "activity_level": "LOW_ACTIVITY_NORMAL",
@@ -2226,9 +2226,9 @@
       "zone": "Urban Sector",
       "latitude": 28.5316,
       "longitude": 77.3692,
-      "sai_score": 2.12,
+      "sai_score": 2.1,
       "raw_incident_count": 1,
-      "decayed_incident_count": 0.85,
+      "decayed_incident_count": 0.84,
       "category_breakdown": {
         "VIOLENT_CRIME": 0,
         "PROPERTY_CRIME": 1,
@@ -2242,8 +2242,8 @@
           "headline": "Burglaries on the rise, Noida residents seek night patrols: DDRWA and Sector 105 RWA seek mandatory verif",
           "category": "PROPERTY_CRIME",
           "timestamp": "2026-11-24T21:00:00",
-          "impact": 2.118,
-          "temporal_weight": 0.848
+          "impact": 2.102,
+          "temporal_weight": 0.842
         }
       ],
       "activity_level": "LOW_ACTIVITY_NORMAL",
@@ -2371,7 +2371,7 @@
           "headline": "Noida Sector 125 fire: Blaze at hotel spreads to nearby eateries, firefighting ops underway",
           "category": "CIVIC_HAZARD",
           "timestamp": "2026-10-24T12:30:00",
-          "impact": 0.133,
+          "impact": 0.132,
           "temporal_weight": 0.038
         }
       ],
@@ -2540,7 +2540,7 @@
           "headline": "Noida Sector 150 Air Pollution Protest Targets Heavy Trucks",
           "category": "PUBLIC_DISRUPTION",
           "timestamp": "2026-10-25T00:54:32",
-          "impact": 0.08,
+          "impact": 0.079,
           "temporal_weight": 0.04
         }
       ],
@@ -2589,8 +2589,8 @@
           "headline": "Man loses control, crashes car into another on Noida Expressway, dies",
           "category": "TRAFFIC_INCIDENT",
           "timestamp": "2026-10-31T12:30:00",
-          "impact": 0.152,
-          "temporal_weight": 0.076
+          "impact": 0.151,
+          "temporal_weight": 0.075
         },
         {
           "event_id": "EVT_64BE6F55D8",
@@ -2617,16 +2617,6 @@
       "explanation": "Sector 105 exhibits an anomaly Z-score of 1.59\u03c3 (1 reports in 7d vs 0.2 expected). Predominant pattern: PROPERTY_CRIME."
     },
     {
-      "sector_id": "Sector 6",
-      "z_score": 1.59,
-      "recent_count": 1,
-      "expected_count": 0.23,
-      "severity": "ELEVATED_SURGE",
-      "is_anomaly": true,
-      "dominant_category": "CIVIC_HAZARD",
-      "explanation": "Sector 6 exhibits an anomaly Z-score of 1.59\u03c3 (1 reports in 7d vs 0.2 expected). Predominant pattern: CIVIC_HAZARD."
-    },
-    {
       "sector_id": "Sector 50",
       "z_score": 1.59,
       "recent_count": 1,
@@ -2635,6 +2625,16 @@
       "is_anomaly": true,
       "dominant_category": "PROPERTY_CRIME",
       "explanation": "Sector 50 exhibits an anomaly Z-score of 1.59\u03c3 (1 reports in 7d vs 0.2 expected). Predominant pattern: PROPERTY_CRIME."
+    },
+    {
+      "sector_id": "Sector 6",
+      "z_score": 1.59,
+      "recent_count": 1,
+      "expected_count": 0.23,
+      "severity": "ELEVATED_SURGE",
+      "is_anomaly": true,
+      "dominant_category": "CIVIC_HAZARD",
+      "explanation": "Sector 6 exhibits an anomaly Z-score of 1.59\u03c3 (1 reports in 7d vs 0.2 expected). Predominant pattern: CIVIC_HAZARD."
     },
     {
       "sector_id": "Noida-Greater Noida Expressway",
@@ -2672,7 +2672,7 @@
     {
       "sector_id": "Sector 6",
       "sector_name": "Sector 6, Noida",
-      "current_sai": 2.78,
+      "current_sai": 2.76,
       "raw_incidents": 1,
       "anomaly_z_score": 1.59,
       "projected_7d_incidents": 0.4,
@@ -2683,7 +2683,7 @@
     {
       "sector_id": "Sector 105",
       "sector_name": "Sector 105, Noida",
-      "current_sai": 2.12,
+      "current_sai": 2.1,
       "raw_incidents": 1,
       "anomaly_z_score": 1.59,
       "projected_7d_incidents": 0.4,
@@ -2694,7 +2694,7 @@
     {
       "sector_id": "Sector 63",
       "sector_name": "Sector 63, Noida",
-      "current_sai": 1.58,
+      "current_sai": 1.57,
       "raw_incidents": 3,
       "anomaly_z_score": -0.84,
       "projected_7d_incidents": 0.4,
@@ -2705,7 +2705,7 @@
     {
       "sector_id": "Sector 50",
       "sector_name": "Sector 50, Noida",
-      "current_sai": 1.32,
+      "current_sai": 1.31,
       "raw_incidents": 2,
       "anomaly_z_score": 1.59,
       "projected_7d_incidents": 0.3,
