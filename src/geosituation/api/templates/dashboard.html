@@ -2,715 +2,1010 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GeoSituation-NLP | Situational Awareness System</title>
-  
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <!-- Leaflet CSS & JS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <title>GeoSituation-NLP · Noida</title>
+
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <!-- Leaflet Heatmap Plugin -->
   <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
 
   <style>
-    body { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-    #map { height: 100%; width: 100%; z-index: 10; }
-    .custom-scrollbar::-webkit-scrollbar { width: 6px; }
-    .custom-scrollbar::-webkit-scrollbar-track { background: #0f172a; }
-    .custom-scrollbar::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
-    .pulse-ring {
-      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    :root {
+      --bg: #f2f2f7;
+      --card: #ffffff;
+      --card-2: #f7f7fa;
+      --bar: rgba(249, 249, 251, 0.78);
+      --text: #000000;
+      --text-2: rgba(60, 60, 67, 0.62);
+      --text-3: rgba(60, 60, 67, 0.32);
+      --sep: rgba(60, 60, 67, 0.14);
+      --fill: rgba(120, 120, 128, 0.12);
+      --fill-2: rgba(120, 120, 128, 0.2);
+      --blue: #007aff;
+      --green: #34c759;
+      --yellow: #ffcc00;
+      --orange: #ff9500;
+      --red: #ff3b30;
+      --purple: #af52de;
+      --indigo: #5856d6;
+      --teal: #30b0c7;
+      --cell-quiet: rgba(120, 120, 128, 0.10);
+      --cell-stroke: rgba(60, 60, 67, 0.28);
+      --shadow: 0 1px 2px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.06);
+      --radius: 14px;
     }
-    @keyframes pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: .5; transform: scale(1.15); }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --card: #1c1c1e;
+        --card-2: #2c2c2e;
+        --bar: rgba(22, 22, 24, 0.78);
+        --text: #ffffff;
+        --text-2: rgba(235, 235, 245, 0.6);
+        --text-3: rgba(235, 235, 245, 0.3);
+        --sep: rgba(84, 84, 88, 0.5);
+        --fill: rgba(120, 120, 128, 0.24);
+        --fill-2: rgba(120, 120, 128, 0.36);
+        --blue: #0a84ff;
+        --green: #30d158;
+        --yellow: #ffd60a;
+        --orange: #ff9f0a;
+        --red: #ff453a;
+        --purple: #bf5af2;
+        --indigo: #5e5ce6;
+        --teal: #40c8e0;
+        --cell-quiet: rgba(235, 235, 245, 0.06);
+        --cell-stroke: rgba(235, 235, 245, 0.26);
+        --shadow: 0 8px 24px rgba(0,0,0,0.4);
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      font-size: 15px;
+      line-height: 1.35;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    button, input, textarea { font: inherit; color: inherit; }
+    button { cursor: pointer; border: 0; background: none; padding: 0; }
+
+    /* ---------- Navigation bar ---------- */
+    .navbar {
+      height: 56px;
+      flex: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      background: var(--bar);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 0.5px solid var(--sep);
+      z-index: 40;
+    }
+    .navbar h1 { font-size: 17px; font-weight: 600; margin: 0; letter-spacing: -0.2px; }
+    .navbar .sub { font-size: 12px; color: var(--text-2); }
+    .nav-actions { display: flex; gap: 8px; align-items: center; }
+    .btn-text { color: var(--blue); font-size: 15px; padding: 6px 10px; border-radius: 8px; }
+    .btn-text:hover { background: var(--fill); }
+    .btn-fill {
+      background: var(--blue); color: #fff; font-weight: 600; font-size: 14px;
+      padding: 7px 14px; border-radius: 999px;
+    }
+    .btn-fill:hover { filter: brightness(1.08); }
+    .btn-fill:disabled { opacity: 0.5; cursor: default; }
+
+    /* ---------- Layout ---------- */
+    .layout {
+      flex: 1;
+      min-height: 0;
+      display: grid;
+      grid-template-columns: 340px 1fr 340px;
+    }
+    .pane {
+      min-height: 0;
+      overflow-y: auto;
+      padding: 16px 16px 32px;
+      scrollbar-width: thin;
+    }
+    .pane-left { border-right: 0.5px solid var(--sep); }
+    .pane-right { border-left: 0.5px solid var(--sep); }
+    .map-wrap { position: relative; min-height: 0; }
+    #map { position: absolute; inset: 0; background: var(--bg); }
+
+    /* ---------- iOS grouped lists ---------- */
+    .section-title {
+      font-size: 22px; font-weight: 700; letter-spacing: -0.3px;
+      margin: 4px 4px 10px; display: flex; align-items: baseline; justify-content: space-between;
+    }
+    .section-title .count { font-size: 13px; font-weight: 400; color: var(--text-2); }
+    .group-label {
+      font-size: 12px; text-transform: uppercase; letter-spacing: 0.3px;
+      color: var(--text-2); margin: 22px 16px 6px;
+    }
+    .group-label:first-child { margin-top: 4px; }
+    .group-footer { font-size: 12px; color: var(--text-2); margin: 6px 16px 0; }
+    .group {
+      background: var(--card);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .row {
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      padding: 11px 16px; position: relative; font-size: 15px;
+    }
+    .row + .row::before {
+      content: ""; position: absolute; top: 0; left: 16px; right: 0;
+      border-top: 0.5px solid var(--sep);
+    }
+    .row .muted { color: var(--text-2); }
+    .row.tap { cursor: pointer; }
+    .row.tap:hover { background: var(--card-2); }
+    .row-main { min-width: 0; flex: 1; }
+    .row-title { font-weight: 500; }
+    .row-sub { font-size: 13px; color: var(--text-2); margin-top: 2px; }
+    .num { font-variant-numeric: tabular-nums; }
+    .empty { padding: 18px 16px; color: var(--text-2); font-size: 14px; text-align: center; }
+
+    /* ---------- Segmented control ---------- */
+    .segmented {
+      display: flex; background: var(--fill); border-radius: 9px; padding: 2px; gap: 2px;
+      overflow-x: auto; scrollbar-width: none;
+    }
+    .segmented::-webkit-scrollbar { display: none; }
+    .segmented button {
+      flex: 1; white-space: nowrap; font-size: 13px; font-weight: 500;
+      padding: 5px 10px; border-radius: 7px; color: var(--text);
+    }
+    .segmented button.active {
+      background: var(--card); box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 0 0 0.5px rgba(0,0,0,0.04);
+      font-weight: 600;
+    }
+    @media (prefers-color-scheme: dark) {
+      .segmented button.active { background: #636366; }
+    }
+
+    /* ---------- News (text only) ---------- */
+    .news-item { padding: 12px 16px; cursor: pointer; position: relative; }
+    .news-item + .news-item::before {
+      content: ""; position: absolute; top: 0; left: 16px; right: 0;
+      border-top: 0.5px solid var(--sep);
+    }
+    .news-item:hover { background: var(--card-2); }
+    .news-item.selected { background: var(--fill); }
+    .news-meta {
+      display: flex; align-items: center; gap: 6px;
+      font-size: 12px; color: var(--text-2); margin-bottom: 3px;
+    }
+    .dot { width: 8px; height: 8px; border-radius: 50%; flex: none; display: inline-block; }
+    .news-headline { font-size: 15px; font-weight: 600; line-height: 1.3; letter-spacing: -0.1px; }
+    .news-body {
+      font-size: 14px; color: var(--text-2); margin-top: 3px; line-height: 1.4;
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .news-item.selected .news-body { -webkit-line-clamp: unset; display: block; }
+    .news-foot { font-size: 12px; color: var(--text-3); margin-top: 6px; }
+    .news-item.selected .news-foot { color: var(--text-2); }
+    .verified { color: var(--green); font-weight: 500; }
+
+    /* ---------- Metrics ---------- */
+    .metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .metric { background: var(--card); border-radius: var(--radius); padding: 12px 14px; }
+    .metric .label { font-size: 12px; color: var(--text-2); }
+    .metric .value { font-size: 26px; font-weight: 700; letter-spacing: -0.5px; margin-top: 2px; }
+    .metric .value.small { font-size: 19px; }
+
+    /* ---------- Bars ---------- */
+    .bar-track { height: 4px; border-radius: 2px; background: var(--fill); margin-top: 7px; overflow: hidden; }
+    .bar-fill { height: 100%; border-radius: 2px; }
+    .pill {
+      font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 999px; white-space: nowrap;
+    }
+
+    /* ---------- Map overlays ---------- */
+    .map-top {
+      position: absolute; top: 14px; left: 50%; transform: translateX(-50%);
+      z-index: 500; display: flex; gap: 8px; align-items: center;
+    }
+    .floating {
+      background: var(--bar);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      border-radius: 12px; box-shadow: var(--shadow);
+      border: 0.5px solid var(--sep);
+    }
+    .map-top .segmented { background: transparent; padding: 3px; }
+    .map-top .segmented button { padding: 6px 14px; }
+    .legend {
+      position: absolute; left: 14px; bottom: 14px; z-index: 500;
+      padding: 10px 12px; font-size: 12px; color: var(--text-2);
+    }
+    .legend-row { display: flex; align-items: center; gap: 8px; margin-top: 4px; }
+    .legend-row:first-child { margin-top: 0; }
+    .swatch { width: 14px; height: 10px; border-radius: 3px; border: 0.5px solid var(--cell-stroke); }
+    .ramp { width: 120px; height: 8px; border-radius: 4px; }
+    .sector-label {
+      background: none; border: 0; box-shadow: none;
+      font: 600 11px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--text); text-align: center; pointer-events: none;
+      text-shadow: 0 0 3px var(--bg), 0 0 3px var(--bg), 0 0 2px var(--bg);
+      white-space: nowrap;
+    }
+    .sector-label.quiet { color: var(--text-2); font-weight: 500; }
+    .corridor-label {
+      display: inline-block; transform: translate(-50%, -50%);
+      font: 500 11px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      padding: 4px 8px; border-radius: 999px; white-space: nowrap;
+      background: var(--card); color: var(--text); border: 0.5px solid var(--cell-stroke);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+    }
+
+    /* Leaflet theming */
+    .leaflet-container { font-family: inherit; background: var(--bg); }
+    .leaflet-tooltip.ios-tip {
+      background: var(--card); color: var(--text); border: 0; border-radius: 10px;
+      box-shadow: var(--shadow); padding: 8px 10px; font-size: 13px; line-height: 1.35;
+    }
+    .leaflet-tooltip.ios-tip::before { display: none; }
+    .leaflet-bar { border: 0 !important; box-shadow: var(--shadow) !important; border-radius: 10px !important; overflow: hidden; }
+    .leaflet-bar a { background: var(--bar) !important; color: var(--text) !important; border-bottom-color: var(--sep) !important; backdrop-filter: blur(20px); }
+    .leaflet-control-attribution { background: var(--bar) !important; color: var(--text-2) !important; border-radius: 6px 0 0 0; }
+    .leaflet-control-attribution a { color: var(--text-2) !important; }
+
+    /* ---------- Sheet (modal) ---------- */
+    .sheet-backdrop {
+      position: fixed; inset: 0; background: rgba(0,0,0,0.32); z-index: 1000;
+      display: none; align-items: center; justify-content: center; padding: 16px;
+    }
+    .sheet-backdrop.open { display: flex; }
+    .sheet {
+      background: var(--bg); width: 100%; max-width: 520px; border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden;
+      animation: rise 0.22s ease-out;
+    }
+    @keyframes rise { from { transform: translateY(16px); opacity: 0; } to { transform: none; opacity: 1; } }
+    .sheet-head {
+      display: grid; grid-template-columns: 1fr auto 1fr; align-items: center;
+      padding: 12px 8px; border-bottom: 0.5px solid var(--sep); background: var(--bar);
+    }
+    .sheet-head h2 { font-size: 17px; font-weight: 600; margin: 0; }
+    .sheet-head .right { justify-self: end; }
+    .sheet-body { padding: 8px 16px 20px; }
+    .field { display: block; width: 100%; border: 0; outline: 0; background: transparent; padding: 12px 16px; font-size: 15px; resize: vertical; }
+    .field::placeholder { color: var(--text-3); }
+    .field + .field { border-top: 0.5px solid var(--sep); }
+    .sheet-note { font-size: 13px; color: var(--text-2); margin: 8px 16px 0; min-height: 18px; }
+    .sheet-note.error { color: var(--red); }
+
+    .toast {
+      position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%) translateY(20px);
+      background: var(--card); color: var(--text); box-shadow: var(--shadow);
+      padding: 10px 16px; border-radius: 999px; font-size: 14px; font-weight: 500;
+      opacity: 0; pointer-events: none; transition: all 0.25s ease; z-index: 1100;
+    }
+    .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+    .spin { animation: spin 0.8s linear infinite; display: inline-block; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 1100px) {
+      .layout { grid-template-columns: 300px 1fr 300px; }
+    }
+    @media (max-width: 860px) {
+      body { overflow: auto; }
+      body { display: block; }
+      .navbar { position: sticky; top: 0; }
+      .layout { display: flex; flex-direction: column; }
+      .map-wrap { height: 60vh; flex: none; order: -1; }
+      .pane { overflow: visible; border: 0; flex: none; }
+      .legend { padding: 8px 10px; font-size: 11px; }
+      .navbar { padding: 0 16px; }
+      .navbar .sub { display: none; }
     }
   </style>
 </head>
-<body class="bg-slate-950 text-slate-100 h-screen flex flex-col overflow-hidden">
+<body>
 
-  <!-- Top Navigation Bar -->
-  <header class="h-16 bg-slate-900/90 border-b border-slate-800 px-6 flex items-center justify-between z-30 backdrop-blur-md">
-    <div class="flex items-center space-x-4">
-      <div class="w-10 h-10 rounded-xl bg-indigo-600/20 border border-indigo-500/40 flex items-center justify-center text-indigo-400">
-        <i data-lucide="shield-alert" class="w-5 h-5"></i>
-      </div>
-      <div>
-        <div class="flex items-center space-x-2">
-          <h1 class="font-bold text-lg tracking-tight text-white">GeoSituation-NLP</h1>
-          <span class="px-2 py-0.5 text-xs font-semibold bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 rounded-full">Endsley's Model</span>
-        </div>
-        <p class="text-xs text-slate-400">Geospatial Incident Intelligence &bull; Noida Testbed (Sectors 1–168)</p>
-      </div>
+  <header class="navbar">
+    <div>
+      <h1>GeoSituation-NLP</h1>
+      <div class="sub">Noida situational awareness · <span id="updated-at">—</span></div>
     </div>
-
-    <!-- Middle Indicator: Cognitive Levels Status -->
-    <div class="hidden md:flex items-center space-x-6 text-xs">
-      <div class="flex items-center space-x-2">
-        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
-        <span class="text-slate-300 font-medium">L1: Perception (NER + DistilBERT)</span>
-      </div>
-      <div class="text-slate-600">&bull;</div>
-      <div class="flex items-center space-x-2">
-        <span class="w-2.5 h-2.5 rounded-full bg-blue-400"></span>
-        <span class="text-slate-300 font-medium">L2: Comprehension (Coreference + SAI)</span>
-      </div>
-      <div class="text-slate-600">&bull;</div>
-      <div class="flex items-center space-x-2">
-        <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
-        <span class="text-slate-300 font-medium">L3: Projection (ST-KDE & DBSCAN)</span>
-      </div>
-    </div>
-
-    <!-- Action Buttons -->
-    <div class="flex items-center space-x-3">
-      <button onclick="openIngestModal()" class="px-3.5 py-1.5 text-xs font-medium rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white transition flex items-center space-x-1.5 shadow-lg shadow-indigo-600/20">
-        <i data-lucide="plus-circle" class="w-4 h-4"></i>
-        <span>Ingest News Article</span>
-      </button>
-      <button onclick="refreshData()" class="p-2 text-slate-400 hover:text-white bg-slate-800 rounded-lg transition" title="Refresh State">
-        <i data-lucide="refresh-cw" class="w-4 h-4" id="refresh-icon"></i>
-      </button>
+    <div class="nav-actions">
+      <button class="btn-text" onclick="refreshData()" title="Refresh" aria-label="Refresh"><span id="refresh-icon">↻</span></button>
+      <button class="btn-fill" onclick="openSheet()">Add News</button>
     </div>
   </header>
 
-  <!-- Main Three-Pane Layout -->
-  <div class="flex-1 flex overflow-hidden">
+  <div class="layout">
 
-    <!-- LEFT PANE: Level 1 Perception Stream -->
-    <aside class="w-80 md:w-96 bg-slate-900/70 border-r border-slate-800 flex flex-col z-20">
-      <div class="p-4 border-b border-slate-800 flex items-center justify-between">
-        <div class="flex items-center space-x-2">
-          <i data-lucide="radio" class="w-4 h-4 text-emerald-400"></i>
-          <span class="text-xs font-bold uppercase tracking-wider text-slate-300">Level 1: Perception Stream</span>
-        </div>
-        <span id="incident-count-badge" class="px-2 py-0.5 text-xs font-mono bg-slate-800 rounded text-slate-300">0 events</span>
+    <!-- News (Level 1 Perception) -->
+    <aside class="pane pane-left">
+      <div class="section-title">News <span class="count" id="incident-count-badge">0</span></div>
+      <div class="segmented" id="category-filter" style="margin-bottom: 14px;">
+        <button class="active" data-cat="ALL">All</button>
+        <button data-cat="VIOLENT_CRIME">Violent</button>
+        <button data-cat="PROPERTY_CRIME">Property</button>
+        <button data-cat="TRAFFIC_INCIDENT">Traffic</button>
+        <button data-cat="CIVIC_HAZARD">Hazard</button>
+        <button data-cat="PUBLIC_DISRUPTION">Public</button>
       </div>
-
-      <!-- Category Filter Pills -->
-      <div class="px-4 py-2.5 border-b border-slate-800/60 bg-slate-900/40 flex items-center space-x-1.5 overflow-x-auto text-xs custom-scrollbar">
-        <button onclick="filterCategory('ALL')" class="category-filter-btn px-2.5 py-1 rounded-md bg-indigo-600 text-white font-medium whitespace-nowrap" data-cat="ALL">All</button>
-        <button onclick="filterCategory('VIOLENT_CRIME')" class="category-filter-btn px-2.5 py-1 rounded-md bg-slate-800 text-slate-400 hover:text-white font-medium whitespace-nowrap" data-cat="VIOLENT_CRIME">Violent</button>
-        <button onclick="filterCategory('PROPERTY_CRIME')" class="category-filter-btn px-2.5 py-1 rounded-md bg-slate-800 text-slate-400 hover:text-white font-medium whitespace-nowrap" data-cat="PROPERTY_CRIME">Property</button>
-        <button onclick="filterCategory('TRAFFIC_INCIDENT')" class="category-filter-btn px-2.5 py-1 rounded-md bg-slate-800 text-slate-400 hover:text-white font-medium whitespace-nowrap" data-cat="TRAFFIC_INCIDENT">Traffic</button>
-        <button onclick="filterCategory('CIVIC_HAZARD')" class="category-filter-btn px-2.5 py-1 rounded-md bg-slate-800 text-slate-400 hover:text-white font-medium whitespace-nowrap" data-cat="CIVIC_HAZARD">Hazard</button>
-      </div>
-
-      <!-- Incident Feed List -->
-      <div id="incident-feed" class="flex-1 overflow-y-auto p-3 space-y-3 custom-scrollbar">
-        <div class="text-center py-10 text-slate-500 text-xs">Loading perceived incidents...</div>
+      <div id="sector-filter-chip" style="display:none; margin: -4px 0 12px;"></div>
+      <div class="group" id="incident-feed">
+        <div class="empty">Loading…</div>
       </div>
     </aside>
 
-    <!-- CENTER PANE: Interactive Geospatial GIS Map -->
-    <main class="flex-1 relative flex flex-col">
-      <!-- Map Container -->
-      <div id="map" class="bg-slate-950"></div>
-
-      <!-- Floating Map Layer Controls -->
-      <div class="absolute top-4 right-4 z-20 bg-slate-900/90 border border-slate-800 rounded-xl p-3 shadow-2xl backdrop-blur-md space-y-2 text-xs">
-        <div class="font-bold text-slate-300 pb-1 border-b border-slate-800 flex items-center space-x-2">
-          <i data-lucide="layers" class="w-3.5 h-3.5 text-indigo-400"></i>
-          <span>GIS Visualization Layers</span>
-        </div>
-        <div>
-          <label class="block text-[10px] uppercase font-bold text-slate-400 mb-1">Base Map Theme</label>
-          <select id="basemap-selector" onchange="switchBasemap(this.value)" class="w-full bg-slate-950 border border-slate-800 rounded px-2 py-1 text-xs text-slate-200 focus:outline-none focus:border-indigo-500">
-            <option value="esri_dark" selected>🌙 Dark Canvas (Esri - Clean, No Key Required)</option>
-            <option value="carto_dark">🛰️ Carto Dark Matter (With API Key)</option>
-            <option value="osm">🗺️ OpenStreetMap (Standard Street Map)</option>
-          </select>
-        </div>
-        <div class="pt-1 border-t border-slate-800/80 space-y-1.5">
-          <label class="flex items-center space-x-2 cursor-pointer hover:text-white text-slate-300">
-            <input type="checkbox" id="toggle-markers" checked onchange="updateLayers()" class="rounded bg-slate-800 border-slate-700 text-indigo-600 focus:ring-0">
-            <span>Incident Markers (L1)</span>
-          </label>
-          <label class="flex items-center space-x-2 cursor-pointer hover:text-white text-slate-300">
-            <input type="checkbox" id="toggle-sectors" checked onchange="updateLayers()" class="rounded bg-slate-800 border-slate-700 text-indigo-600 focus:ring-0">
-            <span>Sector Activity Choropleth (L2)</span>
-          </label>
-          <label class="flex items-center space-x-2 cursor-pointer hover:text-white text-slate-300">
-            <input type="checkbox" id="toggle-heatmap" checked onchange="updateLayers()" class="rounded bg-slate-800 border-slate-700 text-indigo-600 focus:ring-0">
-            <span>KDE Continuous Risk Surface (L3)</span>
-          </label>
-          <label class="flex items-center space-x-2 cursor-pointer hover:text-white text-slate-300">
-            <input type="checkbox" id="toggle-hotspots" checked onchange="updateLayers()" class="rounded bg-slate-800 border-slate-700 text-indigo-600 focus:ring-0">
-            <span>ST-DBSCAN Cluster Drift (L3)</span>
-          </label>
+    <!-- Map -->
+    <main class="map-wrap">
+      <div id="map"></div>
+      <div class="map-top floating">
+        <div class="segmented" id="view-switch">
+          <button class="active" data-view="sectors">Sectors</button>
+          <button data-view="density">Density</button>
+          <button data-view="clusters">Clusters</button>
         </div>
       </div>
-
-      <!-- Bottom Floating Metric Strip -->
-      <div class="absolute bottom-4 left-6 right-6 z-20 grid grid-cols-2 md:grid-cols-4 gap-3 pointer-events-none">
-        <div class="bg-slate-900/90 border border-slate-800 p-3 rounded-xl shadow-lg backdrop-blur-md pointer-events-auto">
-          <div class="text-[10px] uppercase font-bold text-slate-400">L1 Perceived Events</div>
-          <div class="text-xl font-bold text-white flex items-center space-x-2">
-            <span id="metric-total-events">12</span>
-            <span class="text-[11px] font-normal text-emerald-400" id="metric-multi-verified">(3 multi-verified)</span>
-          </div>
-        </div>
-        <div class="bg-slate-900/90 border border-slate-800 p-3 rounded-xl shadow-lg backdrop-blur-md pointer-events-auto">
-          <div class="text-[10px] uppercase font-bold text-slate-400">L2 Peak Activity Sector</div>
-          <div class="text-xl font-bold text-amber-400" id="metric-top-sector">Sector 18</div>
-        </div>
-        <div class="bg-slate-900/90 border border-slate-800 p-3 rounded-xl shadow-lg backdrop-blur-md pointer-events-auto">
-          <div class="text-[10px] uppercase font-bold text-slate-400">L2 Poisson Anomaly Alerts</div>
-          <div class="text-xl font-bold text-rose-400" id="metric-anomaly-count">3 Sectors Surge</div>
-        </div>
-        <div class="bg-slate-900/90 border border-slate-800 p-3 rounded-xl shadow-lg backdrop-blur-md pointer-events-auto">
-          <div class="text-[10px] uppercase font-bold text-slate-400">L3 Emerging Hotspot Trajectories</div>
-          <div class="text-xl font-bold text-indigo-400" id="metric-hotspot-count">4 Clusters Active</div>
-        </div>
-      </div>
+      <div class="legend floating" id="legend"></div>
     </main>
 
-    <!-- RIGHT PANE: Level 2 & Level 3 Intelligence Synthesis -->
-    <aside class="w-80 md:w-96 bg-slate-900/80 border-l border-slate-800 flex flex-col z-20 custom-scrollbar overflow-y-auto">
-      
-      <!-- Level 2 Section -->
-      <div class="p-4 border-b border-slate-800">
-        <div class="flex items-center space-x-2 mb-3">
-          <i data-lucide="compass" class="w-4 h-4 text-blue-400"></i>
-          <span class="text-xs font-bold uppercase tracking-wider text-slate-300">Level 2: Comprehension</span>
-        </div>
-        
-        <!-- Sector Activity Index (SAI) Leaderboard -->
-        <div class="space-y-2">
-          <div class="text-[11px] text-slate-400 font-medium">Top Sectors by Situational Activity Index (SAI):</div>
-          <div id="sai-leaderboard" class="space-y-1.5 text-xs">
-            <!-- Dynamic items -->
-          </div>
-        </div>
+    <!-- Insights (Level 2 + Level 3) -->
+    <aside class="pane pane-right">
+      <div id="sector-detail"></div>
 
-        <!-- Anomaly Highlights -->
-        <div class="mt-4 pt-3 border-t border-slate-800/80">
-          <div class="text-[11px] text-slate-400 font-medium mb-1.5 flex items-center justify-between">
-            <span>Poisson Baseline Anomalies:</span>
-            <span class="text-[10px] text-rose-400 font-mono">Z &gt; 1.5&sigma;</span>
-          </div>
-          <div id="anomaly-list" class="space-y-2 text-xs">
-            <!-- Dynamic anomaly alerts -->
-          </div>
-        </div>
+      <div class="section-title">Overview</div>
+      <div class="metrics">
+        <div class="metric"><div class="label">Events</div><div class="value num" id="metric-total-events">–</div></div>
+        <div class="metric"><div class="label">Multi-source</div><div class="value num" id="metric-multi-verified">–</div></div>
+        <div class="metric"><div class="label">Anomalies</div><div class="value num" id="metric-anomaly-count">–</div></div>
+        <div class="metric"><div class="label">Clusters</div><div class="value num" id="metric-hotspot-count">–</div></div>
       </div>
 
-      <!-- Level 3 Section -->
-      <div class="p-4 flex-1">
-        <div class="flex items-center space-x-2 mb-3">
-          <i data-lucide="trending-up" class="w-4 h-4 text-amber-400"></i>
-          <span class="text-xs font-bold uppercase tracking-wider text-slate-300">Level 3: Projection & Forecast</span>
-        </div>
+      <div class="group-label">Most active sectors</div>
+      <div class="group" id="sai-leaderboard"></div>
+      <div class="group-footer">Situational Activity Index — severity × confidence × 7-day decay.</div>
 
-        <!-- Emerging Cluster Drift -->
-        <div class="space-y-2 mb-4">
-          <div class="text-[11px] text-slate-400 font-medium">Active Hotspot Drift Trajectories (ST-DBSCAN):</div>
-          <div id="hotspot-trajectory-list" class="space-y-2 text-xs">
-            <!-- Dynamic hotspot drift cards -->
-          </div>
-        </div>
+      <div class="group-label">Unusual activity</div>
+      <div class="group" id="anomaly-list"></div>
+      <div class="group-footer">Sectors above 1.5σ of their 30-day baseline.</div>
 
-        <!-- 7-Day Forecast Momentum -->
-        <div class="pt-3 border-t border-slate-800/80">
-          <div class="text-[11px] text-slate-400 font-medium mb-2">7-Day Sector Risk Momentum Forecast:</div>
-          <div id="momentum-forecast-list" class="space-y-1.5 text-xs">
-            <!-- Dynamic momentum cards -->
-          </div>
-        </div>
+      <div class="group-label">Next 7 days</div>
+      <div class="group" id="momentum-forecast-list"></div>
 
-      </div>
+      <div class="group-label">Moving clusters</div>
+      <div class="group" id="hotspot-trajectory-list"></div>
+      <div class="group-footer">Aggregate report density only — no individual-level prediction.</div>
     </aside>
-
   </div>
 
-  <!-- Ingestion Modal -->
-  <div id="ingest-modal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-    <div class="bg-slate-900 border border-slate-800 rounded-2xl w-full max-w-xl p-6 shadow-2xl space-y-4">
-      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
-        <div class="flex items-center space-x-2">
-          <i data-lucide="file-plus" class="w-5 h-5 text-indigo-400"></i>
-          <h3 class="text-sm font-bold text-white">Live News Article Ingestion</h3>
-        </div>
-        <button onclick="closeIngestModal()" class="text-slate-400 hover:text-white">
-          <i data-lucide="x" class="w-4 h-4"></i>
-        </button>
+  <!-- Add News sheet (text only) -->
+  <div class="sheet-backdrop" id="ingest-modal" onclick="if (event.target === this) closeSheet()">
+    <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+      <div class="sheet-head">
+        <button class="btn-text" onclick="closeSheet()" style="justify-self:start">Cancel</button>
+        <h2 id="sheet-title">Add News</h2>
+        <button class="btn-text right" id="btn-submit-ingest" onclick="submitArticle()" style="font-weight:600">Add</button>
       </div>
-      
-      <p class="text-xs text-slate-400">
-        Input raw headline and journalistic text. The pipeline will extract entities, classify the incident, resolve the Noida sector, fuse duplicate records, and update the situational state.
-      </p>
-
-      <div class="space-y-3">
-        <div>
-          <label class="block text-xs font-medium text-slate-300 mb-1">Article Headline</label>
-          <input type="text" id="ingest-headline" placeholder="e.g. Armed robbery at jewelry store in Sector 18 Atta Market..." class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-slate-100 focus:outline-none focus:border-indigo-500">
+      <div class="sheet-body">
+        <div class="group-label">Text</div>
+        <div class="group">
+          <input class="field" id="ingest-headline" placeholder="Headline" autocomplete="off">
+          <textarea class="field" id="ingest-body" rows="6" placeholder="Paste the article text…"></textarea>
         </div>
-        <div>
-          <label class="block text-xs font-medium text-slate-300 mb-1">Article Body / News Content</label>
-          <textarea id="ingest-body" rows="4" placeholder="e.g. Noida: Four bike-borne youths barged into a showroom near Sector 18 metro station late yesterday night and decamped with cash..." class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-slate-100 focus:outline-none focus:border-indigo-500"></textarea>
+        <div class="group-label">Source</div>
+        <div class="group">
+          <input class="field" id="ingest-source" placeholder="e.g. Hindustan Times (optional)" autocomplete="off">
         </div>
-        <div>
-          <label class="block text-xs font-medium text-slate-300 mb-1">Source Outlet / Reference</label>
-          <input type="text" id="ingest-source" value="Hindustan Times NCR Edition" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-slate-100 focus:outline-none focus:border-indigo-500">
-        </div>
-      </div>
-
-      <div class="flex items-center justify-end space-x-3 pt-3 border-t border-slate-800">
-        <button onclick="closeIngestModal()" class="px-4 py-2 text-xs text-slate-400 hover:text-white transition">Cancel</button>
-        <button onclick="submitArticle()" class="px-4 py-2 text-xs font-medium rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white transition flex items-center space-x-1.5" id="btn-submit-ingest">
-          <span>Ingest & Run Pipeline</span>
-        </button>
+        <div class="sheet-note" id="sheet-note">Location is read from the text. Only Noida sectors and known landmarks are mapped.</div>
       </div>
     </div>
   </div>
 
-  <!-- Client-Side Dashboard Script -->
+  <div class="toast" id="toast"></div>
+
   <script>
-    lucide.createIcons();
-
-    let map;
-    let currentBasemapLayer = null;
-    let markersLayer = L.layerGroup();
-    let sectorsLayer = L.layerGroup();
-    let heatLayer = null;
-    let hotspotsLayer = L.layerGroup();
-
-    let globalState = null;
-    let currentCategoryFilter = 'ALL';
-
-    const CATEGORY_COLORS = {
-      "VIOLENT_CRIME": "#ef4444",
-      "PROPERTY_CRIME": "#f97316",
-      "TRAFFIC_INCIDENT": "#eab308",
-      "CIVIC_HAZARD": "#a855f7",
-      "PUBLIC_DISRUPTION": "#3b82f6"
+    // ------------------------------------------------------------------ constants
+    const CATEGORY = {
+      VIOLENT_CRIME:     { label: "Violent",  color: "var(--red)" },
+      PROPERTY_CRIME:    { label: "Property", color: "var(--orange)" },
+      TRAFFIC_INCIDENT:  { label: "Traffic",  color: "var(--yellow)" },
+      CIVIC_HAZARD:      { label: "Hazard",   color: "var(--purple)" },
+      PUBLIC_DISRUPTION: { label: "Public",   color: "var(--blue)" }
     };
+    const ACTIVITY = {
+      LOW_ACTIVITY_NORMAL: { label: "Low",      css: "--green" },
+      MODERATE_ACTIVITY:   { label: "Moderate", css: "--yellow" },
+      ELEVATED_ATTENTION:  { label: "Elevated", css: "--orange" },
+      HIGH_ANOMALY_ALERT:  { label: "High",     css: "--red" }
+    };
+    const CELL_RADIUS_KM = 1.15;   // max reach of a sector cell from its centroid
+    const KM_PER_DEG_LAT = 110.574;
 
-    function getBasemapLayer(type) {
-      const cartoApiKey = "{{ carto_api_key|default('') }}".trim();
+    // ------------------------------------------------------------------ state
+    let map, baseLayer, labelsLayer;
+    const cellsLayer = L.layerGroup();
+    const markersLayer = L.layerGroup();
+    const hotspotsLayer = L.layerGroup();
+    let heatLayer = null;
+    let globalState = null;
+    let currentCategoryFilter = "ALL";
+    let currentView = "sectors";
+    let selectedSector = null;
+    let selectedEventId = null;
+    const cellById = {};
 
-      if (type === 'carto_dark') {
-        let cartoUrl = 'https://{s}.basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}.png';
-        if (cartoApiKey) {
-          cartoUrl += '?api_key=' + encodeURIComponent(cartoApiKey);
-        }
-        return L.tileLayer(cartoUrl, {
-          attribution: '&copy; OpenStreetMap &copy; CARTO',
-          subdomains: 'abcd',
-          maxZoom: 19
-        });
-      } else if (type === 'osm') {
-        return L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          attribution: '&copy; OpenStreetMap contributors',
-          maxZoom: 19
-        });
-      } else {
-        // Default: Esri World Dark Gray Canvas (Clean, reliable, professional, NO API KEY NEEDED)
-        return L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-          attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
-          maxZoom: 16
-        });
-      }
+    // ------------------------------------------------------------------ helpers
+    const esc = (v) => String(v ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+    const shortSector = (s) => String(s || "").replace(", Noida", "");
+    const sectorNum = (id) => String(id).replace(/^Sector\s+/i, "");
+    const isGridSector = (id) => /^Sector\s+\w+$/i.test(String(id));
+    const cssVar = (name) => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    const catColor = (cat) => (CATEGORY[cat] || { color: "var(--text-3)" }).color;
+    const catLabel = (cat) => (CATEGORY[cat] || { label: cat || "Other" }).label;
+    const isDark = () => window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    function formatTime(iso) {
+      const d = new Date(iso);
+      if (isNaN(d)) return "";
+      return d.toLocaleString(undefined, { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+    }
+    function sourceText(src) {
+      // Sources are plain text for now. Strip a URL down to a readable outlet name.
+      const s = String(src || "").trim();
+      if (!s) return "Unknown source";
+      try {
+        const u = new URL(s);
+        return u.hostname.replace(/^www\./, "");
+      } catch (_) { return s; }
+    }
+    function toast(msg) {
+      const t = document.getElementById("toast");
+      t.textContent = msg;
+      t.classList.add("show");
+      clearTimeout(toast._t);
+      toast._t = setTimeout(() => t.classList.remove("show"), 2600);
     }
 
-    function switchBasemap(type) {
-      if (currentBasemapLayer && map) {
-        map.removeLayer(currentBasemapLayer);
+    // SAI → fill colour. Quiet sectors stay neutral, active ones warm up.
+    function saiFill(sai, level) {
+      if (!sai || sai <= 0) return { color: cssVar("--cell-quiet"), opacity: 1 };
+      const a = ACTIVITY[level] || ACTIVITY.LOW_ACTIVITY_NORMAL;
+      const opacity = Math.min(0.75, 0.28 + sai / 20);
+      return { color: cssVar(a.css), opacity };
+    }
+
+    // ------------------------------------------------------------------ geometry
+    // Sector cells = Voronoi cell of each centroid ∩ a disc of CELL_RADIUS_KM.
+    // Computed by clipping a disc polygon with the perpendicular-bisector
+    // half-plane of every other sector (exact for convex shapes).
+    function project(lat, lon, lat0, lon0) {
+      const kx = 111.320 * Math.cos(lat0 * Math.PI / 180);
+      return [(lon - lon0) * kx, (lat - lat0) * KM_PER_DEG_LAT];
+    }
+    function unproject(x, y, lat0, lon0) {
+      const kx = 111.320 * Math.cos(lat0 * Math.PI / 180);
+      return [lat0 + y / KM_PER_DEG_LAT, lon0 + x / kx];
+    }
+    function clipHalfPlane(poly, p, q) {
+      // keep points closer to p than to q: (x - m)·(q - p) <= 0
+      const nx = q[0] - p[0], ny = q[1] - p[1];
+      const mx = (p[0] + q[0]) / 2, my = (p[1] + q[1]) / 2;
+      const side = (v) => (v[0] - mx) * nx + (v[1] - my) * ny;
+      const out = [];
+      for (let i = 0; i < poly.length; i++) {
+        const a = poly[i], b = poly[(i + 1) % poly.length];
+        const sa = side(a), sb = side(b);
+        if (sa <= 0) out.push(a);
+        if ((sa < 0 && sb > 0) || (sa > 0 && sb < 0)) {
+          const t = sa / (sa - sb);
+          out.push([a[0] + t * (b[0] - a[0]), a[1] + t * (b[1] - a[1])]);
+        }
       }
-      currentBasemapLayer = getBasemapLayer(type);
-      currentBasemapLayer.addTo(map);
-      currentBasemapLayer.bringToBack();
+      return out;
+    }
+    function buildSectorCells(sectors) {
+      const pts = sectors.filter(s => isGridSector(s.sector_id) && isFinite(s.latitude) && isFinite(s.longitude));
+      if (!pts.length) return [];
+      const lat0 = pts.reduce((a, s) => a + s.latitude, 0) / pts.length;
+      const lon0 = pts.reduce((a, s) => a + s.longitude, 0) / pts.length;
+      const xy = pts.map(s => project(s.latitude, s.longitude, lat0, lon0));
+      const N = 64;
+      return pts.map((s, i) => {
+        let poly = [];
+        for (let k = 0; k < N; k++) {
+          const t = (2 * Math.PI * k) / N;
+          poly.push([xy[i][0] + CELL_RADIUS_KM * Math.cos(t), xy[i][1] + CELL_RADIUS_KM * Math.sin(t)]);
+        }
+        for (let j = 0; j < pts.length && poly.length; j++) {
+          if (j === i) continue;
+          const d = Math.hypot(xy[j][0] - xy[i][0], xy[j][1] - xy[i][1]);
+          if (d === 0 || d > 2 * CELL_RADIUS_KM) continue;
+          poly = clipHalfPlane(poly, xy[i], xy[j]);
+        }
+        return { sector: s, latlngs: poly.map(([x, y]) => unproject(x, y, lat0, lon0)) };
+      }).filter(c => c.latlngs.length >= 3);
+    }
+
+    // ------------------------------------------------------------------ map
+    function setBasemap() {
+      if (baseLayer) map.removeLayer(baseLayer);
+      const key = "{{ carto_api_key|default('') }}".trim();
+      if (key) {
+        // CARTO Positron / Dark Matter without labels (needs CARTO_API_KEY in .env).
+        const style = (isDark() ? "dark" : "light") + "_nolabels";
+        baseLayer = L.tileLayer(`https://{s}.basemaps.cartocdn.com/rastertiles/${style}/{z}/{x}/{y}{r}.png?api_key=` + encodeURIComponent(key), {
+          attribution: "&copy; OpenStreetMap &copy; CARTO", subdomains: "abcd", maxZoom: 19
+        });
+      } else {
+        // Keyless default: Esri light / dark gray canvas (no labels).
+        const style = isDark() ? "World_Dark_Gray_Base" : "World_Light_Gray_Base";
+        baseLayer = L.tileLayer(`https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/${style}/MapServer/tile/{z}/{y}/{x}`, {
+          attribution: "Tiles &copy; Esri", maxNativeZoom: 16, maxZoom: 18
+        });
+      }
+      baseLayer.addTo(map);
+      baseLayer.bringToBack();
     }
 
     function initMap() {
-      // Centered on Noida
-      map = L.map('map', {
-        center: [28.5600, 77.3500],
-        zoom: 12,
-        zoomControl: true
+      map = L.map("map", { center: [28.565, 77.36], zoom: 12, zoomControl: false, attributionControl: true });
+      L.control.zoom({ position: "bottomright" }).addTo(map);
+      map.createPane("cells");  map.getPane("cells").style.zIndex = 410;
+      map.createPane("labels"); map.getPane("labels").style.zIndex = 620;
+      map.getPane("labels").style.pointerEvents = "none";
+      setBasemap();
+      labelsLayer = L.layerGroup().addTo(map);
+      window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+        setBasemap(); if (globalState) renderMapLayers();
       });
-
-      // Initialize with Esri Dark Canvas (clean dark mode, no watermarks)
-      switchBasemap('esri_dark');
-
-      markersLayer.addTo(map);
-      sectorsLayer.addTo(map);
-      hotspotsLayer.addTo(map);
     }
 
+    // ------------------------------------------------------------------ data
     async function loadData() {
-      try {
-        const [incidentsRes, sectorsRes, hotspotsRes, heatmapRes, summaryRes, trajectoriesRes] = await Promise.all([
-          fetch('/api/incidents'),
-          fetch('/api/sectors'),
-          fetch('/api/hotspots'),
-          fetch('/api/heatmap'),
-          fetch('/api/summary'),
-          fetch('/api/trajectories')
-        ]);
-
-        const incidents = await incidentsRes.json();
-        const sectors = await sectorsRes.json();
-        const hotspots = await hotspotsRes.json();
-        const heatmap = await heatmapRes.json();
-        const summary = await summaryRes.json();
-        const trajectories = await trajectoriesRes.json();
-
-        globalState = { incidents, sectors, hotspots, heatmap, summary, trajectories };
-        renderDashboard();
-      } catch (err) {
-        console.error("Error loading situational data:", err);
-      }
+      const urls = ["/api/incidents", "/api/sectors", "/api/hotspots", "/api/heatmap", "/api/summary", "/api/trajectories"];
+      const res = await Promise.all(urls.map(u => fetch(u).then(r => {
+        if (!r.ok) throw new Error(`${u} → ${r.status}`);
+        return r.json();
+      })));
+      const [incidents, sectors, hotspots, heatmap, summary, trajectories] = res;
+      incidents.sort((a, b) => new Date(b.incident_timestamp) - new Date(a.incident_timestamp));
+      globalState = { incidents, sectors, hotspots, heatmap, summary, trajectories };
+      if (selectedSector && !sectors.some(s => s.sector_id === selectedSector)) selectedSector = null;
+      renderDashboard();
     }
 
     function renderDashboard() {
       if (!globalState) return;
-
+      document.getElementById("updated-at").textContent = "Updated " + formatTime(globalState.summary.timestamp);
       renderMetrics();
       renderIncidentFeed();
-      renderSectorChoropleth();
-      renderIncidentMarkers();
-      renderHeatmap();
-      renderHotspots();
+      renderMapLayers();
+      renderSectorDetail();
       renderComprehensionPanel();
       renderProjectionPanel();
     }
 
-    function renderMetrics() {
-      const summary = globalState.summary;
-      document.getElementById('metric-total-events').innerText = summary.level_1_perception.total_canonical_events;
-      document.getElementById('metric-multi-verified').innerText = `(${summary.level_1_perception.multi_source_verified_events} multi-verified)`;
-      
-      const topSec = summary.level_2_comprehension.top_activity_sectors[0];
-      document.getElementById('metric-top-sector').innerText = topSec ? topSec.sector.replace(', Noida', '') : 'None';
-      
-      document.getElementById('metric-anomaly-count').innerText = `${summary.level_2_comprehension.active_baseline_anomalies_count} Sectors Surge`;
-      document.getElementById('metric-hotspot-count').innerText = `${summary.level_3_projection.active_spatial_hotspots_count} Active Clusters`;
-      document.getElementById('incident-count-badge').innerText = `${globalState.incidents.length} events`;
+    function filteredIncidents() {
+      let list = globalState.incidents;
+      if (currentCategoryFilter !== "ALL") list = list.filter(i => i.category === currentCategoryFilter);
+      if (selectedSector) list = list.filter(i => i.sector_id === selectedSector);
+      return list;
     }
 
-    function renderIncidentFeed() {
-      const feedContainer = document.getElementById('incident-feed');
-      feedContainer.innerHTML = '';
+    // ------------------------------------------------------------------ render: metrics
+    function renderMetrics() {
+      const s = globalState.summary;
+      document.getElementById("metric-total-events").textContent = s.level_1_perception.total_canonical_events;
+      document.getElementById("metric-multi-verified").textContent = s.level_1_perception.multi_source_verified_events;
+      document.getElementById("metric-anomaly-count").textContent = s.level_2_comprehension.active_baseline_anomalies_count;
+      document.getElementById("metric-hotspot-count").textContent = s.level_3_projection.active_spatial_hotspots_count;
+    }
 
-      let filtered = globalState.incidents;
-      if (currentCategoryFilter !== 'ALL') {
-        filtered = filtered.filter(i => i.category === currentCategoryFilter);
+    // ------------------------------------------------------------------ render: news feed (text only)
+    function renderIncidentFeed() {
+      const feed = document.getElementById("incident-feed");
+      const list = filteredIncidents();
+      document.getElementById("incident-count-badge").textContent = `${list.length} ${list.length === 1 ? "story" : "stories"}`;
+
+      const chip = document.getElementById("sector-filter-chip");
+      if (selectedSector) {
+        chip.style.display = "block";
+        chip.innerHTML = `<button class="pill" style="background:var(--fill);color:var(--blue);font-size:13px;padding:5px 12px" onclick="selectSector(null)">${esc(selectedSector)}  ✕</button>`;
+      } else {
+        chip.style.display = "none";
       }
 
-      if (filtered.length === 0) {
-        feedContainer.innerHTML = '<div class="text-center py-10 text-slate-500 text-xs">No incidents match this filter.</div>';
+      if (!list.length) {
+        feed.innerHTML = `<div class="empty">No news for this filter.</div>`;
         return;
       }
-
-      filtered.forEach(evt => {
-        const color = CATEGORY_COLORS[evt.category] || "#94a3b8";
-        const isMulti = evt.is_multi_source_verified;
-        
-        const card = document.createElement('div');
-        card.className = "p-3 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-slate-700 transition cursor-pointer space-y-2";
-        card.onclick = () => focusIncident(evt.latitude, evt.longitude, evt.headline);
-
-        card.innerHTML = `
-          <div class="flex items-center justify-between text-[11px]">
-            <span class="px-2 py-0.5 rounded font-semibold text-white" style="background-color: ${color}20; color: ${color}; border: 1px solid ${color}40;">
-              ${evt.category_name}
-            </span>
-            <span class="text-slate-400 font-mono">${evt.sector_id}</span>
-          </div>
-          <div class="text-xs font-semibold text-slate-100 leading-snug line-clamp-2">
-            ${evt.headline}
-          </div>
-          <div class="text-[11px] text-slate-400 line-clamp-2 leading-relaxed">
-            ${evt.summary}
-          </div>
-          <div class="pt-2 border-t border-slate-800/80 flex items-center justify-between text-[10px] text-slate-500">
-            <span class="flex items-center space-x-1">
-              ${isMulti ? `<span class="text-emerald-400 font-bold flex items-center"><i data-lucide="check-check" class="w-3 h-3 mr-0.5 inline"></i> ${evt.report_count} Sources</span>` : `<span>1 Source</span>`}
-            </span>
-            <span>Conf: ${Math.round(evt.verification_confidence * 100)}%</span>
-          </div>
-        `;
-        feedContainer.appendChild(card);
+      feed.innerHTML = list.map(evt => {
+        const srcs = [...new Set((evt.sources || []).map(x => sourceText(x.source_url)))];
+        const n = evt.report_count || (evt.sources || []).length || 1;
+        return `
+          <div class="news-item${evt.event_id === selectedEventId ? " selected" : ""}" data-id="${esc(evt.event_id)}">
+            <div class="news-meta">
+              <span class="dot" style="background:${catColor(evt.category)}"></span>
+              <span>${esc(catLabel(evt.category))}</span><span>·</span>
+              <span>${esc(evt.sector_id)}</span><span>·</span>
+              <span>${esc(formatTime(evt.incident_timestamp))}</span>
+            </div>
+            <div class="news-headline">${esc(evt.headline)}</div>
+            <div class="news-body">${esc(evt.summary)}</div>
+            <div class="news-foot">
+              ${evt.is_multi_source_verified ? `<span class="verified">${n} reports</span>` : `1 report`}
+              · ${Math.round((evt.verification_confidence || 0) * 100)}% confidence
+              · ${esc(srcs.join(", ") || "Unknown source")}
+            </div>
+          </div>`;
+      }).join("");
+      feed.querySelectorAll(".news-item").forEach(el => {
+        el.addEventListener("click", () => focusIncident(el.dataset.id));
       });
-      lucide.createIcons();
+    }
+
+    function focusIncident(id) {
+      const evt = globalState.incidents.find(e => e.event_id === id);
+      if (!evt) return;
+      selectedEventId = selectedEventId === id ? null : id;
+      renderIncidentFeed();
+      renderIncidentMarkers();
+      if (selectedEventId) map.flyTo([evt.latitude, evt.longitude], 14, { duration: 0.6 });
+    }
+
+    // ------------------------------------------------------------------ render: map
+    function renderMapLayers() {
+      renderSectorCells();
+      renderIncidentMarkers();
+      renderHeatmap();
+      renderHotspots();
+      applyView();
+      renderLegend();
+    }
+
+    function renderSectorCells() {
+      cellsLayer.clearLayers();
+      labelsLayer.clearLayers();
+      Object.keys(cellById).forEach(k => delete cellById[k]);
+      const stroke = cssVar("--cell-stroke");
+      const blue = cssVar("--blue");
+
+      buildSectorCells(globalState.sectors).forEach(({ sector: s, latlngs }) => {
+        const fill = saiFill(s.sai_score, s.activity_level);
+        const selected = s.sector_id === selectedSector;
+        const poly = L.polygon(latlngs, {
+          pane: "cells",
+          color: selected ? blue : stroke,
+          weight: selected ? 2.5 : 1,
+          fillColor: fill.color,
+          fillOpacity: fill.opacity,
+          smoothFactor: 0.5
+        });
+        poly.bindTooltip(sectorTooltip(s), { sticky: true, className: "ios-tip", direction: "top", offset: [0, -8] });
+        poly.on("mouseover", () => { if (s.sector_id !== selectedSector) poly.setStyle({ weight: 2 }); });
+        poly.on("mouseout", () => { if (s.sector_id !== selectedSector) poly.setStyle({ weight: 1 }); });
+        poly.on("click", () => selectSector(s.sector_id === selectedSector ? null : s.sector_id));
+        cellsLayer.addLayer(poly);
+        cellById[s.sector_id] = poly;
+
+        L.marker([s.latitude, s.longitude], {
+          pane: "labels", interactive: false, keyboard: false,
+          icon: L.divIcon({
+            className: "sector-label" + (s.sai_score > 0 ? "" : " quiet"),
+            html: esc(sectorNum(s.sector_id)), iconSize: [40, 14], iconAnchor: [20, 7]
+          })
+        }).addTo(labelsLayer);
+      });
+
+      // Corridors (expressway, flyway) are not tiles — show them as labelled pins.
+      globalState.sectors.filter(s => !isGridSector(s.sector_id) && isFinite(s.latitude)).forEach(s => {
+        const a = ACTIVITY[s.activity_level] || ACTIVITY.LOW_ACTIVITY_NORMAL;
+        const dot = s.sai_score > 0 ? cssVar(a.css) : cssVar("--text-3");
+        const m = L.marker([s.latitude, s.longitude], {
+          pane: "labels",
+          icon: L.divIcon({
+            className: "", iconSize: [0, 0],
+            html: `<span class="corridor-label"><span class="dot" style="background:${dot};width:7px;height:7px;margin-right:5px;vertical-align:1px"></span>${esc(s.sector_id)}</span>`
+          })
+        });
+        m.addTo(labelsLayer);
+      });
+    }
+
+    function sectorTooltip(s) {
+      const a = ACTIVITY[s.activity_level] || ACTIVITY.LOW_ACTIVITY_NORMAL;
+      return `<div style="font-weight:600">${esc(s.sector_id)}</div>
+        <div style="color:var(--text-2);font-size:12px">${esc(s.zone)}</div>
+        <div style="margin-top:4px">${s.raw_incident_count} ${s.raw_incident_count === 1 ? "event" : "events"} · SAI ${s.sai_score} · ${a.label}</div>`;
     }
 
     function renderIncidentMarkers() {
       markersLayer.clearLayers();
-      let filtered = globalState.incidents;
-      if (currentCategoryFilter !== 'ALL') {
-        filtered = filtered.filter(i => i.category === currentCategoryFilter);
-      }
-
-      filtered.forEach(evt => {
-        const color = CATEGORY_COLORS[evt.category] || "#94a3b8";
-        
-        const marker = L.circleMarker([evt.latitude, evt.longitude], {
-          radius: evt.is_multi_source_verified ? 9 : 7,
-          fillColor: color,
-          color: evt.is_multi_source_verified ? "#ffffff" : color,
-          weight: evt.is_multi_source_verified ? 2.5 : 1,
-          opacity: 1,
-          fillOpacity: 0.85
+      filteredIncidents().forEach(evt => {
+        const sel = evt.event_id === selectedEventId;
+        const m = L.circleMarker([evt.latitude, evt.longitude], {
+          pane: "markerPane",
+          radius: sel ? 8 : (evt.is_multi_source_verified ? 6 : 4.5),
+          fillColor: cssVar(catColor(evt.category).slice(4, -1)),
+          color: isDark() ? "#000" : "#fff",
+          weight: sel ? 3 : 1.5,
+          fillOpacity: 1
         });
-
-        const popupContent = `
-          <div class="text-slate-900 p-1" style="min-width: 200px;">
-            <div class="text-[10px] uppercase font-bold text-indigo-600 mb-0.5">${evt.category_name} &bull; ${evt.sector_name}</div>
-            <div class="text-xs font-bold leading-snug mb-1">${evt.headline}</div>
-            <div class="text-[11px] text-slate-600 mb-1.5">${evt.summary}</div>
-            <div class="text-[10px] text-slate-500 pt-1 border-t border-slate-200 flex justify-between">
-              <span>${evt.is_multi_source_verified ? '<b>Verified across ' + evt.report_count + ' sources</b>' : 'Single news report'}</span>
-              <span>Confidence: ${Math.round(evt.verification_confidence * 100)}%</span>
-            </div>
-          </div>
-        `;
-
-        marker.bindPopup(popupContent);
-        markersLayer.addLayer(marker);
-      });
-    }
-
-    function renderSectorChoropleth() {
-      sectorsLayer.clearLayers();
-      const sectors = globalState.sectors;
-
-      sectors.forEach(s => {
-        if (!s.latitude || !s.longitude) return;
-
-        // Draw visual sector node
-        const color = s.status_color || "#22c55e";
-        const circle = L.circle([s.latitude, s.longitude], {
-          radius: 400 + Math.min(600, s.sai_score * 80),
-          fillColor: color,
-          color: color,
-          weight: 1,
-          opacity: 0.7,
-          fillOpacity: s.sai_score > 0 ? 0.25 : 0.08
-        });
-
-        circle.bindTooltip(`<b>${s.sector_name}</b><br>SAI Score: ${s.sai_score}<br>Incidents: ${s.raw_incident_count}<br>Status: ${s.activity_level}`, {
-          sticky: true
-        });
-
-        sectorsLayer.addLayer(circle);
+        m.bindTooltip(`<div style="font-weight:600;max-width:240px;white-space:normal">${esc(evt.headline)}</div>
+          <div style="color:var(--text-2);font-size:12px;margin-top:2px">${esc(catLabel(evt.category))} · ${esc(evt.sector_id)}</div>`,
+          { className: "ios-tip", direction: "top", offset: [0, -6] });
+        m.on("click", () => focusIncident(evt.event_id));
+        markersLayer.addLayer(m);
       });
     }
 
     function renderHeatmap() {
-      if (heatLayer) {
-        map.removeLayer(heatLayer);
-        heatLayer = null;
-      }
-
-      const pts = globalState.heatmap.heatmap_points;
-      if (pts && pts.length > 0) {
-        heatLayer = L.heatLayer(pts, {
-          radius: 35,
-          blur: 25,
-          maxZoom: 14,
-          max: 1.0,
-          gradient: {
-            0.2: '#3b82f6',
-            0.4: '#10b981',
-            0.6: '#eab308',
-            0.8: '#f97316',
-            1.0: '#ef4444'
-          }
-        });
-        if (document.getElementById('toggle-heatmap').checked) {
-          heatLayer.addTo(map);
-        }
-      }
+      if (heatLayer) { map.removeLayer(heatLayer); heatLayer = null; }
+      const pts = (globalState.heatmap && globalState.heatmap.heatmap_points) || [];
+      if (!pts.length) return;
+      heatLayer = L.heatLayer(pts, {
+        radius: 30, blur: 24, maxZoom: 14, max: 1.0, minOpacity: 0.05,
+        gradient: { 0.25: cssVar("--teal"), 0.5: cssVar("--yellow"), 0.75: cssVar("--orange"), 1.0: cssVar("--red") }
+      });
     }
 
     function renderHotspots() {
       hotspotsLayer.clearLayers();
-      const hotspots = globalState.hotspots;
-
-      hotspots.forEach(h => {
-        // Draw cluster hull / bounding circle
-        const circle = L.circle([h.center_latitude, h.center_longitude], {
-          radius: h.radius_km * 1000,
-          fillColor: '#818cf8',
-          color: '#6366f1',
-          weight: 1.5,
-          dashArray: '4, 6',
-          fillOpacity: 0.12
+      const color = cssVar("--indigo");
+      (globalState.hotspots || []).forEach(h => {
+        const c = L.circle([h.center_latitude, h.center_longitude], {
+          radius: Math.max(300, h.radius_km * 1000), color, weight: 1.5, dashArray: "4 5",
+          fillColor: color, fillOpacity: 0.08
         });
+        c.bindTooltip(`<div style="font-weight:600">${esc(catLabel(h.dominant_category))} cluster</div>
+          <div style="color:var(--text-2);font-size:12px">${esc((h.sectors_involved || []).join(", "))}</div>
+          <div style="margin-top:4px">${h.incident_count} events · drifting ${esc(h.drift_direction)} ${h.drift_velocity_km_per_day} km/day</div>`,
+          { sticky: true, className: "ios-tip" });
+        hotspotsLayer.addLayer(c);
 
-        circle.bindTooltip(`
-          <div class="p-1">
-            <b>${h.hotspot_id}: ${h.dominant_category}</b><br>
-            Incidents: ${h.incident_count}<br>
-            Drift: ${h.drift_direction} (${h.drift_velocity_km_per_day} km/day)<br>
-            Sectors: ${h.sectors_involved.join(', ')}
-          </div>
-        `, { sticky: true });
-
-        hotspotsLayer.addLayer(circle);
+        // Drift arrow: where the cluster is heading over the next ~3 days.
+        const v = Number(h.drift_velocity_km_per_day) || 0;
+        const bearing = Number(h.drift_bearing_degrees);
+        if (v > 0 && isFinite(bearing)) {
+          const distKm = Math.min(3, Math.max(0.6, v * 3));
+          const rad = bearing * Math.PI / 180;
+          const lat0 = h.center_latitude, lon0 = h.center_longitude;
+          const dLat = (distKm * Math.cos(rad)) / KM_PER_DEG_LAT;
+          const dLon = (distKm * Math.sin(rad)) / (111.320 * Math.cos(lat0 * Math.PI / 180));
+          const tip = [lat0 + dLat, lon0 + dLon];
+          hotspotsLayer.addLayer(L.polyline([[lat0, lon0], tip], { color, weight: 2.5, lineCap: "round" }));
+          hotspotsLayer.addLayer(L.marker(tip, {
+            interactive: false,
+            icon: L.divIcon({
+              className: "", iconSize: [14, 14], iconAnchor: [7, 7],
+              html: `<svg width="14" height="14" viewBox="0 0 14 14" style="transform:rotate(${bearing}deg)"><path d="M7 1 L12 12 L7 9 L2 12 Z" fill="${color}"/></svg>`
+            })
+          }));
+        }
       });
     }
 
+    function applyView() {
+      const show = (layer, on) => { if (!layer) return; on ? map.addLayer(layer) : map.removeLayer(layer); };
+      show(cellsLayer, currentView !== "density");
+      show(labelsLayer, true);
+      show(heatLayer, currentView === "density");
+      show(hotspotsLayer, currentView === "clusters");
+      show(markersLayer, true);
+    }
+
+    function renderLegend() {
+      const el = document.getElementById("legend");
+      if (currentView === "density") {
+        el.innerHTML = `<div style="font-weight:600;color:var(--text);margin-bottom:6px">Report density</div>
+          <div class="ramp" style="background:linear-gradient(90deg, ${cssVar("--teal")}, ${cssVar("--yellow")}, ${cssVar("--orange")}, ${cssVar("--red")})"></div>
+          <div style="display:flex;justify-content:space-between;margin-top:3px"><span>Low</span><span>High</span></div>`;
+        return;
+      }
+      const rows = [
+        ["No activity", cssVar("--cell-quiet"), 1],
+        ["Low", cssVar("--green"), 0.45],
+        ["Moderate", cssVar("--yellow"), 0.55],
+        ["Elevated", cssVar("--orange"), 0.65],
+        ["High", cssVar("--red"), 0.75]
+      ];
+      el.innerHTML = `<div style="font-weight:600;color:var(--text);margin-bottom:6px">Sector activity</div>` +
+        rows.map(([l, c, o]) => `<div class="legend-row"><span class="swatch" style="background:color-mix(in srgb, ${c} ${Math.round(o * 100)}%, transparent)"></span>${l}</div>`).join("") +
+        (currentView === "clusters" ? `<div class="legend-row" style="margin-top:8px"><span class="swatch" style="border:1.5px dashed ${cssVar("--indigo")};background:none"></span>Cluster · arrow = drift</div>` : "");
+    }
+
+    // ------------------------------------------------------------------ sector selection
+    function selectSector(id) {
+      selectedSector = id;
+      selectedEventId = null;
+      renderIncidentFeed();
+      renderSectorCells();
+      renderIncidentMarkers();
+      renderSectorDetail();
+      if (id && cellById[id]) map.flyToBounds(cellById[id].getBounds(), { maxZoom: 14, duration: 0.6, padding: [40, 40] });
+    }
+
+    function renderSectorDetail() {
+      const el = document.getElementById("sector-detail");
+      const s = selectedSector && globalState.sectors.find(x => x.sector_id === selectedSector);
+      if (!s) { el.innerHTML = ""; return; }
+      const a = ACTIVITY[s.activity_level] || ACTIVITY.LOW_ACTIVITY_NORMAL;
+      const traj = (globalState.trajectories || []).find(t => t.sector_id === s.sector_id);
+      const anomaly = (globalState.summary.level_2_comprehension.anomaly_highlights || []).find(t => t.startsWith(s.sector_id + " "));
+      const breakdown = Object.entries(s.category_breakdown || {}).filter(([, n]) => n > 0);
+      const maxN = Math.max(1, ...breakdown.map(([, n]) => n));
+      el.innerHTML = `
+        <div class="section-title">${esc(s.sector_id)}
+          <button class="btn-text" style="font-size:15px;font-weight:400" onclick="selectSector(null)">Done</button></div>
+        <div class="group">
+          <div class="row"><span>Zone</span><span class="muted">${esc(s.zone)}</span></div>
+          <div class="row"><span>Activity</span><span class="pill" style="background:color-mix(in srgb, var(${a.css}) 18%, transparent);color:var(${a.css})">${a.label}</span></div>
+          <div class="row"><span>Activity index</span><span class="muted num">${s.sai_score}</span></div>
+          <div class="row"><span>Events</span><span class="muted num">${s.raw_incident_count}</span></div>
+          ${traj ? `<div class="row"><span>Expected next 7 days</span><span class="muted num">${traj.projected_7d_incidents}</span></div>` : ""}
+        </div>
+        ${breakdown.length ? `<div class="group-label">By type</div><div class="group">` + breakdown.map(([c, n]) => `
+          <div class="row" style="display:block">
+            <div style="display:flex;justify-content:space-between"><span>${esc(catLabel(c))}</span><span class="muted num">${n}</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:${(n / maxN) * 100}%;background:${catColor(c)}"></div></div>
+          </div>`).join("") + `</div>` : ""}
+        ${anomaly ? `<div class="group-footer" style="color:var(--red);margin-top:10px">${esc(anomaly)}</div>` : ""}
+        ${traj && traj.raw_incidents > 0 ? `<div class="group-footer" style="margin-top:8px">${esc(traj.recommendation)}</div>` : ""}
+        <div style="height:22px"></div>`;
+    }
+
+    // ------------------------------------------------------------------ render: insights
     function renderComprehensionPanel() {
-      const topSectors = globalState.summary.level_2_comprehension.top_activity_sectors;
-      const saiContainer = document.getElementById('sai-leaderboard');
-      saiContainer.innerHTML = '';
-
-      topSectors.forEach((s, idx) => {
-        const item = document.createElement('div');
-        item.className = "flex items-center justify-between p-2 rounded-lg bg-slate-950/60 border border-slate-800/80";
-        item.innerHTML = `
-          <div class="flex items-center space-x-2">
-            <span class="w-4 text-slate-500 font-mono font-bold">${idx + 1}</span>
-            <span class="text-slate-200 font-medium">${s.sector.replace(', Noida', '')}</span>
+      const c = globalState.summary.level_2_comprehension;
+      const top = c.top_activity_sectors || [];
+      const maxSai = Math.max(1, ...top.map(t => t.sai));
+      const sectorsById = Object.fromEntries(globalState.sectors.map(s => [s.sector_name, s]));
+      document.getElementById("sai-leaderboard").innerHTML = top.length ? top.map(t => {
+        const s = sectorsById[t.sector];
+        const a = ACTIVITY[s && s.activity_level] || ACTIVITY.LOW_ACTIVITY_NORMAL;
+        const id = s ? s.sector_id : shortSector(t.sector);
+        return `<div class="row tap" style="display:block" data-sector="${esc(id)}">
+          <div style="display:flex;justify-content:space-between;align-items:baseline">
+            <span class="row-title">${esc(shortSector(t.sector))}</span>
+            <span class="muted num" style="font-size:14px">${t.sai} <span style="font-size:12px">· ${t.incidents} ev</span></span>
           </div>
-          <div class="flex items-center space-x-3">
-            <span class="text-[10px] text-slate-400">${s.incidents} rep</span>
-            <span class="font-mono font-bold text-amber-400">SAI ${s.sai}</span>
-          </div>
-        `;
-        saiContainer.appendChild(item);
-      });
+          <div class="bar-track"><div class="bar-fill" style="width:${(t.sai / maxSai) * 100}%;background:var(${a.css})"></div></div>
+        </div>`;
+      }).join("") : `<div class="empty">No activity</div>`;
 
-      const anomalyContainer = document.getElementById('anomaly-list');
-      anomalyContainer.innerHTML = '';
-      const highlights = globalState.summary.level_2_comprehension.anomaly_highlights;
-      highlights.forEach(h => {
-        const div = document.createElement('div');
-        div.className = "p-2 rounded-lg bg-rose-500/10 border border-rose-500/20 text-rose-300 text-[11px] leading-relaxed";
-        div.innerText = h;
-        anomalyContainer.appendChild(div);
-      });
+      const anomalies = c.anomaly_highlights || [];
+      document.getElementById("anomaly-list").innerHTML = anomalies.length ? anomalies.map(text => {
+        const m = text.match(/^(.*?) exhibits an anomaly Z-score of ([\d.]+)σ \((\d+) reports in (\d+)d vs ([\d.]+) expected\)/);
+        if (!m) return `<div class="row"><span class="row-sub" style="margin:0">${esc(text)}</span></div>`;
+        const isSector = globalState.sectors.some(s => s.sector_id === m[1]);
+        return `<div class="row${isSector ? " tap" : ""}" ${isSector ? `data-sector="${esc(m[1])}"` : ""}>
+          <div class="row-main"><div class="row-title">${esc(m[1])}</div>
+          <div class="row-sub">${m[3]} in ${m[4]} days · ${m[5]} expected</div></div>
+          <span class="pill num" style="background:color-mix(in srgb, var(--red) 15%, transparent);color:var(--red)">${m[2]}σ</span>
+        </div>`;
+      }).join("") : `<div class="empty">Nothing unusual</div>`;
     }
 
     function renderProjectionPanel() {
-      const trajectoryContainer = document.getElementById('hotspot-trajectory-list');
-      trajectoryContainer.innerHTML = '';
-      const trajectories = globalState.summary.level_3_projection.hotspot_trajectories;
-      
-      trajectories.forEach(t => {
-        const div = document.createElement('div');
-        div.className = "p-2 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-200 text-[11px] leading-relaxed flex items-start space-x-2";
-        div.innerHTML = `
-          <i data-lucide="navigation" class="w-3.5 h-3.5 text-indigo-400 mt-0.5 shrink-0"></i>
-          <span>${t}</span>
-        `;
-        trajectoryContainer.appendChild(div);
-      });
+      const p = globalState.summary.level_3_projection;
+      const acc = p.accelerating_risk_sectors || [];
+      const idByName = Object.fromEntries(globalState.sectors.map(s => [s.sector_name, s.sector_id]));
+      document.getElementById("momentum-forecast-list").innerHTML = acc.length ? acc.map(a => {
+        const id = idByName[a.sector] || shortSector(a.sector);
+        return `<div class="row tap" data-sector="${esc(id)}">
+          <div class="row-main"><div class="row-title">${esc(shortSector(a.sector))}</div><div class="row-sub">Rising</div></div>
+          <span class="muted num">≈ ${a.projected_7d} events</span></div>`;
+      }).join("") : `<div class="empty">All sectors steady</div>`;
 
-      const momentumContainer = document.getElementById('momentum-forecast-list');
-      momentumContainer.innerHTML = '';
-      const accelerating = globalState.summary.level_3_projection.accelerating_risk_sectors;
+      const hs = globalState.hotspots || [];
+      document.getElementById("hotspot-trajectory-list").innerHTML = hs.length ? hs.map((h, i) => `
+        <div class="row tap" data-hotspot="${i}">
+          <div class="row-main"><div class="row-title">${esc(catLabel(h.dominant_category))} · ${esc((h.sectors_involved || []).join(", "))}</div>
+          <div class="row-sub">${h.incident_count} events</div></div>
+          <span class="muted" style="white-space:nowrap">${esc(h.drift_direction)} · ${h.drift_velocity_km_per_day} km/d</span>
+        </div>`).join("") : `<div class="empty">No clusters</div>`;
 
-      accelerating.forEach(acc => {
-        const div = document.createElement('div');
-        div.className = "flex items-center justify-between p-2 rounded-lg bg-slate-950/60 border border-slate-800/80";
-        div.innerHTML = `
-          <span class="text-slate-300 font-medium">${acc.sector.replace(', Noida', '')}</span>
-          <div class="flex items-center space-x-2">
-            <span class="text-rose-400 font-mono font-bold">+${acc.projected_7d} exp/7d</span>
-            <span class="px-1.5 py-0.5 text-[9px] rounded font-bold bg-rose-500/20 text-rose-300">ACCELERATING</span>
-          </div>
-        `;
-        momentumContainer.appendChild(div);
-      });
-      lucide.createIcons();
+      document.querySelectorAll(".pane-right [data-sector]").forEach(el =>
+        el.addEventListener("click", () => selectSector(el.dataset.sector)));
+      document.querySelectorAll(".pane-right [data-hotspot]").forEach(el =>
+        el.addEventListener("click", () => {
+          const h = hs[Number(el.dataset.hotspot)];
+          setView("clusters");
+          map.flyTo([h.center_latitude, h.center_longitude], 14, { duration: 0.6 });
+        }));
     }
 
-    function updateLayers() {
-      const showMarkers = document.getElementById('toggle-markers').checked;
-      const showSectors = document.getElementById('toggle-sectors').checked;
-      const showHeatmap = document.getElementById('toggle-heatmap').checked;
-      const showHotspots = document.getElementById('toggle-hotspots').checked;
-
-      if (showMarkers) map.addLayer(markersLayer); else map.removeLayer(markersLayer);
-      if (showSectors) map.addLayer(sectorsLayer); else map.removeLayer(sectorsLayer);
-      if (showHotspots) map.addLayer(hotspotsLayer); else map.removeLayer(hotspotsLayer);
-      if (heatLayer) {
-        if (showHeatmap) map.addLayer(heatLayer); else map.removeLayer(heatLayer);
-      }
+    // ------------------------------------------------------------------ controls
+    function setView(v) {
+      currentView = v;
+      document.querySelectorAll("#view-switch button").forEach(b => b.classList.toggle("active", b.dataset.view === v));
+      if (globalState) { applyView(); renderLegend(); }
     }
+    document.querySelectorAll("#view-switch button").forEach(b => b.addEventListener("click", () => setView(b.dataset.view)));
 
     function filterCategory(cat) {
       currentCategoryFilter = cat;
-      document.querySelectorAll('.category-filter-btn').forEach(btn => {
-        if (btn.dataset.cat === cat) {
-          btn.className = "category-filter-btn px-2.5 py-1 rounded-md bg-indigo-600 text-white font-medium whitespace-nowrap";
-        } else {
-          btn.className = "category-filter-btn px-2.5 py-1 rounded-md bg-slate-800 text-slate-400 hover:text-white font-medium whitespace-nowrap";
-        }
-      });
+      selectedEventId = null;
+      document.querySelectorAll("#category-filter button").forEach(b => b.classList.toggle("active", b.dataset.cat === cat));
       renderIncidentFeed();
       renderIncidentMarkers();
     }
-
-    function focusIncident(lat, lon, headline) {
-      map.setView([lat, lon], 14, { animate: true });
-    }
+    document.querySelectorAll("#category-filter button").forEach(b => b.addEventListener("click", () => filterCategory(b.dataset.cat)));
 
     async function refreshData() {
-      const icon = document.getElementById('refresh-icon');
-      icon.classList.add('animate-spin');
-      await loadData();
-      setTimeout(() => icon.classList.remove('animate-spin'), 600);
+      const icon = document.getElementById("refresh-icon");
+      icon.classList.add("spin");
+      try { await loadData(); }
+      catch (e) { console.error(e); toast("Couldn’t load data"); }
+      finally { setTimeout(() => icon.classList.remove("spin"), 400); }
     }
 
-    function openIngestModal() {
-      document.getElementById('ingest-modal').classList.remove('hidden');
+    // ------------------------------------------------------------------ add news sheet
+    function setNote(text, isError) {
+      const n = document.getElementById("sheet-note");
+      n.textContent = text;
+      n.classList.toggle("error", !!isError);
     }
-
-    function closeIngestModal() {
-      document.getElementById('ingest-modal').classList.add('hidden');
+    function openSheet() {
+      setNote("Location is read from the text. Only Noida sectors and known landmarks are mapped.");
+      document.getElementById("ingest-modal").classList.add("open");
+      setTimeout(() => document.getElementById("ingest-headline").focus(), 50);
     }
+    function closeSheet() { document.getElementById("ingest-modal").classList.remove("open"); }
+    // Backwards-compatible names
+    const openIngestModal = openSheet, closeIngestModal = closeSheet;
+    document.addEventListener("keydown", e => { if (e.key === "Escape") closeSheet(); });
 
     async function submitArticle() {
-      const headline = document.getElementById('ingest-headline').value.trim();
-      const body = document.getElementById('ingest-body').value.trim();
-      const source = document.getElementById('ingest-source').value.trim();
+      const headline = document.getElementById("ingest-headline").value.trim();
+      const body = document.getElementById("ingest-body").value.trim();
+      const source = document.getElementById("ingest-source").value.trim() || "Manual text entry";
+      if (!headline) { setNote("Add a headline first.", true); return; }
 
-      if (!headline) {
-        alert("Please provide an article headline.");
-        return;
-      }
-
-      const btn = document.getElementById('btn-submit-ingest');
+      const btn = document.getElementById("btn-submit-ingest");
       btn.disabled = true;
-      btn.innerText = "Processing NLP Pipeline...";
-
+      btn.textContent = "Adding…";
+      setNote("Reading text, locating sector, merging duplicates…");
       try {
-        const res = await fetch('/api/ingest', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+        const res = await fetch("/api/ingest", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ headline, body, source_url: source })
         });
-        const data = await res.json();
-        
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok) throw new Error(data.detail || `Server error ${res.status}`);
         if (data.success) {
-          closeIngestModal();
-          document.getElementById('ingest-headline').value = '';
-          document.getElementById('ingest-body').value = '';
+          closeSheet();
+          document.getElementById("ingest-headline").value = "";
+          document.getElementById("ingest-body").value = "";
+          document.getElementById("ingest-source").value = "";
           await refreshData();
+          toast("News added");
         } else {
-          alert("Pipeline Notification: " + data.message);
+          setNote("Not added — this doesn’t read as an incident, or no Noida sector was found in the text.", true);
         }
       } catch (err) {
-        alert("Error during article ingestion: " + err.message);
+        setNote("Couldn’t add: " + err.message, true);
       } finally {
         btn.disabled = false;
-        btn.innerHTML = "<span>Ingest & Run Pipeline</span>";
+        btn.textContent = "Add";
       }
     }
 
-    // Initialize map and load pipeline state
-    window.onload = () => {
+    // ------------------------------------------------------------------ boot
+    window.addEventListener("load", () => {
       initMap();
-      loadData();
-    };
+      refreshData();
+    });
   </script>
 </body>
 </html>

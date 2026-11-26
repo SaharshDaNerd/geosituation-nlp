@@ -87,10 +87,10 @@ class SectorAnomalyDetector:
                 "is_anomaly": is_anomaly,
                 "dominant_category": dom_cat,
                 "explanation": (
-                    f"Sector {s_id} exhibits an anomaly Z-score of {z_score}σ "
+                    f"{s_id} exhibits an anomaly Z-score of {z_score}σ "
                     f"({n_recent} reports in {self.recent_window_days}d vs {round(expected_recent, 1)} expected). "
                     f"Predominant pattern: {dom_cat}."
-                ) if is_anomaly else f"Sector {s_id} is operating within normal baseline variance (Z={z_score}σ)."
+                ) if is_anomaly else f"{s_id} is operating within normal baseline variance (Z={z_score}σ)."
             })
 
         # Sort by Z-score descending

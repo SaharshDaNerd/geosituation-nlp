@@ -68,7 +68,7 @@ This project implements an AI-driven urban intelligence system modeled after **M
 │       └── api/
 │           ├── main.py         # FastAPI async endpoints (REST + Lifespan)
 │           └── templates/
-│               └── dashboard.html # Leaflet.js interactive dark GIS dashboard
+│               └── dashboard.html # Minimal iOS-style Leaflet dashboard (light/dark, sector tiles)
 ├── scripts/
 │   ├── generate_gazetteer.py   # Regenerates canonical Noida sector database
 │   ├── seed_data.py            # Generates baseline seed corpus & runs pipeline
@@ -138,7 +138,8 @@ $$\theta = \text{atan2}(\Delta \text{lon}, \Delta \text{lat})$$
 2. **Option B: Connect Live Scraping Daemon**
    - Hook `NewsIncidentCollector.fetch_google_news_rss()` into an async background task or recurring cron script (`scripts/daemon_ingest.py`) that polls every hour and calls `pipeline.ingest_new_article()`.
 3. **Option C: Add GeoJSON Sector Polygons**
-   - Currently, sector nodes render as dynamic interactive circles scaled by SAI score. To render exact municipal boundary polygons, place a GeoJSON file into `data/geojson/noida_sectors.geojson` and bind it via `L.geoJSON()` in `dashboard.html`.
+   - Sectors currently render as approximate tiles: each centroid's Voronoi cell clipped to a 1.15 km disc (`buildSectorCells()` in `dashboard.html`), filled by SAI activity level. Corridors (Expressway, DND) render as labelled pins. To use exact municipal boundaries, place `data/geojson/noida_sectors.geojson`, serve it, and swap `buildSectorCells()` for `L.geoJSON()`.
+   - News input is plain text only (headline + body + optional source name); sources display as text, not links.
 
 ---
 
@@ -154,3 +155,14 @@ uv run python scripts/evaluate_models.py
 uv run python run.py
 ```
 Ensure all 24 tests pass before modifying core modules.
+
+---
+
+## 7. Live News Ingestion (real data)
+
+* `scripts/ingest_live_news.py` rebuilds `data/processed/*` from **real Google News RSS headlines only** (the synthetic seed corpus in `scripts/seed_data.py` is no longer used for the live state). Default window and retention: **60 days** (`--days N`); `--append` keeps existing reports but still prunes anything older than the window.
+* Two queries per gazetteer sector plus city-wide incident queries, 1 s apart.
+* Filters in `NewsIncidentCollector.fetch_google_news_rss()`: headline must name Noida; Greater Noida (separate sector numbering) and other "Sector N" cities (Gurugram, Chandigarh, Mohali…) are rejected; must contain an incident cue; retrospectives/court/film stories and self-harm are excluded. Short headlines get their category from unambiguous cue words (`HEADLINE_CATEGORY_RULES`, recorded as `category_source`), else the classifier.
+* Sources are stored as outlet name text in `source_url`; the link is kept in `article_url`.
+* `scripts/extend_gazetteer_osm.py` added 63 sector centroids from OpenStreetMap Nominatim (area features only, inside the Noida envelope; cache in `data/raw/osm_sector_cache.json`). The old "interpolated sector" fallback that invented coordinates was removed from `gazetteer.py`: unknown sectors now resolve to nothing.
+* Coverage is limited by what headlines actually name; reading full article bodies would raise it.
