@@ -63,6 +63,57 @@ def main() -> int:
     seen = {norm(r["headline"]) for r in existing}
     collected = []
 
+    # 1. Direct Noida City Index Pages (TOI Noida + HT Noida) with full article body scraping
+    print("[Source 1/5] Scraping TOI & HT Noida city pages (full article bodies)...", flush=True)
+    city_recs = collector.fetch_noida_city_pages(max_articles=60)
+    city_new = 0
+    for r in city_recs:
+        key = norm(r["headline"])
+        if key not in seen:
+            seen.add(key)
+            collected.append(r)
+            city_new += 1
+    print(f"   -> {len(city_recs)} incidents from city pages, {city_new} new", flush=True)
+
+    # 2. Direct Publisher RSS Feeds (HT Noida, TOI NCR, Indian Express) with lead-paragraph body extraction
+    print("[Source 2/5] Fetching direct publisher RSS feeds (with article body extraction)...", flush=True)
+    pub_recs = collector.fetch_publisher_rss(fetch_body=True)
+    pub_new = 0
+    for r in pub_recs:
+        key = norm(r["headline"])
+        if key not in seen:
+            seen.add(key)
+            collected.append(r)
+            pub_new += 1
+    print(f"   -> {len(pub_recs)} incidents from publisher RSS, {pub_new} new", flush=True)
+
+    # 3. Bing News RSS (direct publisher URLs + article body extraction)
+    print("[Source 3/5] Fetching Bing News RSS (direct URLs + body extraction)...", flush=True)
+    bing_recs = collector.fetch_bing_news_rss(fetch_body=True)
+    bing_new = 0
+    for r in bing_recs:
+        key = norm(r["headline"])
+        if key not in seen:
+            seen.add(key)
+            collected.append(r)
+            bing_new += 1
+    print(f"   -> {len(bing_recs)} incidents from Bing News RSS, {bing_new} new", flush=True)
+
+    # 4. GDELT 2.0 Doc API (up to 250 historical Indian/NCR articles over the window)
+    gdelt_days = min(args.days, 90)
+    print(f"[Source 4/5] Querying GDELT 2.0 Doc API (timespan={gdelt_days}d)...", flush=True)
+    gdelt_recs = collector.fetch_gdelt_news(timespan=f"{gdelt_days}d", max_records=250)
+    gdelt_new = 0
+    for r in gdelt_recs:
+        key = norm(r["headline"])
+        if key not in seen:
+            seen.add(key)
+            collected.append(r)
+            gdelt_new += 1
+    print(f"   -> {len(gdelt_recs)} incidents from GDELT, {gdelt_new} new", flush=True)
+
+    # 5. Google News RSS per-sector & city-wide fan-out
+    print(f"[Source 5/5] Querying Google News RSS ({len(queries)} targeted queries)...", flush=True)
     for i, q in enumerate(queries, 1):
         recs = collector.fetch_google_news_rss(q + window)
         new = 0

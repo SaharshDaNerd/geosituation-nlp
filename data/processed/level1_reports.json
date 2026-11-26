@@ -1,6 +1,99 @@
 [
   {
-    "report_id": "REP_9508ADE417",
+    "report_id": "REP_1DBB6277DA",
+    "source_url": "Times of India",
+    "headline": "4 months after plaster collapse, Child PGI repairs to start now",
+    "full_text": "4 months after plaster collapse, Child PGI repairs to start now.",
+    "published_at": "2026-11-26T19:07:29.442097",
+    "incident_timestamp": "2026-11-26T19:07:29.442097",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "model_confidence": 0.1667,
+    "severity_weight": 3.5,
+    "sector_id": "Sector 30",
+    "sector_name": "Sector 30, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5733,
+    "longitude": 77.3392,
+    "spatial_match_type": "LANDMARK_GAZETTEER_MATCH",
+    "spatial_confidence": 0.9,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://timesofindia.indiatimes.com/city/noida/4-months-after-plaster-collapse-child-pgi-repairs-to-start-now/articleshow/136062499.cms",
+    "ingest_channel": "city_page_scraper"
+  },
+  {
+    "report_id": "REP_AEB8EFB3A5",
+    "source_url": "Times of India",
+    "headline": "Burglaries on the rise, Noida residents seek night patrols: DDRWA and Sector 105 RWA seek mandatory verification of house helps, vendors and guards",
+    "full_text": "Burglaries on the rise, Noida residents seek night patrols: DDRWA and Sector 105 RWA seek mandatory verification of house helps, vendors and guards.",
+    "published_at": "2026-11-26T19:07:20.952752",
+    "incident_timestamp": "2026-11-26T21:00:00.952752",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP_NIGHT",
+    "temporal_confidence": 0.65,
+    "category": "PROPERTY_CRIME",
+    "category_name": "Property / Financial Crime",
+    "model_confidence": 1.0,
+    "severity_weight": 2.5,
+    "sector_id": "Sector 105",
+    "sector_name": "Sector 105, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5316,
+    "longitude": 77.3692,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://timesofindia.indiatimes.com/city/noida/burglaries-on-the-rise-noida-residents-seek-night-patrols-ddrwa-and-sector-105-rwa-seek-mandatory-verification-of-house-helps-vendors-and-guards/articleshow/136110970.cms",
+    "ingest_channel": "city_page_scraper"
+  },
+  {
+    "report_id": "REP_631601C5DF",
+    "source_url": "Hindustan Times",
+    "headline": "Noida man duped of  ₹24L in cryptocurrency fraud",
+    "full_text": "Noida man duped of ₹24L in cryptocurrency fraud. Noida: A 44-year-old man in Noida’s Sector 21 was allegedly duped of ₹24 lakh in a cryptocurrency fraud, police said on Tuesday",
+    "published_at": "2026-11-25T07:43:40",
+    "incident_timestamp": "2026-11-25T07:43:40",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "PROPERTY_CRIME",
+    "category_name": "Property / Financial Crime",
+    "model_confidence": 0.6955,
+    "severity_weight": 2.5,
+    "sector_id": "Sector 21",
+    "sector_name": "Sector 21, Noida",
+    "zone": "Residential / Civic",
+    "latitude": 28.5885,
+    "longitude": 77.334,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://www.hindustantimes.com/cities/noida-news/noida-man-duped-of-24l-in-cryptocurrency-fraud-101795546013845.html",
+    "ingest_channel": "publisher_rss"
+  },
+  {
+    "report_id": "REP_E091A0188B",
     "source_url": "www.thesamaja.com",
     "headline": "Massive Fire Guts Plastic Decorative Items Factory in Noida's Sector 6; No Casualties Reported",
     "full_text": "Massive Fire Guts Plastic Decorative Items Factory in Noida's Sector 6; No Casualties Reported.",
@@ -33,7 +126,7 @@
     "ingest_channel": "google_news_rss"
   },
   {
-    "report_id": "REP_333FDB753F",
+    "report_id": "REP_4C5D9445BD",
     "source_url": "The Times of India",
     "headline": "Burglaries on the rise, Noida residents seek night patrols: DDRWA and Sector 105 RWA seek mandatory verif",
     "full_text": "Burglaries on the rise, Noida residents seek night patrols: DDRWA and Sector 105 RWA seek mandatory verif.",
@@ -64,7 +157,7 @@
     "ingest_channel": "google_news_rss"
   },
   {
-    "report_id": "REP_E7BADBA78A",
+    "report_id": "REP_906E395998",
     "source_url": "tennews.in",
     "headline": "Massive fire engulfs unit manufacturing plastic decorative items in Noida’s Sector 6",
     "full_text": "Massive fire engulfs unit manufacturing plastic decorative items in Noida’s Sector 6.",
@@ -97,7 +190,38 @@
     "ingest_channel": "google_news_rss"
   },
   {
-    "report_id": "REP_D0F51E09A6",
+    "report_id": "REP_A0097608BB",
+    "source_url": "msn.com",
+    "headline": "24-year-old arrested after firing outside Greater Noida college: Police",
+    "full_text": "24-year-old arrested after firing outside Greater Noida college: Police. Police identified the suspect as a resident of Atta Gujran village, who is also a BA LLB student at a government college in Greater Noida ...",
+    "published_at": "2026-11-22T13:02:03",
+    "incident_timestamp": "2026-11-22T13:02:03",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "VIOLENT_CRIME",
+    "category_name": "Violent Crime",
+    "model_confidence": 1.0,
+    "severity_weight": 5.0,
+    "sector_id": "Sector 18",
+    "sector_name": "Sector 18, Noida",
+    "zone": "Major Commercial Hub",
+    "latitude": 28.57,
+    "longitude": 77.322,
+    "spatial_match_type": "LANDMARK_GAZETTEER_MATCH",
+    "spatial_confidence": 0.78,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://www.msn.com/en-in/news/India/24-year-old-arrested-after-firing-outside-greater-noida-college-police/ar-AA2hYbNl",
+    "ingest_channel": "bing_news_rss"
+  },
+  {
+    "report_id": "REP_25E08F7A4C",
     "source_url": "Hindustan Times",
     "headline": "Three arrested for ₹1.5 crore burglary in Noida’s Sector 50 society, police hunt fourth suspect",
     "full_text": "Three arrested for ₹1.5 crore burglary in Noida’s Sector 50 society, police hunt fourth suspect.",
@@ -128,7 +252,7 @@
     "ingest_channel": "google_news_rss"
   },
   {
-    "report_id": "REP_762F0140F7",
+    "report_id": "REP_1D410677DF",
     "source_url": "Hindustan Times",
     "headline": "Man dies after his bike crashes into tree in Noida Sec 63",
     "full_text": "Man dies after his bike crashes into tree in Noida Sec 63.",
@@ -161,7 +285,71 @@
     "ingest_channel": "google_news_rss"
   },
   {
-    "report_id": "REP_A9B073C770",
+    "report_id": "REP_D3CBC0E2F1",
+    "source_url": "millenniumpost.in",
+    "headline": "Three cars damaged in Noida road accident",
+    "full_text": "Three cars damaged in Noida road accident. Noida: Three cars collided near Metro Pillar 186 in Sector 39 on Wednesday morning, briefly disrupting traffic on a busy stretch. The collision left the vehicles damaged, but police initially ...",
+    "published_at": "2026-11-18T22:04:00",
+    "incident_timestamp": "2026-11-18T09:00:00",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP_MORNING",
+    "temporal_confidence": 0.65,
+    "category": "TRAFFIC_INCIDENT",
+    "category_name": "Traffic & Road Hazard",
+    "model_confidence": 1.0,
+    "severity_weight": 2.0,
+    "sector_id": "Sector 39",
+    "sector_name": "Sector 39, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5686,
+    "longitude": 77.3521,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://www.millenniumpost.in/delhi/three-cars-damaged-in-noida-road-accident-683783",
+    "ingest_channel": "bing_news_rss"
+  },
+  {
+    "report_id": "REP_D58B0B95D9",
+    "source_url": "msn.com",
+    "headline": "IT engineer dies in fatal motorcycle crash in Noida Sector 63",
+    "full_text": "IT engineer dies in fatal motorcycle crash in Noida Sector 63. A 24-year-old IT engineer lost his life in a tragic road accident in Noida on Tuesday night after swerving his motorcycle to avoid a collision with another vehicle.",
+    "published_at": "2026-11-18T16:43:47",
+    "incident_timestamp": "2026-11-18T21:00:00",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP_NIGHT",
+    "temporal_confidence": 0.65,
+    "category": "TRAFFIC_INCIDENT",
+    "category_name": "Traffic & Road Hazard",
+    "model_confidence": 0.1667,
+    "severity_weight": 2.0,
+    "sector_id": "Sector 63",
+    "sector_name": "Sector 63, Noida",
+    "zone": "Major Industrial & Tech Zone",
+    "latitude": 28.625,
+    "longitude": 77.382,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [],
+      "vehicles": [
+        "Motorcycle"
+      ],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://www.msn.com/en-in/news/other/it-engineer-dies-in-fatal-motorcycle-crash-in-noida-sector-63/ar-AA2hIamy",
+    "ingest_channel": "bing_news_rss"
+  },
+  {
+    "report_id": "REP_86927BFA5B",
     "source_url": "The Hans India",
     "headline": "Noida: Two workers rescued after fire breaks out at garment export company in Sector 63",
     "full_text": "Noida: Two workers rescued after fire breaks out at garment export company in Sector 63.",
@@ -196,7 +384,7 @@
     "ingest_channel": "google_news_rss"
   },
   {
-    "report_id": "REP_9A66F239C4",
+    "report_id": "REP_90EDA9E6D0",
     "source_url": "Mid-Day",
     "headline": "Noida police arrest four suspects after late-night encounter in Sector 63",
     "full_text": "Noida police arrest four suspects after late-night encounter in Sector 63.",
@@ -229,7 +417,7 @@
     "ingest_channel": "google_news_rss"
   },
   {
-    "report_id": "REP_C3A7565B2A",
+    "report_id": "REP_371143F0D6",
     "source_url": "Hindustan Times",
     "headline": "Noida Sector 37 residents raise security concerns after burglary in society",
     "full_text": "Noida Sector 37 residents raise security concerns after burglary in society.",
@@ -260,7 +448,7 @@
     "ingest_channel": "google_news_rss"
   },
   {
-    "report_id": "REP_F8B9BE9DC0",
+    "report_id": "REP_AD5C4E5F08",
     "source_url": "The Times of India",
     "headline": "Man loses control, crashes car into another on Noida Expressway, dies",
     "full_text": "Man loses control, crashes car into another on Noida Expressway, dies.",
@@ -293,7 +481,41 @@
     "ingest_channel": "google_news_rss"
   },
   {
-    "report_id": "REP_1A80B254EA",
+    "report_id": "REP_FA669494A7",
+    "source_url": "msn.com",
+    "headline": "One dead, four injured in two separate road accidents in Noida",
+    "full_text": "One dead, four injured in two separate road accidents in Noida. In the second accident, four people were injured when two cars collided head-on and one crashed into a roadside tea shop in Sector 62, Noida on Thursday.",
+    "published_at": "2026-10-31T00:48:30",
+    "incident_timestamp": "2026-10-31T00:48:30",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "TRAFFIC_INCIDENT",
+    "category_name": "Traffic & Road Hazard",
+    "model_confidence": 1.0,
+    "severity_weight": 2.0,
+    "sector_id": "Sector 62",
+    "sector_name": "Sector 62, Noida",
+    "zone": "Major Institutional & IT Hub",
+    "latitude": 28.627,
+    "longitude": 77.363,
+    "spatial_match_type": "EXACT_SECTOR_REGEX",
+    "spatial_confidence": 0.96,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [],
+      "casualty_mentions": [
+        "four",
+        "one"
+      ]
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://www.msn.com/en-in/news/other/one-dead-four-injured-in-two-separate-road-accidents-in-noida/ar-AA2grHFq",
+    "ingest_channel": "bing_news_rss"
+  },
+  {
+    "report_id": "REP_A664E70982",
     "source_url": "Urban Acres",
     "headline": "Noida Sector 150 Air Pollution Protest Targets Heavy Trucks",
     "full_text": "Noida Sector 150 Air Pollution Protest Targets Heavy Trucks.",
@@ -324,7 +546,7 @@
     "ingest_channel": "google_news_rss"
   },
   {
-    "report_id": "REP_31D0085BFB",
+    "report_id": "REP_C119677E9B",
     "source_url": "India Today",
     "headline": "Noida Sector 125 Fire: 1 Dead as Blaze Engulfs Multiple Shops Following Blast - India Today",
     "full_text": "Noida Sector 125 Fire: 1 Dead as Blaze Engulfs Multiple Shops Following Blast - India Today.",
@@ -360,7 +582,7 @@
     "ingest_channel": "google_news_rss"
   },
   {
-    "report_id": "REP_2D12D6DECB",
+    "report_id": "REP_1A23F25BBD",
     "source_url": "Hindustan Times",
     "headline": "Massive fire breaks out at food outlet in Noida’s Sector 125; one killed, several shops gutted",
     "full_text": "Massive fire breaks out at food outlet in Noida’s Sector 125; one killed, several shops gutted.",
@@ -395,7 +617,7 @@
     "ingest_channel": "google_news_rss"
   },
   {
-    "report_id": "REP_5FDDCA9C2D",
+    "report_id": "REP_3BC28AEE36",
     "source_url": "Livemint",
     "headline": "Noida Sector 125 fire: Blaze at hotel spreads to nearby eateries, firefighting ops underway",
     "full_text": "Noida Sector 125 fire: Blaze at hotel spreads to nearby eateries, firefighting ops underway.",
@@ -429,7 +651,7 @@
     "ingest_channel": "google_news_rss"
   },
   {
-    "report_id": "REP_BCD6CDADE1",
+    "report_id": "REP_742549EB64",
     "source_url": "News Arena India",
     "headline": "Noida Fire: 1 Dead as Massive Blaze Engulfs Shops in Sector 125",
     "full_text": "Noida Fire: 1 Dead as Massive Blaze Engulfs Shops in Sector 125.",
@@ -465,7 +687,7 @@
     "ingest_channel": "google_news_rss"
   },
   {
-    "report_id": "REP_45596F022D",
+    "report_id": "REP_BD8F451CBA",
     "source_url": "Times Now",
     "headline": "Massive Fire Breaks Out In Noida's Sector 125, One Dead, Several Shops Gutted",
     "full_text": "Massive Fire Breaks Out In Noida's Sector 125, One Dead, Several Shops Gutted.",
@@ -500,7 +722,7 @@
     "ingest_channel": "google_news_rss"
   },
   {
-    "report_id": "REP_F481F56907",
+    "report_id": "REP_37DB7EED5D",
     "source_url": "Oneindia",
     "headline": "Noida Fire: One Dead As Blaze Breaks Out At Krishna Food Point In Sector 125, Multiple LPG Cylinders Spotted",
     "full_text": "Noida Fire: One Dead As Blaze Breaks Out At Krishna Food Point In Sector 125, Multiple LPG Cylinders Spotted.",
@@ -536,7 +758,7 @@
     "ingest_channel": "google_news_rss"
   },
   {
-    "report_id": "REP_7EDD90AE8F",
+    "report_id": "REP_C436C994B1",
     "source_url": "The Week",
     "headline": "What caused massive fire near Noida Amity University?",
     "full_text": "What caused massive fire near Noida Amity University?.",
@@ -569,7 +791,106 @@
     "ingest_channel": "google_news_rss"
   },
   {
-    "report_id": "REP_BF2AA832FD",
+    "report_id": "REP_72E87665C0",
+    "source_url": "Daily Pioneer",
+    "headline": "LPG cylinder blasts trigger fire at shops near Amity University in Noida, 1 dead",
+    "full_text": "LPG cylinder blasts trigger fire at shops near Amity University in Noida, 1 dead.",
+    "published_at": "2026-10-24T12:30:00",
+    "incident_timestamp": "2026-10-24T12:30:00",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "model_confidence": 1.0,
+    "severity_weight": 3.5,
+    "sector_id": "Sector 125",
+    "sector_name": "Sector 125, Noida",
+    "zone": "Educational / Institutional Hub",
+    "latitude": 28.544,
+    "longitude": 77.332,
+    "spatial_match_type": "LANDMARK_GAZETTEER_MATCH",
+    "spatial_confidence": 0.9,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": [],
+      "casualty_mentions": [
+        "1"
+      ]
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQTMwdmtxQm9hNG82MjFqRHVlbnk2cUVDZGE0d21yQ0M4cGw3cTE2cUJjRmV0Ml9xSTYzUzNJV0Jjd1lpeERrcVplU0hVVlh0LW83ak9ONF9ZYmNqYTlJRTFzM2RDNkFMUnlJTk42X29TbG9JVXN0dzBHVVowS1NVWGxqc01xSFdOWVhUTVlEUWtTQ0tVOUpnaVNUN2ZRVEpMVS1ucGZUTnVBTi1yYWFJ0gG8AUFVX3lxTE5FTW1Pejd6Tnl2dk9mUUtob3Y0VzRtYWhfa010cFNORzREOXZUNzh3WHdzLUNwMzhnSDdQS0VUc2VqWVBZODFHZExNRmVCM0ZROXlsb0RkWWhZc09HTjkzNDRXVTM2ZXFXQWVlcUN6UkJYTUtHOWZhcC11bmd3X1REVXljUkRFb3NOd2tRcEpNOWtFRXRKYzI5V2tMQ1NwRHhDUDFRNmo2VEgzZVhHOW8weUJsRmJjRmd0X3lx?oc=5",
+    "ingest_channel": "google_news_rss"
+  },
+  {
+    "report_id": "REP_23EF17A6D3",
+    "source_url": "Hindustan Times",
+    "headline": "Noida’s Jaypee Wish Town residents protest ₹1.5 per sq ft shared area maintenance charges, cite possible duplication of expenses",
+    "full_text": "Noida’s Jaypee Wish Town residents protest ₹1.5 per sq ft shared area maintenance charges, cite possible duplication of expenses.",
+    "published_at": "2026-10-24T12:30:00",
+    "incident_timestamp": "2026-10-24T12:30:00",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "PUBLIC_DISRUPTION",
+    "category_name": "Public Order & Protests",
+    "model_confidence": 1.0,
+    "severity_weight": 2.0,
+    "sector_id": "Sector 128",
+    "sector_name": "Sector 128, Noida",
+    "zone": "Expressway / Healthcare Hub",
+    "latitude": 28.514,
+    "longitude": 77.355,
+    "spatial_match_type": "LANDMARK_GAZETTEER_MATCH",
+    "spatial_confidence": 0.9,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQNmlkaXN1V3NncklRU1FxdXB3UHItTldGSE56UGUzWUVQYzM5OU9aNkJWdWJwNTdiTmdCaEtqdWtxaWl1UXVIa2ZsMk5Ld0FKODh3LW1wYWpsZW5aTW5uSW9YdXNzTG56czF6TFlMempQUWZaZEZjV2pPTGYtTWplR1cxTXQzVVctdmd3N3RLLWM2eHNNTlBkbGZINEc1RVVjS2JKWkFxSVdzTGVFMFpUNnBNXzVXWXRQTGh5UU5URVJONkF5MlHSAcsBQVVfeXFMUHJLc2tJd2piVHFuR3ZITDVHbk9xM2F4SE1hWHNfb3NuVXN3TjVDWG1UMHI5V1ZrNTdwOVVXaEkzaWxCQU9OUkdvSUNiV0NBZ0FySTFsUV9YbGRyME45OTk4LUpreHRrUTFNY2JtRS1KX1VycWZQWnkxaUR0eEhneGxkdjkxVE1TS1ktWV9EbUlUMy0xVThDVkg3ODREc3FRM3BLanZkWGNZSkU1S2RqV1JYbXlHZG9TekQzWXM5MURST0dhbmh0Uzc2QTQ?oc=5",
+    "ingest_channel": "google_news_rss"
+  },
+  {
+    "report_id": "REP_76C832E68B",
+    "source_url": "newsx.com",
+    "headline": "23 - Year - Old Sahil Found Dead in Open Drain in Noida Barola , Locals Question Noida Authority Negligence",
+    "full_text": "23 - Year - Old Sahil Found Dead in Open Drain in Noida Barola , Locals Question Noida Authority Negligence.",
+    "published_at": "2026-10-18T16:15:00",
+    "incident_timestamp": "2026-10-18T16:15:00",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "VIOLENT_CRIME",
+    "category_name": "Violent Crime",
+    "model_confidence": 1.0,
+    "severity_weight": 5.0,
+    "sector_id": "Sector 6",
+    "sector_name": "Sector 6, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5938,
+    "longitude": 77.3205,
+    "spatial_match_type": "LANDMARK_GAZETTEER_MATCH",
+    "spatial_confidence": 0.9,
+    "entities": {
+      "organizations": [
+        "Noida Authority"
+      ],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://www.newsx.com/regionals/23-year-old-sahil-found-dead-in-open-drain-in-noidas-barola-locals-question-noida-authoritys-negligence-284786/",
+    "ingest_channel": "gdelt_doc_api"
+  },
+  {
+    "report_id": "REP_A7520EEA30",
     "source_url": "The Times of India",
     "headline": "Burglars steal jewellery and cash worth Rs 1.5 crore from two locked flats in Noida Sector 50 highrise",
     "full_text": "Burglars steal jewellery and cash worth Rs 1.5 crore from two locked flats in Noida Sector 50 highrise.",
@@ -600,7 +921,7 @@
     "ingest_channel": "google_news_rss"
   },
   {
-    "report_id": "REP_357766711A",
+    "report_id": "REP_A59052A569",
     "source_url": "Hindustan Times",
     "headline": "Thieves steal valuables worth ₹1.5 crore from two locked flats in Noida’s Sector 50 society",
     "full_text": "Thieves steal valuables worth ₹1.5 crore from two locked flats in Noida’s Sector 50 society.",
@@ -633,10 +954,10 @@
     "ingest_channel": "google_news_rss"
   },
   {
-    "report_id": "REP_64BE6F55D8",
+    "report_id": "REP_30CFBC8431",
     "source_url": "NDTV",
     "headline": "Sleeper Bus Catches Fire On Noida-Greater Noida Expressway, All Passengers Rescued",
-    "full_text": "Sleeper Bus Catches Fire On Noida-Greater Noida Expressway, All Passengers Rescued.",
+    "full_text": "Sleeper Bus Catches Fire On Noida-Greater Noida Expressway, All Passengers Rescued. Noida News | Sleeper Bus Catches Fire On Noida-Greater Noida Expressway, All Passengers Rescued NDTV",
     "published_at": "2026-10-07T15:12:45",
     "incident_timestamp": "2026-10-07T15:12:45",
     "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
@@ -668,7 +989,75 @@
     "ingest_channel": "google_news_rss"
   },
   {
-    "report_id": "REP_2F18C5A4A3",
+    "report_id": "REP_82BA05FDBE",
+    "source_url": "India TV News",
+    "headline": "Sleeper bus catches fire on Greater Noida Expressway, horrifying video surfaces",
+    "full_text": "Sleeper bus catches fire on Greater Noida Expressway, horrifying video surfaces.",
+    "published_at": "2026-10-06T12:30:00",
+    "incident_timestamp": "2026-10-06T12:30:00",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "model_confidence": 1.0,
+    "severity_weight": 3.5,
+    "sector_id": "Noida-Greater Noida Expressway",
+    "sector_name": "Noida-Greater Noida Expressway",
+    "zone": "High-Speed Arterial Corridor",
+    "latitude": 28.518,
+    "longitude": 77.382,
+    "spatial_match_type": "LANDMARK_GAZETTEER_MATCH",
+    "spatial_confidence": 0.9,
+    "entities": {
+      "organizations": [],
+      "vehicles": [
+        "Bus"
+      ],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    },
+    "category_source": "headline_cue_rule",
+    "article_url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNXy0xN3lYSUQ0WlFHLW1VOS01ZGFsLVg2Z3BBZ1JqM3dqazFVZndidV9ycWVUdlNWMnNGS1pDcmNFTFUwcXNKN1BZbDFBZkx5OE15eGMzSkM1dUhIM3hsVXpjczNEYUNqM2M2OGFZenZkZE8teXE4V20zdDdFYml2b2pWaVNwRl9PZTVMYzZTZWV4bUNMYUFTYjB0TFFkbzdMaHRSZF9iaG1XTWw1WC1wRlF2WGowX0t0X1pFZlJpN3VjWGdiV3VuN0Z5RHhuUi1yQzR4QUtNcFVkSmRYcjgxSDhsMEpZWFHSAewBQVVfeXFMTld4aVNKSmtmWmJ3RWN4SEdOT0dBdVFqMlQtdVdyU2NjeS1GN3kzNUNwcEFnSmxoa3dJZzJGUi1sWGc5cGxuT19zdkJaVUJyY0dMeEdSVkZxODRqdmN6ejM5d2phUDRXSG50dnUyYnpGOGtlS1NzTnQwbVRlaHFIT00tYnh1ZHI5OWtwLUVDNm5ueGNwdkpVSWRmQkdLUi05TllpM190bmFjWmQ5UTJWclJGaDZHbU5jUVZveDBuam04dDRzd0lOR3g0dkxsaXJTbm1OQURfcjV4TmRFWDJnamZwdnVPZktCQkRWM24?oc=5",
+    "ingest_channel": "google_news_rss"
+  },
+  {
+    "report_id": "REP_1839B3354D",
+    "source_url": "Free Press Journal",
+    "headline": "Agra-Bound Sleeper Bus Turns Into Fireball On Noida-Greater Noida Expressway, Passengers Evacuated - VIDEO",
+    "full_text": "Agra-Bound Sleeper Bus Turns Into Fireball On Noida-Greater Noida Expressway, Passengers Evacuated - VIDEO.",
+    "published_at": "2026-10-06T12:30:00",
+    "incident_timestamp": "2026-10-06T12:30:00",
+    "temporal_indicator": "ARTICLE_PUBLICATION_TIMESTAMP",
+    "temporal_confidence": 0.65,
+    "category": "TRAFFIC_INCIDENT",
+    "category_name": "Traffic & Road Hazard",
+    "model_confidence": 1.0,
+    "severity_weight": 2.0,
+    "sector_id": "Noida-Greater Noida Expressway",
+    "sector_name": "Noida-Greater Noida Expressway",
+    "zone": "High-Speed Arterial Corridor",
+    "latitude": 28.518,
+    "longitude": 77.382,
+    "spatial_match_type": "LANDMARK_GAZETTEER_MATCH",
+    "spatial_confidence": 0.9,
+    "entities": {
+      "organizations": [],
+      "vehicles": [
+        "Bus"
+      ],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [],
+      "casualty_mentions": []
+    },
+    "category_source": "classifier",
+    "article_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQRFV4ZW9qMGZyNGFFdjE3YUUxNkI2a2xCZWhfUDIyTXhOZElTVE1TZUJvUFgtQS1ma0F6NzBjMGZvbllXblhpdjc0dVJZdUNGRkRuY1UtTkIzb2hOWkpIWmJVTDNMNUhnUVZYbUZXSE5ZWXRSU2M3ZS12ckJYVXFWU2t6eERsTm16bUJWWU1semtMQ2FpaUxNMkpaenoxQUxLaVp6aVVYdFNSQ2NHLTB3V2NBeUpfd21WdXc2T19zaHBTVDlCaldkcWZnOWNBZVV0bExGVnBaa0TSAd4BQVVfeXFMTTNBMW11b3FlYkE1b2tSZjZJLW8xYXk1OUJlanF0UjVyNHBQSUdEWnMzVWRWVU1ma0R0MVF5REo4Y3E4b1IzTjFMSnRfRGFKYTkzNzFoS21oUmhTa0pVelc0RlhFUWJ6NHRKWEhDNTROYUFLeDk0bU9yTVJCaEFha3BrU3JEY2pJZjhPMGNuaUxxX1QxVVFVTWNua1gydDRLVUlFWTZtNWFIbVJlLWcySjU0cTFWOUpqNnlnY25jNzZBZjY4UnN3MHB6a3cxT3VMRzRueFU5MEI2dnhkNHFR?oc=5",
+    "ingest_channel": "google_news_rss"
+  },
+  {
+    "report_id": "REP_456C79672B",
     "source_url": "The Statesman",
     "headline": "Horror at Noida’s Supernova: Airbnb guest falls from Sector 94 high-rise; police probe death",
     "full_text": "Horror at Noida’s Supernova: Airbnb guest falls from Sector 94 high-rise; police probe death.",

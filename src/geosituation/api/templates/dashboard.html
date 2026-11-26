@@ -426,10 +426,10 @@
       PUBLIC_DISRUPTION: { label: "Public",   color: "var(--blue)" }
     };
     const ACTIVITY = {
-      LOW_ACTIVITY_NORMAL: { label: "Low",      css: "--green" },
-      MODERATE_ACTIVITY:   { label: "Moderate", css: "--yellow" },
-      ELEVATED_ATTENTION:  { label: "Elevated", css: "--orange" },
-      HIGH_ANOMALY_ALERT:  { label: "High",     css: "--red" }
+      LOW_ACTIVITY_NORMAL: { label: "Relatively Safer",  css: "--green" },
+      MODERATE_ACTIVITY:   { label: "Moderate Caution",  css: "--yellow" },
+      ELEVATED_ATTENTION:  { label: "Elevated Risk",     css: "--orange" },
+      HIGH_ANOMALY_ALERT:  { label: "Higher-Risk Zone",  css: "--red" }
     };
     const CELL_RADIUS_KM = 1.15;   // max reach of a sector cell from its centroid
     const KM_PER_DEG_LAT = 110.574;
@@ -479,11 +479,11 @@
       toast._t = setTimeout(() => t.classList.remove("show"), 2600);
     }
 
-    // SAI → fill colour. Quiet sectors stay neutral, active ones warm up.
+    // SAI → safety fill colour across all sectors (Green = Safer → Red = Higher-Risk).
     function saiFill(sai, level) {
-      if (!sai || sai <= 0) return { color: cssVar("--cell-quiet"), opacity: 1 };
+      if (!sai || sai <= 0.01) return { color: cssVar("--green"), opacity: 0.16 };
       const a = ACTIVITY[level] || ACTIVITY.LOW_ACTIVITY_NORMAL;
-      const opacity = Math.min(0.75, 0.28 + sai / 20);
+      const opacity = Math.min(0.78, 0.30 + sai / 6.0);
       return { color: cssVar(a.css), opacity };
     }
 
@@ -745,9 +745,10 @@
 
     function sectorTooltip(s) {
       const a = ACTIVITY[s.activity_level] || ACTIVITY.LOW_ACTIVITY_NORMAL;
-      return `<div style="font-weight:600">${esc(s.sector_id)}</div>
-        <div style="color:var(--text-2);font-size:12px">${esc(s.zone)}</div>
-        <div style="margin-top:4px">${s.raw_incident_count} ${s.raw_incident_count === 1 ? "event" : "events"} · SAI ${s.sai_score} · ${a.label}</div>`;
+      const risk = s.risk_score !== undefined ? `${s.risk_score}/100` : `SAI ${s.sai_score}`;
+      return `<div style="font-weight:600">${esc(s.sector_id)} · ${esc(a.label)}</div>
+        <div style="color:var(--text-2);font-size:12px">${esc(s.zone)} · Risk ${risk}</div>
+        <div style="margin-top:4px">${s.raw_incident_count} direct ${s.raw_incident_count === 1 ? "event" : "events"}${s.spillover_sai > 0 ? ` · spillover ${s.spillover_sai}` : ""}</div>`;
     }
 
     function renderIncidentMarkers() {
@@ -834,13 +835,12 @@
         return;
       }
       const rows = [
-        ["No activity", cssVar("--cell-quiet"), 1],
-        ["Low", cssVar("--green"), 0.45],
-        ["Moderate", cssVar("--yellow"), 0.55],
-        ["Elevated", cssVar("--orange"), 0.65],
-        ["High", cssVar("--red"), 0.75]
+        ["Relatively Safer", cssVar("--green"), 0.28],
+        ["Moderate Caution", cssVar("--yellow"), 0.50],
+        ["Elevated Risk", cssVar("--orange"), 0.65],
+        ["Higher-Risk Zone", cssVar("--red"), 0.78]
       ];
-      el.innerHTML = `<div style="font-weight:600;color:var(--text);margin-bottom:6px">Sector activity</div>` +
+      el.innerHTML = `<div style="font-weight:600;color:var(--text);margin-bottom:6px">Predicted area safety</div>` +
         rows.map(([l, c, o]) => `<div class="legend-row"><span class="swatch" style="background:color-mix(in srgb, ${c} ${Math.round(o * 100)}%, transparent)"></span>${l}</div>`).join("") +
         (currentView === "clusters" ? `<div class="legend-row" style="margin-top:8px"><span class="swatch" style="border:1.5px dashed ${cssVar("--indigo")};background:none"></span>Cluster · arrow = drift</div>` : "");
     }
@@ -870,9 +870,11 @@
           <button class="btn-text" style="font-size:15px;font-weight:400" onclick="selectSector(null)">Done</button></div>
         <div class="group">
           <div class="row"><span>Zone</span><span class="muted">${esc(s.zone)}</span></div>
-          <div class="row"><span>Activity</span><span class="pill" style="background:color-mix(in srgb, var(${a.css}) 18%, transparent);color:var(${a.css})">${a.label}</span></div>
-          <div class="row"><span>Activity index</span><span class="muted num">${s.sai_score}</span></div>
-          <div class="row"><span>Events</span><span class="muted num">${s.raw_incident_count}</span></div>
+          <div class="row"><span>Safety rating</span><span class="pill" style="background:color-mix(in srgb, var(${a.css}) 18%, transparent);color:var(${a.css})">${esc(s.safety_status || a.label)}</span></div>
+          <div class="row"><span>Predicted risk</span><span class="muted num">${s.risk_score !== undefined ? s.risk_score : "–"} / 100</span></div>
+          <div class="row"><span>Activity index</span><span class="muted num">${s.sai_score} (${s.direct_sai ?? s.sai_score} direct + ${s.spillover_sai ?? 0} nearby)</span></div>
+          <div class="row"><span>Direct events</span><span class="muted num">${s.raw_incident_count}</span></div>
+          <div class="row"><span>Data basis</span><span class="muted" style="font-size:12px">${esc(s.data_basis || "Observed Reports")}</span></div>
           ${traj ? `<div class="row"><span>Expected next 7 days</span><span class="muted num">${traj.projected_7d_incidents}</span></div>` : ""}
         </div>
         ${breakdown.length ? `<div class="group-label">By type</div><div class="group">` + breakdown.map(([c, n]) => `
