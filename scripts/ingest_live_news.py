@@ -1,29 +1,35 @@
 """
-Rebuild the situational database from REAL news (Google News RSS).
+Rebuild the situational database from REAL news across 6 multi-source channels.
 
-* Runs one search per sector in the gazetteer ("Noida Sector N") plus a set of
-  city-wide incident searches, restricted to the last N days.
-* Every headline goes through the normal Level 1 perception path
-  (incident filter -> classifier -> gazetteer). Headlines that are not about
-  Noida, are not incidents, or cannot be placed on a known sector are dropped.
-* Replaces data/processed/level1_reports.json with only these real reports
-  (the synthetic seed corpus is NOT kept), re-runs coreference, then the full
-  Level 2 / Level 3 pipeline.
+Channels:
+  1. Direct Noida city index pages (TOI Noida & HT Noida via layered BS4 / JSON-LD)
+  2. Direct Publisher RSS feeds (HT Noida, TOI NCR, Indian Express)
+  3. Bing News RSS (direct publisher URLs + body extraction)
+  4. GDELT 2.0 Doc API (up to 90-day historical backfill)
+  5. Google News Hindi RSS (Noida local Hindi reporting)
+  6. Google News English RSS (per-sector + city-wide fan-out + redirect decoding)
 
 Usage:
-    uv run python scripts/ingest_live_news.py            # last 60 days
-    uv run python scripts/ingest_live_news.py --days 14
-    uv run python scripts/ingest_live_news.py --append   # keep existing reports
+    uv run python scripts/ingest_live_news.py
+    uv run python scripts/ingest_live_news.py --mode high_recall --days 90
+    uv run python scripts/ingest_live_news.py --append
 """
 import argparse
 import json
+import logging
 import re
 import sys
 import time
-from datetime import datetime, timedelta
 from collections import Counter
+from datetime import datetime, timedelta
 
-from geosituation.config import PROCESSED_DATA_DIR
+from geosituation.config import (
+    INGEST_CONFIG,
+    PROCESSED_DATA_DIR,
+    build_pipeline_config,
+)
+from geosituation.perception.collector import NewsIncidentCollector
+from geosituation.comprehension.coreference import CrossDocumentDeduplicator
 from geosituation.pipeline import SituationalAwarenessPipeline
 
 CITY_QUERIES = [
@@ -39,115 +45,165 @@ CITY_QUERIES = [
 SECTOR_INCIDENT_TERMS = "police OR fire OR accident OR theft OR arrested OR killed OR protest"
 
 
-def norm(headline: str) -> str:
-    return re.sub(r"[^a-z0-9]+", " ", headline.lower()).strip()
+def norm_key(report: dict) -> str:
+    headline = re.sub(r"[^a-z0-9\u0900-\u097f]+", " ", report["headline"].lower()).strip()
+    return f"{headline}||{report.get('sector_id', '')}"
 
 
 def main() -> int:
+    logging.basicConfig(level=logging.WARNING, format="%(levelname)s: %(message)s")
+
     ap = argparse.ArgumentParser()
-    ap.add_argument("--days", type=int, default=60)
-    ap.add_argument("--append", action="store_true", help="keep existing level1 reports")
-    ap.add_argument("--delay", type=float, default=1.0, help="seconds between requests")
+    ap.add_argument("--days", type=int, default=None, help="Lookback window in days")
+    ap.add_argument("--append", action="store_true", help="Keep existing level1 reports")
+    ap.add_argument("--delay", type=float, default=0.5, help="Seconds between Google News requests")
+    ap.add_argument("--mode", choices=["strict", "balanced", "high_recall"], default="", help="Override PIPELINE_MODE")
     args = ap.parse_args()
 
-    pipeline = SituationalAwarenessPipeline()
-    collector = pipeline.collector
-    sectors = [s["id"] for s in pipeline.gazetteer.get_all_sectors() if s["id"].startswith("Sector ")]
+    cfg = build_pipeline_config(args.mode)
+    grounding_cfg = cfg["grounding"]
+    dedup_cfg = cfg["deduplication"]
+    ingest_cfg = cfg["ingest"]
+    days = args.days if args.days is not None else ingest_cfg["lookback_days"]
 
-    # Two searches per sector: everything mentioning it, and an incident-focused one
+    print(f"=== GeoSituation-NLP Live Ingestion (mode={grounding_cfg['pipeline_mode']}, days={days}) ===", flush=True)
+
+    pipeline = SituationalAwarenessPipeline()
+    collector = NewsIncidentCollector(grounding_config=grounding_cfg, ingest_config=ingest_cfg)
+    collector.reset_stats()
+    deduplicator = CrossDocumentDeduplicator(**dedup_cfg)
+
+    all_gazetteer_sectors = collector.gazetteer.get_all_sectors()
+    sectors = [s["id"] for s in all_gazetteer_sectors if s["id"].startswith("Sector ")]
     queries = [q for s in sectors for q in (f'Noida "{s}"', f'Noida "{s}" {SECTOR_INCIDENT_TERMS}')] + CITY_QUERIES
-    window = f" when:{args.days}d"
+    window = f" when:{days}d"
 
     reports_path = PROCESSED_DATA_DIR / "level1_reports.json"
     existing = json.loads(reports_path.read_text(encoding="utf-8")) if (args.append and reports_path.exists()) else []
-    seen = {norm(r["headline"]) for r in existing}
+    seen = {norm_key(r) for r in existing}
     collected = []
 
-    # 1. Direct Noida City Index Pages (TOI Noida + HT Noida) with full article body scraping
-    print("[Source 1/5] Scraping TOI & HT Noida city pages (full article bodies)...", flush=True)
-    city_recs = collector.fetch_noida_city_pages(max_articles=60)
-    city_new = 0
-    for r in city_recs:
-        key = norm(r["headline"])
-        if key not in seen:
-            seen.add(key)
-            collected.append(r)
-            city_new += 1
-    print(f"   -> {len(city_recs)} incidents from city pages, {city_new} new", flush=True)
-
-    # 2. Direct Publisher RSS Feeds (HT Noida, TOI NCR, Indian Express) with lead-paragraph body extraction
-    print("[Source 2/5] Fetching direct publisher RSS feeds (with article body extraction)...", flush=True)
-    pub_recs = collector.fetch_publisher_rss(fetch_body=True)
-    pub_new = 0
-    for r in pub_recs:
-        key = norm(r["headline"])
-        if key not in seen:
-            seen.add(key)
-            collected.append(r)
-            pub_new += 1
-    print(f"   -> {len(pub_recs)} incidents from publisher RSS, {pub_new} new", flush=True)
-
-    # 3. Bing News RSS (direct publisher URLs + article body extraction)
-    print("[Source 3/5] Fetching Bing News RSS (direct URLs + body extraction)...", flush=True)
-    bing_recs = collector.fetch_bing_news_rss(fetch_body=True)
-    bing_new = 0
-    for r in bing_recs:
-        key = norm(r["headline"])
-        if key not in seen:
-            seen.add(key)
-            collected.append(r)
-            bing_new += 1
-    print(f"   -> {len(bing_recs)} incidents from Bing News RSS, {bing_new} new", flush=True)
-
-    # 4. GDELT 2.0 Doc API (up to 250 historical Indian/NCR articles over the window)
-    gdelt_days = min(args.days, 90)
-    print(f"[Source 4/5] Querying GDELT 2.0 Doc API (timespan={gdelt_days}d)...", flush=True)
-    gdelt_recs = collector.fetch_gdelt_news(timespan=f"{gdelt_days}d", max_records=250)
-    gdelt_new = 0
-    for r in gdelt_recs:
-        key = norm(r["headline"])
-        if key not in seen:
-            seen.add(key)
-            collected.append(r)
-            gdelt_new += 1
-    print(f"   -> {len(gdelt_recs)} incidents from GDELT, {gdelt_new} new", flush=True)
-
-    # 5. Google News RSS per-sector & city-wide fan-out
-    print(f"[Source 5/5] Querying Google News RSS ({len(queries)} targeted queries)...", flush=True)
-    for i, q in enumerate(queries, 1):
-        recs = collector.fetch_google_news_rss(q + window)
-        new = 0
+    def add_records(recs: list) -> int:
+        added = 0
         for r in recs:
-            key = norm(r["headline"])
+            key = norm_key(r)
             if key in seen:
                 continue
             seen.add(key)
             collected.append(r)
-            new += 1
+            added += 1
+        return added
+
+    # 1. Direct Noida City Index Pages (TOI Noida + HT Noida)
+    print(f"[Source 1/6] Scraping TOI & HT Noida city pages (max_articles={ingest_cfg['max_city_articles']})...", flush=True)
+    city_recs = collector.fetch_noida_city_pages(max_articles=ingest_cfg["max_city_articles"])
+    print(f"   -> {len(city_recs)} incidents, {add_records(city_recs)} new", flush=True)
+
+    # 2. Direct Publisher RSS Feeds
+    print("[Source 2/6] Fetching direct publisher RSS feeds (HT Noida, TOI, IE)...", flush=True)
+    pub_recs = collector.fetch_publisher_rss(fetch_body=True)
+    print(f"   -> {len(pub_recs)} incidents, {add_records(pub_recs)} new", flush=True)
+
+    # 3. Bing News RSS
+    print("[Source 3/6] Fetching Bing News RSS (direct URLs + BS4 extraction)...", flush=True)
+    bing_recs = collector.fetch_bing_news_rss(fetch_body=True)
+    print(f"   -> {len(bing_recs)} incidents, {add_records(bing_recs)} new", flush=True)
+
+    # 4. GDELT 2.0 Doc API
+    gdelt_days = min(days, 90)
+    print(f"[Source 4/6] Querying GDELT 2.0 Doc API (timespan={gdelt_days}d)...", flush=True)
+    gdelt_recs = collector.fetch_gdelt_news(timespan=f"{gdelt_days}d", max_records=250)
+    print(f"   -> {len(gdelt_recs)} incidents, {add_records(gdelt_recs)} new", flush=True)
+
+    # 5. Google News Hindi RSS
+    if ingest_cfg.get("enable_hindi_feeds", True):
+        print("[Source 5/6] Fetching Google News Hindi RSS (Noida local press)...", flush=True)
+        hi_recs = collector.fetch_hindi_noida_rss(days=days)
+        print(f"   -> {len(hi_recs)} incidents, {add_records(hi_recs)} new", flush=True)
+    else:
+        print("[Source 5/6] Hindi RSS skipped (ENABLE_HINDI_FEEDS=false).", flush=True)
+
+    # 6. Google News English RSS fan-out
+    print(f"[Source 6/6] Querying Google News RSS ({len(queries)} targeted queries)...", flush=True)
+    decode_gnews = ingest_cfg.get("decode_google_news_urls", True)
+    for i, q in enumerate(queries, 1):
+        is_city = q in CITY_QUERIES
+        recs = collector.fetch_google_news_rss(
+            q + window,
+            fetch_unresolved_bodies=decode_gnews and (is_city or i <= 60),
+            max_body_fetches=10 if is_city else 3,
+        )
+        new = add_records(recs)
         print(f"[{i:3d}/{len(queries)}] {q[:48]:48s} -> {len(recs):2d} incidents, {new:2d} new", flush=True)
         time.sleep(args.delay)
+
+    collector._save_url_cache()
 
     if not collected and not existing:
         print("No real incident reports collected (network down?). Existing data left untouched.")
         return 1
 
-    # Retention: keep only reports published within the window (default 60 days)
-    cutoff = (datetime.now() - timedelta(days=args.days)).isoformat()
+    cutoff = (datetime.now() - timedelta(days=days)).isoformat()
     kept = [r for r in existing + collected if r.get("published_at", "") >= cutoff]
-    dropped = len(existing) + len(collected) - len(kept)
-    if dropped:
-        print(f"Dropped {dropped} reports older than {args.days} days.")
+    dropped_old = len(existing) + len(collected) - len(kept)
     reports = sorted(kept, key=lambda r: r["published_at"], reverse=True)
     reports_path.write_text(json.dumps(reports, indent=2, ensure_ascii=False), encoding="utf-8")
 
-    canonical = pipeline.deduplicator.deduplicate(reports)
+    canonical = deduplicator.deduplicate(reports)
     (PROCESSED_DATA_DIR / "canonical_events.json").write_text(json.dumps(canonical, indent=2, ensure_ascii=False), encoding="utf-8")
+    pipeline.deduplicator = deduplicator
     state = pipeline.run_pipeline()
 
+    # Telemetry & Funnel Audit Summary
+    diag = collector.get_diagnostics()
+    merge_stats = deduplicator.last_merge_stats
     by_sector = Counter(e["sector_id"] for e in canonical)
-    print(f"\n{len(reports)} real reports -> {len(canonical)} canonical events across {len(by_sector)} sectors/landmarks.")
-    print("Top:", ", ".join(f"{k} ({v})" for k, v in by_sector.most_common(12)))
-    print("Hotspots:", len(state["hotspots"]))
+
+    print("\n" + "=" * 78)
+    print("   FUNNEL AUDIT & REJECTION / MERGE TELEMETRY")
+    print("=" * 78)
+    print(
+        f"HTTP Stats       : requests={diag.get('http_requests', 0)}, "
+        f"200={diag.get('http_200', 0)}, 4xx={diag.get('http_4xx', 0)}, "
+        f"5xx={diag.get('http_5xx', 0)}, timeouts={diag.get('http_timeouts', 0)}, "
+        f"errors={diag.get('http_errors', 0)}"
+    )
+    print(
+        f"BS4 Extraction   : jsonld={diag.get('bs4_jsonld_hits', 0)}, "
+        f"semantic={diag.get('bs4_article_hits', 0)}, p_fallback={diag.get('bs4_paragraph_hits', 0)}, "
+        f"meta={diag.get('bs4_meta_fallbacks', 0)}, rss={diag.get('bs4_rss_fallbacks', 0)}, "
+        f"failures={diag.get('bs4_parse_failures', 0)}"
+    )
+    print(
+        f"Google Redirects : decoded={diag.get('google_url_decoded', 0)}, "
+        f"failed={diag.get('google_url_decode_failed', 0)}"
+    )
+    print(
+        f"Filter Drops     : min_len={diag.get('dropped_min_length', 0)}, "
+        f"rss_only={diag.get('dropped_rss_summary_disallowed', 0)}, "
+        f"non_noida={diag.get('dropped_non_noida', 0)}, "
+        f"greater_noida={diag.get('dropped_greater_noida', 0)}, "
+        f"other_city={diag.get('dropped_other_city', 0)}, "
+        f"no_cue={diag.get('dropped_no_incident_cue', 0)}, "
+        f"excluded={diag.get('dropped_excluded_term', 0)}, "
+        f"non_incident={diag.get('dropped_classifier_non_incident', 0)}, "
+        f"low_cls_conf={diag.get('dropped_low_classifier_conf', 0)}, "
+        f"unresolved_loc={diag.get('dropped_unresolved_location', 0)}, "
+        f"expired_window={dropped_old}"
+    )
+    print(
+        f"Level 2 Merge    : in={merge_stats.get('input_reports', 0)} -> "
+        f"out={merge_stats.get('output_events', 0)} "
+        f"(merged={merge_stats.get('merged_reports', 0)}: "
+        f"high_sim={merge_stats.get('merged_by_high_sim', 0)}, "
+        f"sector_sim={merge_stats.get('merged_by_same_sector_sim', 0)}, "
+        f"entity_sim={merge_stats.get('merged_by_entity_sim', 0)}, "
+        f"close={merge_stats.get('merged_by_close_proximity', 0)})"
+    )
+    print(f"Coverage         : {len(by_sector)} / {len(all_gazetteer_sectors)} gazetteer sectors have direct events.")
+    print("Top Sectors      :", ", ".join(f"{k} ({v})" for k, v in by_sector.most_common(12)))
+    print(f"Level 3 Hotspots : {len(state['hotspots'])} active clusters")
+    print("=" * 78)
     return 0
 
 

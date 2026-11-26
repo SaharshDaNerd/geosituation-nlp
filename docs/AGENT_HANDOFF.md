@@ -158,11 +158,20 @@ Ensure all 24 tests pass before modifying core modules.
 
 ---
 
-## 7. Live News Ingestion (real data)
+## 7. Live News Ingestion & Configurable Pipeline Profiles
 
-* `scripts/ingest_live_news.py` rebuilds `data/processed/*` from **real Google News RSS headlines only** (the synthetic seed corpus in `scripts/seed_data.py` is no longer used for the live state). Default window and retention: **60 days** (`--days N`); `--append` keeps existing reports but still prunes anything older than the window.
-* Two queries per gazetteer sector plus city-wide incident queries, 1 s apart.
-* Filters in `NewsIncidentCollector.fetch_google_news_rss()`: headline must name Noida; Greater Noida (separate sector numbering) and other "Sector N" cities (Gurugram, Chandigarh, Mohali…) are rejected; must contain an incident cue; retrospectives/court/film stories and self-harm are excluded. Short headlines get their category from unambiguous cue words (`HEADLINE_CATEGORY_RULES`, recorded as `category_source`), else the classifier.
-* Sources are stored as outlet name text in `source_url`; the link is kept in `article_url`.
-* `scripts/extend_gazetteer_osm.py` added 63 sector centroids from OpenStreetMap Nominatim (area features only, inside the Noida envelope; cache in `data/raw/osm_sector_cache.json`). The old "interpolated sector" fallback that invented coordinates was removed from `gazetteer.py`: unknown sectors now resolve to nothing.
-* Coverage is limited by what headlines actually name; reading full article bodies would raise it.
+* `scripts/ingest_live_news.py` rebuilds `data/processed/*` from **6 real news channels**:
+  1. Direct Noida city index pages (`fetch_noida_city_pages`: TOI Noida & HT Noida, paginated)
+  2. Direct publisher RSS feeds (`fetch_publisher_rss`: HT Noida, TOI NCR, Indian Express)
+  3. Bing News RSS (`fetch_bing_news_rss`: direct publisher URLs + body extraction)
+  4. GDELT 2.0 Doc API (`fetch_gdelt_news`: up to 90-day historical backfill)
+  5. Google News Hindi RSS (`fetch_hindi_noida_rss`: `hl=hi` local reporting with Devanagari `सेक्टर N` resolution)
+  6. Google News English RSS (`fetch_google_news_rss`: per-sector + city-wide queries with Google redirect decoding)
+* **Layered BeautifulSoup Extraction (`extract_article_from_html`):** Extracts `JSON-LD` (`articleBody`, `datePublished`) before stripping boilerplate (`nav`, `footer`, `aside`, `script`, cookie banners), falls back to semantic containers (`<article>`, `<main>`, `._s30J`, `.storyDetails`), generic `<p>` tags, and `og:description` meta tags.
+* **Configurable Strictness Presets (`src/geosituation/config.py` + `.env.example`):**
+  * `PIPELINE_MODE=strict | balanced | high_recall` sets defaults for `GROUNDING_CONFIG`, `DEDUPLICATION_CONFIG`, and `INGEST_CONFIG`.
+  * Individual env overrides: `MIN_TEXT_LENGTH`, `REQUIRE_NOIDA_KEYWORD`, `ALLOW_RSS_SUMMARY_ONLY`, `ALLOW_LANDMARK_MATCH`, `MIN_SPATIAL_CONFIDENCE`, `MIN_CLASSIFIER_CONFIDENCE`, `ALLOW_MULTI_SECTOR_EXPANSION`, `MAX_SECTORS_PER_ARTICLE`, `DEDUP_SIM_THRESHOLD`, `DEDUP_SAME_SECTOR_SIM`, `DEDUP_CLOSE_DIST_KM`, `DEDUP_CLOSE_SIM`, `DEDUP_ENTITY_SIM_FLOOR`, `DEDUP_MAX_DISTANCE_KM`, `DEDUP_MAX_TIME_HOURS`, `INGEST_LOOKBACK_DAYS`, `MAX_CITY_ARTICLES`, `MAX_RSS_ITEMS`, `ENABLE_HINDI_FEEDS`, `DECODE_GOOGLE_NEWS_URLS`.
+* **Anti-Over-Merging Coreference (`coreference.py`):** Excludes generic agency entities (`Noida Police`, `Traffic Police`, `Fire Department`) from entity-overlap triggers and enforces `entity_overlap_sim_floor` + `same_sector_sim_threshold`.
+* **Multi-Sector & Gazetteer Grounding (`gazetteer.py`):** `resolve_all_locations()` extracts multi-sector ranges/lists (`Sectors 15 and 16`), Hindi `सेक्टर N`, and 60+ Noida chowks/villages/societies/hospitals (`EXTRA_LOCALITY_ALIASES`), while explicitly blocking ambiguous tokens (`atta`, `noida authority`) via `IGNORED_ALIASES`.
+* **Funnel Telemetry:** Every run prints HTTP status counts, BS4 extraction layer hits, Google URL decode counts, per-rule filter drop counts, and Level 2 merge reasons (`collector.get_diagnostics()`, `deduplicator.last_merge_stats`).
+* **Area Safety Scoring (`situational_index.py`):** Combines `direct_sai` + Gaussian `spillover_sai` (within 3.0 km, $\sigma = 1.2\text{ km}$) into a `0–100` `risk_score` and `safety_status` (`Relatively Safer` $\rightarrow$ `Higher-Risk Zone`), tracking `data_basis` (`Direct Observed Reports` vs `Nearby Incident Spillover Estimate` vs `No Recent Reports (Baseline)`).

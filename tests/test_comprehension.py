@@ -96,5 +96,138 @@ class TestComprehensionEngine(unittest.TestCase):
         self.assertTrue(s18_anom["is_anomaly"])
         self.assertGreater(s18_anom["z_score"], 1.5)
 
+    def test_distinct_same_sector_events_not_overmerged(self):
+        now = datetime.now().isoformat()
+        reports = [
+            {
+                "report_id": "REP_A",
+                "headline": "Man dies after his motorcycle crashes into tree in Noida Sector 63",
+                "full_text": "Man dies after his motorcycle crashes into tree in Noida Sector 63 near factory gate.",
+                "category": "TRAFFIC_INCIDENT",
+                "category_name": "Traffic & Road Hazard",
+                "severity_weight": 2.0,
+                "model_confidence": 0.90,
+                "sector_id": "Sector 63",
+                "sector_name": "Sector 63, Noida",
+                "zone": "Industrial",
+                "latitude": 28.625,
+                "longitude": 77.382,
+                "incident_timestamp": now,
+                "published_at": now,
+                "source_url": "Hindustan Times",
+                "entities": {"organizations": ["Noida Police"], "vehicles": ["Motorcycle"], "instruments_or_hazards": [], "roles_and_actors": []}
+            },
+            {
+                "report_id": "REP_B",
+                "headline": "Speeding bus rams stationary tanker causing morning jam in Sector 63",
+                "full_text": "A speeding private bus rammed a stationary water tanker in Sector 63, while Noida Police cleared the pileup with a motorcycle patrol.",
+                "category": "TRAFFIC_INCIDENT",
+                "category_name": "Traffic & Road Hazard",
+                "severity_weight": 2.0,
+                "model_confidence": 0.85,
+                "sector_id": "Sector 63",
+                "sector_name": "Sector 63, Noida",
+                "zone": "Industrial",
+                "latitude": 28.625,
+                "longitude": 77.382,
+                "incident_timestamp": now,
+                "published_at": now,
+                "source_url": "Times of India",
+                "entities": {"organizations": ["Noida Police"], "vehicles": ["Motorcycle", "Bus"], "instruments_or_hazards": [], "roles_and_actors": []}
+            }
+        ]
+
+        dedup = CrossDocumentDeduplicator()
+        canonical = dedup.deduplicate(reports)
+        self.assertEqual(len(canonical), 2)
+        self.assertEqual(dedup.last_merge_stats["merged_reports"], 0)
+        self.assertEqual(dedup.last_merge_stats["output_events"], 2)
+
+    def test_cross_lingual_hindi_english_and_long_short_merge(self):
+        now = datetime.now().isoformat()
+        reports = [
+            {
+                "report_id": "REP_EN_FIRE",
+                "headline": "Massive Fire Guts Plastic Decorative Items Factory in Noida's Sector 6",
+                "full_text": "Massive Fire Guts Plastic Decorative Items Factory in Noida's Sector 6.",
+                "category": "CIVIC_HAZARD",
+                "category_name": "Civic & Industrial Hazard",
+                "severity_weight": 3.5,
+                "model_confidence": 0.90,
+                "sector_id": "Sector 6",
+                "sector_name": "Sector 6, Noida",
+                "zone": "Urban Sector",
+                "latitude": 28.5938,
+                "longitude": 77.3205,
+                "incident_timestamp": now,
+                "published_at": now,
+                "source_url": "tennews.in",
+                "entities": {"organizations": [], "vehicles": [], "instruments_or_hazards": ["Fire"], "roles_and_actors": []}
+            },
+            {
+                "report_id": "REP_HI_FIRE",
+                "headline": "नोएडा सेक्टर-6 के प्लास्टिक फैक्ट्री में लगी भीषण आग, दूसरी इमारत भी आई चपेट में",
+                "full_text": "नोएडा सेक्टर-6 के प्लास्टिक फैक्ट्री में लगी भीषण आग, दूसरी इमारत भी आई चपेट में",
+                "category": "CIVIC_HAZARD",
+                "category_name": "Civic & Industrial Hazard",
+                "severity_weight": 3.5,
+                "model_confidence": 0.90,
+                "sector_id": "Sector 6",
+                "sector_name": "Sector 6, Noida",
+                "zone": "Urban Sector",
+                "latitude": 28.5938,
+                "longitude": 77.3205,
+                "incident_timestamp": now,
+                "published_at": now,
+                "source_url": "ETV Bharat",
+                "entities": {"organizations": [], "vehicles": [], "instruments_or_hazards": ["Fire"], "roles_and_actors": []}
+            },
+            {
+                "report_id": "REP_TOI_CRYPTO",
+                "headline": "Promised profits, man loses ₹24L in crypto fraud",
+                "full_text": "Promised profits, man loses ₹24L in crypto fraud. Noida: A 44-year-old man from Sector 21 lost Rs 24 lakh in a cryptocurrency investment scam. Cybercrime branch registered FIR under BNS Section 318(4) and IT Act Section 66D after Binance wallet transfers could not be withdrawn.",
+                "category": "PROPERTY_CRIME",
+                "category_name": "Property / Financial Crime",
+                "severity_weight": 2.5,
+                "model_confidence": 0.80,
+                "sector_id": "Sector 21",
+                "sector_name": "Sector 21, Noida",
+                "zone": "Residential",
+                "latitude": 28.5885,
+                "longitude": 77.3340,
+                "incident_timestamp": now,
+                "published_at": now,
+                "source_url": "Times of India",
+                "entities": {"organizations": [], "vehicles": [], "instruments_or_hazards": [], "roles_and_actors": []}
+            },
+            {
+                "report_id": "REP_HT_CRYPTO",
+                "headline": "Noida man duped of ₹24L in cryptocurrency fraud",
+                "full_text": "Noida man duped of ₹24L in cryptocurrency fraud. Noida: A 44-year-old man in Sector 21 was duped.",
+                "category": "PROPERTY_CRIME",
+                "category_name": "Property / Financial Crime",
+                "severity_weight": 2.5,
+                "model_confidence": 0.75,
+                "sector_id": "Sector 21",
+                "sector_name": "Sector 21, Noida",
+                "zone": "Residential",
+                "latitude": 28.5885,
+                "longitude": 77.3340,
+                "incident_timestamp": now,
+                "published_at": now,
+                "source_url": "Hindustan Times",
+                "entities": {"organizations": [], "vehicles": [], "instruments_or_hazards": [], "roles_and_actors": []}
+            }
+        ]
+
+        dedup = CrossDocumentDeduplicator()
+        canonical = dedup.deduplicate(reports)
+        self.assertEqual(len(canonical), 2)
+        fire_evt = next(e for e in canonical if e["sector_id"] == "Sector 6")
+        self.assertEqual(fire_evt["report_count"], 2)
+        self.assertIn("Massive Fire", fire_evt["headline"])  # English preferred over Hindi
+        crypto_evt = next(e for e in canonical if e["sector_id"] == "Sector 21")
+        self.assertEqual(crypto_evt["report_count"], 2)
+
 if __name__ == "__main__":
     unittest.main()

@@ -88,12 +88,146 @@ INCIDENT_CATEGORIES = {
     }
 }
 
-# Level 2 Parameters (Comprehension)
-DEDUPLICATION_CONFIG = {
-    "sim_threshold": 0.72,        # Semantic text similarity threshold (TF-IDF / Embedding)
-    "max_distance_km": 1.8,       # Max distance between reported coordinates for duplicate match
-    "max_time_window_hours": 60,  # Max time separation between duplicate news reports (2.5 days)
+def _env_bool(name: str, default: bool) -> bool:
+    val = os.getenv(name)
+    if val is None or val.strip() == "":
+        return default
+    return val.strip().lower() in ("1", "true", "yes", "on")
+
+
+def _env_int(name: str, default: int) -> int:
+    val = os.getenv(name)
+    if val is None or val.strip() == "":
+        return default
+    try:
+        return int(val.strip())
+    except ValueError:
+        return default
+
+
+def _env_float(name: str, default: float) -> float:
+    val = os.getenv(name)
+    if val is None or val.strip() == "":
+        return default
+    try:
+        return float(val.strip())
+    except ValueError:
+        return default
+
+
+# Tunable Strictness Presets (strict | balanced | high_recall)
+PIPELINE_PRESETS: Dict[str, Dict] = {
+    "strict": {
+        "min_text_length": 25,
+        "require_noida_keyword": True,
+        "allow_rss_summary_only": False,
+        "allow_landmark_match": True,
+        "min_spatial_confidence": 0.85,
+        "min_classifier_confidence": 0.35,
+        "allow_multi_sector_expansion": False,
+        "max_sectors_per_article": 1,
+        "dedup_sim_threshold": 0.72,
+        "dedup_same_sector_sim": 0.38,
+        "dedup_close_dist_km": 0.8,
+        "dedup_close_sim": 0.35,
+        "dedup_entity_sim_floor": 0.22,
+        "dedup_max_distance_km": 1.8,
+        "dedup_max_time_window_hours": 60.0,
+        "lookback_days": 60,
+        "max_city_articles": 60,
+        "max_rss_items": 100,
+        "enable_hindi_feeds": False,
+        "decode_google_news_urls": True,
+    },
+    "balanced": {
+        "min_text_length": 15,
+        "require_noida_keyword": True,
+        "allow_rss_summary_only": True,
+        "allow_landmark_match": True,
+        "min_spatial_confidence": 0.75,
+        "min_classifier_confidence": 0.15,
+        "allow_multi_sector_expansion": True,
+        "max_sectors_per_article": 2,
+        "dedup_sim_threshold": 0.68,
+        "dedup_same_sector_sim": 0.34,
+        "dedup_close_dist_km": 0.8,
+        "dedup_close_sim": 0.30,
+        "dedup_entity_sim_floor": 0.18,
+        "dedup_max_distance_km": 1.8,
+        "dedup_max_time_window_hours": 60.0,
+        "lookback_days": 180,
+        "max_city_articles": 250,
+        "max_rss_items": 100,
+        "enable_hindi_feeds": True,
+        "decode_google_news_urls": True,
+    },
+    "high_recall": {
+        "min_text_length": 10,
+        "require_noida_keyword": False,
+        "allow_rss_summary_only": True,
+        "allow_landmark_match": True,
+        "min_spatial_confidence": 0.65,
+        "min_classifier_confidence": 0.0,
+        "allow_multi_sector_expansion": True,
+        "max_sectors_per_article": 3,
+        "dedup_sim_threshold": 0.74,
+        "dedup_same_sector_sim": 0.30,
+        "dedup_close_dist_km": 0.8,
+        "dedup_close_sim": 0.30,
+        "dedup_entity_sim_floor": 0.16,
+        "dedup_max_distance_km": 1.8,
+        "dedup_max_time_window_hours": 48.0,
+        "lookback_days": 180,
+        "max_city_articles": 350,
+        "max_rss_items": 100,
+        "enable_hindi_feeds": True,
+        "decode_google_news_urls": True,
+    },
 }
+
+
+def build_pipeline_config(mode: str = "") -> Dict[str, Dict]:
+    """Builds grounding, deduplication, and ingestion configs from PIPELINE_MODE + env overrides."""
+    selected = (mode or os.getenv("PIPELINE_MODE", "balanced")).strip().lower()
+    if selected not in PIPELINE_PRESETS:
+        selected = "balanced"
+    p = PIPELINE_PRESETS[selected]
+
+    grounding = {
+        "pipeline_mode": selected,
+        "min_text_length": _env_int("MIN_TEXT_LENGTH", p["min_text_length"]),
+        "require_noida_keyword": _env_bool("REQUIRE_NOIDA_KEYWORD", p["require_noida_keyword"]),
+        "allow_rss_summary_only": _env_bool("ALLOW_RSS_SUMMARY_ONLY", p["allow_rss_summary_only"]),
+        "allow_landmark_match": _env_bool("ALLOW_LANDMARK_MATCH", p["allow_landmark_match"]),
+        "min_spatial_confidence": _env_float("MIN_SPATIAL_CONFIDENCE", p["min_spatial_confidence"]),
+        "min_classifier_confidence": _env_float("MIN_CLASSIFIER_CONFIDENCE", p["min_classifier_confidence"]),
+        "allow_multi_sector_expansion": _env_bool("ALLOW_MULTI_SECTOR_EXPANSION", p["allow_multi_sector_expansion"]),
+        "max_sectors_per_article": _env_int("MAX_SECTORS_PER_ARTICLE", p["max_sectors_per_article"]),
+    }
+    dedup = {
+        "sim_threshold": _env_float("DEDUP_SIM_THRESHOLD", p["dedup_sim_threshold"]),
+        "same_sector_sim_threshold": _env_float("DEDUP_SAME_SECTOR_SIM", p["dedup_same_sector_sim"]),
+        "close_dist_km": _env_float("DEDUP_CLOSE_DIST_KM", p["dedup_close_dist_km"]),
+        "close_sim_threshold": _env_float("DEDUP_CLOSE_SIM", p["dedup_close_sim"]),
+        "entity_overlap_sim_floor": _env_float("DEDUP_ENTITY_SIM_FLOOR", p["dedup_entity_sim_floor"]),
+        "max_distance_km": _env_float("DEDUP_MAX_DISTANCE_KM", p["dedup_max_distance_km"]),
+        "max_time_window_hours": _env_float("DEDUP_MAX_TIME_HOURS", p["dedup_max_time_window_hours"]),
+    }
+    ingest = {
+        "lookback_days": _env_int("INGEST_LOOKBACK_DAYS", p["lookback_days"]),
+        "max_city_articles": _env_int("MAX_CITY_ARTICLES", p["max_city_articles"]),
+        "max_rss_items": _env_int("MAX_RSS_ITEMS", p["max_rss_items"]),
+        "enable_hindi_feeds": _env_bool("ENABLE_HINDI_FEEDS", p["enable_hindi_feeds"]),
+        "decode_google_news_urls": _env_bool("DECODE_GOOGLE_NEWS_URLS", p["decode_google_news_urls"]),
+    }
+    return {"grounding": grounding, "deduplication": dedup, "ingest": ingest}
+
+
+_ACTIVE_CONFIG = build_pipeline_config()
+PIPELINE_MODE = _ACTIVE_CONFIG["grounding"]["pipeline_mode"]
+GROUNDING_CONFIG = _ACTIVE_CONFIG["grounding"]
+DEDUPLICATION_CONFIG = _ACTIVE_CONFIG["deduplication"]
+INGEST_CONFIG = _ACTIVE_CONFIG["ingest"]
 
 TEMPORAL_DECAY_CONFIG = {
     "half_life_days": 7.0,        # Incident relevance drops by 50% every 7 days

@@ -1,74 +1,39 @@
 [
   {
-    "event_id": "EVT_1DBB6277DA",
-    "headline": "4 months after plaster collapse, Child PGI repairs to start now",
-    "summary": "4 months after plaster collapse, Child PGI repairs to start now.",
+    "event_id": "EVT_789F5D17BB",
+    "headline": "Power cuts even in winters: Noida Sector 56 residents blame rusted poles, faulty transformers",
+    "summary": "Power cuts even in winters: Noida Sector 56 residents blame rusted poles, faulty transformers. Noida: Residents of Sector 56 have said power infrastructure in the area is being poorly maintained, and corroded electricity poles, faulty cables and old transformers are leading to lo...",
     "category": "CIVIC_HAZARD",
     "category_name": "Civic & Industrial Hazard",
     "severity_weight": 3.5,
-    "sector_id": "Sector 30",
-    "sector_name": "Sector 30, Noida",
+    "sector_id": "Sector 56",
+    "sector_name": "Sector 56, Noida",
     "zone": "Urban Sector",
-    "latitude": 28.5733,
-    "longitude": 77.3392,
-    "incident_timestamp": "2026-11-26T19:07:29.442097",
+    "latitude": 28.6039,
+    "longitude": 77.3426,
+    "incident_timestamp": "2026-11-26T09:45:00",
     "report_count": 1,
     "verification_confidence": 0.1667,
     "is_multi_source_verified": false,
     "entities": {
       "organizations": [],
       "vehicles": [],
-      "instruments_or_hazards": [],
+      "instruments_or_hazards": [
+        "Transformer"
+      ],
       "roles_and_actors": []
     },
     "sources": [
       {
-        "report_id": "REP_1DBB6277DA",
+        "report_id": "REP_789F5D17BB",
         "source_url": "Times of India",
-        "headline": "4 months after plaster collapse, Child PGI repairs to start now",
-        "published_at": "2026-11-26T19:07:29.442097"
+        "headline": "Power cuts even in winters: Noida Sector 56 residents blame rusted poles, faulty transformers",
+        "published_at": "2026-11-26T09:45:00"
       }
     ]
   },
   {
-    "event_id": "EVT_AEB8EFB3A5",
-    "headline": "Burglaries on the rise, Noida residents seek night patrols: DDRWA and Sector 105 RWA seek mandatory verification of house helps, vendors and guards",
-    "summary": "Burglaries on the rise, Noida residents seek night patrols: DDRWA and Sector 105 RWA seek mandatory verification of house helps, vendors and guards.",
-    "category": "PROPERTY_CRIME",
-    "category_name": "Property / Financial Crime",
-    "severity_weight": 2.5,
-    "sector_id": "Sector 105",
-    "sector_name": "Sector 105, Noida",
-    "zone": "Urban Sector",
-    "latitude": 28.5316,
-    "longitude": 77.3692,
-    "incident_timestamp": "2026-11-26T21:00:00.952752",
-    "report_count": 2,
-    "verification_confidence": 0.999,
-    "is_multi_source_verified": true,
-    "entities": {
-      "organizations": [],
-      "vehicles": [],
-      "instruments_or_hazards": [],
-      "roles_and_actors": []
-    },
-    "sources": [
-      {
-        "report_id": "REP_AEB8EFB3A5",
-        "source_url": "Times of India",
-        "headline": "Burglaries on the rise, Noida residents seek night patrols: DDRWA and Sector 105 RWA seek mandatory verification of house helps, vendors and guards",
-        "published_at": "2026-11-26T19:07:20.952752"
-      },
-      {
-        "report_id": "REP_4C5D9445BD",
-        "source_url": "The Times of India",
-        "headline": "Burglaries on the rise, Noida residents seek night patrols: DDRWA and Sector 105 RWA seek mandatory verif",
-        "published_at": "2026-11-24T01:21:00"
-      }
-    ]
-  },
-  {
-    "event_id": "EVT_631601C5DF",
+    "event_id": "EVT_FD898E5B73",
     "headline": "Noida man duped of  ₹24L in cryptocurrency fraud",
     "summary": "Noida man duped of ₹24L in cryptocurrency fraud. Noida: A 44-year-old man in Noida’s Sector 21 was allegedly duped of ₹24 lakh in a cryptocurrency fraud, police said on Tuesday",
     "category": "PROPERTY_CRIME",
@@ -80,9 +45,9 @@
     "latitude": 28.5885,
     "longitude": 77.334,
     "incident_timestamp": "2026-11-25T07:43:40",
-    "report_count": 1,
-    "verification_confidence": 0.6955,
-    "is_multi_source_verified": false,
+    "report_count": 2,
+    "verification_confidence": 0.7463,
+    "is_multi_source_verified": true,
     "entities": {
       "organizations": [],
       "vehicles": [],
@@ -91,7 +56,13 @@
     },
     "sources": [
       {
-        "report_id": "REP_631601C5DF",
+        "report_id": "REP_02ACEA2BA1",
+        "source_url": "Times of India",
+        "headline": "Promised profits, man loses ₹24L in crypto fraud",
+        "published_at": "2026-11-25T08:03:00"
+      },
+      {
+        "report_id": "REP_FD898E5B73",
         "source_url": "Hindustan Times",
         "headline": "Noida man duped of  ₹24L in cryptocurrency fraud",
         "published_at": "2026-11-25T07:43:40"
@@ -99,9 +70,9 @@
     ]
   },
   {
-    "event_id": "EVT_E091A0188B",
+    "event_id": "EVT_D6672ED88D",
     "headline": "Massive Fire Guts Plastic Decorative Items Factory in Noida's Sector 6; No Casualties Reported",
-    "summary": "Massive Fire Guts Plastic Decorative Items Factory in Noida's Sector 6; No Casualties Reported.",
+    "summary": "Massive Fire Guts Plastic Decorative Items Factory in Noida's Sector 6; No Casualties Reported",
     "category": "CIVIC_HAZARD",
     "category_name": "Civic & Industrial Hazard",
     "severity_weight": 3.5,
@@ -111,8 +82,8 @@
     "latitude": 28.5938,
     "longitude": 77.3205,
     "incident_timestamp": "2026-11-24T07:37:42",
-    "report_count": 2,
-    "verification_confidence": 0.9907,
+    "report_count": 3,
+    "verification_confidence": 0.999,
     "is_multi_source_verified": true,
     "entities": {
       "organizations": [],
@@ -124,13 +95,19 @@
     },
     "sources": [
       {
-        "report_id": "REP_E091A0188B",
+        "report_id": "REP_D6672ED88D",
         "source_url": "www.thesamaja.com",
         "headline": "Massive Fire Guts Plastic Decorative Items Factory in Noida's Sector 6; No Casualties Reported",
         "published_at": "2026-11-24T07:37:42"
       },
       {
-        "report_id": "REP_906E395998",
+        "report_id": "REP_28998CDC74",
+        "source_url": "ETV Bharat",
+        "headline": "नोएडा सेक्टर-6 के प्लास्टिक फैक्ट्री में लगी भीषण आग, दूसरी इमारत भी आई चपेट में",
+        "published_at": "2026-11-23T13:34:02"
+      },
+      {
+        "report_id": "REP_FD78DFB71C",
         "source_url": "tennews.in",
         "headline": "Massive fire engulfs unit manufacturing plastic decorative items in Noida’s Sector 6",
         "published_at": "2026-11-23T11:39:58"
@@ -138,18 +115,55 @@
     ]
   },
   {
-    "event_id": "EVT_A0097608BB",
-    "headline": "24-year-old arrested after firing outside Greater Noida college: Police",
-    "summary": "24-year-old arrested after firing outside Greater Noida college: Police. Police identified the suspect as a resident of Atta Gujran village, who is also a BA LLB student at a government college in Greater Noida ...",
+    "event_id": "EVT_EAE6EDA91B",
+    "headline": "Burglaries on the rise, Noida residents seek night patrols: DDRWA and Sector 105 RWA seek mandatory verification of house helps, vendors and guards",
+    "summary": "Burglaries on the rise, Noida residents seek night patrols: DDRWA and Sector 105 RWA seek mandatory verification of house helps, vendors and guards. Noida: Rising incidents of residential burglaries, traffic violations and public nuisance have left city residents harried. For exa...",
+    "category": "PROPERTY_CRIME",
+    "category_name": "Property / Financial Crime",
+    "severity_weight": 2.5,
+    "sector_id": "Sector 105",
+    "sector_name": "Sector 105, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5316,
+    "longitude": 77.3692,
+    "incident_timestamp": "2026-11-24T21:00:00",
+    "report_count": 2,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_EAE6EDA91B",
+        "source_url": "Times of India",
+        "headline": "Burglaries on the rise, Noida residents seek night patrols: DDRWA and Sector 105 RWA seek mandatory verification of house helps, vendors and guards",
+        "published_at": "2026-11-24T01:21:00"
+      },
+      {
+        "report_id": "REP_D85662EF85",
+        "source_url": "The Times of India",
+        "headline": "Burglaries on the rise, Noida residents seek night patrols: DDRWA and Sector 105 RWA seek mandatory verif",
+        "published_at": "2026-11-24T01:21:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_C9D5EF67CF",
+    "headline": "नोएडा के सेक्टर-62 में देर रात व्यापारी सरोज गुप्ता से मारपीट, सिर पर लगे टांके, सीसीटीवी में कैद हुई पूरी घटना",
+    "summary": "नोएडा के सेक्टर-62 में देर रात व्यापारी सरोज गुप्ता से मारपीट, सिर पर लगे टांके, सीसीटीवी में कैद हुई पूरी घटना",
     "category": "VIOLENT_CRIME",
     "category_name": "Violent Crime",
     "severity_weight": 5.0,
-    "sector_id": "Sector 18",
-    "sector_name": "Sector 18, Noida",
-    "zone": "Major Commercial Hub",
-    "latitude": 28.57,
-    "longitude": 77.322,
-    "incident_timestamp": "2026-11-22T13:02:03",
+    "sector_id": "Sector 62",
+    "sector_name": "Sector 62, Noida",
+    "zone": "Major Institutional & IT Hub",
+    "latitude": 28.627,
+    "longitude": 77.363,
+    "incident_timestamp": "2026-11-23T16:00:05",
     "report_count": 1,
     "verification_confidence": 0.999,
     "is_multi_source_verified": false,
@@ -161,17 +175,384 @@
     },
     "sources": [
       {
-        "report_id": "REP_A0097608BB",
-        "source_url": "msn.com",
-        "headline": "24-year-old arrested after firing outside Greater Noida college: Police",
-        "published_at": "2026-11-22T13:02:03"
+        "report_id": "REP_C9D5EF67CF",
+        "source_url": "| Now Noida",
+        "headline": "नोएडा के सेक्टर-62 में देर रात व्यापारी सरोज गुप्ता से मारपीट, सिर पर लगे टांके, सीसीटीवी में कैद हुई पूरी घटना",
+        "published_at": "2026-11-23T16:00:05"
       }
     ]
   },
   {
-    "event_id": "EVT_25E08F7A4C",
+    "event_id": "EVT_CC32A51AE3",
+    "headline": "नोएडा सेक्टर-6 की कंपनी में भीषण आग, 25 दमकल गाड़ियों ने संभाला मोर्चा",
+    "summary": "नोएडा सेक्टर-6 की कंपनी में भीषण आग, 25 दमकल गाड़ियों ने संभाला मोर्चा",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 6",
+    "sector_name": "Sector 6, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5938,
+    "longitude": 77.3205,
+    "incident_timestamp": "2026-11-23T13:07:25",
+    "report_count": 5,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [
+        "Fire Department"
+      ],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Blaze",
+        "Fire"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_CC32A51AE3",
+        "source_url": "ChetnaManch",
+        "headline": "नोएडा सेक्टर-6 की कंपनी में भीषण आग, 25 दमकल गाड़ियों ने संभाला मोर्चा",
+        "published_at": "2026-11-23T13:07:25"
+      },
+      {
+        "report_id": "REP_A7834A51FC",
+        "source_url": "Khaskhabar.com",
+        "headline": "नोएडा के सेक्टर-6 में प्लास्टिक उत्पाद बनाने वाली कंपनी में भीषण आग, पूरी बिल्डिंग आग की चपेट में आई",
+        "published_at": "2026-11-23T11:22:00"
+      },
+      {
+        "report_id": "REP_0228F3280C",
+        "source_url": "bhaskarhindi.com",
+        "headline": "नोएडा के सेक्टर-6 में प्लास्टिक उत्पाद बनाने वाली कंपनी में भीषण आग, पूरी बिल्डिंग आग की चपेट में आई | ????? ?? ??????-6 ??? ????????? ?????? ????? ???? ????? ??? ???? ??, ???? ???????? ?? ?? ???? ??? ??",
+        "published_at": "2026-11-23T11:02:10"
+      },
+      {
+        "report_id": "REP_6A53B283D7",
+        "source_url": "Amar Ujala",
+        "headline": "नोएडा: सेक्टर-6 की निजी कंपनी में देर रात लगी भीषण आग, उठने लगी आग की ऊंची लपटें, मचा हड़कंप",
+        "published_at": "2026-11-23T10:21:30"
+      },
+      {
+        "report_id": "REP_70F349559F",
+        "source_url": "| Now Noida",
+        "headline": "नोएडा के सेक्टर-6 में तीन मंजिला कंपनी में भीषण आग, बुझाने में लगीं 15 दमकल गाड़ियां, दो किलोमीटर दूर तक दिखा धुआं",
+        "published_at": "2026-11-23T09:00:05"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_FF25940666",
+    "headline": "नोएडा के सेक्टर-4 में प्लास्टिक फूल बनाने वाली कंपनी में लगी भीषण आग, 25 गाड़ियों ने पाया काबू",
+    "summary": "नोएडा के सेक्टर-4 में प्लास्टिक फूल बनाने वाली कंपनी में लगी भीषण आग, 25 गाड़ियों ने पाया काबू",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 4",
+    "sector_name": "Sector 4, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5837,
+    "longitude": 77.323,
+    "incident_timestamp": "2026-11-23T12:23:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_FF25940666",
+        "source_url": "Royal Bulletin",
+        "headline": "नोएडा के सेक्टर-4 में प्लास्टिक फूल बनाने वाली कंपनी में लगी भीषण आग, 25 गाड़ियों ने पाया काबू",
+        "published_at": "2026-11-23T12:23:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_BC56FFFF5F",
+    "headline": "नोएडा के सेक्टर 6 में प्लास्टिक फैक्टरी में लगी भीषण आग, कोई हताहत नहीं",
+    "summary": "नोएडा के सेक्टर 6 में प्लास्टिक फैक्टरी में लगी भीषण आग, कोई हताहत नहीं",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 6",
+    "sector_name": "Sector 6, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5938,
+    "longitude": 77.3205,
+    "incident_timestamp": "2026-11-23T11:10:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_BC56FFFF5F",
+        "source_url": "Lokmat News Hindi",
+        "headline": "नोएडा के सेक्टर 6 में प्लास्टिक फैक्टरी में लगी भीषण आग, कोई हताहत नहीं",
+        "published_at": "2026-11-23T11:10:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_F144036A80",
+    "headline": "Noida News: सेक्टर-62 में जाम की वजह बने मेट्रो एफओबी का पिलर हटाने की तैयारी",
+    "summary": "Noida News: सेक्टर-62 में जाम की वजह बने मेट्रो एफओबी का पिलर हटाने की तैयारी",
+    "category": "PUBLIC_DISRUPTION",
+    "category_name": "Public Order & Protests",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 62",
+    "sector_name": "Sector 62, Noida",
+    "zone": "Major Institutional & IT Hub",
+    "latitude": 28.627,
+    "longitude": 77.363,
+    "incident_timestamp": "2026-11-22T21:07:08",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_F144036A80",
+        "source_url": "Amar Ujala",
+        "headline": "Noida News: सेक्टर-62 में जाम की वजह बने मेट्रो एफओबी का पिलर हटाने की तैयारी",
+        "published_at": "2026-11-22T21:07:08"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_5191CF1A1F",
+    "headline": "4 months after plaster collapse, Child PGI repairs to start now",
+    "summary": "4 months after plaster collapse, Child PGI repairs to start now. Noida: Months after a chunk of ceiling plaster collapsed onto a patient’s bed in the emergency ICU at the state-run Post Graduate Institute of Child Health (PGICH) in Sector 30, the Uttar Pradesh govt has sanctioned...",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 30",
+    "sector_name": "Sector 30, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5733,
+    "longitude": 77.3392,
+    "incident_timestamp": "2026-11-22T07:53:00",
+    "report_count": 1,
+    "verification_confidence": 0.1667,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [
+        "Workers"
+      ]
+    },
+    "sources": [
+      {
+        "report_id": "REP_5191CF1A1F",
+        "source_url": "Times of India",
+        "headline": "4 months after plaster collapse, Child PGI repairs to start now",
+        "published_at": "2026-11-22T07:53:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_5E7BF7DB3B",
+    "headline": "Two gunfights, hours apart: Four men wanted for robberies across NCR nabbed in Noida",
+    "summary": "Two gunfights, hours apart: Four men wanted for robberies across NCR nabbed in Noida. Noida: Four alleged members of an interstate robbery gang operating across NCR were arrested after two separate gunfights with police on Saturday.An officer said the four men were involved in mo...",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 63",
+    "sector_name": "Sector 63, Noida",
+    "zone": "Major Industrial & Tech Zone",
+    "latitude": 28.625,
+    "longitude": 77.382,
+    "incident_timestamp": "2026-11-22T07:52:00",
+    "report_count": 1,
+    "verification_confidence": 0.1667,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [
+        "Motorcycle"
+      ],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": [
+        "Gang"
+      ]
+    },
+    "sources": [
+      {
+        "report_id": "REP_5E7BF7DB3B",
+        "source_url": "Times of India",
+        "headline": "Two gunfights, hours apart: Four men wanted for robberies across NCR nabbed in Noida",
+        "published_at": "2026-11-22T07:52:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_38BB812218",
+    "headline": "यूपी: नोएडा के सेक्टर-63 में ग्रीन बेल्ट के पास मुठभेड़, पुलिस ने दो बदमाश किए गिरफ्तार",
+    "summary": "यूपी: नोएडा के सेक्टर-63 में ग्रीन बेल्ट के पास मुठभेड़, पुलिस ने दो बदमाश किए गिरफ्तार",
+    "category": "VIOLENT_CRIME",
+    "category_name": "Violent Crime",
+    "severity_weight": 5.0,
+    "sector_id": "Sector 63",
+    "sector_name": "Sector 63, Noida",
+    "zone": "Major Industrial & Tech Zone",
+    "latitude": 28.625,
+    "longitude": 77.382,
+    "incident_timestamp": "2026-11-21T14:08:25",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [
+        "Noida Police"
+      ],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [
+        "Miscreants"
+      ]
+    },
+    "sources": [
+      {
+        "report_id": "REP_38BB812218",
+        "source_url": "Amar Ujala",
+        "headline": "यूपी: नोएडा के सेक्टर-63 में ग्रीन बेल्ट के पास मुठभेड़, पुलिस ने दो बदमाश किए गिरफ्तार",
+        "published_at": "2026-11-21T14:08:25"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_08DE216688",
+    "headline": "Noida bride suffers burn injuries during laser hair removal therapy ahead of wedding, family fights 15-year legal battle, consumer commission orders clinic to refund Rs 99,000 with 6% interest and and Rs 55,000 in compensation and costs",
+    "summary": "Noida bride suffers burn injuries during laser hair removal therapy ahead of wedding, family fights 15-year legal battle, consumer commission orders clinic to refund Rs 99,000 with 6% interest and and Rs 55,000 in compensation and costs. NOIDA: A Noida woman who suffered burn inj...",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 18",
+    "sector_name": "Sector 18, Noida",
+    "zone": "Major Commercial Hub",
+    "latitude": 28.57,
+    "longitude": 77.322,
+    "incident_timestamp": "2026-11-20T11:15:00",
+    "report_count": 1,
+    "verification_confidence": 0.1667,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_08DE216688",
+        "source_url": "Times of India",
+        "headline": "Noida bride suffers burn injuries during laser hair removal therapy ahead of wedding, family fights 15-year legal battle, consumer commission orders clinic to refund Rs 99,000 with 6% interest and and Rs 55,000 in compensation and costs",
+        "published_at": "2026-11-20T11:15:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_A60F021C28",
+    "headline": "जल्द ही नोएडा-ग्रेटर नोएडा एक्सप्रेसवे पर जाम की होगी छुट्टी, सेक्टर-135 से यमुना एक्सप्रेसवे तक बनेगा 10 KM लंबा एक नया हाईवे",
+    "summary": "जल्द ही नोएडा-ग्रेटर नोएडा एक्सप्रेसवे पर जाम की होगी छुट्टी, सेक्टर-135 से यमुना एक्सप्रेसवे तक बनेगा 10 KM लंबा एक नया हाईवे",
+    "category": "PUBLIC_DISRUPTION",
+    "category_name": "Public Order & Protests",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 135",
+    "sector_name": "Sector 135, Noida",
+    "zone": "IT SEZ / Corporate Hub",
+    "latitude": 28.497,
+    "longitude": 77.402,
+    "incident_timestamp": "2026-11-20T07:06:16",
+    "report_count": 2,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_A60F021C28",
+        "source_url": "UdaipurTimes.com",
+        "headline": "जल्द ही नोएडा-ग्रेटर नोएडा एक्सप्रेसवे पर जाम की होगी छुट्टी, सेक्टर-135 से यमुना एक्सप्रेसवे तक बनेगा 10 KM लंबा एक नया हाईवे",
+        "published_at": "2026-11-20T07:06:16"
+      },
+      {
+        "report_id": "REP_EAC075E8E2",
+        "source_url": "Moneycontrol Hindi",
+        "headline": "नोएडा-ग्रेटर नोएडा एक्सप्रेसवे के जाम से मिलेगी मुक्ति! सेक्टर-135 से यमुना एक्सप्रेसवे तक बनेगा 10 km लंबा नया हाईवे",
+        "published_at": "2026-11-18T12:33:49"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_BADE8EE082",
+    "headline": "जल्द ही नोएडा-ग्रेटर नोएडा एक्सप्रेसवे पर जाम की होगी छुट्टी, सेक्टर-135 से यमुना एक्सप्रेसवे तक बनेगा 10 KM लंबा एक नया हाईवे",
+    "summary": "जल्द ही नोएडा-ग्रेटर नोएडा एक्सप्रेसवे पर जाम की होगी छुट्टी, सेक्टर-135 से यमुना एक्सप्रेसवे तक बनेगा 10 KM लंबा एक नया हाईवे",
+    "category": "PUBLIC_DISRUPTION",
+    "category_name": "Public Order & Protests",
+    "severity_weight": 2.0,
+    "sector_id": "Noida-Greater Noida Expressway",
+    "sector_name": "Noida-Greater Noida Expressway",
+    "zone": "High-Speed Arterial Corridor",
+    "latitude": 28.518,
+    "longitude": 77.382,
+    "incident_timestamp": "2026-11-20T07:06:16",
+    "report_count": 2,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_BADE8EE082",
+        "source_url": "UdaipurTimes.com",
+        "headline": "जल्द ही नोएडा-ग्रेटर नोएडा एक्सप्रेसवे पर जाम की होगी छुट्टी, सेक्टर-135 से यमुना एक्सप्रेसवे तक बनेगा 10 KM लंबा एक नया हाईवे",
+        "published_at": "2026-11-20T07:06:16"
+      },
+      {
+        "report_id": "REP_B7FDF355CA",
+        "source_url": "Moneycontrol Hindi",
+        "headline": "नोएडा-ग्रेटर नोएडा एक्सप्रेसवे के जाम से मिलेगी मुक्ति! सेक्टर-135 से यमुना एक्सप्रेसवे तक बनेगा 10 km लंबा नया हाईवे",
+        "published_at": "2026-11-18T12:33:49"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_B8176B0CF2",
     "headline": "Three arrested for ₹1.5 crore burglary in Noida’s Sector 50 society, police hunt fourth suspect",
-    "summary": "Three arrested for ₹1.5 crore burglary in Noida’s Sector 50 society, police hunt fourth suspect.",
+    "summary": "Three arrested for ₹1.5 crore burglary in Noida’s Sector 50 society, police hunt fourth suspect",
     "category": "PROPERTY_CRIME",
     "category_name": "Property / Financial Crime",
     "severity_weight": 2.5,
@@ -192,7 +573,7 @@
     },
     "sources": [
       {
-        "report_id": "REP_25E08F7A4C",
+        "report_id": "REP_B8176B0CF2",
         "source_url": "Hindustan Times",
         "headline": "Three arrested for ₹1.5 crore burglary in Noida’s Sector 50 society, police hunt fourth suspect",
         "published_at": "2026-11-19T19:04:05"
@@ -200,9 +581,9 @@
     ]
   },
   {
-    "event_id": "EVT_1D410677DF",
+    "event_id": "EVT_9E9D276B75",
     "headline": "Man dies after his bike crashes into tree in Noida Sec 63",
-    "summary": "Man dies after his bike crashes into tree in Noida Sec 63.",
+    "summary": "Man dies after his bike crashes into tree in Noida Sec 63",
     "category": "TRAFFIC_INCIDENT",
     "category_name": "Traffic & Road Hazard",
     "severity_weight": 2.0,
@@ -225,7 +606,7 @@
     },
     "sources": [
       {
-        "report_id": "REP_1D410677DF",
+        "report_id": "REP_9E9D276B75",
         "source_url": "Hindustan Times",
         "headline": "Man dies after his bike crashes into tree in Noida Sec 63",
         "published_at": "2026-11-19T07:39:00"
@@ -233,7 +614,7 @@
     ]
   },
   {
-    "event_id": "EVT_D3CBC0E2F1",
+    "event_id": "EVT_B8FB4CD2AA",
     "headline": "Three cars damaged in Noida road accident",
     "summary": "Three cars damaged in Noida road accident. Noida: Three cars collided near Metro Pillar 186 in Sector 39 on Wednesday morning, briefly disrupting traffic on a busy stretch. The collision left the vehicles damaged, but police initially ...",
     "category": "TRAFFIC_INCIDENT",
@@ -256,7 +637,7 @@
     },
     "sources": [
       {
-        "report_id": "REP_D3CBC0E2F1",
+        "report_id": "REP_B8FB4CD2AA",
         "source_url": "millenniumpost.in",
         "headline": "Three cars damaged in Noida road accident",
         "published_at": "2026-11-18T22:04:00"
@@ -264,7 +645,7 @@
     ]
   },
   {
-    "event_id": "EVT_D58B0B95D9",
+    "event_id": "EVT_6FF7B8CE98",
     "headline": "IT engineer dies in fatal motorcycle crash in Noida Sector 63",
     "summary": "IT engineer dies in fatal motorcycle crash in Noida Sector 63. A 24-year-old IT engineer lost his life in a tragic road accident in Noida on Tuesday night after swerving his motorcycle to avoid a collision with another vehicle.",
     "category": "TRAFFIC_INCIDENT",
@@ -289,7 +670,7 @@
     },
     "sources": [
       {
-        "report_id": "REP_D58B0B95D9",
+        "report_id": "REP_6FF7B8CE98",
         "source_url": "msn.com",
         "headline": "IT engineer dies in fatal motorcycle crash in Noida Sector 63",
         "published_at": "2026-11-18T16:43:47"
@@ -297,9 +678,273 @@
     ]
   },
   {
-    "event_id": "EVT_86927BFA5B",
-    "headline": "Noida: Two workers rescued after fire breaks out at garment export company in Sector 63",
-    "summary": "Noida: Two workers rescued after fire breaks out at garment export company in Sector 63.",
+    "event_id": "EVT_952D04DA08",
+    "headline": "Man clicks on link for investment site, loses Rs 12 lakh to scammers",
+    "summary": "Man clicks on link for investment site, loses Rs 12 lakh to scammers. Noida: A 72-year-old Greater Noida resident was cheated out of nearly Rs 12.5 lakh under the pretext of investing his money through an online platform. The man clicked a link after watching a fraudulent adverti...",
+    "category": "PROPERTY_CRIME",
+    "category_name": "Property / Financial Crime",
+    "severity_weight": 2.5,
+    "sector_id": "Sector 36",
+    "sector_name": "Sector 36, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5719,
+    "longitude": 77.3485,
+    "incident_timestamp": "2026-11-18T01:09:00",
+    "report_count": 1,
+    "verification_confidence": 0.1667,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_952D04DA08",
+        "source_url": "Times of India",
+        "headline": "Man clicks on link for investment site, loses Rs 12 lakh to scammers",
+        "published_at": "2026-11-18T01:09:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_0F5DDE89F7",
+    "headline": "Noida News: सेक्टर-150 स्पोर्ट्स सिटी प्रोजेक्ट को मंजूरी के बाद बनेगा तीसरा फ्लाईओवर, 2 लाख लोगों को जाम से मिलेगी राहत",
+    "summary": "Noida News: सेक्टर-150 स्पोर्ट्स सिटी प्रोजेक्ट को मंजूरी के बाद बनेगा तीसरा फ्लाईओवर, 2 लाख लोगों को जाम से मिलेगी राहत",
+    "category": "PUBLIC_DISRUPTION",
+    "category_name": "Public Order & Protests",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 150",
+    "sector_name": "Sector 150, Noida",
+    "zone": "Sports City / Eco-Residential",
+    "latitude": 28.455,
+    "longitude": 77.458,
+    "incident_timestamp": "2026-11-16T13:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_0F5DDE89F7",
+        "source_url": "Moneycontrol Hindi",
+        "headline": "Noida News: सेक्टर-150 स्पोर्ट्स सिटी प्रोजेक्ट को मंजूरी के बाद बनेगा तीसरा फ्लाईओवर, 2 लाख लोगों को जाम से मिलेगी राहत",
+        "published_at": "2026-11-16T13:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_3940DEC46C",
+    "headline": "नोएडा के सेक्टर 150 में नाले में डूबकर शख्स की मौत, तीन दिन से गायब था",
+    "summary": "नोएडा के सेक्टर 150 में नाले में डूबकर शख्स की मौत, तीन दिन से गायब था",
+    "category": "TRAFFIC_INCIDENT",
+    "category_name": "Traffic & Road Hazard",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 150",
+    "sector_name": "Sector 150, Noida",
+    "zone": "Sports City / Eco-Residential",
+    "latitude": 28.455,
+    "longitude": 77.458,
+    "incident_timestamp": "2026-11-15T13:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.5848,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_3940DEC46C",
+        "source_url": "NDTV India",
+        "headline": "नोएडा के सेक्टर 150 में नाले में डूबकर शख्स की मौत, तीन दिन से गायब था",
+        "published_at": "2026-11-15T13:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_162C118E26",
+    "headline": "Biryani seller pushing cart towards market killed in hit and run near Greater Noida",
+    "summary": "Biryani seller pushing cart towards market killed in hit and run near Greater Noida. Noida: A 45-year-old biryani seller died after he was hit by an unidentified vehicle in Kulesara early on Friday.An FIR has been filed at Ecotech-3 police station and efforts are on to trace the ...",
+    "category": "TRAFFIC_INCIDENT",
+    "category_name": "Traffic & Road Hazard",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 39",
+    "sector_name": "Sector 39, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5686,
+    "longitude": 77.3521,
+    "incident_timestamp": "2026-11-15T00:23:00",
+    "report_count": 1,
+    "verification_confidence": 0.1667,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [
+        "Car"
+      ],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [
+        "Driver",
+        "Victim"
+      ]
+    },
+    "sources": [
+      {
+        "report_id": "REP_162C118E26",
+        "source_url": "Times of India",
+        "headline": "Biryani seller pushing cart towards market killed in hit and run near Greater Noida",
+        "published_at": "2026-11-15T00:23:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_5C449A6DB8",
+    "headline": "नोएडा के सेक्टर-125 में भीषण अग्निकांड, 5 से 6 दुकानें आग की चपेट में; मौके पर पहुंची दमकल टीम",
+    "summary": "नोएडा के सेक्टर-125 में भीषण अग्निकांड, 5 से 6 दुकानें आग की चपेट में; मौके पर पहुंची दमकल टीम",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 125",
+    "sector_name": "Sector 125, Noida",
+    "zone": "Educational / Institutional Hub",
+    "latitude": 28.544,
+    "longitude": 77.332,
+    "incident_timestamp": "2026-11-13T19:46:37",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [
+        "Fire Department"
+      ],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_5C449A6DB8",
+        "source_url": "www.abhinews.co.in",
+        "headline": "नोएडा के सेक्टर-125 में भीषण अग्निकांड, 5 से 6 दुकानें आग की चपेट में; मौके पर पहुंची दमकल टीम",
+        "published_at": "2026-11-13T19:46:37"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_FEEE45E04E",
+    "headline": "Road rage murder accused who was hiding in Noida park shot at in gunfight with cops",
+    "summary": "Road rage murder accused who was hiding in Noida park shot at in gunfight with cops. Noida: Two days after a man was killed in a road rage incident outside a park near Naya Bans in Sector 15, a suspect has been arrested from the Sector 3 area after a gunfight. The cops have also ...",
+    "category": "VIOLENT_CRIME",
+    "category_name": "Violent Crime",
+    "severity_weight": 5.0,
+    "sector_id": "Sector 15",
+    "sector_name": "Sector 15, Noida",
+    "zone": "Residential / Commercial",
+    "latitude": 28.583,
+    "longitude": 77.314,
+    "incident_timestamp": "2026-11-12T02:00:00",
+    "report_count": 1,
+    "verification_confidence": 0.1667,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [
+        "Motorcycle",
+        "Scooter"
+      ],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_FEEE45E04E",
+        "source_url": "Times of India",
+        "headline": "Road rage murder accused who was hiding in Noida park shot at in gunfight with cops",
+        "published_at": "2026-11-12T01:08:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_E4673A342B",
+    "headline": "Lights dead, driving after dark a nightmare on this 2km Noida Expressway link",
+    "summary": "Lights dead, driving after dark a nightmare on this 2km Noida Expressway link. Noida: A nearly 2km stretch of service road branching off from the third exit along the Noida Expressway and connecting Sectors 90-93 to Sectors 136, 148 and 168 has become a challenge for commuters, w...",
+    "category": "TRAFFIC_INCIDENT",
+    "category_name": "Traffic & Road Hazard",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 90",
+    "sector_name": "Sector 90, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5122,
+    "longitude": 77.4143,
+    "incident_timestamp": "2026-11-11T18:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.1667,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [
+        "Noida Authority"
+      ],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_E4673A342B",
+        "source_url": "Times of India",
+        "headline": "Lights dead, driving after dark a nightmare on this 2km Noida Expressway link",
+        "published_at": "2026-11-11T00:45:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_7A38702FF5",
+    "headline": "Lights dead, driving after dark a nightmare on this 2km Noida Expressway link",
+    "summary": "Lights dead, driving after dark a nightmare on this 2km Noida Expressway link. Noida: A nearly 2km stretch of service road branching off from the third exit along the Noida Expressway and connecting Sectors 90-93 to Sectors 136, 148 and 168 has become a challenge for commuters, w...",
+    "category": "TRAFFIC_INCIDENT",
+    "category_name": "Traffic & Road Hazard",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 93",
+    "sector_name": "Sector 93, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.523,
+    "longitude": 77.3861,
+    "incident_timestamp": "2026-11-11T18:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.1667,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [
+        "Noida Authority"
+      ],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_7A38702FF5",
+        "source_url": "Times of India",
+        "headline": "Lights dead, driving after dark a nightmare on this 2km Noida Expressway link",
+        "published_at": "2026-11-11T00:45:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_12249FA7E6",
+    "headline": "Massive fire breaks out at a garment export factory, two workers rescued",
+    "summary": "Massive fire breaks out at a garment export factory, two workers rescued. Noida: A massive fire broke out at a garment export factory in Sector 63 late Monday night, trapping two workers inside the building. Firefighters rescued both men safely and brought the blaze under control...",
     "category": "CIVIC_HAZARD",
     "category_name": "Civic & Industrial Hazard",
     "severity_weight": 3.5,
@@ -308,12 +953,60 @@
     "zone": "Major Industrial & Tech Zone",
     "latitude": 28.625,
     "longitude": 77.382,
-    "incident_timestamp": "2026-11-10T13:30:00",
-    "report_count": 1,
-    "verification_confidence": 0.1667,
-    "is_multi_source_verified": false,
+    "incident_timestamp": "2026-11-11T21:00:00",
+    "report_count": 2,
+    "verification_confidence": 0.3056,
+    "is_multi_source_verified": true,
     "entities": {
-      "organizations": [],
+      "organizations": [
+        "Fire Department",
+        "Fire Tenders"
+      ],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Blaze",
+        "Fire",
+        "Smoke"
+      ],
+      "roles_and_actors": [
+        "Workers"
+      ]
+    },
+    "sources": [
+      {
+        "report_id": "REP_12249FA7E6",
+        "source_url": "Times of India",
+        "headline": "Massive fire breaks out at a garment export factory, two workers rescued",
+        "published_at": "2026-11-11T00:42:00"
+      },
+      {
+        "report_id": "REP_1C04F260DE",
+        "source_url": "The Hans India",
+        "headline": "Noida: Two workers rescued after fire breaks out at garment export company in Sector 63",
+        "published_at": "2026-11-10T13:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_8E6AF75432",
+    "headline": "Noida News: सेक्टर-63 की गारमेंट एक्सपोर्ट कंपनी में भीषण आग, दो कर्मचारियों को बचाया",
+    "summary": "Noida News: सेक्टर-63 की गारमेंट एक्सपोर्ट कंपनी में भीषण आग, दो कर्मचारियों को बचाया",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 63",
+    "sector_name": "Sector 63, Noida",
+    "zone": "Major Industrial & Tech Zone",
+    "latitude": 28.625,
+    "longitude": 77.382,
+    "incident_timestamp": "2026-11-10T20:15:15",
+    "report_count": 3,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [
+        "Fire Department"
+      ],
       "vehicles": [],
       "instruments_or_hazards": [
         "Fire"
@@ -324,17 +1017,424 @@
     },
     "sources": [
       {
-        "report_id": "REP_86927BFA5B",
-        "source_url": "The Hans India",
-        "headline": "Noida: Two workers rescued after fire breaks out at garment export company in Sector 63",
+        "report_id": "REP_8E6AF75432",
+        "source_url": "Amar Ujala",
+        "headline": "Noida News: सेक्टर-63 की गारमेंट एक्सपोर्ट कंपनी में भीषण आग, दो कर्मचारियों को बचाया",
+        "published_at": "2026-11-10T20:15:15"
+      },
+      {
+        "report_id": "REP_11FF47C302",
+        "source_url": "Lokmat News Hindi",
+        "headline": "नोएडा: सेक्टर 63 की गारमेंट एक्सपोर्ट कंपनी में आग, दो मजदूर बचाए गए",
         "published_at": "2026-11-10T13:30:00"
+      },
+      {
+        "report_id": "REP_7DAF9F0BD3",
+        "source_url": "| Now Noida",
+        "headline": "नोएडा के सेक्टर-63 स्थित कंपनी में भीषण आग से आसपास अफरातफरी, दमकल की कई गाड़ियां आग पर काबू पाने में जुटीं",
+        "published_at": "2026-11-10T10:36:23"
       }
     ]
   },
   {
-    "event_id": "EVT_90EDA9E6D0",
+    "event_id": "EVT_2EBA5C3A67",
+    "headline": "Youth killed in road rage after scooter brushes bystander celebrating friend’s birthday",
+    "summary": "Youth killed in road rage after scooter brushes bystander celebrating friend’s birthday. Noida: A 25-year-old man died and another was injured after a minor dispute over a scooter collision escalated into a fight at a park near Naya Bans village in Sector 15.The deceased, Amit, a...",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 15",
+    "sector_name": "Sector 15, Noida",
+    "zone": "Residential / Commercial",
+    "latitude": 28.583,
+    "longitude": 77.314,
+    "incident_timestamp": "2026-11-10T01:00:00",
+    "report_count": 1,
+    "verification_confidence": 0.1667,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [
+        "Scooter"
+      ],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_2EBA5C3A67",
+        "source_url": "Times of India",
+        "headline": "Youth killed in road rage after scooter brushes bystander celebrating friend’s birthday",
+        "published_at": "2026-11-10T01:28:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_7934484108",
+    "headline": "नोएडा-दिल्ली एनसीआर में महाजाम: त्योहारों की भीड़ से रेंग रहे वाहन, सेक्टर 62 से मेरठ एक्सप्रेसवे पर लगा गाड़ियों का लंबा तांता - massive traffic jam in noida delhi ncr vehicles crawling due to festive rush",
+    "summary": "नोएडा-दिल्ली एनसीआर में महाजाम: त्योहारों की भीड़ से रेंग रहे वाहन, सेक्टर 62 से मेरठ एक्सप्रेसवे पर लगा गाड़ियों का लंबा तांता - massive traffic jam in noida delhi ncr vehicles crawling due to festive rush",
+    "category": "PUBLIC_DISRUPTION",
+    "category_name": "Public Order & Protests",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 62",
+    "sector_name": "Sector 62, Noida",
+    "zone": "Major Institutional & IT Hub",
+    "latitude": 28.627,
+    "longitude": 77.363,
+    "incident_timestamp": "2026-11-08T13:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.5652,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_7934484108",
+        "source_url": "Jagran",
+        "headline": "नोएडा-दिल्ली एनसीआर में महाजाम: त्योहारों की भीड़ से रेंग रहे वाहन, सेक्टर 62 से मेरठ एक्सप्रेसवे पर लगा गाड़ियों का लंबा तांता - massive traffic jam in noida delhi ncr vehicles crawling due to festive rush",
+        "published_at": "2026-11-08T13:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_AD18826C8E",
+    "headline": "नोएडा में जाम का टेंशन खत्म! सेक्टर 148-150 के बीच बनेगा शानदार आर्क ब्रिज",
+    "summary": "नोएडा में जाम का टेंशन खत्म! सेक्टर 148-150 के बीच बनेगा शानदार आर्क ब्रिज",
+    "category": "PUBLIC_DISRUPTION",
+    "category_name": "Public Order & Protests",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 150",
+    "sector_name": "Sector 150, Noida",
+    "zone": "Sports City / Eco-Residential",
+    "latitude": 28.455,
+    "longitude": 77.458,
+    "incident_timestamp": "2026-11-08T13:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.7935,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_AD18826C8E",
+        "source_url": "Khabar Fast",
+        "headline": "नोएडा में जाम का टेंशन खत्म! सेक्टर 148-150 के बीच बनेगा शानदार आर्क ब्रिज",
+        "published_at": "2026-11-08T13:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_6197D935A9",
+    "headline": "‘RWAs should not charge house owners NOC fee for adding relatives’ names to property documents’",
+    "summary": "‘RWAs should not charge house owners NOC fee for adding relatives’ names to property documents’. Noida: The deputy registrar (firms, societies and chits) has held that resident welfare associations and apartment owners’ associations cannot charge 0.5% of the circle rate as no-obj...",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 93",
+    "sector_name": "Sector 93, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.523,
+    "longitude": 77.3861,
+    "incident_timestamp": "2026-11-08T00:05:00",
+    "report_count": 2,
+    "verification_confidence": 0.3056,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_6197D935A9",
+        "source_url": "Times of India",
+        "headline": "‘RWAs should not charge house owners NOC fee for adding relatives’ names to property documents’",
+        "published_at": "2026-11-08T00:05:00"
+      },
+      {
+        "report_id": "REP_11BDC0E765",
+        "source_url": "Times of India",
+        "headline": "‘RWAs should not charge house owners NOC fee for adding relatives’ names to property documents’",
+        "published_at": "2026-11-08T00:05:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_866658B2AB",
+    "headline": "Noida Sector 122 RWA flags fire risk from accumulated dry waste in parks, green belts",
+    "summary": "Noida Sector 122 RWA flags fire risk from accumulated dry waste in parks, green belts",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 122",
+    "sector_name": "Sector 122, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5929,
+    "longitude": 77.3976,
+    "incident_timestamp": "2026-11-07T13:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_866658B2AB",
+        "source_url": "Hindustan Times",
+        "headline": "Noida Sector 122 RWA flags fire risk from accumulated dry waste in parks, green belts",
+        "published_at": "2026-11-07T13:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_1A536B63EF",
+    "headline": "Duplicate expenses? No shared area maintenance fee at Wish Town for now",
+    "summary": "Duplicate expenses? No shared area maintenance fee at Wish Town for now. Noida: Noida Authority has put on hold an additional maintenance charge of Rs 1.5 per sqft proposed by Suraksha Realty for Jaypee Wish Town and set up a six-member panel to examine residents’ complaints that...",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 132",
+    "sector_name": "Sector 132, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5117,
+    "longitude": 77.3768,
+    "incident_timestamp": "2026-11-07T00:54:00",
+    "report_count": 2,
+    "verification_confidence": 0.3056,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [
+        "Noida Authority"
+      ],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_1A536B63EF",
+        "source_url": "Times of India",
+        "headline": "Duplicate expenses? No shared area maintenance fee at Wish Town for now",
+        "published_at": "2026-11-07T00:54:00"
+      },
+      {
+        "report_id": "REP_C0557A3125",
+        "source_url": "Times of India",
+        "headline": "Duplicate expenses? No shared area maintenance fee at Wish Town for now",
+        "published_at": "2026-11-07T00:54:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_F7FA14E8FC",
+    "headline": "Airport engineer among two held for cannabis smuggling",
+    "summary": "Airport engineer among two held for cannabis smuggling. Noida: Two men have been arrested for allegedly operating a cannabis supply network that catered to young people living in flats, paying guest (PG) accommodations, hostels and colleges across Delhi-NCR.The accused are Sumit ...",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 57",
+    "sector_name": "Sector 57, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.605,
+    "longitude": 77.3535,
+    "incident_timestamp": "2026-11-06T01:02:00",
+    "report_count": 2,
+    "verification_confidence": 0.3056,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [],
+      "vehicles": [
+        "Motorcycle"
+      ],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_F7FA14E8FC",
+        "source_url": "Times of India",
+        "headline": "Airport engineer among two held for cannabis smuggling",
+        "published_at": "2026-11-06T01:02:00"
+      },
+      {
+        "report_id": "REP_F086B6A61B",
+        "source_url": "Times of India",
+        "headline": "Airport engineer among two held for cannabis smuggling",
+        "published_at": "2026-11-06T01:02:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_CE3A93C361",
+    "headline": "One-year-old boy wanders off while playing near home, gets crushed by mini truck in Noida’s Shahdara village",
+    "summary": "One-year-old boy wanders off while playing near home, gets crushed by mini truck in Noida’s Shahdara village. Noida: A one-year-old boy died after being hit by a mini-truck carrying water bottles in Shahdara village in Sector 141 on Tuesday. The driver allegedly abandoned the veh...",
+    "category": "TRAFFIC_INCIDENT",
+    "category_name": "Traffic & Road Hazard",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 142",
+    "sector_name": "Sector 142, Noida",
+    "zone": "Expressway Corporate / Transit Hub",
+    "latitude": 28.491,
+    "longitude": 77.419,
+    "incident_timestamp": "2026-11-04T20:00:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [
+        "Truck"
+      ],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [
+        "Driver"
+      ]
+    },
+    "sources": [
+      {
+        "report_id": "REP_CE3A93C361",
+        "source_url": "Times of India",
+        "headline": "One-year-old boy wanders off while playing near home, gets crushed by mini truck in Noida’s Shahdara village",
+        "published_at": "2026-11-04T00:46:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_E1A9BA3D1E",
+    "headline": "Children’s play area in Sec 43 park dug up for Chhath, locals protest",
+    "summary": "Children’s play area in Sec 43 park dug up for Chhath, locals protest. Noida: As Chhath Puja approaches and dedicated spaces are being prepared across the cities for the festivities, residents of Sector 50 have objected to the recent digging of the children’s play area in Sector ...",
+    "category": "PUBLIC_DISRUPTION",
+    "category_name": "Public Order & Protests",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 43",
+    "sector_name": "Sector 43, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5576,
+    "longitude": 77.3517,
+    "incident_timestamp": "2026-11-04T00:23:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [
+        "Noida Authority"
+      ],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_E1A9BA3D1E",
+        "source_url": "Times of India",
+        "headline": "Children’s play area in Sec 43 park dug up for Chhath, locals protest",
+        "published_at": "2026-11-04T00:23:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_A5D15E7347",
+    "headline": "Children’s play area in Sec 43 park dug up for Chhath, locals protest",
+    "summary": "Children’s play area in Sec 43 park dug up for Chhath, locals protest. Noida: As Chhath Puja approaches and dedicated spaces are being prepared across the cities for the festivities, residents of Sector 50 have objected to the recent digging of the children’s play area in Sector ...",
+    "category": "PUBLIC_DISRUPTION",
+    "category_name": "Public Order & Protests",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 50",
+    "sector_name": "Sector 50, Noida",
+    "zone": "Residential High-Density",
+    "latitude": 28.577,
+    "longitude": 77.368,
+    "incident_timestamp": "2026-11-04T00:23:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [
+        "Noida Authority"
+      ],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_A5D15E7347",
+        "source_url": "Times of India",
+        "headline": "Children’s play area in Sec 43 park dug up for Chhath, locals protest",
+        "published_at": "2026-11-04T00:23:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_A24CB1B867",
+    "headline": "नोएडा सेक्टर 63 में मुठभेड़: पुलिस ने चार बदमाशों को किया गिरफ्तार, दो के पैर में लगी गोली; अवैध हथियार बरामद",
+    "summary": "नोएडा सेक्टर 63 में मुठभेड़: पुलिस ने चार बदमाशों को किया गिरफ्तार, दो के पैर में लगी गोली; अवैध हथियार बरामद",
+    "category": "VIOLENT_CRIME",
+    "category_name": "Violent Crime",
+    "severity_weight": 5.0,
+    "sector_id": "Sector 63",
+    "sector_name": "Sector 63, Noida",
+    "zone": "Major Industrial & Tech Zone",
+    "latitude": 28.625,
+    "longitude": 77.382,
+    "incident_timestamp": "2026-11-02T13:30:00",
+    "report_count": 3,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [
+        "Noida Police"
+      ],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Bullet"
+      ],
+      "roles_and_actors": [
+        "Miscreants"
+      ]
+    },
+    "sources": [
+      {
+        "report_id": "REP_A24CB1B867",
+        "source_url": "Amar Ujala",
+        "headline": "नोएडा सेक्टर 63 में मुठभेड़: पुलिस ने चार बदमाशों को किया गिरफ्तार, दो के पैर में लगी गोली; अवैध हथियार बरामद",
+        "published_at": "2026-11-02T13:30:00"
+      },
+      {
+        "report_id": "REP_C8399639DF",
+        "source_url": "Navbharat Times",
+        "headline": "नोएडा में पुलिस और लिफ्ट लुटेरों के बीच मुठभेड़: सेक्टर-63 में फायरिंग के बाद 2 बदमाश घायल, 4 गिरफ्तार",
+        "published_at": "2026-11-02T13:30:00"
+      },
+      {
+        "report_id": "REP_DA2F17D0EB",
+        "source_url": "Arth Parkash",
+        "headline": "नोएडा के सेक्टर-63 में पुलिस और बदमाशों के बीच मुठभेड़, दो बदमाश पैर में गोली लगने से घायल, चार आरोपी गिरफ्तार",
+        "published_at": "2026-11-02T11:34:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_05FC471889",
     "headline": "Noida police arrest four suspects after late-night encounter in Sector 63",
-    "summary": "Noida police arrest four suspects after late-night encounter in Sector 63.",
+    "summary": "Noida police arrest four suspects after late-night encounter in Sector 63",
     "category": "VIOLENT_CRIME",
     "category_name": "Violent Crime",
     "severity_weight": 5.0,
@@ -357,7 +1457,7 @@
     },
     "sources": [
       {
-        "report_id": "REP_90EDA9E6D0",
+        "report_id": "REP_05FC471889",
         "source_url": "Mid-Day",
         "headline": "Noida police arrest four suspects after late-night encounter in Sector 63",
         "published_at": "2026-11-02T13:30:00"
@@ -365,9 +1465,40 @@
     ]
   },
   {
-    "event_id": "EVT_371143F0D6",
+    "event_id": "EVT_A0667A0884",
+    "headline": "नोएडा-ग्रेटर नोएडा एक्सप्रेसवे का नया शॉर्टकट, खत्म होगा 16 KM का चक्कर और जाम; जल्द खुलेगा नया लिंक रोड - new noidagreater noida link road via sector 146 to lg chowk opening soon check details",
+    "summary": "नोएडा-ग्रेटर नोएडा एक्सप्रेसवे का नया शॉर्टकट, खत्म होगा 16 KM का चक्कर और जाम; जल्द खुलेगा नया लिंक रोड - new noidagreater noida link road via sector 146 to lg chowk opening soon check details",
+    "category": "PUBLIC_DISRUPTION",
+    "category_name": "Public Order & Protests",
+    "severity_weight": 2.0,
+    "sector_id": "Noida-Greater Noida Expressway",
+    "sector_name": "Noida-Greater Noida Expressway",
+    "zone": "High-Speed Arterial Corridor",
+    "latitude": 28.518,
+    "longitude": 77.382,
+    "incident_timestamp": "2026-11-01T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.1667,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_A0667A0884",
+        "source_url": "Jagran",
+        "headline": "नोएडा-ग्रेटर नोएडा एक्सप्रेसवे का नया शॉर्टकट, खत्म होगा 16 KM का चक्कर और जाम; जल्द खुलेगा नया लिंक रोड - new noidagreater noida link road via sector 146 to lg chowk opening soon check details",
+        "published_at": "2026-11-01T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_A8A6DBC902",
     "headline": "Noida Sector 37 residents raise security concerns after burglary in society",
-    "summary": "Noida Sector 37 residents raise security concerns after burglary in society.",
+    "summary": "Noida Sector 37 residents raise security concerns after burglary in society",
     "category": "PROPERTY_CRIME",
     "category_name": "Property / Financial Crime",
     "severity_weight": 2.5,
@@ -378,7 +1509,7 @@
     "longitude": 77.336,
     "incident_timestamp": "2026-11-01T12:30:00",
     "report_count": 1,
-    "verification_confidence": 0.999,
+    "verification_confidence": 0.952,
     "is_multi_source_verified": false,
     "entities": {
       "organizations": [],
@@ -388,7 +1519,7 @@
     },
     "sources": [
       {
-        "report_id": "REP_371143F0D6",
+        "report_id": "REP_A8A6DBC902",
         "source_url": "Hindustan Times",
         "headline": "Noida Sector 37 residents raise security concerns after burglary in society",
         "published_at": "2026-11-01T12:30:00"
@@ -396,9 +1527,9 @@
     ]
   },
   {
-    "event_id": "EVT_AD5C4E5F08",
+    "event_id": "EVT_12B380D823",
     "headline": "Man loses control, crashes car into another on Noida Expressway, dies",
-    "summary": "Man loses control, crashes car into another on Noida Expressway, dies.",
+    "summary": "Man loses control, crashes car into another on Noida Expressway, dies",
     "category": "TRAFFIC_INCIDENT",
     "category_name": "Traffic & Road Hazard",
     "severity_weight": 2.0,
@@ -421,7 +1552,7 @@
     },
     "sources": [
       {
-        "report_id": "REP_AD5C4E5F08",
+        "report_id": "REP_12B380D823",
         "source_url": "The Times of India",
         "headline": "Man loses control, crashes car into another on Noida Expressway, dies",
         "published_at": "2026-10-31T12:30:00"
@@ -429,7 +1560,7 @@
     ]
   },
   {
-    "event_id": "EVT_FA669494A7",
+    "event_id": "EVT_AB7B598920",
     "headline": "One dead, four injured in two separate road accidents in Noida",
     "summary": "One dead, four injured in two separate road accidents in Noida. In the second accident, four people were injured when two cars collided head-on and one crashed into a roadside tea shop in Sector 62, Noida on Thursday.",
     "category": "TRAFFIC_INCIDENT",
@@ -452,7 +1583,7 @@
     },
     "sources": [
       {
-        "report_id": "REP_FA669494A7",
+        "report_id": "REP_AB7B598920",
         "source_url": "msn.com",
         "headline": "One dead, four injured in two separate road accidents in Noida",
         "published_at": "2026-10-31T00:48:30"
@@ -460,9 +1591,42 @@
     ]
   },
   {
-    "event_id": "EVT_A664E70982",
+    "event_id": "EVT_4587E577EB",
+    "headline": "चोरी, पेचकस से हमला और गंदे नाले में छलांग; नोएडा सेक्टर-22 में चोरों पर भारी पड़ी मां-बेटे की जोड़ी",
+    "summary": "चोरी, पेचकस से हमला और गंदे नाले में छलांग; नोएडा सेक्टर-22 में चोरों पर भारी पड़ी मां-बेटे की जोड़ी",
+    "category": "PROPERTY_CRIME",
+    "category_name": "Property / Financial Crime",
+    "severity_weight": 2.5,
+    "sector_id": "Sector 22",
+    "sector_name": "Sector 22, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5952,
+    "longitude": 77.3473,
+    "incident_timestamp": "2026-10-30T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [
+        "Thieves"
+      ]
+    },
+    "sources": [
+      {
+        "report_id": "REP_4587E577EB",
+        "source_url": "Jagran",
+        "headline": "चोरी, पेचकस से हमला और गंदे नाले में छलांग; नोएडा सेक्टर-22 में चोरों पर भारी पड़ी मां-बेटे की जोड़ी",
+        "published_at": "2026-10-30T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_A4555D6373",
     "headline": "Noida Sector 150 Air Pollution Protest Targets Heavy Trucks",
-    "summary": "Noida Sector 150 Air Pollution Protest Targets Heavy Trucks.",
+    "summary": "Noida Sector 150 Air Pollution Protest Targets Heavy Trucks",
     "category": "PUBLIC_DISRUPTION",
     "category_name": "Public Order & Protests",
     "severity_weight": 2.0,
@@ -483,7 +1647,7 @@
     },
     "sources": [
       {
-        "report_id": "REP_A664E70982",
+        "report_id": "REP_A4555D6373",
         "source_url": "Urban Acres",
         "headline": "Noida Sector 150 Air Pollution Protest Targets Heavy Trucks",
         "published_at": "2026-10-25T00:54:32"
@@ -491,9 +1655,9 @@
     ]
   },
   {
-    "event_id": "EVT_3BC28AEE36",
-    "headline": "Noida Sector 125 fire: Blaze at hotel spreads to nearby eateries, firefighting ops underway",
-    "summary": "Noida Sector 125 fire: Blaze at hotel spreads to nearby eateries, firefighting ops underway.",
+    "event_id": "EVT_907371519D",
+    "headline": "नोएडा के Sector 126 थाना क्षेत्र के अंतर्गत आने वाले Sector 125 में एक बड़ा हादसा हो गया है. यहां मौजूद कृष्णा फूड पॉइंट में शनिवार दोपहर भयंकर Fire लग गई. आग इतनी तेज थी कि इसने आस-पास की कई दूसरी दुकानों को भी अपनी चपेट में ले लिया. मौके पर Cylinder फटने के धमाके भी सुने गए हैं, जिससे इलाके में भारी दहशत फैल गई है. शुरूआती जांच में आग लगने की वजह Short Circuit बताई जा रही है. घटना की सूचना मिलते ही Fire Brigade और Police की टीम मौके पर पहुंच गई है और Rescue Operation तेजी से चल रहा है.\n\n#NoidaFire #noidanews #Noidasector126 #noidasector125 #UttarPradeshNews #ZeeBusiness",
+    "summary": "नोएडा के Sector 126 थाना क्षेत्र के अंतर्गत आने वाले Sector 125 में एक बड़ा हादसा हो गया है. यहां मौजूद कृष्णा फूड पॉइंट में शनिवार दोपहर भयंकर Fire लग गई. आग इतनी तेज थी कि इसने आस-पास की कई दूसरी दुकानों को भी अपनी चपेट में ले लिया. मौके पर Cylinder फटने के धमाके भी सुने गए हैं...",
     "category": "CIVIC_HAZARD",
     "category_name": "Civic & Industrial Hazard",
     "severity_weight": 3.5,
@@ -503,7 +1667,119 @@
     "latitude": 28.544,
     "longitude": 77.332,
     "incident_timestamp": "2026-10-24T12:30:00",
-    "report_count": 8,
+    "report_count": 2,
+    "verification_confidence": 0.9986,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Fire",
+        "Short Circuit"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_907371519D",
+        "source_url": "Facebook",
+        "headline": "नोएडा के Sector 126 थाना क्षेत्र के अंतर्गत आने वाले Sector 125 में एक बड़ा हादसा हो गया है. यहां मौजूद कृष्णा फूड पॉइंट में शनिवार दोपहर भयंकर Fire लग गई. आग इतनी तेज थी कि इसने आस-पास की कई दूसरी दुकानों को भी अपनी चपेट में ले लिया. मौके पर Cylinder फटने के धमाके भी सुने गए हैं, जिससे इलाके में भारी दहशत फैल गई है. शुरूआती जांच में आग लगने की वजह Short Circuit बताई जा रही है. घटना की सूचना मिलते ही Fire Brigade और Police की टीम मौके पर पहुंच गई है और Rescue Operation तेजी से चल रहा है.\n\n#NoidaFire #noidanews #Noidasector126 #noidasector125 #UttarPradeshNews #ZeeBusiness",
+        "published_at": "2026-10-24T12:30:00"
+      },
+      {
+        "report_id": "REP_4145836F81",
+        "source_url": "Facebook",
+        "headline": "नोएडा के Sector 126 थाना क्षेत्र के अंतर्गत आने वाले Sector 125 में एक बड़ा हादसा हो गया है. यहां मौजूद कृष्णा फूड पॉइंट में शनिवार दोपहर भयंकर Fire लग गई. आग इतनी तेज थी कि इसने आस-पास की कई दूसरी द",
+        "published_at": "2026-10-24T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_EEAB00C568",
+    "headline": "Noida Fire: 1 Dead as Massive Blaze Engulfs Shops in Sector 125",
+    "summary": "Noida Fire: 1 Dead as Massive Blaze Engulfs Shops in Sector 125",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 125",
+    "sector_name": "Sector 125, Noida",
+    "zone": "Educational / Institutional Hub",
+    "latitude": 28.544,
+    "longitude": 77.332,
+    "incident_timestamp": "2026-10-24T12:30:00",
+    "report_count": 7,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Blaze",
+        "Explosive",
+        "Fire",
+        "Short Circuit"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_CDCD9CC5BB",
+        "source_url": "AajTak",
+        "headline": "नोएडा: सेक्टर 125 में भीषण आग, 6 दुकानें जलीं, एक की मौत",
+        "published_at": "2026-10-24T12:30:00"
+      },
+      {
+        "report_id": "REP_FA078C8D41",
+        "source_url": "Jagran",
+        "headline": "नोएडा सेक्टर-125 में सिलिंडर ब्लास्ट के बाद भीषण आग, एक की मौत - noida hotel fire cylinders explode short circuit suspected",
+        "published_at": "2026-10-24T12:30:00"
+      },
+      {
+        "report_id": "REP_42F39F5869",
+        "source_url": "NDTV India",
+        "headline": "नोएडा सेक्टर 125 में एमिटी के पास लगी भीषण आग, कई दुकानें खाक, एक की मौत, VIDEO",
+        "published_at": "2026-10-24T12:30:00"
+      },
+      {
+        "report_id": "REP_F55932D191",
+        "source_url": "ETV Bharat",
+        "headline": "नोएडा: सेक्टर 125 में लगी भीषण आग, चपेट में आई 5-6 दुकानें, एक की मौत",
+        "published_at": "2026-10-24T12:30:00"
+      },
+      {
+        "report_id": "REP_F59B345D82",
+        "source_url": "News24 Hindi",
+        "headline": "नोएडा सेक्टर-125 में लगी भीषण आग, कई दुकानें जलकर राख, व्यापारियों को लाखों का नुकसान",
+        "published_at": "2026-10-24T12:30:00"
+      },
+      {
+        "report_id": "REP_EEAB00C568",
+        "source_url": "News Arena India",
+        "headline": "Noida Fire: 1 Dead as Massive Blaze Engulfs Shops in Sector 125",
+        "published_at": "2026-10-24T12:30:00"
+      },
+      {
+        "report_id": "REP_CD6B395B60",
+        "source_url": "Times Now",
+        "headline": "Massive Fire Breaks Out In Noida's Sector 125, One Dead, Several Shops Gutted",
+        "published_at": "2026-10-24T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_3B803CEA60",
+    "headline": "Noida Sector 125 Fire: 1 Dead as Blaze Engulfs Multiple Shops Following Blast - India Today",
+    "summary": "Noida Sector 125 Fire: 1 Dead as Blaze Engulfs Multiple Shops Following Blast - India Today",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 125",
+    "sector_name": "Sector 125, Noida",
+    "zone": "Educational / Institutional Hub",
+    "latitude": 28.544,
+    "longitude": 77.332,
+    "incident_timestamp": "2026-10-24T12:30:00",
+    "report_count": 2,
     "verification_confidence": 0.999,
     "is_multi_source_verified": true,
     "entities": {
@@ -517,59 +1793,130 @@
     },
     "sources": [
       {
-        "report_id": "REP_C119677E9B",
+        "report_id": "REP_6C4A499A4C",
+        "source_url": "Jagran",
+        "headline": "नोएडा सेक्टर 125 अग्निकांड: ग्राइंडर की चिंगारी से कैसे 6 दुकानों तक पहुंची आग? दुकान में फंसे व्यक्ति की मौत",
+        "published_at": "2026-10-24T12:30:00"
+      },
+      {
+        "report_id": "REP_3B803CEA60",
         "source_url": "India Today",
         "headline": "Noida Sector 125 Fire: 1 Dead as Blaze Engulfs Multiple Shops Following Blast - India Today",
-        "published_at": "2026-10-24T12:30:00"
-      },
-      {
-        "report_id": "REP_1A23F25BBD",
-        "source_url": "Hindustan Times",
-        "headline": "Massive fire breaks out at food outlet in Noida’s Sector 125; one killed, several shops gutted",
-        "published_at": "2026-10-24T12:30:00"
-      },
-      {
-        "report_id": "REP_3BC28AEE36",
-        "source_url": "Livemint",
-        "headline": "Noida Sector 125 fire: Blaze at hotel spreads to nearby eateries, firefighting ops underway",
-        "published_at": "2026-10-24T12:30:00"
-      },
-      {
-        "report_id": "REP_742549EB64",
-        "source_url": "News Arena India",
-        "headline": "Noida Fire: 1 Dead as Massive Blaze Engulfs Shops in Sector 125",
-        "published_at": "2026-10-24T12:30:00"
-      },
-      {
-        "report_id": "REP_BD8F451CBA",
-        "source_url": "Times Now",
-        "headline": "Massive Fire Breaks Out In Noida's Sector 125, One Dead, Several Shops Gutted",
-        "published_at": "2026-10-24T12:30:00"
-      },
-      {
-        "report_id": "REP_37DB7EED5D",
-        "source_url": "Oneindia",
-        "headline": "Noida Fire: One Dead As Blaze Breaks Out At Krishna Food Point In Sector 125, Multiple LPG Cylinders Spotted",
-        "published_at": "2026-10-24T12:30:00"
-      },
-      {
-        "report_id": "REP_C436C994B1",
-        "source_url": "The Week",
-        "headline": "What caused massive fire near Noida Amity University?",
-        "published_at": "2026-10-24T12:30:00"
-      },
-      {
-        "report_id": "REP_72E87665C0",
-        "source_url": "Daily Pioneer",
-        "headline": "LPG cylinder blasts trigger fire at shops near Amity University in Noida, 1 dead",
         "published_at": "2026-10-24T12:30:00"
       }
     ]
   },
   {
-    "event_id": "EVT_23EF17A6D3",
+    "event_id": "EVT_1C4B93E5D3",
+    "headline": "Noida Fire: One Dead As Blaze Breaks Out At Krishna Food Point In Sector 125, Multiple LPG Cylinders Spotted",
+    "summary": "Noida Fire: One Dead As Blaze Breaks Out At Krishna Food Point In Sector 125, Multiple LPG Cylinders Spotted",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 125",
+    "sector_name": "Sector 125, Noida",
+    "zone": "Educational / Institutional Hub",
+    "latitude": 28.544,
+    "longitude": 77.332,
+    "incident_timestamp": "2026-10-24T12:30:00",
+    "report_count": 2,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Blaze",
+        "Fire"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_985E223249",
+        "source_url": "Hindustan Times",
+        "headline": "Massive fire breaks out at food outlet in Noida’s Sector 125; one killed, several shops gutted",
+        "published_at": "2026-10-24T12:30:00"
+      },
+      {
+        "report_id": "REP_1C4B93E5D3",
+        "source_url": "Oneindia",
+        "headline": "Noida Fire: One Dead As Blaze Breaks Out At Krishna Food Point In Sector 125, Multiple LPG Cylinders Spotted",
+        "published_at": "2026-10-24T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_452D3A05A9",
+    "headline": "Noida Sector 125 fire: Blaze at hotel spreads to nearby eateries, firefighting ops underway",
+    "summary": "Noida Sector 125 fire: Blaze at hotel spreads to nearby eateries, firefighting ops underway",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 125",
+    "sector_name": "Sector 125, Noida",
+    "zone": "Educational / Institutional Hub",
+    "latitude": 28.544,
+    "longitude": 77.332,
+    "incident_timestamp": "2026-10-24T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Blaze",
+        "Fire"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_452D3A05A9",
+        "source_url": "Livemint",
+        "headline": "Noida Sector 125 fire: Blaze at hotel spreads to nearby eateries, firefighting ops underway",
+        "published_at": "2026-10-24T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_BEB57ACE9A",
+    "headline": "What caused massive fire near Noida Amity University?",
+    "summary": "What caused massive fire near Noida Amity University?",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 125",
+    "sector_name": "Sector 125, Noida",
+    "zone": "Educational / Institutional Hub",
+    "latitude": 28.544,
+    "longitude": 77.332,
+    "incident_timestamp": "2026-10-24T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.5,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_BEB57ACE9A",
+        "source_url": "The Week",
+        "headline": "What caused massive fire near Noida Amity University?",
+        "published_at": "2026-10-24T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_703CD1E25B",
     "headline": "Noida’s Jaypee Wish Town residents protest ₹1.5 per sq ft shared area maintenance charges, cite possible duplication of expenses",
-    "summary": "Noida’s Jaypee Wish Town residents protest ₹1.5 per sq ft shared area maintenance charges, cite possible duplication of expenses.",
+    "summary": "Noida’s Jaypee Wish Town residents protest ₹1.5 per sq ft shared area maintenance charges, cite possible duplication of expenses",
     "category": "PUBLIC_DISRUPTION",
     "category_name": "Public Order & Protests",
     "severity_weight": 2.0,
@@ -590,7 +1937,7 @@
     },
     "sources": [
       {
-        "report_id": "REP_23EF17A6D3",
+        "report_id": "REP_703CD1E25B",
         "source_url": "Hindustan Times",
         "headline": "Noida’s Jaypee Wish Town residents protest ₹1.5 per sq ft shared area maintenance charges, cite possible duplication of expenses",
         "published_at": "2026-10-24T12:30:00"
@@ -598,17 +1945,48 @@
     ]
   },
   {
-    "event_id": "EVT_76C832E68B",
+    "event_id": "EVT_E67292381C",
+    "headline": "DND से अब सीधा नोएडा सेक्टर 62 जाएगी सड़क, 850 करोड़ में बनेगी एलिवेटेड रोड, नहीं मिलेगा जाम",
+    "summary": "DND से अब सीधा नोएडा सेक्टर 62 जाएगी सड़क, 850 करोड़ में बनेगी एलिवेटेड रोड, नहीं मिलेगा जाम",
+    "category": "PUBLIC_DISRUPTION",
+    "category_name": "Public Order & Protests",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 62",
+    "sector_name": "Sector 62, Noida",
+    "zone": "Major Institutional & IT Hub",
+    "latitude": 28.627,
+    "longitude": 77.363,
+    "incident_timestamp": "2026-10-21T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.7099,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_E67292381C",
+        "source_url": "News18 Hindi",
+        "headline": "DND से अब सीधा नोएडा सेक्टर 62 जाएगी सड़क, 850 करोड़ में बनेगी एलिवेटेड रोड, नहीं मिलेगा जाम",
+        "published_at": "2026-10-21T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_7A7C271BE0",
     "headline": "23 - Year - Old Sahil Found Dead in Open Drain in Noida Barola , Locals Question Noida Authority Negligence",
-    "summary": "23 - Year - Old Sahil Found Dead in Open Drain in Noida Barola , Locals Question Noida Authority Negligence.",
+    "summary": "23 - Year - Old Sahil Found Dead in Open Drain in Noida Barola , Locals Question Noida Authority Negligence",
     "category": "VIOLENT_CRIME",
     "category_name": "Violent Crime",
     "severity_weight": 5.0,
-    "sector_id": "Sector 6",
-    "sector_name": "Sector 6, Noida",
+    "sector_id": "Sector 49",
+    "sector_name": "Sector 49, Noida",
     "zone": "Urban Sector",
-    "latitude": 28.5938,
-    "longitude": 77.3205,
+    "latitude": 28.564,
+    "longitude": 77.3672,
     "incident_timestamp": "2026-10-18T16:15:00",
     "report_count": 1,
     "verification_confidence": 0.999,
@@ -623,7 +2001,7 @@
     },
     "sources": [
       {
-        "report_id": "REP_76C832E68B",
+        "report_id": "REP_7A7C271BE0",
         "source_url": "newsx.com",
         "headline": "23 - Year - Old Sahil Found Dead in Open Drain in Noida Barola , Locals Question Noida Authority Negligence",
         "published_at": "2026-10-18T16:15:00"
@@ -631,9 +2009,104 @@
     ]
   },
   {
-    "event_id": "EVT_A7520EEA30",
+    "event_id": "EVT_AB3AB44E8C",
+    "headline": "नोएडा के बरौला में खुले नाले में मिला 23 वर्षीय साहिल का शव, प्राधिकरण के खिलाफ ग्रामीणों में आक्रोश",
+    "summary": "नोएडा के बरौला में खुले नाले में मिला 23 वर्षीय साहिल का शव, प्राधिकरण के खिलाफ ग्रामीणों में आक्रोश",
+    "category": "VIOLENT_CRIME",
+    "category_name": "Violent Crime",
+    "severity_weight": 5.0,
+    "sector_id": "Sector 49",
+    "sector_name": "Sector 49, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.564,
+    "longitude": 77.3672,
+    "incident_timestamp": "2026-10-18T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_AB3AB44E8C",
+        "source_url": "Royal Bulletin",
+        "headline": "नोएडा के बरौला में खुले नाले में मिला 23 वर्षीय साहिल का शव, प्राधिकरण के खिलाफ ग्रामीणों में आक्रोश",
+        "published_at": "2026-10-18T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_855CFE3F61",
+    "headline": "नोएडा सेक्टर 120 जोडिएक सोसायटी में बिना नंबर प्लेट वाली कार घुसी , कई वाहनों को मारी टक्कर , फिर मारपीट",
+    "summary": "नोएडा सेक्टर 120 जोडिएक सोसायटी में बिना नंबर प्लेट वाली कार घुसी , कई वाहनों को मारी टक्कर , फिर मारपीट",
+    "category": "TRAFFIC_INCIDENT",
+    "category_name": "Traffic & Road Hazard",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 120",
+    "sector_name": "Sector 120, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5862,
+    "longitude": 77.3966,
+    "incident_timestamp": "2026-10-18T12:00:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [
+        "Car"
+      ],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_855CFE3F61",
+        "source_url": "navbharattimes.indiatimes.com",
+        "headline": "नोएडा सेक्टर 120 जोडिएक सोसायटी में बिना नंबर प्लेट वाली कार घुसी , कई वाहनों को मारी टक्कर , फिर मारपीट",
+        "published_at": "2026-10-18T12:00:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_BF10BB60CD",
+    "headline": "Shuttering Collapse In Noida Sec - 62 : नोएडा में तेज आंधी से बड़ा हादसा , निर्माणाधीन बिल्डिंग की शटरिंग गिरने से 14 गाड़ियां क्षतिग्रस्त",
+    "summary": "Shuttering Collapse In Noida Sec - 62 : नोएडा में तेज आंधी से बड़ा हादसा , निर्माणाधीन बिल्डिंग की शटरिंग गिरने से 14 गाड़ियां क्षतिग्रस्त",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 62",
+    "sector_name": "Sector 62, Noida",
+    "zone": "Major Institutional & IT Hub",
+    "latitude": 28.627,
+    "longitude": 77.363,
+    "incident_timestamp": "2026-10-15T14:15:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_BF10BB60CD",
+        "source_url": "punjabkesari.com",
+        "headline": "Shuttering Collapse In Noida Sec - 62 : नोएडा में तेज आंधी से बड़ा हादसा , निर्माणाधीन बिल्डिंग की शटरिंग गिरने से 14 गाड़ियां क्षतिग्रस्त",
+        "published_at": "2026-10-15T14:15:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_19D4D2430D",
     "headline": "Burglars steal jewellery and cash worth Rs 1.5 crore from two locked flats in Noida Sector 50 highrise",
-    "summary": "Burglars steal jewellery and cash worth Rs 1.5 crore from two locked flats in Noida Sector 50 highrise.",
+    "summary": "Burglars steal jewellery and cash worth Rs 1.5 crore from two locked flats in Noida Sector 50 highrise",
     "category": "PROPERTY_CRIME",
     "category_name": "Property / Financial Crime",
     "severity_weight": 2.5,
@@ -644,7 +2117,7 @@
     "longitude": 77.368,
     "incident_timestamp": "2026-10-15T12:30:00",
     "report_count": 2,
-    "verification_confidence": 0.9847,
+    "verification_confidence": 0.9897,
     "is_multi_source_verified": true,
     "entities": {
       "organizations": [],
@@ -656,13 +2129,13 @@
     },
     "sources": [
       {
-        "report_id": "REP_A7520EEA30",
+        "report_id": "REP_19D4D2430D",
         "source_url": "The Times of India",
         "headline": "Burglars steal jewellery and cash worth Rs 1.5 crore from two locked flats in Noida Sector 50 highrise",
         "published_at": "2026-10-15T12:30:00"
       },
       {
-        "report_id": "REP_A59052A569",
+        "report_id": "REP_B4F2D573CB",
         "source_url": "Hindustan Times",
         "headline": "Thieves steal valuables worth ₹1.5 crore from two locked flats in Noida’s Sector 50 society",
         "published_at": "2026-10-14T12:30:00"
@@ -670,9 +2143,9 @@
     ]
   },
   {
-    "event_id": "EVT_30CFBC8431",
-    "headline": "Sleeper Bus Catches Fire On Noida-Greater Noida Expressway, All Passengers Rescued",
-    "summary": "Sleeper Bus Catches Fire On Noida-Greater Noida Expressway, All Passengers Rescued. Noida News | Sleeper Bus Catches Fire On Noida-Greater Noida Expressway, All Passengers Rescued NDTV",
+    "event_id": "EVT_42A8175BFB",
+    "headline": "Sleeper bus catches fire on Greater Noida Expressway, horrifying video surfaces",
+    "summary": "Sleeper bus catches fire on Greater Noida Expressway, horrifying video surfaces",
     "category": "CIVIC_HAZARD",
     "category_name": "Civic & Industrial Hazard",
     "severity_weight": 3.5,
@@ -681,12 +2154,14 @@
     "zone": "High-Speed Arterial Corridor",
     "latitude": 28.518,
     "longitude": 77.382,
-    "incident_timestamp": "2026-10-07T15:12:45",
-    "report_count": 2,
+    "incident_timestamp": "2026-10-06T12:30:00",
+    "report_count": 5,
     "verification_confidence": 0.999,
     "is_multi_source_verified": true,
     "entities": {
-      "organizations": [],
+      "organizations": [
+        "Fire Department"
+      ],
       "vehicles": [
         "Bus"
       ],
@@ -697,46 +2172,31 @@
     },
     "sources": [
       {
-        "report_id": "REP_30CFBC8431",
-        "source_url": "NDTV",
-        "headline": "Sleeper Bus Catches Fire On Noida-Greater Noida Expressway, All Passengers Rescued",
-        "published_at": "2026-10-07T15:12:45"
+        "report_id": "REP_54225F7E3D",
+        "source_url": "AajTak",
+        "headline": "नोएडा एक्सप्रेसवे पर दौड़ती स्लीपर बस में लगी भीषण आग, देखते-ही-देखते धधक उठी Video",
+        "published_at": "2026-10-07T12:30:00"
       },
       {
-        "report_id": "REP_82BA05FDBE",
+        "report_id": "REP_944747DA0C",
+        "source_url": "Jagran",
+        "headline": "नोएडा एक्सप्रेसवे पर सेक्टर 150 के समीप स्लीपर बस में लगी आग, दमकल की टीम मौके पर",
+        "published_at": "2026-10-06T12:30:00"
+      },
+      {
+        "report_id": "REP_C57A7F7B34",
+        "source_url": "AajTak",
+        "headline": "नोएडा एक्सप्रेसवे पर स्लीपर बस में लगी आग, जा रही थी आगरा",
+        "published_at": "2026-10-06T12:30:00"
+      },
+      {
+        "report_id": "REP_42A8175BFB",
         "source_url": "India TV News",
         "headline": "Sleeper bus catches fire on Greater Noida Expressway, horrifying video surfaces",
         "published_at": "2026-10-06T12:30:00"
-      }
-    ]
-  },
-  {
-    "event_id": "EVT_1839B3354D",
-    "headline": "Agra-Bound Sleeper Bus Turns Into Fireball On Noida-Greater Noida Expressway, Passengers Evacuated - VIDEO",
-    "summary": "Agra-Bound Sleeper Bus Turns Into Fireball On Noida-Greater Noida Expressway, Passengers Evacuated - VIDEO.",
-    "category": "TRAFFIC_INCIDENT",
-    "category_name": "Traffic & Road Hazard",
-    "severity_weight": 2.0,
-    "sector_id": "Noida-Greater Noida Expressway",
-    "sector_name": "Noida-Greater Noida Expressway",
-    "zone": "High-Speed Arterial Corridor",
-    "latitude": 28.518,
-    "longitude": 77.382,
-    "incident_timestamp": "2026-10-06T12:30:00",
-    "report_count": 1,
-    "verification_confidence": 0.999,
-    "is_multi_source_verified": false,
-    "entities": {
-      "organizations": [],
-      "vehicles": [
-        "Bus"
-      ],
-      "instruments_or_hazards": [],
-      "roles_and_actors": []
-    },
-    "sources": [
+      },
       {
-        "report_id": "REP_1839B3354D",
+        "report_id": "REP_EBE38526D2",
         "source_url": "Free Press Journal",
         "headline": "Agra-Bound Sleeper Bus Turns Into Fireball On Noida-Greater Noida Expressway, Passengers Evacuated - VIDEO",
         "published_at": "2026-10-06T12:30:00"
@@ -744,9 +2204,46 @@
     ]
   },
   {
-    "event_id": "EVT_456C79672B",
+    "event_id": "EVT_7BBD572CA8",
+    "headline": "नोएडा एक्सप्रेसवे पर सेक्टर 150 के समीप स्लीपर बस में लगी आग, दमकल की टीम मौके पर",
+    "summary": "नोएडा एक्सप्रेसवे पर सेक्टर 150 के समीप स्लीपर बस में लगी आग, दमकल की टीम मौके पर",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 150",
+    "sector_name": "Sector 150, Noida",
+    "zone": "Sports City / Eco-Residential",
+    "latitude": 28.455,
+    "longitude": 77.458,
+    "incident_timestamp": "2026-10-06T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.5848,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [
+        "Fire Department"
+      ],
+      "vehicles": [
+        "Bus"
+      ],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_7BBD572CA8",
+        "source_url": "Jagran",
+        "headline": "नोएडा एक्सप्रेसवे पर सेक्टर 150 के समीप स्लीपर बस में लगी आग, दमकल की टीम मौके पर",
+        "published_at": "2026-10-06T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_3511125603",
     "headline": "Horror at Noida’s Supernova: Airbnb guest falls from Sector 94 high-rise; police probe death",
-    "summary": "Horror at Noida’s Supernova: Airbnb guest falls from Sector 94 high-rise; police probe death.",
+    "summary": "Horror at Noida’s Supernova: Airbnb guest falls from Sector 94 high-rise; police probe death",
     "category": "VIOLENT_CRIME",
     "category_name": "Violent Crime",
     "severity_weight": 5.0,
@@ -757,7 +2254,7 @@
     "longitude": 77.3238,
     "incident_timestamp": "2026-10-03T12:30:00",
     "report_count": 1,
-    "verification_confidence": 0.5556,
+    "verification_confidence": 0.6279,
     "is_multi_source_verified": false,
     "entities": {
       "organizations": [],
@@ -767,10 +2264,1895 @@
     },
     "sources": [
       {
-        "report_id": "REP_456C79672B",
+        "report_id": "REP_3511125603",
         "source_url": "The Statesman",
         "headline": "Horror at Noida’s Supernova: Airbnb guest falls from Sector 94 high-rise; police probe death",
         "published_at": "2026-10-03T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_C69F0C7D73",
+    "headline": "नोएडा के सेक्टर-57 चौराहे के पास कार और ट्रक की जोरदार टक्कर के बाद दोनों वाहनों में आग लग गई. हादसे की सूचना पर दमकल की टीम मौके पर पहुंची और आग पर काबू पाया.\n\n#noida #noidacity #accident #accident #ZeeBusiness #zeebusiness",
+    "summary": "नोएडा के सेक्टर-57 चौराहे के पास कार और ट्रक की जोरदार टक्कर के बाद दोनों वाहनों में आग लग गई. हादसे की सूचना पर दमकल की टीम मौके पर पहुंची और आग पर काबू पाया. #noida #noidacity #accident #accident #ZeeBusiness #zeebusiness",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 57",
+    "sector_name": "Sector 57, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.605,
+    "longitude": 77.3535,
+    "incident_timestamp": "2026-10-02T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.5258,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [
+        "Fire Department"
+      ],
+      "vehicles": [
+        "Car",
+        "Truck"
+      ],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_C69F0C7D73",
+        "source_url": "Facebook",
+        "headline": "नोएडा के सेक्टर-57 चौराहे के पास कार और ट्रक की जोरदार टक्कर के बाद दोनों वाहनों में आग लग गई. हादसे की सूचना पर दमकल की टीम मौके पर पहुंची और आग पर काबू पाया.\n\n#noida #noidacity #accident #accident #ZeeBusiness #zeebusiness",
+        "published_at": "2026-10-02T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_2B6332EB34",
+    "headline": "Noida man found dead in Sector 34 drain, police to probe if car crash killed him",
+    "summary": "Noida man found dead in Sector 34 drain, police to probe if car crash killed him",
+    "category": "TRAFFIC_INCIDENT",
+    "category_name": "Traffic & Road Hazard",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 34",
+    "sector_name": "Sector 34, Noida",
+    "zone": "Residential",
+    "latitude": 28.583,
+    "longitude": 77.358,
+    "incident_timestamp": "2026-09-22T12:30:00",
+    "report_count": 2,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [],
+      "vehicles": [
+        "Car"
+      ],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_2B6332EB34",
+        "source_url": "Hindustan Times",
+        "headline": "Noida man found dead in Sector 34 drain, police to probe if car crash killed him",
+        "published_at": "2026-09-22T12:30:00"
+      },
+      {
+        "report_id": "REP_A3CB282084",
+        "source_url": "Hindustan Times",
+        "headline": "Man found dead near Noida Sector 34 after car crashes into drain",
+        "published_at": "2026-09-21T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_14839291D2",
+    "headline": "Fire breaks out at garments company in Noida Sector 63",
+    "summary": "Fire breaks out at garments company in Noida Sector 63",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 63",
+    "sector_name": "Sector 63, Noida",
+    "zone": "Major Industrial & Tech Zone",
+    "latitude": 28.625,
+    "longitude": 77.382,
+    "incident_timestamp": "2026-09-19T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.1667,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_14839291D2",
+        "source_url": "Hindustan Times",
+        "headline": "Fire breaks out at garments company in Noida Sector 63",
+        "published_at": "2026-09-19T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_E33592F2E3",
+    "headline": "नोएडा के सेक्टर-63 में गारमेंट फैक्ट्री में लगी आग, काबू पाने में जुटी दमकल की टीम",
+    "summary": "नोएडा के सेक्टर-63 में गारमेंट फैक्ट्री में लगी आग, काबू पाने में जुटी दमकल की टीम",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 63",
+    "sector_name": "Sector 63, Noida",
+    "zone": "Major Industrial & Tech Zone",
+    "latitude": 28.625,
+    "longitude": 77.382,
+    "incident_timestamp": "2026-09-18T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [
+        "Fire Department"
+      ],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_E33592F2E3",
+        "source_url": "Jagran",
+        "headline": "नोएडा के सेक्टर-63 में गारमेंट फैक्ट्री में लगी आग, काबू पाने में जुटी दमकल की टीम",
+        "published_at": "2026-09-18T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_8182E4DAAE",
+    "headline": "हरिद्वार: सुरेंद्र कोली ने की आत्महत्या, नोएडा निठारी कांड में कोर्ट ने किया था बरी",
+    "summary": "हरिद्वार: सुरेंद्र कोली ने की आत्महत्या, नोएडा निठारी कांड में कोर्ट ने किया था बरी",
+    "category": "VIOLENT_CRIME",
+    "category_name": "Violent Crime",
+    "severity_weight": 5.0,
+    "sector_id": "Sector 20",
+    "sector_name": "Sector 20, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5833,
+    "longitude": 77.3314,
+    "incident_timestamp": "2026-09-18T12:30:00",
+    "report_count": 2,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_8182E4DAAE",
+        "source_url": "ETV Bharat",
+        "headline": "हरिद्वार: सुरेंद्र कोली ने की आत्महत्या, नोएडा निठारी कांड में कोर्ट ने किया था बरी",
+        "published_at": "2026-09-18T12:30:00"
+      },
+      {
+        "report_id": "REP_E44EF8089E",
+        "source_url": "Navbharat Times",
+        "headline": "कौन था सुरेंद्र कोली? नोएडा के निठारी हत्याकांड में बरी होकर हरिद्वार में चलाता था चाय की दुकान, अब मिली लाश",
+        "published_at": "2026-09-18T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_62BAEDD58D",
+    "headline": "नोएडा एलिवेटेड रोड हादसा: सीवर लीकेज से सेक्टर-28 में नीचे उतरने वाली लेन धंसी, यातायात प्रभावित",
+    "summary": "नोएडा एलिवेटेड रोड हादसा: सीवर लीकेज से सेक्टर-28 में नीचे उतरने वाली लेन धंसी, यातायात प्रभावित",
+    "category": "TRAFFIC_INCIDENT",
+    "category_name": "Traffic & Road Hazard",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 28",
+    "sector_name": "Sector 28, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5716,
+    "longitude": 77.3318,
+    "incident_timestamp": "2026-09-15T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_62BAEDD58D",
+        "source_url": "Jagran",
+        "headline": "नोएडा एलिवेटेड रोड हादसा: सीवर लीकेज से सेक्टर-28 में नीचे उतरने वाली लेन धंसी, यातायात प्रभावित",
+        "published_at": "2026-09-15T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_55C9F6049D",
+    "headline": "नोएडा के हरौला में चोर समझकर युवक की पीट-पीटकर हत्या, 5 आरोपी गिरफ्तार और एक नाबालिग हिरासत में",
+    "summary": "नोएडा के हरौला में चोर समझकर युवक की पीट-पीटकर हत्या, 5 आरोपी गिरफ्तार और एक नाबालिग हिरासत में",
+    "category": "VIOLENT_CRIME",
+    "category_name": "Violent Crime",
+    "severity_weight": 5.0,
+    "sector_id": "Sector 2",
+    "sector_name": "Sector 2, Noida",
+    "zone": "Industrial / Commercial",
+    "latitude": 28.587,
+    "longitude": 77.315,
+    "incident_timestamp": "2026-09-01T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [
+        "Thieves"
+      ]
+    },
+    "sources": [
+      {
+        "report_id": "REP_55C9F6049D",
+        "source_url": "Royal Bulletin",
+        "headline": "नोएडा के हरौला में चोर समझकर युवक की पीट-पीटकर हत्या, 5 आरोपी गिरफ्तार और एक नाबालिग हिरासत में",
+        "published_at": "2026-09-01T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_12C5105D7C",
+    "headline": "Noida में बड़ा बदलाव: सेक्टर 148-150 के बीच बनेगा नया फ्लाईओवर, जाम से मिलेगी राहत",
+    "summary": "Noida में बड़ा बदलाव: सेक्टर 148-150 के बीच बनेगा नया फ्लाईओवर, जाम से मिलेगी राहत",
+    "category": "PUBLIC_DISRUPTION",
+    "category_name": "Public Order & Protests",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 150",
+    "sector_name": "Sector 150, Noida",
+    "zone": "Sports City / Eco-Residential",
+    "latitude": 28.455,
+    "longitude": 77.458,
+    "incident_timestamp": "2026-09-01T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.5144,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_12C5105D7C",
+        "source_url": "The CSR Journal",
+        "headline": "Noida में बड़ा बदलाव: सेक्टर 148-150 के बीच बनेगा नया फ्लाईओवर, जाम से मिलेगी राहत",
+        "published_at": "2026-09-01T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_BCA979047D",
+    "headline": "47 किमी तक चलती बस में 16 वर्षीय यूपी की किशोरी से सामूहिक दुष्कर्म, दिल्ली के कश्मीरी गेट पहुंचने तक जारी रही दरिंदगी - rape 16 year old girl student delhi bus kashmiri gate police arrest noida sector 63",
+    "summary": "47 किमी तक चलती बस में 16 वर्षीय यूपी की किशोरी से सामूहिक दुष्कर्म, दिल्ली के कश्मीरी गेट पहुंचने तक जारी रही दरिंदगी - rape 16 year old girl student delhi bus kashmiri gate police arrest noida sector 63",
+    "category": "VIOLENT_CRIME",
+    "category_name": "Violent Crime",
+    "severity_weight": 5.0,
+    "sector_id": "Sector 63",
+    "sector_name": "Sector 63, Noida",
+    "zone": "Major Industrial & Tech Zone",
+    "latitude": 28.625,
+    "longitude": 77.382,
+    "incident_timestamp": "2026-08-31T12:30:00",
+    "report_count": 2,
+    "verification_confidence": 0.75,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [],
+      "vehicles": [
+        "Bus"
+      ],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_BCA979047D",
+        "source_url": "Jagran",
+        "headline": "47 किमी तक चलती बस में 16 वर्षीय यूपी की किशोरी से सामूहिक दुष्कर्म, दिल्ली के कश्मीरी गेट पहुंचने तक जारी रही दरिंदगी - rape 16 year old girl student delhi bus kashmiri gate police arrest noida sector 63",
+        "published_at": "2026-08-31T12:30:00"
+      },
+      {
+        "report_id": "REP_8ED4E911C5",
+        "source_url": "jagran.com",
+        "headline": "दिल्ली में निर्भया कांड जैसी वारदात , चलती बस में 16 वर्षीय छात्रा से सामूहिक दुष्कर्म ; ड्राइवर - कंडक्टर गिरफ्तार - rape 16 year old girl student delhi bus kashmiri gate police arrest noida sector 63",
+        "published_at": "2026-08-31T06:15:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_C0DCD4B3C7",
+    "headline": "2 killed, 17-year-old injured as car rams into stationary bus on Noida-Greater Noida Expressway",
+    "summary": "2 killed, 17-year-old injured as car rams into stationary bus on Noida-Greater Noida Expressway",
+    "category": "TRAFFIC_INCIDENT",
+    "category_name": "Traffic & Road Hazard",
+    "severity_weight": 2.0,
+    "sector_id": "Noida-Greater Noida Expressway",
+    "sector_name": "Noida-Greater Noida Expressway",
+    "zone": "High-Speed Arterial Corridor",
+    "latitude": 28.518,
+    "longitude": 77.382,
+    "incident_timestamp": "2026-08-30T12:30:00",
+    "report_count": 2,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [],
+      "vehicles": [
+        "Bus",
+        "Car"
+      ],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_5461133DC3",
+        "source_url": "The Times of India",
+        "headline": "2 dead, 17-year-old injured after car crashes into bus parked on Noida Expressway",
+        "published_at": "2026-08-30T12:30:00"
+      },
+      {
+        "report_id": "REP_C0DCD4B3C7",
+        "source_url": "Hindustan Times",
+        "headline": "2 killed, 17-year-old injured as car rams into stationary bus on Noida-Greater Noida Expressway",
+        "published_at": "2026-08-30T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_9D7221E364",
+    "headline": "नोएडा के छिजारसी डूब क्षेत्र में बिजली चोरी का बड़ा खेल, 20 हजार घरों से हर महीने हो रही 1.8 करोड़ की वसूली",
+    "summary": "नोएडा के छिजारसी डूब क्षेत्र में बिजली चोरी का बड़ा खेल, 20 हजार घरों से हर महीने हो रही 1.8 करोड़ की वसूली",
+    "category": "PROPERTY_CRIME",
+    "category_name": "Property / Financial Crime",
+    "severity_weight": 2.5,
+    "sector_id": "Sector 63",
+    "sector_name": "Sector 63, Noida",
+    "zone": "Major Industrial & Tech Zone",
+    "latitude": 28.625,
+    "longitude": 77.382,
+    "incident_timestamp": "2026-08-29T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_9D7221E364",
+        "source_url": "Jagran",
+        "headline": "नोएडा के छिजारसी डूब क्षेत्र में बिजली चोरी का बड़ा खेल, 20 हजार घरों से हर महीने हो रही 1.8 करोड़ की वसूली",
+        "published_at": "2026-08-29T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_5A36CFB29E",
+    "headline": "नोएडा में गोल चक्कर और छिजारसी पर जाम से मिलेगी मुक्ति, 300 करोड़ की रोड इंजीनियरिंग योजना को मिली मंजूरी",
+    "summary": "नोएडा में गोल चक्कर और छिजारसी पर जाम से मिलेगी मुक्ति, 300 करोड़ की रोड इंजीनियरिंग योजना को मिली मंजूरी",
+    "category": "PUBLIC_DISRUPTION",
+    "category_name": "Public Order & Protests",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 1",
+    "sector_name": "Sector 1, Noida",
+    "zone": "Industrial",
+    "latitude": 28.588,
+    "longitude": 77.309,
+    "incident_timestamp": "2026-08-29T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_5A36CFB29E",
+        "source_url": "Jagran",
+        "headline": "नोएडा में गोल चक्कर और छिजारसी पर जाम से मिलेगी मुक्ति, 300 करोड़ की रोड इंजीनियरिंग योजना को मिली मंजूरी",
+        "published_at": "2026-08-29T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_14708857BF",
+    "headline": "नोएडा में गोल चक्कर और छिजारसी पर जाम से मिलेगी मुक्ति, 300 करोड़ की रोड इंजीनियरिंग योजना को मिली मंजूरी",
+    "summary": "नोएडा में गोल चक्कर और छिजारसी पर जाम से मिलेगी मुक्ति, 300 करोड़ की रोड इंजीनियरिंग योजना को मिली मंजूरी",
+    "category": "PUBLIC_DISRUPTION",
+    "category_name": "Public Order & Protests",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 63",
+    "sector_name": "Sector 63, Noida",
+    "zone": "Major Industrial & Tech Zone",
+    "latitude": 28.625,
+    "longitude": 77.382,
+    "incident_timestamp": "2026-08-29T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_14708857BF",
+        "source_url": "Jagran",
+        "headline": "नोएडा में गोल चक्कर और छिजारसी पर जाम से मिलेगी मुक्ति, 300 करोड़ की रोड इंजीनियरिंग योजना को मिली मंजूरी",
+        "published_at": "2026-08-29T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_7969DD9172",
+    "headline": "Noida Heavy Rain Traffic Jam: तेज बारिश के बाद नोएडा सेक्टर-62 मेट्रो स्टेशन के बाहर थमी रफ्तार #noidarain #noidasector62 #metrostation #noidaweather #waterlogging #noidanews #monsoonupdate #trafficjam noida rain, noida sector",
+    "summary": "Noida Heavy Rain Traffic Jam: तेज बारिश के बाद नोएडा सेक्टर-62 मेट्रो स्टेशन के बाहर थमी रफ्तार #noidarain #noidasector62 #metrostation #noidaweather #waterlogging #noidanews #monsoonupdate #trafficjam noida rain, noida sector",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 62",
+    "sector_name": "Sector 62, Noida",
+    "zone": "Major Institutional & IT Hub",
+    "latitude": 28.627,
+    "longitude": 77.363,
+    "incident_timestamp": "2026-08-24T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.6448,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_7969DD9172",
+        "source_url": "Facebook",
+        "headline": "Noida Heavy Rain Traffic Jam: तेज बारिश के बाद नोएडा सेक्टर-62 मेट्रो स्टेशन के बाहर थमी रफ्तार #noidarain #noidasector62 #metrostation #noidaweather #waterlogging #noidanews #monsoonupdate #trafficjam noida rain, noida sector",
+        "published_at": "2026-08-24T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_DD57812A26",
+    "headline": "नोएडा सेक्टर 137 में बड़ा हादसा, गुलशन विवांटे सोसायटी में नीचे गिरकर 20 साल की युवती की मौत",
+    "summary": "नोएडा सेक्टर 137 में बड़ा हादसा, गुलशन विवांटे सोसायटी में नीचे गिरकर 20 साल की युवती की मौत",
+    "category": "TRAFFIC_INCIDENT",
+    "category_name": "Traffic & Road Hazard",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 137",
+    "sector_name": "Sector 137, Noida",
+    "zone": "Expressway High-Rise Hub",
+    "latitude": 28.508,
+    "longitude": 77.408,
+    "incident_timestamp": "2026-08-22T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_DD57812A26",
+        "source_url": "India TV Hindi",
+        "headline": "नोएडा सेक्टर 137 में बड़ा हादसा, गुलशन विवांटे सोसायटी में नीचे गिरकर 20 साल की युवती की मौत",
+        "published_at": "2026-08-22T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_A5EC4323C3",
+    "headline": "नोएडा मेट्रो के आगे कूदा छात्र, मौत: 11वीं क्लास में पढ़ता था, मां ने की बेटे की पहचान; सेक्टर-52 स्टेशन पर ...",
+    "summary": "नोएडा मेट्रो के आगे कूदा छात्र, मौत: 11वीं क्लास में पढ़ता था, मां ने की बेटे की पहचान; सेक्टर-52 स्टेशन पर ...",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 52",
+    "sector_name": "Sector 52, Noida",
+    "zone": "Transit Hub / Residential",
+    "latitude": 28.589,
+    "longitude": 77.371,
+    "incident_timestamp": "2026-08-13T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_A5EC4323C3",
+        "source_url": "Dainik Bhaskar",
+        "headline": "नोएडा मेट्रो के आगे कूदा छात्र, मौत: 11वीं क्लास में पढ़ता था, मां ने की बेटे की पहचान; सेक्टर-52 स्टेशन पर ...",
+        "published_at": "2026-08-13T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_25949CE8FB",
+    "headline": "Noida: छिजारसी के जाम से मिलेगी राहत! 1500 करोड़ से बनेगा 900 मीटर लंबा 4-लेन फ्लाईओवर, FNG से जुड़ेगा NH-9",
+    "summary": "Noida: छिजारसी के जाम से मिलेगी राहत! 1500 करोड़ से बनेगा 900 मीटर लंबा 4-लेन फ्लाईओवर, FNG से जुड़ेगा NH-9",
+    "category": "PUBLIC_DISRUPTION",
+    "category_name": "Public Order & Protests",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 63",
+    "sector_name": "Sector 63, Noida",
+    "zone": "Major Industrial & Tech Zone",
+    "latitude": 28.625,
+    "longitude": 77.382,
+    "incident_timestamp": "2026-08-13T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_25949CE8FB",
+        "source_url": "Navbharat Times",
+        "headline": "Noida: छिजारसी के जाम से मिलेगी राहत! 1500 करोड़ से बनेगा 900 मीटर लंबा 4-लेन फ्लाईओवर, FNG से जुड़ेगा NH-9",
+        "published_at": "2026-08-13T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_FE10499354",
+    "headline": "Noida News: सेक्टर-51 में घरेलू सहायिका की मौत के बाद हंगामा",
+    "summary": "Noida News: सेक्टर-51 में घरेलू सहायिका की मौत के बाद हंगामा",
+    "category": "PUBLIC_DISRUPTION",
+    "category_name": "Public Order & Protests",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 51",
+    "sector_name": "Sector 51, Noida",
+    "zone": "Transit Interchange",
+    "latitude": 28.582,
+    "longitude": 77.373,
+    "incident_timestamp": "2026-08-09T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_FE10499354",
+        "source_url": "Hindustan",
+        "headline": "Noida News: सेक्टर-51 में घरेलू सहायिका की मौत के बाद हंगामा",
+        "published_at": "2026-08-09T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_4146ACB7CD",
+    "headline": "नोएडा सेक्टर 51 में मचा हड़कंप, कोठी में पंखे से लटका मिला लड़की का शव",
+    "summary": "नोएडा सेक्टर 51 में मचा हड़कंप, कोठी में पंखे से लटका मिला लड़की का शव",
+    "category": "VIOLENT_CRIME",
+    "category_name": "Violent Crime",
+    "severity_weight": 5.0,
+    "sector_id": "Sector 51",
+    "sector_name": "Sector 51, Noida",
+    "zone": "Transit Interchange",
+    "latitude": 28.582,
+    "longitude": 77.373,
+    "incident_timestamp": "2026-08-08T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_4146ACB7CD",
+        "source_url": "India TV Hindi",
+        "headline": "नोएडा सेक्टर 51 में मचा हड़कंप, कोठी में पंखे से लटका मिला लड़की का शव",
+        "published_at": "2026-08-08T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_E341ACC064",
+    "headline": "Video: Woman Calls Noida “Water City”; Shows Waterlogged Sector 18 Road After Heavy Rain",
+    "summary": "Video: Woman Calls Noida “Water City”; Shows Waterlogged Sector 18 Road After Heavy Rain",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 18",
+    "sector_name": "Sector 18, Noida",
+    "zone": "Major Commercial Hub",
+    "latitude": 28.57,
+    "longitude": 77.322,
+    "incident_timestamp": "2026-08-08T12:30:00",
+    "report_count": 3,
+    "verification_confidence": 0.4214,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_E341ACC064",
+        "source_url": "Curly Tales",
+        "headline": "Video: Woman Calls Noida “Water City”; Shows Waterlogged Sector 18 Road After Heavy Rain",
+        "published_at": "2026-08-08T12:30:00"
+      },
+      {
+        "report_id": "REP_C3BCD42EF9",
+        "source_url": "The Times of India",
+        "headline": "Noida or Venice? Woman shows waterlogged Sector 18, takes brutal dig at city",
+        "published_at": "2026-08-08T12:30:00"
+      },
+      {
+        "report_id": "REP_B5C83DEF03",
+        "source_url": "Hindustan Times",
+        "headline": "‘Should have brought a boat’: Woman shows waterlogged Noida Sector 18, questions ‘planned city’ tag",
+        "published_at": "2026-08-08T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_7B817895C2",
+    "headline": "Man on Kanwar Yatra killed in crash near Noida Sec 63; 2 booked for rash driving",
+    "summary": "Man on Kanwar Yatra killed in crash near Noida Sec 63; 2 booked for rash driving",
+    "category": "TRAFFIC_INCIDENT",
+    "category_name": "Traffic & Road Hazard",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 63",
+    "sector_name": "Sector 63, Noida",
+    "zone": "Major Industrial & Tech Zone",
+    "latitude": 28.625,
+    "longitude": 77.382,
+    "incident_timestamp": "2026-08-05T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.6953,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_7B817895C2",
+        "source_url": "Hindustan Times",
+        "headline": "Man on Kanwar Yatra killed in crash near Noida Sec 63; 2 booked for rash driving",
+        "published_at": "2026-08-05T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_CA33FCC9CF",
+    "headline": "Noida man riding sports bike dies after being hit by SUV in Sector 99, family says car driver ‘fled from hospital’",
+    "summary": "Noida man riding sports bike dies after being hit by SUV in Sector 99, family says car driver ‘fled from hospital’",
+    "category": "TRAFFIC_INCIDENT",
+    "category_name": "Traffic & Road Hazard",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 99",
+    "sector_name": "Sector 99, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5435,
+    "longitude": 77.3589,
+    "incident_timestamp": "2026-08-03T12:30:00",
+    "report_count": 2,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [],
+      "vehicles": [
+        "Bike",
+        "Car",
+        "Suv"
+      ],
+      "instruments_or_hazards": [],
+      "roles_and_actors": [
+        "Driver"
+      ]
+    },
+    "sources": [
+      {
+        "report_id": "REP_42D80CF6F6",
+        "source_url": "Jagran",
+        "headline": "नोएडा के सेक्टर-99 में तेज रफ्तार SUV की टक्कर से रेसिंग बाइक सवार इंजीनियर की मौत, ड्राइवर हिरासत में",
+        "published_at": "2026-08-03T12:30:00"
+      },
+      {
+        "report_id": "REP_CA33FCC9CF",
+        "source_url": "Hindustan Times",
+        "headline": "Noida man riding sports bike dies after being hit by SUV in Sector 99, family says car driver ‘fled from hospital’",
+        "published_at": "2026-08-03T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_555895F418",
+    "headline": "70-year-old man dies after falling into open drain in Noida Sector 66",
+    "summary": "70-year-old man dies after falling into open drain in Noida Sector 66",
+    "category": "VIOLENT_CRIME",
+    "category_name": "Violent Crime",
+    "severity_weight": 5.0,
+    "sector_id": "Sector 66",
+    "sector_name": "Sector 66, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.605,
+    "longitude": 77.3764,
+    "incident_timestamp": "2026-07-30T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_555895F418",
+        "source_url": "Hindustan Times",
+        "headline": "70-year-old man dies after falling into open drain in Noida Sector 66",
+        "published_at": "2026-07-30T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_6294D5D174",
+    "headline": "बारिश के बीच नोएडा सेक्टर-16 में टला बड़ा हादसा, मेट्रो स्टेशन के नीचे टूटकर गिरी डिवाइडर की रेलिंग",
+    "summary": "बारिश के बीच नोएडा सेक्टर-16 में टला बड़ा हादसा, मेट्रो स्टेशन के नीचे टूटकर गिरी डिवाइडर की रेलिंग",
+    "category": "TRAFFIC_INCIDENT",
+    "category_name": "Traffic & Road Hazard",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 16",
+    "sector_name": "Sector 16, Noida",
+    "zone": "Commercial / IT Hub",
+    "latitude": 28.578,
+    "longitude": 77.318,
+    "incident_timestamp": "2026-07-28T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_6294D5D174",
+        "source_url": "Jagran",
+        "headline": "बारिश के बीच नोएडा सेक्टर-16 में टला बड़ा हादसा, मेट्रो स्टेशन के नीचे टूटकर गिरी डिवाइडर की रेलिंग",
+        "published_at": "2026-07-28T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_AD4E9EAB2C",
+    "headline": "नोएडा में बरौला जलभराव पर प्राधिकरण का एक्शन: JE और सुपरवाइजर हटाए गए, ठेकेदार पर 5 लाख जुर्माना",
+    "summary": "नोएडा में बरौला जलभराव पर प्राधिकरण का एक्शन: JE और सुपरवाइजर हटाए गए, ठेकेदार पर 5 लाख जुर्माना",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 49",
+    "sector_name": "Sector 49, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.564,
+    "longitude": 77.3672,
+    "incident_timestamp": "2026-07-28T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_AD4E9EAB2C",
+        "source_url": "Navbharat Times",
+        "headline": "नोएडा में बरौला जलभराव पर प्राधिकरण का एक्शन: JE और सुपरवाइजर हटाए गए, ठेकेदार पर 5 लाख जुर्माना",
+        "published_at": "2026-07-28T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_09E47BCD1E",
+    "headline": "नोएडा: रजनीगंधा से सेक्टर-60 तक बनेगा 1.5 KM लंबा एलिवेटेड रोड, लाखों यात्रियों को मिलेगी जाम से राहत",
+    "summary": "नोएडा: रजनीगंधा से सेक्टर-60 तक बनेगा 1.5 KM लंबा एलिवेटेड रोड, लाखों यात्रियों को मिलेगी जाम से राहत",
+    "category": "PUBLIC_DISRUPTION",
+    "category_name": "Public Order & Protests",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 60",
+    "sector_name": "Sector 60, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.6032,
+    "longitude": 77.3672,
+    "incident_timestamp": "2026-07-22T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_09E47BCD1E",
+        "source_url": "Navbharat Times",
+        "headline": "नोएडा: रजनीगंधा से सेक्टर-60 तक बनेगा 1.5 KM लंबा एलिवेटेड रोड, लाखों यात्रियों को मिलेगी जाम से राहत",
+        "published_at": "2026-07-22T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_AFE5F2F19F",
+    "headline": "नोएडा सेक्टर 19 की तीन मंजिला इमारत में आग से हड़कंप, पड़ोसी की सूझबूझ से बची 11 लोगों की जान",
+    "summary": "नोएडा सेक्टर 19 की तीन मंजिला इमारत में आग से हड़कंप, पड़ोसी की सूझबूझ से बची 11 लोगों की जान",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 19",
+    "sector_name": "Sector 19, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5784,
+    "longitude": 77.3248,
+    "incident_timestamp": "2026-07-19T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_AFE5F2F19F",
+        "source_url": "Jagran",
+        "headline": "नोएडा सेक्टर 19 की तीन मंजिला इमारत में आग से हड़कंप, पड़ोसी की सूझबूझ से बची 11 लोगों की जान",
+        "published_at": "2026-07-19T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_D1A2FD1F18",
+    "headline": "Another fire in Noida: Blaze erupts at Sector 137 housing society after suspected AC short circuit",
+    "summary": "Another fire in Noida: Blaze erupts at Sector 137 housing society after suspected AC short circuit",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 137",
+    "sector_name": "Sector 137, Noida",
+    "zone": "Expressway High-Rise Hub",
+    "latitude": 28.508,
+    "longitude": 77.408,
+    "incident_timestamp": "2026-07-17T12:30:00",
+    "report_count": 3,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [
+        "Fire Department"
+      ],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Blaze",
+        "Fire",
+        "Short Circuit"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_D1A2FD1F18",
+        "source_url": "Moneycontrol.com",
+        "headline": "Another fire in Noida: Blaze erupts at Sector 137 housing society after suspected AC short circuit",
+        "published_at": "2026-07-17T12:30:00"
+      },
+      {
+        "report_id": "REP_6B43A2492F",
+        "source_url": "Republic World",
+        "headline": "Noida High-Rise Fire: AC Short Circuit Triggers Fire at Paras Tierea Society, No Injuries Reported",
+        "published_at": "2026-07-17T12:30:00"
+      },
+      {
+        "report_id": "REP_18C51B09E0",
+        "source_url": "India TV News",
+        "headline": "Fire breaks out at Noida's Paras Tierea's 7th floor after AC short circuit, fire department inspects site",
+        "published_at": "2026-07-17T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_A4EFCD0E93",
+    "headline": "नोएडा में बड़ा हादसा: छिजारसी में अचानक टूटा 11KV हाईटेंशन तार, स्कूटी जलकर राख, 5 लोग झुलसे",
+    "summary": "नोएडा में बड़ा हादसा: छिजारसी में अचानक टूटा 11KV हाईटेंशन तार, स्कूटी जलकर राख, 5 लोग झुलसे",
+    "category": "TRAFFIC_INCIDENT",
+    "category_name": "Traffic & Road Hazard",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 63",
+    "sector_name": "Sector 63, Noida",
+    "zone": "Major Industrial & Tech Zone",
+    "latitude": 28.625,
+    "longitude": 77.382,
+    "incident_timestamp": "2026-07-15T12:30:00",
+    "report_count": 2,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [
+        "Noida Police"
+      ],
+      "vehicles": [
+        "Scooter"
+      ],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_4A62231DB0",
+        "source_url": "Facebook",
+        "headline": "Dynamite News Hindi. . नोएडा के छिजारसी में हाईटेंशन बिजली का तार टूटकर गिरने से दो लड़कों और दो लड़कियों समेत चार लोग गंभीर रूप से झुलस गए। स्थानीय लोगों का आरोप है कि बिजली विभाग को कई बार शिकायतें दी गईं, लेकिन समय पर कार्रवाई नहीं होने से यह बड़ा हादसा हुआ।\n\nNOIDA POLICE UP Police #Noida #NoidaNews #ElectricShock #HighTensionWire",
+        "published_at": "2026-07-16T12:30:00"
+      },
+      {
+        "report_id": "REP_A4EFCD0E93",
+        "source_url": "AajTak",
+        "headline": "नोएडा में बड़ा हादसा: छिजारसी में अचानक टूटा 11KV हाईटेंशन तार, स्कूटी जलकर राख, 5 लोग झुलसे",
+        "published_at": "2026-07-15T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_DA6EF0ED3E",
+    "headline": "नोएडा के छिजारसी गांव में बड़ा हादसा, 11 केवी लाइन टूटने से मची भगदड़ 5 लोग बुरी",
+    "summary": "नोएडा के छिजारसी गांव में बड़ा हादसा, 11 केवी लाइन टूटने से मची भगदड़ 5 लोग बुरी",
+    "category": "TRAFFIC_INCIDENT",
+    "category_name": "Traffic & Road Hazard",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 63",
+    "sector_name": "Sector 63, Noida",
+    "zone": "Major Industrial & Tech Zone",
+    "latitude": 28.625,
+    "longitude": 77.382,
+    "incident_timestamp": "2026-07-16T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_DA6EF0ED3E",
+        "source_url": "ABP News",
+        "headline": "नोएडा के छिजारसी गांव में बड़ा हादसा, 11 केवी लाइन टूटने से मची भगदड़ 5 लोग बुरी",
+        "published_at": "2026-07-16T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_6EECE470B6",
+    "headline": "नोएडा के मामूरा गांव में लगी भीषण आग, 2 लोगों की मौत, मच गया हड़कंप, सीएम योगी ने घटना को संज्ञान में लिया",
+    "summary": "नोएडा के मामूरा गांव में लगी भीषण आग, 2 लोगों की मौत, मच गया हड़कंप, सीएम योगी ने घटना को संज्ञान में लिया",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 66",
+    "sector_name": "Sector 66, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.605,
+    "longitude": 77.3764,
+    "incident_timestamp": "2026-07-15T12:30:00",
+    "report_count": 2,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_6EECE470B6",
+        "source_url": "India TV Hindi",
+        "headline": "नोएडा के मामूरा गांव में लगी भीषण आग, 2 लोगों की मौत, मच गया हड़कंप, सीएम योगी ने घटना को संज्ञान में लिया",
+        "published_at": "2026-07-15T12:30:00"
+      },
+      {
+        "report_id": "REP_49E507A944",
+        "source_url": "News18 Hindi",
+        "headline": "नोएडा के मामूरा गांव में बिल्डिंग में लगी आग, दो लोगों की मौत, इलेक्ट्रिक स्‍कूटी की चार्जिंग से हुआ हादसा,...",
+        "published_at": "2026-07-15T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_3AEE8C555B",
+    "headline": "Noida Mamura Fire: छतों पर सीढ़ी लगाकर कूदे लोग, ममूरा में मौत के मुंह से ऐसे बचाए गए 50 परिवार",
+    "summary": "Noida Mamura Fire: छतों पर सीढ़ी लगाकर कूदे लोग, ममूरा में मौत के मुंह से ऐसे बचाए गए 50 परिवार",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 66",
+    "sector_name": "Sector 66, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.605,
+    "longitude": 77.3764,
+    "incident_timestamp": "2026-07-15T12:30:00",
+    "report_count": 2,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_3AEE8C555B",
+        "source_url": "Navbharat Times",
+        "headline": "Noida Mamura Fire: छतों पर सीढ़ी लगाकर कूदे लोग, ममूरा में मौत के मुंह से ऐसे बचाए गए 50 परिवार",
+        "published_at": "2026-07-15T12:30:00"
+      },
+      {
+        "report_id": "REP_9AF2C84ECC",
+        "source_url": "ABP News",
+        "headline": "Noida Mamura Fire: नोएडा के ममूरा गांव में लगी भीषण आग, डरा देंगी तस्वीरें, सामने आई ये वजह",
+        "published_at": "2026-07-15T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_A022CCB5F6",
+    "headline": "Two Dead, Over 100 Rescued After Massive Fire Engulfs Noida Building In Sector 66",
+    "summary": "Two Dead, Over 100 Rescued After Massive Fire Engulfs Noida Building In Sector 66",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 66",
+    "sector_name": "Sector 66, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.605,
+    "longitude": 77.3764,
+    "incident_timestamp": "2026-07-15T12:30:00",
+    "report_count": 2,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_F30870173B",
+        "source_url": "News18 Hindi",
+        "headline": "100 कमरे, सैकड़ों लोग... संकरी गलियां, नोएडा के मामूरा में जहां लगी आग वहां का डराने वाला सच",
+        "published_at": "2026-07-15T12:30:00"
+      },
+      {
+        "report_id": "REP_A022CCB5F6",
+        "source_url": "ETV Bharat",
+        "headline": "Two Dead, Over 100 Rescued After Massive Fire Engulfs Noida Building In Sector 66",
+        "published_at": "2026-07-15T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_7B78C3864E",
+    "headline": "Two killed in Noida's Mamura village after charging EV causes massive fire, engulfing buildings",
+    "summary": "Two killed in Noida's Mamura village after charging EV causes massive fire, engulfing buildings",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 66",
+    "sector_name": "Sector 66, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.605,
+    "longitude": 77.3764,
+    "incident_timestamp": "2026-07-15T12:30:00",
+    "report_count": 5,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [],
+      "vehicles": [
+        "Scooter"
+      ],
+      "instruments_or_hazards": [
+        "Blaze",
+        "Fire"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_8A89E7AC61",
+        "source_url": "Prabhasakshi",
+        "headline": "Noida Mamura Tragedy: E-scooter बैटरी बनी काल, PG Building में भीषण आग, 2 की मौत",
+        "published_at": "2026-07-15T12:30:00"
+      },
+      {
+        "report_id": "REP_773F2C126D",
+        "source_url": "Telangana Today",
+        "headline": "Noida building fire: Two dead after electric scooter charging sparks blaze in Sector 66",
+        "published_at": "2026-07-15T12:30:00"
+      },
+      {
+        "report_id": "REP_E90288D9D0",
+        "source_url": "Hindustan Times",
+        "headline": "2 killed after fire breaks out at building in Mamura village in Noida's Sector 66, EV spark likely cause",
+        "published_at": "2026-07-15T12:30:00"
+      },
+      {
+        "report_id": "REP_7B78C3864E",
+        "source_url": "India TV News",
+        "headline": "Two killed in Noida's Mamura village after charging EV causes massive fire, engulfing buildings",
+        "published_at": "2026-07-15T12:30:00"
+      },
+      {
+        "report_id": "REP_5C3A97CC94",
+        "source_url": "India.com",
+        "headline": "2 killed, several feared trapped after fire breaks out at Noida residential building in Mamura village",
+        "published_at": "2026-07-15T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_5081437626",
+    "headline": "5 held for running loan fraud racket from call centre in Noida Sector 1",
+    "summary": "5 held for running loan fraud racket from call centre in Noida Sector 1",
+    "category": "PROPERTY_CRIME",
+    "category_name": "Property / Financial Crime",
+    "severity_weight": 2.5,
+    "sector_id": "Sector 1",
+    "sector_name": "Sector 1, Noida",
+    "zone": "Industrial",
+    "latitude": 28.588,
+    "longitude": 77.309,
+    "incident_timestamp": "2026-07-15T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_5081437626",
+        "source_url": "The Times of India",
+        "headline": "5 held for running loan fraud racket from call centre in Noida Sector 1",
+        "published_at": "2026-07-15T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_B88A416BB8",
+    "headline": "Live Wire Falls On People In Noida's Sector 63 Injuring 5, Sets Scooter On Fire",
+    "summary": "Live Wire Falls On People In Noida's Sector 63 Injuring 5, Sets Scooter On Fire",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 63",
+    "sector_name": "Sector 63, Noida",
+    "zone": "Major Industrial & Tech Zone",
+    "latitude": 28.625,
+    "longitude": 77.382,
+    "incident_timestamp": "2026-07-15T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [
+        "Scooter"
+      ],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_B88A416BB8",
+        "source_url": "News18",
+        "headline": "Live Wire Falls On People In Noida's Sector 63 Injuring 5, Sets Scooter On Fire",
+        "published_at": "2026-07-15T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_3D23526E9E",
+    "headline": "Noida News: 2 die as massive fire engulfs Sector 66 residential building; around 50 families evacuated",
+    "summary": "Noida News: 2 die as massive fire engulfs Sector 66 residential building; around 50 families evacuated",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 66",
+    "sector_name": "Sector 66, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.605,
+    "longitude": 77.3764,
+    "incident_timestamp": "2026-07-15T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_3D23526E9E",
+        "source_url": "Livemint",
+        "headline": "Noida News: 2 die as massive fire engulfs Sector 66 residential building; around 50 families evacuated",
+        "published_at": "2026-07-15T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_F2858BEFDE",
+    "headline": "Noida: 27-year-old falls into open drain in Sector 57, dies",
+    "summary": "Noida: 27-year-old falls into open drain in Sector 57, dies",
+    "category": "VIOLENT_CRIME",
+    "category_name": "Violent Crime",
+    "severity_weight": 5.0,
+    "sector_id": "Sector 57",
+    "sector_name": "Sector 57, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.605,
+    "longitude": 77.3535,
+    "incident_timestamp": "2026-07-10T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_F2858BEFDE",
+        "source_url": "News9live",
+        "headline": "Noida: 27-year-old falls into open drain in Sector 57, dies",
+        "published_at": "2026-07-10T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_C1DD5101AC",
+    "headline": "Man dies after falling into drain amid heavy waterlogging in Noida Sector 58",
+    "summary": "Man dies after falling into drain amid heavy waterlogging in Noida Sector 58",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 58",
+    "sector_name": "Sector 58, Noida",
+    "zone": "IT / Industrial",
+    "latitude": 28.611,
+    "longitude": 77.361,
+    "incident_timestamp": "2026-07-10T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.1667,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_C1DD5101AC",
+        "source_url": "The Times of India",
+        "headline": "Man dies after falling into drain amid heavy waterlogging in Noida Sector 58",
+        "published_at": "2026-07-10T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_E0DBDD066D",
+    "headline": "नोएडा सेक्टर-88 में एक फैक्ट्री में लगी आग, दमकल ने समय रहते पाया काबू; कोई हताहत नहीं",
+    "summary": "नोएडा सेक्टर-88 में एक फैक्ट्री में लगी आग, दमकल ने समय रहते पाया काबू; कोई हताहत नहीं",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 88",
+    "sector_name": "Sector 88, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5293,
+    "longitude": 77.4241,
+    "incident_timestamp": "2026-07-07T12:30:00",
+    "report_count": 2,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [
+        "Fire Department"
+      ],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_E0DBDD066D",
+        "source_url": "Jagran",
+        "headline": "नोएडा सेक्टर-88 में एक फैक्ट्री में लगी आग, दमकल ने समय रहते पाया काबू; कोई हताहत नहीं",
+        "published_at": "2026-07-07T12:30:00"
+      },
+      {
+        "report_id": "REP_3DBFCBCC19",
+        "source_url": "AajTak",
+        "headline": "नोएडा सेक्टर 88 स्थित फैक्ट्री में लगी आग, फायर ब्रिगेड ने आग पर काबू पाया",
+        "published_at": "2026-07-07T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_7BADCA27A0",
+    "headline": "नोएडा में भारी बारिश से ट्रैफिक पूरी तरह ठप, रजनीगंधा चौक पर लगा भीषण जाम",
+    "summary": "नोएडा में भारी बारिश से ट्रैफिक पूरी तरह ठप, रजनीगंधा चौक पर लगा भीषण जाम",
+    "category": "PUBLIC_DISRUPTION",
+    "category_name": "Public Order & Protests",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 1",
+    "sector_name": "Sector 1, Noida",
+    "zone": "Industrial",
+    "latitude": 28.588,
+    "longitude": 77.309,
+    "incident_timestamp": "2026-07-07T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_7BADCA27A0",
+        "source_url": "Jagran",
+        "headline": "नोएडा में भारी बारिश से ट्रैफिक पूरी तरह ठप, रजनीगंधा चौक पर लगा भीषण जाम",
+        "published_at": "2026-07-07T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_DDA8AB12C2",
+    "headline": "Noida woman takes e-rickshaw to Sector 18 multilevel parking, jumps to her death",
+    "summary": "Noida woman takes e-rickshaw to Sector 18 multilevel parking, jumps to her death",
+    "category": "VIOLENT_CRIME",
+    "category_name": "Violent Crime",
+    "severity_weight": 5.0,
+    "sector_id": "Sector 18",
+    "sector_name": "Sector 18, Noida",
+    "zone": "Major Commercial Hub",
+    "latitude": 28.57,
+    "longitude": 77.322,
+    "incident_timestamp": "2026-07-06T12:30:00",
+    "report_count": 2,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [],
+      "vehicles": [
+        "E-Rickshaw"
+      ],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_DDA8AB12C2",
+        "source_url": "The Times of India",
+        "headline": "Noida woman takes e-rickshaw to Sector 18 multilevel parking, jumps to her death",
+        "published_at": "2026-07-06T12:30:00"
+      },
+      {
+        "report_id": "REP_F79E6199B2",
+        "source_url": "Hindustan Times",
+        "headline": "Noida: 49-yr-old woman ‘jumps’ to death from multi-level parking lot in Sector 18",
+        "published_at": "2026-07-06T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_3129181D5F",
+    "headline": "नोएडा: सेक्टर-18 के मल्टीलेवल पार्किंग में मिली महिला की लाश, मचा हड़कंप",
+    "summary": "नोएडा: सेक्टर-18 के मल्टीलेवल पार्किंग में मिली महिला की लाश, मचा हड़कंप",
+    "category": "VIOLENT_CRIME",
+    "category_name": "Violent Crime",
+    "severity_weight": 5.0,
+    "sector_id": "Sector 18",
+    "sector_name": "Sector 18, Noida",
+    "zone": "Major Commercial Hub",
+    "latitude": 28.57,
+    "longitude": 77.322,
+    "incident_timestamp": "2026-07-05T12:30:00",
+    "report_count": 4,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [],
+      "vehicles": [
+        "Car"
+      ],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_3129181D5F",
+        "source_url": "AajTak",
+        "headline": "नोएडा: सेक्टर-18 के मल्टीलेवल पार्किंग में मिली महिला की लाश, मचा हड़कंप",
+        "published_at": "2026-07-05T12:30:00"
+      },
+      {
+        "report_id": "REP_542D1C2926",
+        "source_url": "India TV Hindi",
+        "headline": "नोएडा सेक्टर-18 की मल्टी लेवल कार पार्किंग से कूदकर एक महिला ने आत्महत्या की, मचा हड़कंप",
+        "published_at": "2026-07-05T12:30:00"
+      },
+      {
+        "report_id": "REP_BBB35A451C",
+        "source_url": "Jagran",
+        "headline": "नोएडा सेक्टर-18 की मल्टीलेवल पार्किंग में मिली महिला की लाश, इलाके में मचा हड़कंप",
+        "published_at": "2026-07-05T12:30:00"
+      },
+      {
+        "report_id": "REP_ABF394035C",
+        "source_url": "AajTak",
+        "headline": "नोएडा सेक्टर-18 की मल्टीलेवल पार्किंग में महिला का शव मिलने से सनसनी",
+        "published_at": "2026-07-05T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_77B86B3EA3",
+    "headline": "Data theft & fake job racket busted in Noida’s Sector 63, five arrested",
+    "summary": "Data theft & fake job racket busted in Noida’s Sector 63, five arrested",
+    "category": "PROPERTY_CRIME",
+    "category_name": "Property / Financial Crime",
+    "severity_weight": 2.5,
+    "sector_id": "Sector 63",
+    "sector_name": "Sector 63, Noida",
+    "zone": "Major Industrial & Tech Zone",
+    "latitude": 28.625,
+    "longitude": 77.382,
+    "incident_timestamp": "2026-06-25T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.6108,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_77B86B3EA3",
+        "source_url": "The Times of India",
+        "headline": "Data theft & fake job racket busted in Noida’s Sector 63, five arrested",
+        "published_at": "2026-06-25T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_7C8CB3F387",
+    "headline": "नोएडा के सेक्टर-9 की बिल्डिंग में लगी भीषण आग, फायर ब्रिगेड की 5 गाड़ियां मौके पर मौजूद",
+    "summary": "नोएडा के सेक्टर-9 की बिल्डिंग में लगी भीषण आग, फायर ब्रिगेड की 5 गाड़ियां मौके पर मौजूद",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 9",
+    "sector_name": "Sector 9, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5869,
+    "longitude": 77.3274,
+    "incident_timestamp": "2026-06-21T12:30:00",
+    "report_count": 2,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [
+        "Fire Department"
+      ],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_7C8CB3F387",
+        "source_url": "ABP News",
+        "headline": "नोएडा के सेक्टर-9 की बिल्डिंग में लगी भीषण आग, फायर ब्रिगेड की 5 गाड़ियां मौके पर मौजूद",
+        "published_at": "2026-06-21T12:30:00"
+      },
+      {
+        "report_id": "REP_CF641351D5",
+        "source_url": "Jagran",
+        "headline": "नोएडा सेक्टर-9 में बिजली उपकरण बनाने वाली फैक्ट्री में लगी आग, दमकलकर्मी बुझाने में जुटे",
+        "published_at": "2026-06-21T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_A6569ECA52",
+    "headline": "Short circuit triggers blaze at private company in Noida Sector 9",
+    "summary": "Short circuit triggers blaze at private company in Noida Sector 9",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 9",
+    "sector_name": "Sector 9, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5869,
+    "longitude": 77.3274,
+    "incident_timestamp": "2026-06-21T12:30:00",
+    "report_count": 2,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Blaze",
+        "Fire",
+        "Short Circuit"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_A6569ECA52",
+        "source_url": "ANI News",
+        "headline": "Short circuit triggers blaze at private company in Noida Sector 9",
+        "published_at": "2026-06-21T12:30:00"
+      },
+      {
+        "report_id": "REP_037655CFBF",
+        "source_url": "The Times of India",
+        "headline": "Massive fire breaks out at private company in Noida Sector 9",
+        "published_at": "2026-06-21T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_4FA23099C8",
+    "headline": "Residents protest ‘prolonged’ power outage in Noida Sector 11",
+    "summary": "Residents protest ‘prolonged’ power outage in Noida Sector 11",
+    "category": "PUBLIC_DISRUPTION",
+    "category_name": "Public Order & Protests",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 11",
+    "sector_name": "Sector 11, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.5981,
+    "longitude": 77.3338,
+    "incident_timestamp": "2026-06-14T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_4FA23099C8",
+        "source_url": "Hindustan Times",
+        "headline": "Residents protest ‘prolonged’ power outage in Noida Sector 11",
+        "published_at": "2026-06-14T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_DE86487C43",
+    "headline": "Fire erupts in Noida Sector 50 apartment, elderly couple rescued",
+    "summary": "Fire erupts in Noida Sector 50 apartment, elderly couple rescued",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 50",
+    "sector_name": "Sector 50, Noida",
+    "zone": "Residential High-Density",
+    "latitude": 28.577,
+    "longitude": 77.368,
+    "incident_timestamp": "2026-06-13T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.5,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_DE86487C43",
+        "source_url": "Hindustan Times",
+        "headline": "Fire erupts in Noida Sector 50 apartment, elderly couple rescued",
+        "published_at": "2026-06-13T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_E0800CA848",
+    "headline": "नोएडा: सेक्टर 49 स्थित अपार्टमेंट की चौथी मंजिल पर लगी आग, फंसे बुजुर्ग दंपति",
+    "summary": "नोएडा: सेक्टर 49 स्थित अपार्टमेंट की चौथी मंजिल पर लगी आग, फंसे बुजुर्ग दंपति",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 49",
+    "sector_name": "Sector 49, Noida",
+    "zone": "Urban Sector",
+    "latitude": 28.564,
+    "longitude": 77.3672,
+    "incident_timestamp": "2026-06-12T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_E0800CA848",
+        "source_url": "ETV Bharat",
+        "headline": "नोएडा: सेक्टर 49 स्थित अपार्टमेंट की चौथी मंजिल पर लगी आग, फंसे बुजुर्ग दंपति",
+        "published_at": "2026-06-12T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_F97A9137FA",
+    "headline": "नोएडा के सेक्टर 50 में फ्लैट में लगी आग, तीन लोगों को सुरक्षित निकाला",
+    "summary": "नोएडा के सेक्टर 50 में फ्लैट में लगी आग, तीन लोगों को सुरक्षित निकाला",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 50",
+    "sector_name": "Sector 50, Noida",
+    "zone": "Residential High-Density",
+    "latitude": 28.577,
+    "longitude": 77.368,
+    "incident_timestamp": "2026-06-12T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Fire"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_F97A9137FA",
+        "source_url": "AajTak",
+        "headline": "नोएडा के सेक्टर 50 में फ्लैट में लगी आग, तीन लोगों को सुरक्षित निकाला",
+        "published_at": "2026-06-12T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_12B2A255E4",
+    "headline": "Fire breaks out at Sharma Market in Noida's Sector 52",
+    "summary": "Fire breaks out at Sharma Market in Noida's Sector 52",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 52",
+    "sector_name": "Sector 52, Noida",
+    "zone": "Transit Hub / Residential",
+    "latitude": 28.589,
+    "longitude": 77.371,
+    "incident_timestamp": "2026-06-05T12:30:00",
+    "report_count": 3,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": true,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Fire",
+        "Short Circuit"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_9752225276",
+        "source_url": "Deccan Chronicle",
+        "headline": "Noida: Fire Breaks Out at Building in Sector 52",
+        "published_at": "2026-06-05T12:30:00"
+      },
+      {
+        "report_id": "REP_12B2A255E4",
+        "source_url": "The Times of India",
+        "headline": "Fire breaks out at Sharma Market in Noida's Sector 52",
+        "published_at": "2026-06-05T12:30:00"
+      },
+      {
+        "report_id": "REP_EE838FB3DE",
+        "source_url": "The Economic Times",
+        "headline": "Fire breaks out at commercial complex in Noida Sector 52: 15 people rescued; short circuit suspected",
+        "published_at": "2026-06-05T12:30:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_75D1F49DD0",
+    "headline": "Noida's high-rise fire risk: Why air conditioners are emerging as a safety concern",
+    "summary": "Noida's high-rise fire risk: Why air conditioners are emerging as a safety concern. A major blaze erupted in a flat on the 12th floor of a high-rise tower at Ivy County residential society in Sector 75, while a second fire was reported at a paying guest accommodation in Shatabdi ...",
+    "category": "CIVIC_HAZARD",
+    "category_name": "Civic & Industrial Hazard",
+    "severity_weight": 3.5,
+    "sector_id": "Sector 52",
+    "sector_name": "Sector 52, Noida",
+    "zone": "Transit Hub / Residential",
+    "latitude": 28.589,
+    "longitude": 77.371,
+    "incident_timestamp": "2026-06-05T09:00:00",
+    "report_count": 1,
+    "verification_confidence": 0.1667,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [
+        "Blaze",
+        "Fire",
+        "Short Circuit"
+      ],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_75D1F49DD0",
+        "source_url": "moneycontrol.com",
+        "headline": "Noida's high-rise fire risk: Why air conditioners are emerging as a safety concern",
+        "published_at": "2026-06-05T06:28:00"
+      }
+    ]
+  },
+  {
+    "event_id": "EVT_2EAC524FC4",
+    "headline": "नोएडा सेक्टर-16 मेट्रो स्टेशन पर बड़ा हादसा टला, मेट्रो के सामने कूदा व्यक्ति",
+    "summary": "नोएडा सेक्टर-16 मेट्रो स्टेशन पर बड़ा हादसा टला, मेट्रो के सामने कूदा व्यक्ति",
+    "category": "TRAFFIC_INCIDENT",
+    "category_name": "Traffic & Road Hazard",
+    "severity_weight": 2.0,
+    "sector_id": "Sector 16",
+    "sector_name": "Sector 16, Noida",
+    "zone": "Commercial / IT Hub",
+    "latitude": 28.578,
+    "longitude": 77.318,
+    "incident_timestamp": "2026-06-02T12:30:00",
+    "report_count": 1,
+    "verification_confidence": 0.999,
+    "is_multi_source_verified": false,
+    "entities": {
+      "organizations": [],
+      "vehicles": [],
+      "instruments_or_hazards": [],
+      "roles_and_actors": []
+    },
+    "sources": [
+      {
+        "report_id": "REP_2EAC524FC4",
+        "source_url": "News18 Hindi",
+        "headline": "नोएडा सेक्टर-16 मेट्रो स्टेशन पर बड़ा हादसा टला, मेट्रो के सामने कूदा व्यक्ति",
+        "published_at": "2026-06-02T12:30:00"
       }
     ]
   }

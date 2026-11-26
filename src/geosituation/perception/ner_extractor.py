@@ -39,6 +39,13 @@ class IncidentEntityExtractor:
             "shopkeeper", "guard", "security personnel", "sub-inspector", "constable"
         ]
 
+        self.hindi_entity_map = {
+            "organizations": {"नोएडा पुलिस": "Noida Police", "ट्रैफिक पुलिस": "Traffic Police", "फायर ब्रिगेड": "Fire Department", "दमकल": "Fire Department", "पुलिस": "Noida Police"},
+            "vehicles": {"बाइक": "Bike", "मोटरसाइकिल": "Motorcycle", "स्कूटी": "Scooter", "कार": "Car", "एसयूवी": "Suv", "बस": "Bus", "ट्रक": "Truck", "डंपर": "Dumper", "ऑटो": "Auto"},
+            "instruments_or_hazards": {"आग": "Fire", "लपटें": "Blaze", "ब्लास्ट": "Explosive", "धमाका": "Explosive", "सिलेंडर": "Gas Cylinder", "ट्रांसफार्मर": "Transformer", "चाकू": "Knife", "गोली": "Bullet", "पिस्तौल": "Pistol", "तमंचा": "Pistol"},
+            "roles_and_actors": {"बदमाश": "Miscreants", "बदमाशों": "Miscreants", "चोर": "Thieves", "चोरों": "Thieves", "लुटेरे": "Robbers", "झपटमार": "Snatchers", "गिरोह": "Gang", "प्रदर्शनकारी": "Protesters", "किसान": "Farmers", "मजदूर": "Workers", "चालक": "Driver", "गार्ड": "Guard"},
+        }
+
     def extract_entities(self, text: str) -> Dict[str, List[str]]:
         text_lower = text.lower()
         
@@ -61,6 +68,19 @@ class IncidentEntityExtractor:
         for role in self.roles_and_actors:
             if re.search(rf'\b{re.escape(role)}\b', text_lower):
                 found_roles.add(role.title())
+
+        # Hindi entity mapping
+        bucket_map = {
+            "organizations": found_orgs,
+            "vehicles": found_vehicles,
+            "instruments_or_hazards": found_instruments,
+            "roles_and_actors": found_roles,
+        }
+        for bucket_name, kw_map in self.hindi_entity_map.items():
+            target_set = bucket_map[bucket_name]
+            for hi_kw, en_label in kw_map.items():
+                if re.search(rf'(?<![\w\u0900-\u097f]){re.escape(hi_kw)}(?![\w\u0900-\u097f])', text):
+                    target_set.add(en_label)
 
         # Extract number of casualties / victims mentioned (regex pattern)
         casualties = []
